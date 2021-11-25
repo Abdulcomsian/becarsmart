@@ -55,11 +55,27 @@
                     </a>
                 </div>
                 <div class="menu-item">
-                    <a class="menu-link" href="/">
+                    <a class="menu-link" href="{{ route('Car.sell-car') }}">
 										<span class="menu-icon">
 											<i class="bi bi-app-indicator fs-3"></i>
 										</span>
-                        <span class="menu-title">Landing</span>
+                        <span class="menu-title">Sell Car Leads</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a class="menu-link" href="{{ route('Car.buy-car') }}">
+										<span class="menu-icon">
+											<i class="bi bi-app-indicator fs-3"></i>
+										</span>
+                        <span class="menu-title">Buy Car Leads</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a class="menu-link" href="{{ route('Car.cms') }}">
+										<span class="menu-icon">
+											<i class="bi bi-app-indicator fs-3"></i>
+										</span>
+                        <span class="menu-title">Content management system</span>
                     </a>
                 </div>
                 <div class="menu-item">
@@ -77,11 +93,19 @@
 									</span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="{{ route('users.index') }}">
+                            <a class="menu-link" href="{{ route('user_dropdown/home') }}">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
-                                <span class="menu-title">Users</span>
+                                <span class="menu-title">Home</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{ route('user_dropdown/questionnaire') }}">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+                                <span class="menu-title">Questionnaire</span>
                             </a>
                         </div>
 {{--                        <div class="menu-item">--}}
