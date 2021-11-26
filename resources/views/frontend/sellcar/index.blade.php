@@ -30,7 +30,7 @@
                                     </div>    
                                 </div>
                                 <div class="col-md-6 col-12">
-                                    <a href="/frontend/home" class="btn btn-danger w-100">Value My Car</a>
+                                    <a href="/home/home" class="btn btn-danger w-100">Value My Car</a>
                                 </div>
                             </div>
                         </form>
@@ -235,7 +235,7 @@
                     <div class="card blog_card mb-3">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <a href="/frontend/blog">
+                                <a href="/blog/blog">
                                     <img src="{{asset ('assets/img/featured.png')}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
@@ -253,7 +253,7 @@
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                                     
                                     <p class="card-text">
-                                    <a href="/frontend/blog" class="mt-auto btn">Read More</a>
+                                    <a href="/blog/blog" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>
@@ -264,7 +264,7 @@
                     <div class="card blog_card nomargin">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <a href="/frontend/blog">
+                                <a href="/blog/blog">
                                     <img src="{{asset ('assets/img/featured3.png')}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
@@ -282,7 +282,7 @@
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                             
                             <p class="card-text">
-                                <a href="/frontend/blog" class="mt-auto btn">Read More</a>
+                                <a href="/blog/blog" class="mt-auto btn">Read More</a>
                                 </p>
                             </div>
                         </div>
@@ -296,7 +296,7 @@
                     <div class="card blog_card mb-3 height100 nomargin">
                         <div class="row g-0 height100">
                             <div class="col-md-12">
-                                <a href="/frontend/blog">
+                                <a href="/blog/blog">
                                     <img src="{{asset ('assets/img/featured2.png')}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
@@ -314,7 +314,7 @@
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                                 
                                 <p class="card-text">
-                                    <a href="/frontend/blog" class="mt-auto btn">Read More</a>
+                                    <a href="/blog/blog" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>

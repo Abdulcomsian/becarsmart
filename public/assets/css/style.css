@@ -76,7 +76,7 @@ flex-direction: row;
 
 .hero-section {
   padding: 10% 0% 0% 0%;
-  background-image: url("/assets/img/banner.png");
+  background-image: url("assets/img/banner.png");
   background-position: bottom left;
   background-size: auto;
   background-repeat: repeat-x;
@@ -838,7 +838,7 @@ hr:not([size]) {
 
 
 #banner-section{
-  background-image: url("/assets/img/contact-banner.png");
+  background-image: url("assets/img/contact-banner.png");
   background-position: inherit;
   background-size: cover;
   padding: 20px;
@@ -883,7 +883,7 @@ hr:not([size]) {
 }
 
 input.form-control {
-  padding: 13px;
+  padding: 10px;
 }
 
 button.btn.btn-primary.btn-md.btn-block {
@@ -1022,13 +1022,13 @@ button.btn.btn-primary.btn-md.btn-block {
 
 /* ************************* FAQ Section ************************* */
 #terms-section {
-  background-image: url("/assets/img/bg.png");
+  background-image: url("assets/img/bg.png");
   background-position: inherit;
   background-size: cover;
   padding: 20px;
 }
 #faq-section{
-  background-image: url("/assets/img/faq-banner.png");
+  background-image: url("assets/img/faq-banner.png");
   background-position: inherit;
   background-size: cover;
   padding: 20px;
@@ -2144,7 +2144,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-image:url('/assets/img/login-image.jpg');
+  background-image:url('assets/img/login-image.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2526,4 +2526,8 @@ button:hover {
 }        
 .table.table-bordered th {
   text-align: center;
+}
+
+.blog-table {
+  padding-top: 6%;
 }

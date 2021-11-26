@@ -210,25 +210,25 @@
                     <!--begin::Card body-->
                     <div class="card-body pt-5">
                         <div class="section-2 pt-5 pb-5">
-                            <h2>Section 1</h2>
+                            <h2> hero Section </h2>
                         </div>
                         <form class="pt-5">
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 1</label>
+                                <label for="text" class="col-sm-2 col-form-label">Header</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-1" placeholder="Row 1">
+                                <input type="text" class="form-control" id="row-1" placeholder="Enter your header">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 2</label>
+                                <label for="text" class="col-sm-2 col-form-label">Sub Header</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 2">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter your Sub header">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 3</label>
+                                <label for="text" class="col-sm-2 col-form-label">Paragraph</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 3">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Paragraph">
                                 </div>
                             </div>
                            
@@ -238,78 +238,78 @@
                                 </div>
                             </div>
                         </form>
+
+
                         <div class="section-2 pt-5 pb-5">
-                            <h2>Section 2</h2>
+                            <h2>How it Works Section</h2>
                         </div>
-                      
                         <form class="pt-5">
-                        <!-- <h4 class="mb-5">step 1</h4> -->
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 1</label>
+                                <label for="text" class="col-sm-2 col-form-label">Header</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-1" placeholder="Row 1">
+                                <input type="text" class="form-control" id="row-1" placeholder="Enter Your Header">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 2</label>
+                                <label for="text" class="col-sm-2 col-form-label">Sub Header</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 2">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Sub Header">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 1 Row 3</label>
+                                <label for="text" class="col-sm-2 col-form-label">Upload File</label>
                                 <div class="col-sm-10">
-                                <input type="file" class="form-control" id="row-3" placeholder="Row 3">
+                                <input type="file" class="form-control" id="row-3">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 1 Row 4</label>
+                                <label for="text" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 4">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Title">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 1 Row 5</label>
+                                <label for="text" class="col-sm-2 col-form-label">Exceed</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 5">
-                                </div>
-                            </div>
-                            <br>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 2 Row 6</label>
-                                <div class="col-sm-10">
-                                <input type="file" class="form-control" id="row-3" placeholder="Row 6">
-                                </div>
-                            </div>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 2 Row 7</label>
-                                <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 7">
-                                </div>
-                            </div>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 2 Row 8</label>
-                                <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 8">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Exceed">
                                 </div>
                             </div>
                             <br>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 3 Row 9</label>
+                                <label for="text" class="col-sm-2 col-form-label">Upload File</label>
                                 <div class="col-sm-10">
-                                <input type="file" class="form-control" id="row-3" placeholder="Row 9">
+                                <input type="file" class="form-control" id="row-3" >
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 3 Row 10</label>
+                                <label for="text" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 10">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Title">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 3 Row 11</label>
+                                <label for="text" class="col-sm-2 col-form-label">Exceed</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 11">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Exceed">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Upload file</label>
+                                <div class="col-sm-10">
+                                <input type="file" class="form-control" id="row-3" >
+                                </div>
+                            </div>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Title</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Title">
+                                </div>
+                            </div>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Exceed</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Exceed">
                                 </div>
                             </div>
 
@@ -320,169 +320,61 @@
                                 </div>
                             </div>
                         </form>
-
-                            <div class=" row pb-5">   
-                                <div class="col-sm-12">                         
-                                    <a type="submit" class="btn btn-danger  form-control " id="new" href="/questionnaire">View</a>
-                                </div>
-                            </div>
-                        
-                            <form class="pt-5 pb-5">
-                            <!-- <h4 class="mb-5">step 1</h4> -->
-                                
-                                <div class="form-group row pb-5">
-                                    <label for="text" class="col-sm-2 col-form-label">Column 4 Row 12</label>
-                                    <div class="col-sm-10">
-                                    <input type="file" class="form-control" id="row-3" placeholder="Row 12">
-                                    </div>
-                                </div>
-                                <div class="form-group row pb-5">
-                                    <label for="text" class="col-sm-2 col-form-label">Column 4 Row 13</label>
-                                    <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-3" placeholder="Row 13">
-                                    </div>
-                                </div>
-                                <div class="form-group row pb-5">
-                                    <label for="text" class="col-sm-2 col-form-label">Column 4 Row 14</label>
-                                    <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-3" placeholder="Row 14">
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="form-group row pb-5">
-                                    <label for="text" class="col-sm-2 col-form-label">Column 4 Row 15</label>
-                                    <div class="col-sm-10">
-                                    <input type="file" class="form-control" id="row-3" placeholder="Row 15">
-                                    </div>
-                                </div>
-                                <div class="form-group row pb-5">
-                                    <label for="text" class="col-sm-2 col-form-label">Column 4 Row 16</label>
-                                    <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-3" placeholder="Row 16">
-                                    </div>
-                                </div>
-                                <div class="form-group row pb-5">
-                                    <label for="text" class="col-sm-2 col-form-label">Column 4 Row 17</label>
-                                    <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-3" placeholder="Row 17">
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="form-group row pb-5">
-                                    <label for="text" class="col-sm-2 col-form-label">Column 4 Row 18</label>
-                                    <div class="col-sm-10">
-                                    <input type="file" class="form-control" id="row-3" placeholder="Row 18">
-                                    </div>
-                                </div>
-                                <div class="form-group row pb-5">
-                                    <label for="text" class="col-sm-2 col-form-label">Column 4 Row 19</label>
-                                    <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-3" placeholder="Row 19">
-                                    </div>
-                                </div>
-                                <div class="form-group row pb-5">
-                                    <label for="text" class="col-sm-2 col-form-label">Column 4 Row 20</label>
-                                    <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-3" placeholder="Row 20">
-                                    </div>
-                                </div>
-
-                                
-                                <div class=" row pb-5">   
-                                    <div class="col-sm-12">                         
-                                        <a type="submit" class="btn btn-success btn-md" id="row-3"  href="#">Submit</a>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <div class="section-2 pt-5 pb-5">
-                            <h2>Section 4</h2>
-                        </div>
-                      
-                        <form class="pt-5">
-                        <!-- <h4 class="mb-5">step 1</h4> -->
+                        <form class="pt-5 pb-5">
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 1 Row 1</label>
+                                <label for="text" class="col-sm-2 col-form-label">Upload File</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-1" placeholder="Row 1">
+                                <input type="file" class="form-control" id="row-3">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 1 Row 2</label>
+                                <label for="text" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-2" placeholder="Row 2">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Title">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="file" class="col-sm-2 col-form-label">Column 1 Row 3</label>
+                                <label for="text" class="col-sm-2 col-form-label">Exceed</label>
                                 <div class="col-sm-10">
-                                <input type="file" class="form-control" id="row-3" placeholder="Row 3">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Exceed">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Upload File</label>
+                                <div class="col-sm-10">
+                                <input type="file" class="form-control" id="row-3" >
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 1 Row 4</label>
+                                <label for="text" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-10">
-                                    <input type="date" class="form-control" id="row-4" placeholder="Row 4">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Title">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 1 Row 5</label>
+                                <label for="text" class="col-sm-2 col-form-label">Exceed</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-5" placeholder="Row 5">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Exceed">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Upload file</label>
+                                <div class="col-sm-10">
+                                <input type="file" class="form-control" id="row-3" >
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 1 Row 6</label>
+                                <label for="text" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-6" placeholder="Row 6">
-                                </div>
-                            </div><br>
-                            <div class="form-group row pb-5">
-                                <label for="file" class="col-sm-2 col-form-label">Column 2 Row 9</label>
-                                <div class="col-sm-10">
-                                <input type="file" class="form-control" id="row-9" placeholder="Row 9">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Title">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 2 Row 10</label>
+                                <label for="text" class="col-sm-2 col-form-label">Exceed</label>
                                 <div class="col-sm-10">
-                                    <input type="date" class="form-control" id="row-10" placeholder="Row 10">
-                                </div>
-                            </div>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 2 Row 11</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-11" placeholder="Row 11">
-                                </div>
-                            </div>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 2 Row 12</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-12" placeholder="Row 12">
-                                </div>
-                            </div><br>
-                            <div class="form-group row pb-5">
-                                <label for="file" class="col-sm-2 col-form-label">Column 3 Row 13</label>
-                                <div class="col-sm-10">
-                                <input type="file" class="form-control" id="row-13" placeholder="Row 13">
-                                </div>
-                            </div>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 3 Row 14</label>
-                                <div class="col-sm-10">
-                                    <input type="date" class="form-control" id="row-14" placeholder="Row 14">
-                                </div>
-                            </div>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 3 Row 15</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-15" placeholder="Row 15">
-                                </div>
-                            </div>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Column 3 Row 16</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="row-16" placeholder="Row 16">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Exceed">
                                 </div>
                             </div>
 
@@ -493,34 +385,89 @@
                                 </div>
                             </div>
                         </form>
+                       
 
                         <div class="section-2 pt-5 pb-5">
-                            <h2>Section 5</h2>
+                            <h2>Why sell your car with  Section</h2>
+                        </div>
+                        <form class="pt-5 pb-5">                                
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Upload Image</label>
+                                <div class="col-sm-10">
+                                <input type="file" class="form-control" id="row-3">
+                                </div>
+                            </div>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Title</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Title">
+                                </div>
+                            </div>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Paragraph</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Paragraph">
+                                </div>
+                            </div>
+                            <br>                            
+                            <div class=" row pb-5">   
+                                <div class="col-sm-12">                         
+                                    <a type="submit" class="btn btn-success btn-md" id="row-3"  href="#">Submit</a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="section-2 pt-5 pb-5">
+                            <h2>Blog Section</h2>
                         </div>
                         <form class="pt-5">
                             <div class="form-group row pb-5">
-                                <label for="file" class="col-sm-2 col-form-label">Row 1</label>
+                                <label for="text" class="col-sm-2 col-form-label">Header</label>
                                 <div class="col-sm-10">
-                                <input type="file" class="form-control" id="row-1" placeholder="Row 1">
+                                    <input type="text" class="form-control" id="blog-header" placeholder="header">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 2</label>
+                                <label for="text" class="col-sm-2 col-form-label">Sub Header</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 2">
+                                    <input type="text" class="form-control" id="blog-sub-header" placeholder="sub header">
+                                </div>
+                            </div>
+                            
+                            <div class=" row pb-5">   
+                                <div class="col-sm-12">                         
+                                    <a type="submit" class="btn btn-success btn-md" id="row-3"  href="#">Submit</a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="section-2 pt-5 pb-5">
+                            <h2>Testominal Section</h2>
+                        </div>
+                        <form class="pt-5">
+                            <div class="form-group row pb-5">
+                                <label for="file" class="col-sm-2 col-form-label">Upload image</label>
+                                <div class="col-sm-10">
+                                    <input type="file" class="form-control" id="row-1">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 3</label>
+                                <label for="text" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 3">
+                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Title">
+                                </div>
+                            </div>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Review</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" id="row-3" placeholder="Review">
                                 </div>
                             </div>
                            
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 4</label>
+                                <label for="text" class="col-sm-2 col-form-label">Paragraph</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-4" placeholder="Row 4">
+                                <input type="text" class="form-control" id="row-4" placeholder="Enter Your Paragraph">
                                 </div>
                             </div>
                             <div class=" row pb-5">   

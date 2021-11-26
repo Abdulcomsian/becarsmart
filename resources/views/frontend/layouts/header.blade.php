@@ -1,7 +1,7 @@
   <!-- navbar -->
   <div class="container-fluid navBar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-           <a class="navbar-brand" href="/frontend/index"><img src="{{asset ('assets/img/sellcar-logo.png')}}"></a>
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+           <a class="navbar-brand" href="/index"><img src="{{asset ('assets/img/sellcar-logo.png')}}"></a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler10"
               aria-controls="myNavbarToggler10" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>

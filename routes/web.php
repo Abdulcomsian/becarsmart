@@ -36,10 +36,6 @@ Route::group(['middleware' => ['auth']], function() {
         return view('Car.buy-car');
     })->name('Car.buy-car');
 
-    Route::get('/cms', function () {
-        return view('Car.cms');
-    })->name('Car.cms');
-    
     Route::get('/leads-details', function () {
         return view('Car.leads-details');
     })->name('Car.leads-details');
@@ -47,6 +43,21 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/evaluate-car', function () {
         return view('Car.evaluate-car');
     })->name('Car.evaluate-car');
+    Route::get('/home', function () {
+        return view('user_dropdown/home');
+    })->name('user_dropdown/home');
+    
+    Route::get('/questionnaire', function () {
+        return view('user_dropdown/questionnaire');
+    })->name('user_dropdown/questionnaire');
+
+    Route::get('/blog', function () {
+        return view('user_dropdown/blog');
+    })->name('user_dropdown/blog');
+
+    Route::get('/add-blog', function () {
+        return view('user_dropdown/add-blog');
+    })->name('user_dropdown/add-blog');
 
 });
 
@@ -66,60 +77,49 @@ if (env('EnableMigrationAndOptimizeClearRoutes') == true){
 
 // BeCarSmart routing list
 
-Route::get('/frontend/index', function () {
+Route::get('/index', function () {
     return view('frontend/sellcar/index');
 })->name('frontend/index');
 
-Route::get('/frontend/home', function () {
+Route::get('/home/home', function () {
     return view('frontend/sellcar/home');
 })->name('frontend/home');
 
-Route::get('/frontend/blog', function () {
+Route::get('/blog/blog', function () {
     return view('frontend/sellcar/blog');
 })->name('frontend/blog');
 
-Route::get('/frontend/contact', function () {
+Route::get('/contact', function () {
     return view('frontend/sellcar/contact');
 })->name('frontend/contact');
 
-Route::get('/frontend/cookies', function () {
+Route::get('/cookies', function () {
     return view('frontend/sellcar/cookies');
 })->name('frontend/cookies');
 
-Route::get('/frontend/faq', function () {
+Route::get('/faq', function () {
     return view('frontend/sellcar/faq');
 })->name('frontend/faq');
 
-Route::get('/frontend/privacy_policy', function () {
+Route::get('/privacy_policy', function () {
     return view('frontend/sellcar/privacy_policy');
 })->name('frontend/privacy_policy');
 
-Route::get('/frontend/sellcar', function () {
+Route::get('/sellcar', function () {
     return view('frontend/sellcar/sellcar');
 })->name('frontend/sellcar');
 
-Route::get('/frontend/sellcar_new', function () {
+Route::get('/sellcar_new', function () {
     return view('frontend/sellcar/sellcar_new');
 })->name('frontend/sellcar_new');
 
-Route::get('/frontend/term', function () {
+Route::get('/term', function () {
     return view('frontend/sellcar/term');
 })->name('frontend/term');
 
 
-Route::get('/frontend/login', function () {
+Route::get('/login', function () {
     return view('frontend/sellcar/login');
 })->name('frontend/login');
 
 
-
-// dropdown Routes
-
-
-Route::get('/home', function () {
-    return view('user_dropdown/home');
-})->name('user_dropdown/home');
-
-Route::get('/questionnaire', function () {
-    return view('user_dropdown/questionnaire');
-})->name('user_dropdown/questionnaire');

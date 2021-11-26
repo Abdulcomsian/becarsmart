@@ -70,30 +70,18 @@
                         <span class="menu-title">Buy Car Leads</span>
                     </a>
                 </div>
-                <div class="menu-item">
-                    <a class="menu-link" href="{{ route('Car.cms') }}">
-										<span class="menu-icon">
-											<i class="bi bi-app-indicator fs-3"></i>
-										</span>
-                        <span class="menu-title">Content management system</span>
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-content pt-8 pb-2">
-                        <span class="menu-section text-muted text-uppercase fs-8 ls-1">Apps</span>
-                    </div>
-                </div>
+            
                 <div data-kt-menu-trigger="click" class="menu-item here show menu-accordion mb-1">
 									<span class="menu-link">
 										<span class="menu-icon">
 											<i class="bi bi-people fs-3"></i>
 										</span>
-										<span class="menu-title">User Management</span>
+										<span class="menu-title">Content management system</span>
 										<span class="menu-arrow"></span>
 									</span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="{{ route('user_dropdown/home') }}">
+                            <a class="menu-link" href="/home">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -101,13 +89,30 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="{{ route('user_dropdown/questionnaire') }}">
+                            <a class="menu-link" href="/questionnaire">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
                                 <span class="menu-title">Questionnaire</span>
                             </a>
                         </div>
+                        <div class="menu-item">
+                            <a class="menu-link" href="/blog">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+                                <span class="menu-title">Blog </span>
+                            </a>
+                        </div>
+                        <!-- <div class="menu-item">
+                            <a class="menu-link" href="/add-blog">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+                                <span class="menu-title">Add New Blog</span>
+                            </a>
+                        </div> -->
+                        
 {{--                        <div class="menu-item">--}}
 {{--                            <a class="menu-link" href="">--}}
 {{--												<span class="menu-bullet">--}}

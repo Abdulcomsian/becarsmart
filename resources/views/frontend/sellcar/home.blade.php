@@ -35,8 +35,8 @@
                     <div class="home-search-form">
                         <div class="row">
                             <div class="col-md-12 col-12">
-                                <a  href="/frontend/sellcar" class="btn continue btn-danger">Continue</a>
-                                <a  href="/frontend/sellcar" class="btn chevron-left btn-danger"><span><i class="fa fa-chevron-right"></i></span></a>
+                                <a  href="/sellcar" class="btn continue btn-danger">Continue</a>
+                                <a  href="/sellcar" class="btn chevron-left btn-danger"><span><i class="fa fa-chevron-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -113,96 +113,66 @@
     <section id="Buy-a-Car" class="buy_a_car">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                    <div class="row form_overlap_row pt-5">
-                        <div class="col-12 text-center">
-                            <div class="title">
-                                <h2>Want to Buy A Car?</h2>
-                                <p>Fill out the form and let us find a best car you want.</p>
-                            </div>
+                <div class="row form_overlap_row pt-5">
+                    <div class="col-12 text-center">
+                        <div class="title">
+                            <h2>Want to Buy A Car?</h2>
+                            <p>Fill out the form and let us find a best car you want.</p>
                         </div>
-                        <div class="col-12 p-0">
-                            <form id="msform">
-                                <!-- progressbar -->
-                                    <ul id="progressbar">
-                                    <li class="active" id="account"><strong></strong></li>
-                                    <li id="personal"><strong></strong></li>
-                                    <li id="payment"><strong></strong></li>
-                                    <li id="confirm"><strong></strong></li>
-                                </ul> 
-                                <fieldset>
-                                    <div class="form-card">
-                                        <h2 class="fs-title">Hey, What is your good name</h2>
-                                            <input type="text" name="text" placeholder="Enter Your Name">
-                                    </div>
-                                    <input type="button" name="next" class="next action-button" value="Next">
-                                </fieldset>
-                                <fieldset>
-                                    <div class="form-card">
-                                        <h2 class="fs-title">Hey, What is your good name</h2>
-                                            <input type="text" name="text" placeholder="Enter Your Name">
-                                    </div>
-                                    <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous"> -->
-                                    <input type="button" name="next" class="next action-button" value="Next">
-                                </fieldset>
-                                <fieldset>
-                                    <div class="form-card">
-                                        <h2 class="fs-title">Hey, What is your good name</h2>
-                                            <input type="text" name="text" placeholder="Enter Your Name">
-                                    </div>
-                                    <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
-                                    <input type="button" name="make_payment" class="next action-button" value="Confirm">
-                                </fieldset>
-                                <fieldset>
-                                    <div class="form-card">
-                                        <h2 class="fs-title text-center">Success !</h2> <br><br>
-                                        <div class="row justify-content-center">
-                                            <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"></div>
-                                        </div> <br><br>
-                                        <div class="row justify-content-center">
-                                            <div class="col-7 text-center">
-                                                <h5>You Have Successfully Signed Up</h5>
-                                            </div>
+                    </div>
+                    <div class="col-12 p-0">
+                        <form id="msform">
+                            <!-- progressbar -->
+                                <ul id="progressbar">
+                                <li class="active" id="account"><strong></strong></li>
+                                <li id="personal"><strong></strong></li>
+                                <li id="payment"><strong></strong></li>
+                                <li id="confirm"><strong></strong></li>
+                            </ul> 
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title">Hey, What is your good name</h2>
+                                        <input type="text" name="text" placeholder="Enter Your Name">
+                                </div>
+                                <input type="button" name="next" class="next action-button" value="Next">
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title">Hey, What is your good name</h2>
+                                        <input type="text" name="text" placeholder="Enter Your Name">
+                                </div>
+                                <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous"> -->
+                                <input type="button" name="next" class="next action-button" value="Next">
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title">Hey, What is your good name</h2>
+                                        <input type="text" name="text" placeholder="Enter Your Name">
+                                </div>
+                                <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
+                                <input type="button" name="make_payment" class="next action-button" value="Confirm">
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title text-center">Success !</h2> <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"></div>
+                                    </div> <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-7 text-center">
+                                            <h5>You Have Successfully Signed Up</h5>
                                         </div>
                                     </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-
-            </div>
-        </div>
-
-
-        <!-- Steps -->
-        <div class="container text-center pt-5">
-            <div class="row steps pt-5">
-                <div class="col-md-4 col-12">
-                    <div class="blurb">
-                        <img src="{{asset ('assets/img/choose_car.png')}}" alt="Value my Car" class="float-center pb-3">
-                        <h2>Choose a Car</h2>
-                        <p>Fill the form above to<br> select desired car or<br> visit.</p>
-                    </div>
-                </div>
-        
-                <div class="col-md-4 col-12">
-                    <div class="blurb">
-                        <img src="{{asset ('assets/img/make_deal.png')}}" alt="Value my Car" class="float-center pb-3">
-                        <h2>Make a deal</h2>
-                        <p>Check the car and<br> confirm deal.</p>
-                    </div>
-                </div>
-        
-                <div class="col-md-4 col-12">
-                    <div class="blurb">
-                        <img src="{{asset ('assets/img/get_car.png')}}" alt="Value my Car" class="float-center pb-3">
-                        <h2>Get The Car</h2>
-                        <p>Pay The Cash and<br> get your car</p>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    
     </section>
+    
+
 
     <!-- Blog Section -->
     <section class="blog_section">
@@ -220,7 +190,7 @@
                     <div class="card blog_card mb-3">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <a href="blog.html">
+                                <a href="/blog/blog">
                                     <img src="{{asset ('assets/img/featured.png')}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
@@ -238,7 +208,7 @@
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                                     
                                     <p class="card-text">
-                                    <a href="blog.html" class="mt-auto btn">Read More</a>
+                                    <a href="/blog/blog" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>
@@ -249,7 +219,7 @@
                     <div class="card blog_card nomargin">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <a href="blog.html">
+                                <a href="/blog/blog">
                                     <img src="{{asset ('assets/img/featured3.png')}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
@@ -267,7 +237,7 @@
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                             
                             <p class="card-text">
-                                <a href="blog.html" class="mt-auto btn">Read More</a>
+                                <a href="/blog/blog" class="mt-auto btn">Read More</a>
                                 </p>
                             </div>
                         </div>
@@ -281,7 +251,7 @@
                     <div class="card blog_card mb-3 height100 nomargin">
                         <div class="row g-0 height100">
                             <div class="col-md-12">
-                                <a href="blog.html">
+                                <a href="/blog/blog">
                                     <img src="{{asset ('assets/img/featured2.png')}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
@@ -299,7 +269,7 @@
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                                 
                                 <p class="card-text">
-                                    <a href="blog.html" class="mt-auto btn">Read More</a>
+                                    <a href="/blog/blog" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>
