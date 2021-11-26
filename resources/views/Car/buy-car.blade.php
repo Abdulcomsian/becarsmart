@@ -239,15 +239,18 @@
                                     <td class="">+99423990234</td>
                                     <td class="">Islamabad</td>
                                     <td class="">
-                                        <a class="" href="{{url('/evaluate-car')}}">
+                                        
+                                        <button type="button" class="btn btn-primary py-3 px-4"><a class="" href="{{url('/evaluate-car')}}">
                                             <i class="fa fa-eye" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="" href="#">
+                                        </a></button>
+                                   
+                                        <!-- <a class="" href="#">
                                             <i class="fa fa-trash" aria-hidden="true"></i>
                                         </a>
-                                    </td>
+                                    </td> -->
                                 </tr>
                             </tbody>
+                            
                             <!--end::Table body-->
                         </table>
                         <!--end::Table-->
@@ -264,7 +267,9 @@
         <!--end::Post-->
     </div>
 
-   
+    
+    
+
 @endsection
 @section('scripts')
     @include('layouts.sweetalert.sweetalert_js')

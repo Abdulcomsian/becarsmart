@@ -22,6 +22,12 @@ License: -->
     <link rel="shortcut icon" href="assets/media/logos/favicon.ico"/>
     <link rel="stylesheet" href="{{asset ('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset ('assets/css/main.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	
+		<link rel="stylesheet" href="{{asset ('assets/css/ionicons.min.css')}}">
+		<link rel="stylesheet" href="{{asset ('assets/css/dataTables.bootstrap5.min.css')}}">
+        
+		<link rel="stylesheet" href="{{asset ('assets/css/style2.css')}}">
 
 {{--    begin::Global style files--}}
     @include('layouts.dashboard.styles')
@@ -93,6 +99,12 @@ License: -->
 @yield('scripts')
 <!--end::Page Custom Javascript-->
 <!--end::Javascript-->
+
+
+    <script src="{{asset ('assets/js/jquery.min.js')}}"></script>
+    <script src="{{asset ('assets/js/popper.js')}}"></script>
+    <script src="{{asset ('assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset ('assets/js/main.js')}}"></script>
 </body>
 <!--end::Body-->
 </html>
