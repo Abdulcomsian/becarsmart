@@ -6,11 +6,11 @@
             <div class="col-md-12">
                 <div class="footerBox text-center">
                     <!-- <p class="footer-text">Terms<span>.&nbsp</span>Privacy<span>.&nbsp</span>Cookies</p> -->
-                    <a href="/term">Terms</a>
+                    <a href="{{ url('/term') }}">Terms</a>
                     <span>. &nbsp</span>
-                    <a href="/privacy_policy">Privacy</a>
+                    <a href="{{ url('/privacy_policy') }}">Privacy</a>
                     <span>.&nbsp</span>
-                    <a href="/cookies">Cookies</a>
+                    <a href="{{ url('/cookies') }}">Cookies</a>
                 </div>
                 <div class="footer-para">
                     <p class="footer-text">Follow us On:</p>

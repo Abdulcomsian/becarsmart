@@ -35,8 +35,8 @@
                     <div class="home-search-form">
                         <div class="row">
                             <div class="col-md-12 col-12">
-                                <a  href="/sellcar" class="btn continue btn-danger">Continue</a>
-                                <a  href="/sellcar" class="btn chevron-left btn-danger"><span><i class="fa fa-chevron-right"></i></span></a>
+                                <a  href="{{url ('/sellcar_new') }}" class="btn continue btn-danger">Continue</a>
+                                <a  href="{{url ('/sellcar_new') }}" class="btn chevron-left btn-danger"><span><i class="fa fa-chevron-right"></i></span></a>
                             </div>
                         </div>
                     </div>

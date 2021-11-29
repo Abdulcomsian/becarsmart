@@ -47,8 +47,10 @@ class BeCarSmartContoller extends Controller
     {
         return view('frontend/sellcar/term');
     }
-    public function sellcar_login()
+
+    public function login()
     {
         return view('frontend/sellcar/login');
     }
+   
 }

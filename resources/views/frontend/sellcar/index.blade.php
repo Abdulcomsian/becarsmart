@@ -30,7 +30,7 @@
                                     </div>    
                                 </div>
                                 <div class="col-md-6 col-12">
-                                    <a href="/home/home" class="btn btn-danger w-100">Value My Car</a>
+                                    <a href="{{url ('/home/home')}}" class="btn btn-danger w-100">Value My Car</a>
                                 </div>
                             </div>
                         </form>

@@ -1,7 +1,7 @@
   <!-- navbar -->
   <div class="container-fluid navBar">
         <nav class="navbar navbar-expand-lg navbar-light  ">
-           <a class="navbar-brand" href="/index"><img src="{{asset ('assets/img/sellcar-logo.png')}}"></a>
+           <a class="navbar-brand"href="{{ url('/index') }}"><img src="{{asset ('assets/img/sellcar-logo.png')}}"></a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler10"
               aria-controls="myNavbarToggler10" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
@@ -18,7 +18,7 @@
                     <a class="nav-link" href="#Buy-a-Car">Buy A Car</a>
                  </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="/faq">FAQ</a>
+                    <a class="nav-link" href="{{ url('/faq') }}">FAQ</a>
                  </li>
               </ul>
               <!-- <ul class="navbar-nav sm-icons mr-0">

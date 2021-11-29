@@ -117,9 +117,6 @@ Route::get('/term', function () {
     return view('frontend/sellcar/term');
 })->name('frontend/term');
 
-
-Route::get('/login', function () {
+Route::get('/frontend/login', function () {
     return view('frontend/sellcar/login');
 })->name('frontend/login');
-
-

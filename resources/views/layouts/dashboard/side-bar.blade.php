@@ -55,7 +55,7 @@
                     </a>
                 </div>
                 <div class="menu-item">
-                    <a class="menu-link" href="{{ route('Car.sell-car') }}">
+                    <a class="menu-link" href="{{ url('/sell-car') }}">
 										<span class="menu-icon">
 											<i class="bi bi-app-indicator fs-3"></i>
 										</span>
@@ -63,7 +63,7 @@
                     </a>
                 </div>
                 <div class="menu-item">
-                    <a class="menu-link" href="{{ route('Car.buy-car') }}">
+                    <a class="menu-link" href="{{ url('/buy-car') }}">
 										<span class="menu-icon">
 											<i class="bi bi-app-indicator fs-3"></i>
 										</span>
@@ -81,7 +81,7 @@
 									</span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="/home">
+                            <a class="menu-link" href="{{ url('/buy-car') }}">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -89,7 +89,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="/questionnaire">
+                            <a class="menu-link" href="{{ url('/questionnaire') }}">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -97,7 +97,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="/blog">
+                            <a class="menu-link" href="{{url ('/blog')}}">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
