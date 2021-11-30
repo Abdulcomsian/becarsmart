@@ -76,7 +76,7 @@ flex-direction: row;
 
 .hero-section {
   padding: 10% 0% 0% 0%;
-  background-image: url("assets/img/banner.png");
+  background-image: url("../img/banner.png");
   background-position: bottom left;
   background-size: auto;
   background-repeat: repeat-x;
@@ -838,7 +838,7 @@ hr:not([size]) {
 
 
 #banner-section{
-  background-image: url("assets/img/contact-banner.png");
+  background-image: url("../img/contact-banner.png");
   background-position: inherit;
   background-size: cover;
   padding: 20px;
@@ -1022,13 +1022,13 @@ button.btn.btn-primary.btn-md.btn-block {
 
 /* ************************* FAQ Section ************************* */
 #terms-section {
-  background-image: url("assets/img/bg.png");
+  background-image: url("../img/bg.png");
   background-position: inherit;
   background-size: cover;
   padding: 20px;
 }
 #faq-section{
-  background-image: url("assets/img/faq-banner.png");
+  background-image: url("../img/faq-banner.png");
   background-position: inherit;
   background-size: cover;
   padding: 20px;
