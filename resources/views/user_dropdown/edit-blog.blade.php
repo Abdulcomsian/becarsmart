@@ -1,4 +1,4 @@
-@extends('layouts.dashboard.master',['title' => 'Add Blog'])
+@extends('layouts.dashboard.master',['title' => 'Edit Blog'])
 @section('styles')
 @include('layouts.sweetalert.sweetalert_css')
 @endsection
@@ -39,37 +39,38 @@
                     <div class="section-2 pt-5 pb-5">
                         <h2>Blog</h2>
                     </div>
-                    <form class="pt-5" method="post" action="{{url('blogs')}}" enctype="multipart/form-data">
+                    <form class="pt-5" method="post" action="{{url('update-blog')}}" enctype="multipart/form-data">
                         @csrf
+                        <input type="hidden" name="id" value="{{$blog->id}}" />
                         <div class="form-group row pb-5">
                             <label for="file" class="col-sm-2 col-form-label">Features Images</label>
                             <div class="col-sm-10">
-                                <input type="file" name="file" class="form-control" required>
+                                <input type="file" name="file" class="form-control">
                             </div>
                         </div>
                         <div class="form-group row pb-5">
                             <label for="text" class="col-sm-2 col-form-label">Title</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="title" placeholder="Enter Your Title" required>
+                                <input type="text" class="form-control" name="title" placeholder="Enter Your Title" required value="{{$blog->title ?? ''}}">
                             </div>
                         </div>
                         <div class="form-group row pb-5">
                             <label for="text" class="col-sm-2 col-form-label">Exceed</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="exceed" placeholder="Enter Your Exceed">
+                                <input type="text" class="form-control" name="exceed" placeholder="Enter Your Exceed" value="{{$blog->exceed ?? ''}}">
                             </div>
                         </div>
                         <br>
                         <div class="form-group row pb-5">
                             <label for="text" class="col-sm-2 col-form-label">Blog Text Area</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" style="min-height: calc(7.5em + 2.5rem + 2px);" required></textarea>
+                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" style="min-height: calc(7.5em + 2.5rem + 2px);" required>{{$blog->message ?? ''}}</textarea>
                             </div>
                         </div>
 
                         <div class=" row pt-5 pb-5">
                             <div class="col-sm-12">
-                                <button type="submit" class="btn btn-success btn-md">Submit</button>
+                                <button type="submit" class="btn btn-success btn-md">Update</button>
                             </div>
                         </div>
                     </form>
