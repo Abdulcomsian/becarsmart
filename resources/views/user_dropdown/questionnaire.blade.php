@@ -208,77 +208,113 @@
                     </div>
                     <!--end::Card header-->
                     <!--begin::Card body-->
-                    <div class="card-body pt-5">
-                        <div class="section-2 pt-5 pb-5">
-                            <h2>step 1</h2>
+                    <div class="card-body pt-5 questionnaire">
+                        
+                        <form class="pt-5" method="post" action="/insert-questions">
+
+                        @csrf
+
+                       <!-- Section Heading -->
+                       <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Section Heading</label>
+                                <div class="col-sm-10">
+                                <input type="text" name="sec_heading" class="form-control" id="row-1" placeholder="e.g Questioniare section">
+                                </div>
                         </div>
-                        <form class="pt-5">
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 1</label>
+
+                        <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Section Sub Heading</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-1" placeholder="Row 1">
+                                <input type="text" name="sec_subHeading" class="form-control" id="row-1" placeholder="e.g fill the questions below">
                                 </div>
-                            </div>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 2</label>
-                                <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 2">
-                                </div>
-                            </div>
-                            <div class=" row pb-5">   
-                                <div class="col-sm-12">                         
-                                    <a type="submit" class="btn btn-success btn-md" id="row-3" style="float-right" href="#">Submit</a>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="section-2 pt-5 pb-5">
-                            <h2>step 3</h2>
                         </div>
-                        <form class="pt-5">
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 1</label>
-                                <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-1" placeholder="Row 1">
-                                </div>
-                            </div>
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 2</label>
-                                <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 2">
-                                </div>
-                            </div>
-                            <div class=" row pb-5">   
-                                <div class="col-sm-12">                         
-                                    <a type="submit" class="btn btn-success btn-md" id="row-3" style="float-right" href="#">Submit</a>
-                                </div>
-                            </div>
-                        </form>
+
+                    <div id="input_row">
                         <div class="section-2 pt-5 pb-5">
-                            <h2>step 3</h2>
+                        <div class="row">
+                               <div class="col" id="step_number">
+                               <h2>Step 1</h2>
+                               </div>
+                              
+                           </div>
                         </div>
-                        <form class="pt-5">
-                            <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 1</label>
+
+                        <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Question</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-1" placeholder="Row 1">
+                                <input type="text" name="question[]" class="form-control" id="row-1" placeholder="Enter your Question">
                                 </div>
                             </div>
                             <div class="form-group row pb-5">
-                                <label for="text" class="col-sm-2 col-form-label">Row 2</label>
+                                <label for="text" class="col-sm-2 col-form-label">Placeholder</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 2">
+                                <input type="text" name="placeholder[]" class="form-control" id="row-3" placeholder="Enter placeholder text">
                                 </div>
                             </div>
-                            <div class=" row pb-5">   
+
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Enter Question Order</label>
+                                <div class="col-sm-10">
+                                <input type="number" name="step[]" class="form-control" id="row-3" placeholder="e.g 1,2">
+                                </div>
+                            </div>
+                            
+                    </div>
+                       
+                        <div class="row pb-5">   
                                 <div class="col-sm-12">                         
-                                    <a type="submit" class="btn btn-success btn-md" id="row-3" style="float-right" href="#">Submit</a>
+                                    
+                                    <button type="button" class="btn btn-success btn-md m-3" id="add_row" style="float:right" href="#"> <i class="fa fa-plus"></i> Add Step</button>
+                                    <button type="submit" class="btn btn-success btn-md m-3" id="row-3" style="float:right" href="#">Submit</button>
                                 </div>
                             </div>
+                            
                         </form>
+                    
                     </div>
                     <!--end::Card body-->
                 </div>
                 <!--end::Card-->
+
+             
+                <div class="card mt-5">
+                    <div class="card-header pt-5">
+                        <h2>All Questions</h2>
+                    </div>
+
+                    <div class="card-body">
+                   
+                        <table class="table table-hovered">
+                            <thead>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Placeholder</th>
+                                    <th>Step</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($data as $_data)
+                                <tr>
+                                    <td>{{$_data->question}}</td>
+                                    <td>{{$_data->placeholder}}</td>
+                                    <td>{{$_data->step}}</td>
+                                   
+                                    <td>
+                                    <i class="fa fa-trash confirm cursor-pointer" id="{{$_data->id}}"></i>
+                                    <form method="post" id="form_{{$_data->id}}" action="{{url('delete-questionnaire')}}">
+                                    @csrf
+                                    <input type="hidden" name="id" value="{{$_data->id}}" />
+                                    </form>
+
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                  
+                    </div>
+                </div>
             </div>
             <!--end::Container-->
         </div>
@@ -286,5 +322,59 @@
     </div>
 @endsection
 @section('scripts')
-    @include('layouts.sweetalert.sweetalert_js')
+    @include('layouts.sweetalert.sweetalert_js');
+    
+
+    <script>
+ var counter = 1;
+        $(document).ready(function() {
+
+           
+                           
+            //when the Add Field button is clicked
+            $("#add_row").click(function() {
+                counter++;
+       
+                $("#input_row").append(`<div id="step_`+counter+`"><div class="section-2 pt-5 pb-5">
+                    <div class="row">
+                    <div class="col" id="step_number`+ counter +`">
+                    <h2>Step `+ counter +` </h2>
+                    </div>
+                    <div class="col">
+                    <button style="float:right" type="button" onclick="deleteRecord(`+ counter +`)" id="delete_`+ counter +`" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+                        </div>
+
+                        <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Question</label>
+                                <div class="col-sm-10">
+                                <input type="text" name="question[]" class="form-control" id="row-1" placeholder="Enter your Question">
+                                </div>
+                            </div>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Placeholder</label>
+                                <div class="col-sm-10">
+                                <input type="text" name="placeholder[]" class="form-control" id="row-3" placeholder="Enter placeholder text">
+                                </div>
+                            </div>
+
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Enter Question Order</label>
+                                <div class="col-sm-10">
+                                <input type="number" name="step[]" class="form-control" id="row-3" placeholder="e.g 1,2">
+                                
+                                </div>
+                            </div></div>`);
+            });
+
+        });
+
+        function deleteRecord(counter)
+        {
+            $("#step_"+counter).remove();
+            counter -= 1;
+        }
+
+        </script>
 @endsection

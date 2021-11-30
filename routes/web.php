@@ -3,6 +3,7 @@
 use App\Http\Controllers\Dashboard\RoleController;
 use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\SellCar\CarController;
+use App\Http\Controllers\QuestionnaireController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -47,9 +48,18 @@ Route::group(['middleware' => ['auth']], function() {
         return view('user_dropdown/home');
     })->name('user_dropdown/home');
     
-    Route::get('/questionnaire', function () {
-        return view('user_dropdown/questionnaire');
-    })->name('user_dropdown/questionnaire');
+
+    // Questionnaire Routes
+
+    // Route::get('/questionnaire', function () {
+    //     return view('user_dropdown/questionnaire');
+    // })->name('user_dropdown/questionnaire');
+
+    Route::get('/questionnaire', [QuestionnaireController::class, 'index'])->name('user_dropdown/questionnaire');
+    Route::post('/insert-questions', [QuestionnaireController::class, 'insert']);
+    Route::post('/delete-questionnaire', [QuestionnaireController::class, 'delete'])->name('delete-questionnaire');
+   
+
 
     Route::get('/blog', function () {
         return view('user_dropdown/blog');
@@ -118,8 +128,8 @@ Route::get('/term', function () {
 })->name('frontend/term');
 
 
-Route::get('/login', function () {
-    return view('frontend/sellcar/login');
-})->name('frontend/login');
+// Route::get('/login', function () {
+//     return view('frontend/sellcar/login');
+// })->name('frontend/login');
 
 
