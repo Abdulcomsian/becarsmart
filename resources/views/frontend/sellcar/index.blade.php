@@ -29,7 +29,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
-                                    <a href="{{url ('/home/home')}}" class="btn btn-danger w-100">Value My Car</a>
+                                    <a href="{{url ('/home')}}" class="btn btn-danger w-100">Value My Car</a>
                                 </div>
                             </div>
                         </form>
@@ -197,8 +197,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="clock-img pt-5">
-                        <img src="{{asset('images/home/'.'/'.$whysellcar->file ?? '')}}" alt="">
-
+                        <img src="@if(isset($whysellcar->file)){{asset('images/home/'.'/'.$whysellcar->file ?? '')}}@endif" alt="">
                     </div>
                     <div class="clock-content text-center">
                         <h2>{{ $whysellcar->title ?? 'Why sell your car with BeCarSmart.com?'}}</h2>
@@ -232,7 +231,7 @@
                     <div class="card blog_card mb-3">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <a href="/blog/blog">
+                                <a href="{{url('/blog',$blog->permalink)}}">
                                     <img src="{{asset('images/blogs/'.'/'.$blog->feature_img)}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
@@ -250,7 +249,7 @@
                                     <p class="card-text">{{$blog->exceed ?? ''}}</p>
 
                                     <p class="card-text">
-                                        <a href="/blog/blog" class="mt-auto btn">Read More</a>
+                                        <a href="{{url('/blog',$blog->permalink)}}" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>
@@ -293,7 +292,7 @@
                     <div class="card blog_card mb-3 height100 nomargin">
                         <div class="row g-0 height100">
                             <div class="col-md-12">
-                                <a href="/blog/blog">
+                                <a href="{{url('/blog',$blog->permalink)}}">
                                     <img src="{{asset('images/blogs/'.'/'.$blog->feature_img)}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
@@ -311,7 +310,7 @@
                                     <p class="card-text">{{$blog->exceed ?? ''}}</p>
 
                                     <p class="card-text">
-                                        <a href="/blog/blog" class="mt-auto btn">Read More</a>
+                                        <a href="{{url('/blog',$blog->permalink)}}" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>

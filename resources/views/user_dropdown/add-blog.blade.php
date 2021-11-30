@@ -39,7 +39,7 @@
                     <div class="section-2 pt-5 pb-5">
                         <h2>Blog</h2>
                     </div>
-                    <form class="pt-5" method="post" action="{{url('blogs')}}" enctype="multipart/form-data">
+                    <form class="pt-5" method="post" action="{{url('dashboard/blogs')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row pb-5">
                             <label for="file" class="col-sm-2 col-form-label">Features Images</label>
@@ -50,7 +50,8 @@
                         <div class="form-group row pb-5">
                             <label for="text" class="col-sm-2 col-form-label">Title</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="title" placeholder="Enter Your Title" required>
+                                <input type="text" class="form-control" id="title" name="title" placeholder="Enter Your Title" required>
+                                <input type="hidden" class="form-control" id="prmalink" name="permalink">
                             </div>
                         </div>
                         <div class="form-group row pb-5">
@@ -85,4 +86,13 @@
 @endsection
 @section('scripts')
 @include('layouts.sweetalert.sweetalert_js')
+<script>
+    $("#title").on('blur', function() {
+        var title = $(this).val();
+        var currentTime = new Date();
+        var currenttimestamp = Date.parse(currentTime);
+        title = title + currenttimestamp;
+        $("#prmalink").val(title);
+    })
+</script>
 @endsection
