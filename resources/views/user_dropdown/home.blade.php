@@ -207,11 +207,14 @@
                         <input type="hidden" name="form_type" value="Add" />
                         @endif
                         <div class="form-group row pb-5">
+
+                            @if(isset($whycarsell) && $whycarsell->file !='')
                             <div class="col-sm-2">
                             </div>
                             <div class="col-sm-10">
                                 <img class="img img-thumbnail mb-10" width="200px" height="200px" src="@if(isset($whycarsell)){{asset('images/home/'.'/'. $whycarsell->file ?? '')}}@endif" />
                             </div>
+                            @endif
                             <label for="text" class="col-sm-2 col-form-label">Upload Image</label>
                             <div class="col-sm-10">
                                 <input type="file" class="form-control" name="file" @if(isset($whycarsell) && $whycarsell->id !=''){{''}}@else{{'required'}} @endif>
