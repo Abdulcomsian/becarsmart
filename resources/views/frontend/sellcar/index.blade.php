@@ -78,7 +78,7 @@
                 @foreach($howitworks as $work)
                 <div class="col-md-4 col-12">
                     <div class="blurb">
-                        <img src="{{asset ('images/home/'.'/'.$work->file)}}" alt="{{$work->title}}" class="float-center pb-3" width="200px" height="200px">
+                        <img src="{{asset ('images/home/'.'/'.$work->file)}}" alt="{{$work->title}}" class="float-center pb-3" width="15%" height="auto">
                         <h2>{{$work->title ?? 'Value your Car'}}</h2>
                         <p>{{$work->title ?? 'Get a free no obligation  valuation above.'}} </p>
                     </div>

@@ -1,56 +1,77 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+<!doctype html>
+<html class="no-js h-100" lang="en">
 
-        <!-- Session Status -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" id="bootstrap-stylesheet" data-version="1.1.0" href="{{asset ('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="{{asset ('assets/css/dashboard.css')}}">
+    <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+</head>
 
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
+<body class="h-100">
+    <div class="container-fluid no-padd">
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
+                        @csrf
+                        <a href="dashboard">
+                            <div class="logo-login text-center pb-4"><img src="{{asset ('assets/img/sellcar-logo.png')}}" width="80%" height="auto"></div>
+                        </a>
+                        <span class="login100-form-title pb-4">
+                            Login to continue
+                        </span>
+                        <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                            <input id="email" type="email" class="form-control input100 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+                        <div class="wrap-input100 validate-input" data-validate="Password is required">
+                            <input id="password" type="password" class="form-control input100 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                            @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
 
-            <!-- Email Address -->
-            <div>
-                <x-label for="email" :value="__('Email')" />
+                        <div class="flex-sb-m w-full mb-5 pt-3">
+                            <div class="forgot-col">
+                                <a href="{{ route('password.request') }}" class="txt1 pt-1">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                        </div>
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+
+                        <div class="container-login100-form-btn">
+                            <button type="submit" class="login100-form-btn btn btn-primary">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="login100-more">
+						<img src="{{asset ('assets/img/login-img.jpg')}}" alt="" style="position: absolute;left:0;height: 100vh;width: 100%;">
+
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+	
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+</body>
 
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="current-password" />
-            </div>
-
-            <!-- Remember Me -->
-            <div class="block mt-4">
-                <label for="remember_me" class="inline-flex items-center">
-                    <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-
-                <x-button class="ml-3">
-                    {{ __('Log in') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+</html>
