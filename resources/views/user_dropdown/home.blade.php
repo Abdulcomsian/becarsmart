@@ -70,7 +70,7 @@
                     </div>
                     <form class="pt-5" method="post" action="{{url('/hero-section')}}">
                         @csrf
-                        @if($herosection)
+                        @if(isset($herosection))
                         <input type="hidden" name="form_type" value="Edit" />
                         <input type="hidden" name="id" value="{{$herosection->id}}" />
                         @else
@@ -164,7 +164,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @if($howitworks)
+                                    @if(count($howitworks)>0)
                                     @foreach($howitworks as $work)
                                     <tr>
                                         <td>{{$loop->index+1}}</td>
@@ -184,7 +184,9 @@
                                     @endforeach
                                     @else
                                     <tr>
-                                        <td>No Record Found</td>
+                                        <td colspan="5" style="text-align: center;">
+                                            <h3>No Record Found</h3>
+                                        </td>
                                     </tr>
                                     @endif
                                 </tbody>
@@ -266,43 +268,90 @@
                             </div>
                         </div>
                     </form>
-
+                    <hr>
                     <div class="section-2 pt-5 pb-5">
                         <h2>Testominal Section</h2>
                     </div>
-                    <form class="pt-5">
-                        <div class="form-group row pb-5">
-                            <label for="file" class="col-sm-2 col-form-label">Upload image</label>
-                            <div class="col-sm-10">
-                                <input type="file" class="form-control" id="row-1">
+                    <form class="pt-5" method="post" action="{{url('/testominal')}}" enctype="multipart/form-data">
+                        @csrf
+                        <div id="testominal">
+                            <div class="row">
+                                <div class="form-group row pb-5">
+                                    <label for="file" class="col-sm-2 col-form-label">Upload image</label>
+                                    <div class="col-sm-10">
+                                        <input type="file" class="form-control" name="file[]" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row pb-5">
+                                    <label for="text" class="col-sm-2 col-form-label">Title</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="title[]" placeholder="Enter Your Title">
+                                    </div>
+                                </div>
+                                <div class="form-group row pb-5">
+                                    <label for="text" class="col-sm-2 col-form-label">Review</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" min="1" max="5" class="form-control" name="review[]" placeholder="Review">
+                                    </div>
+                                </div>
+                                <div class="form-group row pb-5">
+                                    <label for="text" class="col-sm-2 col-form-label">Paragraph</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="paragraph[]" placeholder="Enter Your Paragraph">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Title</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Enter Your Title">
-                            </div>
-                        </div>
-                        <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Review</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Review">
-                            </div>
-                        </div>
-
-                        <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Paragraph</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-4" placeholder="Enter Your Paragraph">
-                            </div>
-                        </div>
+                        <br>
                         <div class=" row pb-5">
                             <div class="col-sm-12">
-                                <a type="submit" class="btn btn-success btn-md" id="row-3" style="float-right" href="#">Submit</a>
+                                <button type="button" class="btn btn-success btn-md addtestominal"><span class="fa fa-plus"></span> Add More</button>
+                                <button type="submit" class="btn btn-success btn-md">Submit</button>
                             </div>
                         </div>
                     </form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>S-no</th>
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Review</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if(count($testominals)>0)
+                                    @foreach($testominals as $test)
+                                    <tr>
+                                        <td>{{$loop->index+1}}</td>
+                                        <td><img src="{{asset('images/testominal/'.'/'.$test->image)}}" width="100px" height="100px" /></td>
+                                        <td>{{$test->title}}</td>
+                                        <td>{{$test->paragraph}}</td>
+                                        <td>{{$test->review}}</td>
+                                        <td><i class="fa fa-trash confirm cursor-pointer" id="{{$test->id}}"></i></td>
+                                        <form method="post" id="form_{{$test->id}}" action="{{url('testominal-delete')}}">
+                                            @csrf
+                                            <input type="hidden" name="id" value="{{$test->id}}" />
+                                            <input type="hidden" name="image" value="{{$test->image ?? ''}}" />
+                                        </form>
+                                    </tr>
+                                    @endforeach
+                                    @else
+                                    <tr>
+                                        <td colspan="5" style="text-align: center;">
+                                            <h3>No Testominals Found!</h3>
+                                        </td>
+                                    </tr>
+                                    @endif
+                                </tbody>
 
+                            </table>
+                        </div>
+                    </div>
                 </div>
                 <!--end::Card body-->
             </div>
@@ -316,6 +365,7 @@
 @section('scripts')
 @include('layouts.sweetalert.sweetalert_js')
 <script>
+    //add how it work button
     $(".addhowitwork").on('click', function() {
         $("#howitwokrs").append(`<div class="row">
                                 <div class="form-group row pb-5">
@@ -344,6 +394,44 @@
                             </div>`);
     })
     $(document).on('click', ".removehowwork", function() {
+        $(this).parent().parent().parent().remove();
+    })
+
+    //add more button for testominal
+    $(".addtestominal").on('click', function() {
+        $("#testominal").append(`<div class="row">
+                                <div class="form-group row pb-5">
+                                    <label for="file" class="col-sm-2 col-form-label">Upload image</label>
+                                    <div class="col-sm-10">
+                                        <input type="file" class="form-control" name="file[]">
+                                    </div>
+                                </div>
+                                <div class="form-group row pb-5">
+                                    <label for="text" class="col-sm-2 col-form-label">Title</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="title[]" placeholder="Enter Your Title">
+                                    </div>
+                                </div>
+                                <div class="form-group row pb-5">
+                                    <label for="text" class="col-sm-2 col-form-label">Review</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="review[]" placeholder="Review">
+                                    </div>
+                                </div>
+                                <div class="form-group row pb-5">
+                                    <label for="text" class="col-sm-2 col-form-label">Paragraph</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="paragraph[]" placeholder="Enter Your Paragraph">
+                                    </div>
+                                </div>
+                                 <div class="form-group row">
+                                    <div class="col-sm-2">
+                                    <button type="button" class="btn btn-danger removetestominal"><span class="fa fa-minus"></span></button>
+                                    </div>
+                                 </div>
+                            </div>`);
+    })
+    $(document).on('click', ".removetestominal", function() {
         $(this).parent().parent().parent().remove();
     })
 </script>

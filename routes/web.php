@@ -42,6 +42,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/blog-delete', [HomeSectionController::class, 'delete_Blog']);
     Route::get('/blog-edit/{id}', [HomeSectionController::class, 'edit_Blog']);
     Route::post('/update-blog', [HomeSectionController::class, 'update_Blog']);
+    Route::post('/testominal', [HomeSectionController::class, 'testominal']);
+    Route::post('/testominal-delete', [HomeSectionController::class, 'testominal_delete']);
+
 
     Route::get('/sell-car', function () {
         return view('Car.sell-car');

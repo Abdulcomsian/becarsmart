@@ -10,6 +10,7 @@ use App\Models\Home\HowItWorkSection;
 use App\Models\Home\WhySellCar;
 use App\Models\Home\BlogHeader;
 use App\Models\Home\Blogs;
+use App\Models\Home\Testominal;
 
 class HomeSectionController extends Controller
 {
@@ -21,7 +22,8 @@ class HomeSectionController extends Controller
             $howitworks  = HowItWorkSection::get();
             $whycarsell  = WhySellCar::first();
             $blogheading = BlogHeader::first();
-            return view('user_dropdown/home', compact('herosection', 'howitworks', 'whycarsell', 'blogheading'));
+            $testominals = Testominal::get();
+            return view('user_dropdown/home', compact('herosection', 'howitworks', 'whycarsell', 'blogheading', 'testominals'));
         } catch (\Exception $exception) {
             toastError('Something went wrong,try again');
             return Redirect::back();
@@ -217,6 +219,45 @@ class HomeSectionController extends Controller
             }
             if ($model->save()) {
                 toastSuccess("Blog Updated Successfully!");
+                return Redirect::back();
+            }
+        } catch (\Exception $exception) {
+            toastError('Something went wrong,try again');
+            return Redirect::back();
+        }
+    }
+    //testomianl section 
+    public function testominal(Request $request)
+    {
+        try {
+            if ($request->file('file')) {
+                $files = $request->file('file');
+                foreach ($files  as $key => $file) {
+                    $imageName = time() . $file->getClientOriginalName();
+                    $file->move(public_path('images/testominal/'), $imageName);
+                    $model = new Testominal();
+                    $model->title = $request->title[$key];
+                    $model->review = $request->review[$key];
+                    $model->image = $imageName;
+                    $model->paragraph = $request->paragraph[$key];
+                    $model->save();
+                }
+                toastSuccess("Data saved Successfully");
+                return Redirect::back();
+            }
+        } catch (\Exception $exception) {
+            toastError('Something went wrong,try again');
+            return Redirect::back();
+        }
+    }
+    //testominal delete
+    public function testominal_delete(Request $request)
+    {
+        try {
+            $res = Testominal::find($request->id)->delete();
+            if ($res) {
+                unlink(public_path() . '/images/home/' . $request->image);
+                toastSuccess("Record Deleted Successfully!");
                 return Redirect::back();
             }
         } catch (\Exception $exception) {
