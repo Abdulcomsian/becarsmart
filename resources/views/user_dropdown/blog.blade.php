@@ -18,7 +18,7 @@
                 <!--end::Separator-->
                 <!--begin::Breadcrumb-->
                 <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
-                    <li class="breadcrumb-item text-dark">Home</li>
+                    <li class="breadcrumb-item text-dark">Blog</li>
                     <!--end::Item-->
                 </ul>
                 <!--end::Breadcrumb-->

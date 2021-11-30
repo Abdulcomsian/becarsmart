@@ -11,6 +11,7 @@ use App\Models\Home\WhySellCar;
 use App\Models\Home\BlogHeader;
 use App\Models\Home\Blogs;
 use App\Models\Home\Testominal;
+use Auth;
 
 class HomeSectionController extends Controller
 {
@@ -147,6 +148,8 @@ class HomeSectionController extends Controller
             $model->title = $request->title;
             $model->exceed = $request->exceed;
             $model->message = $request->message;
+            $model->permalink = $request->permalink;
+            $model->user_id = Auth::user()->id;
             if ($request->file('file')) {
                 $file = $request->file('file');
                 $imageName = time() . $file->getClientOriginalName();
