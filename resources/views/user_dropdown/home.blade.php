@@ -70,7 +70,7 @@
                     </div>
                     <form class="pt-5" method="post" action="{{url('/hero-section')}}">
                         @csrf
-                        @if($herosection)
+                        @if(isset($herosection))
                         <input type="hidden" name="form_type" value="Edit" />
                         <input type="hidden" name="id" value="{{$herosection->id}}" />
                         @else
