@@ -28,7 +28,7 @@
                      <p>The toppings you may chose for that TV dinner pizza slice when you forgot to shop for foods, the paint you may slap on your face to impress the new boss is your business. But what about your daily bread? Design comps, layouts, wireframes—will your clients accept that you go about things the facile way? Authorities in our business will tell in no uncertain terms that Lorem Ipsum is that huge, huge no no to forswear forever. Not so fast, I'd say, there are some redeeming factors in favor of greeking text, as its use is merely the symptom of a worse problem to take into consideration.</p>
                      <figure class="figure-img">
                         <img class="img-responsive" src="{{asset('assets/img/featured2.png')}}" width="100%" alt="">
-                        <figcaption>So Lorem Ipsum is bad (not necessarily)</figcaption>
+                        <figcaption class="mt-4">So Lorem Ipsum is bad (not necessarily)</figcaption>
                      </figure>
                      
                      <p>If that's what you think how bout the other way around? How can you evaluate content without design? No typography, no colors, no layout, no styles, all those things that convey the important signals that go beyond the mere textual, hierarchies of information, weight, emphasis, oblique stresses, priorities, all those subtle cues that also have visual and emotional appeal to the reader. Rigid proponents of content strategy may shun the use of dummy copy but then designers might want to ask them to provide style sheets with the copy decks they supply that are in tune with the design direction they require.</p>

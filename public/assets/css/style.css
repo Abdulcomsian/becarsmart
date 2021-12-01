@@ -1470,7 +1470,7 @@ h1.heading-h1 {
   max-width: 75%;
 }
 .Why-sell-your-car img{
-    max-width: 25%;
+    max-width: 20%;
     padding-bottom: 2rem;
 
 }
@@ -1641,7 +1641,7 @@ h1.heading-h1 {
 }
 
 .post .post-img>img {
-	width: 100%
+	max-width: 100%
 }
 
 .post .post-meta {

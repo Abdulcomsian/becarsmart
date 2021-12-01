@@ -46,177 +46,43 @@
                                             <div class="home-card-body card-body" >
                                                 <div id="step-1" style="display:block;">
                                                     <form>
+                                                         <div class="card-title">
+                                                            <h2 class="p-3 pb-0">Enter Details</h2>
+                                                            <p class="p-3 pt-0">Enter your details to get an instant valuation.</p>
+                                                        </div>
                                                         <div class="row mb-4">
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle ?</label>
-                                                                    </div>
-                                                                    <div class="col-md-5">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio1" name="sets" class="check-am" type="radio" value="1">
-                                                                            <label for="radio1">1</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-7">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio7" name="sets" class="check-am" type="radio" value="2 or more" />
-                                                                            <label for="radio7">2 or more</label>
-                                                                        </div>
-                                                                    </div>
+                                                            <div class="col-md-12">
+                                                                <div class="input-Group">
+                                                                    <input type="fullname" class="form-control" id="6+months" placeholder="Full name">
+
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
-                                                                    </div>
-                                                                    <div class="col-md-5">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio2" name="no" class="check-yes" type="radio" value="Yes">
-                                                                            <label for="radio2">Yes</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-7">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio8" name="no" class="check-no" type="radio" value="No" />
-                                                                            <label for="radio8">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 " style="padding-bottom: 2%;">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT ?</label>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="input-Group">
-                                                                            <div class="input-Group">
-                                                                                <input type="number" class="form-control" id="6+months" placeholder="6+ Months" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                
+                                                        </div>
+                                                        <div class="row mb-4">
+                                                            <div class="col-md-12">
+                                                                <div class="input-Group">
+                                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
                                                                 </div>
                                                             </div>
                                                         </div>
 
                                                         <div class="row mb-4">
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How your vehicle ever been subject to an insurance write off or been accident demaged?</label>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="input-Group">
-                                                                            <!-- <div class="input-Group"> -->
-                                                                                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Never Written off" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
-                                                                            <!-- </div> -->
-                                                                        </div>
-                                                                    </div>
-                                                                
+                                                            <div class="col-md-12">
+                                                                <div class="input-Group">
+                                                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Phone number">
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has your vehicle over been user for private hire?</label>
-                                                                    </div>
-                                                                    <div class="col-md-5"style="padding-top: 2%;">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio3" name="private-hire" class="check-yes" type="radio" value="Yes">
-                                                                            <label for="radio3">Yes</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-7" style="padding-top: 2%;">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio9" name="private-hire" class="check-no" type="radio" value="No" />
-                                                                            <label for="radio9">No</label>
-                                                                        </div>
-                                                                    </div>
+                                                        </div>            
+                                                                                                
+                                                        <div class="row mb-5">
+                                                            <div class="col-md-12">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" chceked>
+                                                                    <label class="form-check-label" for="checked">
+                                                                    I have read the Privacy Policy and accept the Terms.
+                                                                </label>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has your vehicle over been used for driving tuition? </label>
-                                                                    </div>
-                                                                    <div class="col-md-5" style="padding-top: 2%;">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio4" name="tuition" class="check-yes" type="radio" value="Yes">
-                                                                            <label for="radio4">Yes</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-7" style="padding-top: 2%;">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio10" name="tuition" class="check-no" type="radio" value="No" />
-                                                                            <label for="radio10">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row mb-4">
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has your vehicle ever been used as a police/emergency vehicle?</label>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio5" name="emergency" class="check-yes" type="radio" value="Yes">
-                                                                            <label for="radio5">Yes</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio11" name="emergency" class="check-no" type="radio" value="No" />
-                                                                            <label for="radio11">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">has your vehicle been modified with motability ramps, a winch or now has missing seats?</label>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio6" name="seats" class="check-yes" type="radio" value="Yes">
-                                                                            <label for="radio6">Yes</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="radio12" name="seats" class="check-no" type="radio" value="No" />
-                                                                            <label for="radio12">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600 ;padding-top: 10%;"></label>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="d-grid">
-                                                                            <button type="submit" class="btn text-light main-bg" style="padding: 7px; border-radius:0px; ">Evaluate My Car</button>
-                                                                        </div> 
-                                                                    </div>
-                                                                </div>
-                                                            </div> -->
-
                                                         </div>
 
                                                         <div class="row mb-4 mt-5">
@@ -227,17 +93,6 @@
                                                             </div>
                                                         </div>
 
-                                                        <!-- <div class="row mb-4">
-                                                            <div class="col-md-12 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12" >
-                                                                        <div class="bttn">
-                                                                            <button id="first-page" type="button" class="btn btn-success btn-md" style="float-right">Next Page</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div> -->
 
                                                     </form>
                                                 </div>
@@ -246,9 +101,9 @@
                                                     <form method="post">
 
                                                         <div class="row mb-4">
-                                                            <div class="col-md-8 ">
+                                                            <div class="col-md-12 ">
                                                                 <div class="row">
-                                                                    <div class="col-md-12" style="padding-bottom: 2%;">
+                                                                    <div class="col-md-12" style="">
                                                                         <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Service History</label>
                                                                     </div>
                                                                     <div class="col-md-3">
@@ -278,143 +133,25 @@
                                                                 </div>
                                                             </div>
 
-                                                             <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Do you intend to sell your vehicle with a personalised registration</label>
-                                                                    </div>
-                                                                    <div class="col-md-5">
-                                                                        <div class="inputGroup">
-                                                                            <input id="intend" name="personalised-registration" class="check-yes" type="radio" value="Yes">
-                                                                            <label for="intend">Yes</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-7">
-                                                                        <div class="inputGroup">
-                                                                            <input id="intend1" name="personalised-registration" class="check-no" type="radio" value="No" />
-                                                                            <label for="intend1">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row mb-4">
-                                                            <div class="col-md-8 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12" style="padding-bottom: 0;">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is your Car an Import?</label>
-                                                                    </div>
-                                                                    <div class="col-md-3">
-                                                                        <div class="inputGroup">
-                                                                            <input id="No" name="Import" class="check-am" type="radio" value="1">
-                                                                            <label for="No">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-4">
-                                                                        <div class="inputGroup">
-                                                                            <input id="European" name="Import" class="check-am" type="radio" value="2 or more" />
-                                                                            <label for="European">European/parallel</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-5">
-                                                                        <div class="inputGroup">
-                                                                            <input id="Japanese" name="Import" class="check-am" type="radio" value="1">
-                                                                            <label for="Japanese">Grey (e.g. Japanese)</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
-                                                                    </div>
-                                                                    <div class="col-md-5">
-                                                                        <div class="inputGroup">
-                                                                            <input id="1more" name="this-vehicle" class="check-yes" type="radio" value="Yes">
-                                                                            <label for="1more">1</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-7">
-                                                                        <div class="inputGroup">
-                                                                            <input id="2more" name="this-vehicle" class="check-no" type="radio" value="No" />
-                                                                            <label for="2more">2 or more</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row mb-4">
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 " style="padding-bottom: 6%;">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT ?</label>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="input-Group">
-                                                                            <div class="input-Group">
-                                                                                <input type="number" class="form-control" id="6+months" placeholder="6+ Months" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 " style="padding-bottom: 2%;">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">how your vehicle over been subject to an insurance write off or been accident damaged?</label>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="input-Group">
-                                                                            <div class="input-Group">
-                                                                                <input type="number" class="form-control" id="Written" placeholder="Never Written off" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 "style="padding-bottom: 3.5%;" > 
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How your vehicle ever been used for private hire?</label>
-                                                                    </div>
-                                                                    <div class="col-md-5">
-                                                                        <div class="inputGroup">
-                                                                            <input id="yes" name="private-hire" class="-yes" type="radio" value="Yes">
-                                                                            <label for="yes">Yes</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-7">
-                                                                        <div class="inputGroup">
-                                                                            <input id="no" name="private-hire" class="-no" type="radio" value="No" />
-                                                                            <label for="no">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                             
                                                         </div>
 
                                                         <div class="row mb-4">
                                                             <div class="col-md-6 ">
                                                                 <div class="row">
                                                                     <div class="col-md-12 "style="" > 
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has your vehicle ever been used for driving tuition?</label>
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
                                                                     </div>
                                                                     <div class="col-md-5">
                                                                         <div class="inputGroup">
                                                                             <input id="driving " name="intend" class="-yes" type="radio" value="Yes">
-                                                                            <label for="driving ">Yes</label>
+                                                                            <label for="driving ">1</label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-7">
                                                                         <div class="inputGroup">
                                                                             <input id="tuition" name="intend" class="-no" type="radio" value="No" />
-                                                                            <label for="tuition">No</label>
+                                                                            <label for="tuition">2 or more</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -422,7 +159,7 @@
                                                             <div class="col-md-6 ">
                                                                 <div class="row">
                                                                     <div class="col-md-12 "style="" > 
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has your vehicle ever been used as a police/emergency vehicle?</label>
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
                                                                     </div>
                                                                     <div class="col-md-5">
                                                                         <div class="inputGroup">
@@ -439,6 +176,42 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
+                                                        <div class="row ">
+                                                            <div class="col-md-6">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 " style="padding-bottom: 2%;">
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT ?</label>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="input-Group">
+                                                                            <div class="input-Group">
+                                                                                <input type="number" class="form-control" id="6+months" placeholder="6+ Months" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 ">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 " style="padding-bottom: 2%;">
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">how your vehicle over been subject to an insurance write off or been accident damaged?</label>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="input-Group">
+                                                                            <div class="input-Group">
+                                                                                <input type="number" class="form-control" id="Written" placeholder="Never Written off" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+
+                                                        
 
                                                         <div class="row mb-4 mt-5">
                                                             <div class="col-md-12 ">
@@ -464,116 +237,40 @@
 
                                                 <div id="step-3"style="display:none;">
 
-                                                    <div class="step-3-content pb-5">
-                                                        <!-- <div class="row">
-                                                            <div class="col-md-8 offset-2">
-                                                                <h2>Update assumptions & add damage</h2>
-                                                                <p>How you can let us know about any vehicle damage and <br> update your assumptions</p>
-                                                                <div class="multi-btn">
-                                                                    <button class="btn btn-lg btn-primary" style="padding: 20px 40px; border-radius: 3px;">Assumptions</button>
-                                                                    <button class="btn btn-lg btn-light" style="padding: 20px 40px; border-radius: 3px;">Vehicle Damage</button>
-                                                                </div>
-                                                            </div>
-                                                        </div> -->
-                                                    </div>
+                                                    
 
                                                     <form>
-                                                        <div class="row mb-4">
-                                                            <div class="col-md-2 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 " style="padding-bottom: 5%;">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Mileage</label>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="input-Group">
-                                                                            <div class="input-Group">
-                                                                                <input type="number" class="form-control" id="6+months" value="82000" style="padding: 6px; border-radius: 0; border: 1px solid grey;">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-10 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Previous Onwers</label>
-                                                                    </div>
-                                                                    <div class="col-md-2">
-                                                                        <div class="inputGroup">
-                                                                            <input id="aradio" name="previous-onwers" class="check-am" type="radio" value="2 or more" />
-                                                                            <label for="aradio">0</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-2">
-                                                                        <div class="inputGroup">
-                                                                            <input id="bradio" name="previous-onwers" class="check-am" type="radio" value="1">
-                                                                            <label for="bradio">1</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-2">
-                                                                        <div class="inputGroup">
-                                                                            <input id="cradio" name="previous-onwers" class="check-am" type="radio" value="2 or more" />
-                                                                            <label for="cradio">2</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-2">
-                                                                        <div class="inputGroup">
-                                                                            <input id="dradio" name="previous-onwers" class="check-am" type="radio" value="1">
-                                                                            <label for="dradio">3</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-2">
-                                                                        <div class="inputGroup">
-                                                                            <input id="fradio" name="previous-onwers" class="check-am" type="radio" value="2 or more" />
-                                                                            <label for="fradio">4</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-2">
-                                                                        <div class="inputGroup">
-                                                                            <input id="gradio" name="previous-onwers" class="check-am" type="radio" value="2 or more" />
-                                                                            <label for="gradio">5+</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                    <div class="step-3-contentt pb-5">
+                                                        <div class="row">
+                                                            <div class="col-md-12 ">
+                                                                <h2>Almost There!</h2>
                                                             </div>
                                                         </div>
+                                                    </div>
 
                                                         <div class="row mb-4">
 
-                                                             <div class="col-md-2" style="padding-top:2.4%;">
-                                                                <div class="inputGroup">
-                                                                    <input id="radio" name="previous-onwers" class="check-am" type="radio" value="1">
-                                                                    <label for="radio">?</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-10 ">
+                                                            <div class="col-md-12 ">
                                                                 <div class="row">
                                                                     <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Search History</label>
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Gearbox Condition</label>
                                                                     </div>
-                                                                    <div class="col-md-3">
+                                                                    <div class="col-md-4">
                                                                         <div class="inputGroup">
                                                                             <input id="hradio" name="search-history" class="check-am" type="radio" value="2 or more" />
-                                                                            <label for="hradio">Full</label>
+                                                                            <label for="hradio">NO FAULTS</label>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-3">
+                                                                    <div class="col-md-4">
                                                                         <div class="inputGroup">
                                                                             <input id="iradio" name="search-history" class="check-am" type="radio" value="1">
-                                                                            <label for="iradio">Some</label>
+                                                                            <label for="iradio">FAULTS BUT RUN</label>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-3">
+                                                                    <div class="col-md-4">
                                                                         <div class="inputGroup">
                                                                             <input id="jradio" name="search-history" class="check-am" type="radio" value="2 or more" />
-                                                                            <label for="jradio">None</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3">
-                                                                        <div class="inputGroup">
-                                                                            <input id="kradio" name="search-history" class="check-am" type="radio" value="1">
-                                                                            <label for="kradio">First not due</label>
+                                                                            <label for="jradio">DOESN'T RUNS</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -581,116 +278,52 @@
                                                         </div>
 
                                                         <div class="row mb-4">
-                                                            <div class="col-md-5 ">
+                                                            <div class="col-md-12">
                                                                 <div class="row">
                                                                     <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Do you intent to sell your vehicle with a peronalised registration?</label>
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any Warning light lights or message on the dash?</label>
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="inputGroup">
-                                                                            <input id="xradio" name="Sell" class="check-am" type="radio" value="2 or more" />
+                                                                            <input id="xradio" name="Sell" class="check-am" type="radio" value="yes" />
                                                                             <label for="xradio">Yes</label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="inputGroup">
-                                                                            <input id="yradio" name="Sell" class="check-am" type="radio" value="1">
+                                                                            <input id="yradio" name="Sell" class="check-am" type="radio" value="no">
                                                                             <label for="yradio">No</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-md-7 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">In your car an import?</label>
-                                                                    </div>
-                                                                    <div class="col-md-3">
-                                                                        <div class="inputGroup">
-                                                                            <input id="pradio"name="import-car" class="check-am" type="radio"  />
-                                                                            <label for="pradio">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-4">
-                                                                        <div class="inputGroup">
-                                                                            <input id="yaradio" name="import-car" class="check-am" type="radio">
-                                                                            <label for="yaradio">European/parallel</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-5">
-                                                                        <div class="inputGroup">
-                                                                            <input id="yzradio" name="import-car" class="check-am" type="radio" >
-                                                                            <label for="yzradio">Grey (e.g  Japanese)</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                                         </div>
-
                                                         <div class="row mb-4">
-                                                            <div class="col-md-4 ">
+                                                            <div class="col-md-12">
                                                                 <div class="row">
                                                                     <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any Scratches, marks or dents on the body?</label>
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="inputGroup">
-                                                                            <input id="mmradio"name="non-keys" class="check-am" type="radio"  />
-                                                                            <label for="mmradio">1</label>
+                                                                            <input id="Scratchesradio" name="Scratches" class="check-am" type="radio" value="yes" />
+                                                                            <label for="Scratchesradio">Yes</label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="inputGroup">
-                                                                            <input id="yyradio" name="non-keys" class="check-am" type="radio">
-                                                                            <label for="yyradio">2 or more</label>
+                                                                            <input id="Scratchesyradio" name="Scratches" class="check-am" type="radio" value="no">
+                                                                            <label for="Scratchesyradio">No</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="pmradio"name="non-runner" class="check-am" type="radio"  />
-                                                                            <label for="pmradio">Yes</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="yraradio" name="non-runner" class="check-am" type="radio">
-                                                                            <label for="yraradio">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-4 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 " style="padding-bottom: 2%;">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT?</label>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="input-Group">
-                                                                            <div class="input-Group">
-                                                                                <input type="number" class="form-control" id="6+months" placeholder="6+ Months" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                
-                                                                </div>
-                                                            </div>
-                                                            
                                                         </div>
 
                                                         <div class="row mb-4 mt-5">
                                                             <div class="col-md-12 ">
                                                                 <div class="d-gridd">
-                                                                    <button type="button" id="third-page" class="btn text-light main-bg">Next page</button>
+                                                                    <button type="button" id="third-page" class="btn text-light main-bg">Submit</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -710,7 +343,9 @@
                                                     </form>
                                                 </div>
 
-                                                <div id="step-4" style="display:none;">
+
+                                                
+                                                <!-- <div id="step-4" style="display:none;">
                                                     <form>
                                                         <div class="row mb-4" style="align-items: center;">
                                                             <div class="col-md-6 ">
@@ -771,9 +406,9 @@
                                                             </div>
                                                         </div>
                                                     </form>
-                                                </div>
+                                                </div> -->
 
-                                                <div id="step-5" style="display:none;">
+                                                <!-- <div id="step-5" style="display:none;">
                                                     <form>
                                                         <div class="row mb-4" style="align-items: center;">
                                                             <div class="col-md-3 ">
@@ -905,12 +540,12 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div> -->
+                                                        </div> --
 
                                                     </form>
-                                                </div>
+                                                </div> -->
 
-                                                <div id="step-6" style="display:none;">
+                                                <!-- <div id="step-6" style="display:none;">
                                                     <form>
                                                         <div class="row" style="align-items: center;">
                                                             <div class="col-md-3 ">
@@ -1046,7 +681,8 @@
                                                             </div>
                                                         </div>
                                                     </form>
-                                                </div>
+                                                </div> -->
+
 
                                                  
 
@@ -1180,38 +816,42 @@
                 $("#step-5").hide();
                 $("#step-6").hide();
             });
-
-            $("#fourth-page").on('click', function() {
-                $("#step-1").hide();
-                $("#step-2").hide();
-                $("#step-3").hide();
-                $("#step-4").hide();
-                $("#step-5").show();
-                $("#step-6").hide();
-            });
-
-            $("#fifth-page").on('click', function() {
-                $("#step-1").hide();
-                $("#step-2").hide();
-                $("#step-3").hide();
-                $("#step-4").hide();
-                $("#step-5").hide();
-                $("#step-6").show();
-            });
-
-            $("#last-page").on('click', function() {
-                $("#step-1").hide();
-                $("#step-2").hide();
-                $("#step-3").hide();
-                $("#step-4").hide();
-                $("#step-5").hide();
-                $("#step-6").hide();
-                $('#myModal').modal('show'); 
-            });
-            
-            $("#redirect").on('click', function(){
+            $("#third-page").on('click', function(){
                 location.reload();
             })
+            
+
+            // $("#fourth-page").on('click', function() {
+            //     $("#step-1").hide();
+            //     $("#step-2").hide();
+            //     $("#step-3").hide();
+            //     $("#step-4").hide();
+            //     $("#step-5").show();
+            //     $("#step-6").hide();
+            // });
+
+            // $("#fifth-page").on('click', function() {
+            //     $("#step-1").hide();
+            //     $("#step-2").hide();
+            //     $("#step-3").hide();
+            //     $("#step-4").hide();
+            //     $("#step-5").hide();
+            //     $("#step-6").show();
+            // });
+
+            // $("#last-page").on('click', function() {
+            //     $("#step-1").hide();
+            //     $("#step-2").hide();
+            //     $("#step-3").hide();
+            //     $("#step-4").hide();
+            //     $("#step-5").hide();
+            //     $("#step-6").hide();
+            //     $('#myModal').modal('show'); 
+            // });
+            
+            // $("#redirect").on('click', function(){
+            //     location.reload();
+            // })
             
             
         });

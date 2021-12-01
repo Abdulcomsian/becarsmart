@@ -78,7 +78,7 @@
                 @foreach($howitworks as $work)
                 <div class="col-md-4 col-12">
                     <div class="blurb">
-                        <img src="{{asset ('images/home/'.'/'.$work->file)}}" alt="{{$work->title}}" class="float-center pb-3" width="15%" height="auto">
+                        <img src="{{asset ('images/home/'.'/'.$work->file)}}" alt="{{$work->title}}" class="float-center pb-3" width="17%" height="auto">
                         <h2>{{$work->title ?? 'Value your Car'}}</h2>
                         <p>{{$work->title ?? 'Get a free no obligation  valuation above.'}} </p>
                     </div>
@@ -197,7 +197,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="clock-img pt-5">
-                        <img src="{{asset ('assets/img/clock (1).png')}}" alt="">
+                        <img src="{{asset ('assets/img/clock (1).png')}}" alt="" width="22%">
 
                     </div>
                     <div class="clock-content text-center">
@@ -327,7 +327,7 @@
 
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
+                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" width="15%" alt="...">
                                 <div class="user_name">
                                     <h3>John Doe</h3>
                                 </div>
