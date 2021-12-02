@@ -44,7 +44,7 @@
                                                 <p class="p-3 pt-0">Enter your details to get an instant valuation.</p>
                                             </div> -->
                                             <div class="home-card-body card-body" >
-                                                <div id="step-1" style="display:none;">
+                                                <div id="step-1" style="display:block;">
                                                     <form>
                                                          <div class="card-title">
                                                             <h2 class="p-3 pb-0">Enter Details</h2>
@@ -53,7 +53,7 @@
                                                         <div class="row mb-4">
                                                             <div class="col-md-12">
                                                                 <div class="input-Group">
-                                                                    <input type="fullname" class="form-control" id="6+months" placeholder="Full name">
+                                                                    <input type="fullname" class="form-control" id="6+months" placeholder="Full name"  style="width:30%">
 
                                                                 </div>
                                                             </div>
@@ -61,7 +61,7 @@
                                                         <div class="row mb-4">
                                                             <div class="col-md-12">
                                                                 <div class="input-Group">
-                                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" style="width:30%">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -69,16 +69,16 @@
                                                         <div class="row mb-4">
                                                             <div class="col-md-12">
                                                                 <div class="input-Group">
-                                                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Phone number">
+                                                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Phone number" style="width:30%">
                                                                 </div>
                                                             </div>
                                                         </div>            
                                                                                                 
                                                         <div class="row mb-5">
                                                             <div class="col-md-12">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" value="" id="myCheck" onclick="myFunction()">
-                                                                    <label class="form-check-label" for="myCheck">
+                                                                <div class="form-check" >
+                                                                    <input class="form-check-input" type="checkbox" value="" id="myCheck" onclick="myFunction()" >
+                                                                    <label class="form-check-label" for="myCheck" >
                                                                     I have read the Privacy Policy and accept the Terms.
                                                                 </label>
                                                                 </div>
@@ -102,7 +102,7 @@
                                                     <form method="post">
 
                                                         <div class="row mb-4">
-                                                            <div class="col-md-12 ">
+                                                            <div class="col-md-8 ">
                                                                 <div class="row">
                                                                     <div class="col-md-12" style="">
                                                                         <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Service History</label>
@@ -133,12 +133,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-                                                             
-                                                        </div>
-
-                                                        <div class="row mb-4">
-                                                            <div class="col-md-6 ">
+                                                            <div class="col-md-4 ">
                                                                 <div class="row">
                                                                     <div class="col-md-12 "style="" > 
                                                                         <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
@@ -157,6 +152,11 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                             
+                                                        </div>
+
+                                                        <div class="row mb-4">
+                                                            
                                                             <div class="col-md-6 ">
                                                                 <div class="row">
                                                                     <div class="col-md-12 "style="" > 
@@ -176,9 +176,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-
-                                                        <div class="row ">
                                                             <div class="col-md-6">
                                                                 <div class="row">
                                                                     <div class="col-md-12 " style="padding-bottom: 2%;">
@@ -194,7 +191,11 @@
                                                                 
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-6 ">
+                                                            
+                                                        </div>
+
+                                                        <div class="row ">
+                                                        <div class="col-md-6 ">
                                                                 <div class="row">
                                                                     <div class="col-md-12 " style="padding-bottom: 2%;">
                                                                         <label for="fname" class="form-label" style="font-size:13px; font-weight:600">how your vehicle over been subject to an insurance write off or been accident damaged?</label>
@@ -202,7 +203,9 @@
                                                                     <div class="col-md-12">
                                                                         <div class="input-Group">
                                                                             <div class="input-Group">
-                                                                                <input type="number" class="form-control" id="Written" placeholder="Never Written off" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
+                                                                                <!-- <input type="number" class="form-control" id="Written" placeholder="Never Written off" style="padding: 7px; border-radius: 0; border: 1px solid grey;"> -->
+                                                                                <textarea id="textarea" type="text" placeholder="Enter your comment" style="display:block; width: 100%;height: 100px; padding-left:7px 17px"></textarea>
+
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -236,22 +239,22 @@
                                                     </form>
                                                 </div>
 
-                                                <div id="step-3"style="display:block;">
+                                                <div id="step-3"style="display:none;">
 
                                                     
 
                                                     <form>
-                                                    <div class="step-3-contentt pb-5">
-                                                        <div class="row">
-                                                            <div class="col-md-12 ">
-                                                                <h2>Almost There!</h2>
+                                                        <div class="step-3-contentt pb-5">
+                                                            <div class="row">
+                                                                <div class="col-md-12 ">
+                                                                    <h2>Almost There!</h2>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
 
                                                         <div class="row mb-4">
 
-                                                            <div class="col-md-12 ">
+                                                            <div class="col-md-7 ">
                                                                 <div class="row">
                                                                     <div class="col-md-12">
                                                                         <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Gearbox Condition</label>
@@ -276,10 +279,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-
-                                                        <div class="row mb-4">
-                                                            <div class="col-md-12">
+                                                            <div class="col-md-5">
                                                                 <div class="row">
                                                                     <div class="col-md-12">
                                                                         <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any Warning light lights or messages on the dash?</label>
@@ -301,7 +301,7 @@
                                                         </div>
 
                                                         <div class="row mb-4">
-                                                            <div class="col-md-12">
+                                                            <div class="col-md-6">
                                                                 <div class="row">
                                                                     <div class="col-md-12">
                                                                         <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any Scratches, marks or dents on the body?</label>
@@ -322,7 +322,7 @@
                                                                     </div>
                                                                     
                                                                     <div class="mt-1">
-                                                                                <textarea id="textarea" type="text" placeholder="Enter your comment" style="display:none; width: 49.2%;height: 70px;padding-left:7px 17px"></textarea>
+                                                                                <textarea id="textarea" type="text" placeholder="Enter your comment" style="display:none; width: 48.2%;height: 70px;padding-left:7px 17px"></textarea>
                                                                     </div>
                                                                 </div>
                                                             </div>
