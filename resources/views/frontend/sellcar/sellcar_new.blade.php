@@ -44,7 +44,7 @@
                                                 <p class="p-3 pt-0">Enter your details to get an instant valuation.</p>
                                             </div> -->
                                             <div class="home-card-body card-body" >
-                                                <div id="step-1" style="display:block;">
+                                                <div id="step-1" style="display:none;">
                                                     <form>
                                                          <div class="card-title">
                                                             <h2 class="p-3 pb-0">Enter Details</h2>
@@ -77,8 +77,8 @@
                                                         <div class="row mb-5">
                                                             <div class="col-md-12">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" chceked>
-                                                                    <label class="form-check-label" for="checked">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="myCheck" onclick="myFunction()">
+                                                                    <label class="form-check-label" for="myCheck">
                                                                     I have read the Privacy Policy and accept the Terms.
                                                                 </label>
                                                                 </div>
@@ -96,6 +96,7 @@
 
                                                     </form>
                                                 </div>
+                                           
 
                                                 <div id="step-2" style="display:none;">
                                                     <form method="post">
@@ -235,7 +236,7 @@
                                                     </form>
                                                 </div>
 
-                                                <div id="step-3"style="display:none;">
+                                                <div id="step-3"style="display:block;">
 
                                                     
 
@@ -281,7 +282,7 @@
                                                             <div class="col-md-12">
                                                                 <div class="row">
                                                                     <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any Warning light lights or message on the dash?</label>
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any Warning light lights or messages on the dash?</label>
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="inputGroup">
@@ -298,6 +299,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+
                                                         <div class="row mb-4">
                                                             <div class="col-md-12">
                                                                 <div class="row">
@@ -306,15 +308,21 @@
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="inputGroup">
-                                                                            <input id="Scratchesradio" name="Scratches" class="check-am" type="radio" value="yes" />
-                                                                            <label for="Scratchesradio">Yes</label>
+                                                                            <input id="scratchesradio1" name="Scratches" class="check-am" type="radio" value="yes" />
+                                                                            <label for="scratchesradio1">Yes</label>
                                                                         </div>
                                                                     </div>
+                                                                            
+                                                                    
                                                                     <div class="col-md-6">
                                                                         <div class="inputGroup">
-                                                                            <input id="Scratchesyradio" name="Scratches" class="check-am" type="radio" value="no">
-                                                                            <label for="Scratchesyradio">No</label>
+                                                                            <input id="scratchesradio2" name="Scratches" class="check-am" type="radio" value="no">
+                                                                            <label for="scratchesradio2">No</label>
                                                                         </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="mt-1">
+                                                                                <textarea id="textarea" type="text" placeholder="Enter your comment" style="display:none; width: 49.2%;height: 70px;padding-left:7px 17px"></textarea>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -788,7 +796,31 @@
     </div> 
     @endsection
     @section('script')
+
+                                              
+
+
         <script>
+
+           $("#scratchesradio1").change(function(){
+            if ($(this).is(':checked')){
+                $("#textarea").show();
+            } else {
+                $("#textarea").hide();
+            }
+           });
+
+           $("#scratchesradio2").change(function(){
+            $("#textarea").hide();
+            // if ($(this).is(':checked')){
+            //     $("#textarea").hide();
+            // } else {
+            //     $("#textarea").hide();
+            // }
+           });
+            
+        
+           
         $( document ).ready(function() {
              $("#first-page").on('click', function() {
                 $("#step-1").hide();

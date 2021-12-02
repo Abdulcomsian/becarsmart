@@ -2535,3 +2535,8 @@ button:hover {
   width: 10%;
   height: 20%;
 } */
+
+.textarea#textarea{
+  width: 100% !important;
+  height: 20px !important;
+}
