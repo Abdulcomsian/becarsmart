@@ -29,7 +29,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
-                                    <a href="{{url ('/home/home')}}" class="btn btn-danger w-100">Value My Car</a>
+                                    <a href="{{url ('/home')}}" class="btn btn-danger w-100">Value My Car</a>
                                 </div>
                             </div>
                         </form>
@@ -197,8 +197,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="clock-img pt-5">
+<<<<<<< HEAD
                         <img src="{{asset ('assets/img/clock (1).png')}}" alt="" width="22%">
 
+=======
+                        <img src="@if(isset($whysellcar->file)){{asset('images/home/'.'/'.$whysellcar->file ?? '')}}@endif" alt="">
+>>>>>>> f61ebb6704638bd799fd38bc21dc9e8a5b2831fe
                     </div>
                     <div class="clock-content text-center">
                         <h2>{{ $whysellcar->title ?? 'Why sell your car with BeCarSmart.com?'}}</h2>
@@ -217,43 +221,48 @@
             <div class="row text-center pb-5">
                 <div class="col">
                     <div class="title">
-                        <h2>Tips & Guide</h2>
-                        <p>We are worried for you, follow the tips & guides to avoid the bad situations</p>
+                        <h2>{{$blogheader->header ?? 'Tips & Guide'}}</h2>
+                        <p>{{$blogheader->sub_header ?? 'We are worried for you, follow the tips & guides to avoid the bad situations'}}</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-8">
+                    @php $i=0;@endphp
+                    @foreach($blogs as $blog)
+                    @php
+                    if($i>1){break;}else{$i++;}
+                    @endphp
                     <div class="card blog_card mb-3">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <a href="/blog/blog">
-                                    <img src="{{asset ('assets/img/featured.png')}}" class="img-fluid rounded-start" alt="featured Image">
+                                <a href="{{url('/blog',$blog->permalink)}}">
+                                    <img src="{{asset('images/blogs/'.'/'.$blog->feature_img)}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
                             <div class="col-md-7 p-0">
                                 <div class="card-body">
                                     <div class="cardHeader">
                                         <div class="date-card">
-                                            <div class="day">26</div>
+                                            <div class="day">{{$blog->created_at->format('d')}}</div>
                                             <div>
-                                                <div class="month">Feb</div>
+                                                <div class="month">{{$blog->created_at->format('M')}}</div>
                                             </div>
                                         </div>
-                                        <h5 class="card-title aliqn-bottom">Lorem Ipsum</h5>
+                                        <h5 class="card-title aliqn-bottom">{{$blog->title ?? ''}}</h5>
                                     </div>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                    <p class="card-text">{{$blog->exceed ?? ''}}</p>
 
                                     <p class="card-text">
-                                        <a href="/blog/blog" class="mt-auto btn">Read More</a>
+                                        <a href="{{url('/blog',$blog->permalink)}}" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    @endforeach
                     <!-- blog post -->
-                    <div class="card blog_card nomargin">
+                    <!-- <div class="card blog_card nomargin">
                         <div class="row g-0">
                             <div class="col-md-5">
                                 <a href="/blog/blog">
@@ -279,40 +288,43 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-
-
-
+                @php $i=0;@endphp
+                @foreach($blogs as $blog)
+                @if($i==2)
                 <div class="col-md-4">
                     <div class="card blog_card mb-3 height100 nomargin">
                         <div class="row g-0 height100">
                             <div class="col-md-12">
-                                <a href="/blog/blog">
-                                    <img src="{{asset ('assets/img/featured2.png')}}" class="img-fluid rounded-start" alt="featured Image">
+                                <a href="{{url('/blog',$blog->permalink)}}">
+                                    <img src="{{asset('images/blogs/'.'/'.$blog->feature_img)}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
                             <div class="col-md-12 p-0">
                                 <div class="card-body height100">
                                     <div class="cardHeader">
                                         <div class="date-card">
-                                            <div class="day">26</div>
+                                            <div class="day">{{$blog->created_at->format('d')}}</div>
                                             <div>
-                                                <div class="month">Feb</div>
+                                                <div class="month">{{$blog->created_at->format('M')}}</div>
                                             </div>
                                         </div>
-                                        <h5 class="card-title aliqn-bottom">Lorem Ipsum</h5>
+                                        <h5 class="card-title aliqn-bottom">{{$blog->title ?? ''}}</h5>
                                     </div>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                    <p class="card-text">{{$blog->exceed ?? ''}}</p>
 
                                     <p class="card-text">
-                                        <a href="/blog/blog" class="mt-auto btn">Read More</a>
+                                        <a href="{{url('/blog',$blog->permalink)}}" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                @endif
+                @php $i++;@endphp
+                @endforeach
             </div>
         </div>
     </section>
@@ -326,27 +338,40 @@
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" width="15%" alt="...">
+                            @foreach($testominals as $x => $testominal)
+                            @php
+                            if($x==0)
+                            {
+                            $class="active";
+                            }
+                            else{
+                            $class="";
+                            }
+                            @endphp
+                            <div class="carousel-item {{ $class}}">
+                                <img src="{{asset ('images/testominal/'.'/'.$testominal->image)}}" class="thumbnail circled" alt="...">
                                 <div class="user_name">
-                                    <h3>John Doe</h3>
+                                    <h3>{{$testominal->title ?? ''}}</h3>
                                 </div>
                                 <div class="rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
+                                    @php
+                                    for($i=0;$i<$testominal->review;$i++){
+                                        @endphp
+                                        <span class="fa fa-star checked"></span>
+                                        @php }
+                                        $remain=5-$testominal->review;
+                                        for($i=0;$i<$remain;$i++){ @endphp <span class="fa fa-star"></span>
+                                            @php } @endphp
                                 </div>
                                 <div class="para">
                                     <p>
-                                        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
+                                        {{$testominal->paragraph ?? ''}}
                                     </p>
                                 </div>
 
                             </div>
-
-                            <div class="carousel-item ">
+                            @endforeach
+                            <!-- <div class="carousel-item ">
                                 <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
                                 <div class="user_name">
                                     <h3 class="mt-2">John Doe</h3>
@@ -404,7 +429,7 @@
                                     </p>
                                 </div>
 
-                            </div>
+                            </div> -->
 
                         </div>
 

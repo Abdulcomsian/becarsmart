@@ -4,6 +4,7 @@ use App\Http\Controllers\Dashboard\RoleController;
 use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\Admin\Home\HomeSectionController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\SellCar\CarController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
@@ -19,9 +20,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::group(['middleware' => ['auth']], function () {
     //All Resource Controller
@@ -30,18 +31,21 @@ Route::group(['middleware' => ['auth']], function () {
         'users' => UserController::class, //Clients
     ]);
     //obaid work here
-    Route::get('/home',  [HomeSectionController::class, 'home'])->name('user_dropdown/home');
+    Route::get('dashboard/home',  [HomeSectionController::class, 'home'])->name('user_dropdown/home');
     Route::post('/hero-section', [HomeSectionController::class, 'store_hero_section']);
     Route::post('/how-it-work', [HomeSectionController::class, 'store_how_it_work']);
     Route::post('/how-it-work-delete', [HomeSectionController::class, 'how_it_work_delete']);
     Route::post('/why-sell-car', [HomeSectionController::class, 'why_sell_car']);
     Route::post('/blog-heading', [HomeSectionController::class, 'blog_heading']);
-    Route::post('/blogs', [HomeSectionController::class, 'blogs']);
-    Route::get('/blog', [HomeSectionController::class, 'get_Blog']);
+    Route::post('dashboard/blogs', [HomeSectionController::class, 'blogs']);
+    Route::get('dashboard/blog', [HomeSectionController::class, 'get_Blog']);
     Route::get('/add-blog', [HomeSectionController::class, 'add_Blog']);
     Route::post('/blog-delete', [HomeSectionController::class, 'delete_Blog']);
     Route::get('/blog-edit/{id}', [HomeSectionController::class, 'edit_Blog']);
     Route::post('/update-blog', [HomeSectionController::class, 'update_Blog']);
+    Route::post('/testominal', [HomeSectionController::class, 'testominal']);
+    Route::post('/testominal-delete', [HomeSectionController::class, 'testominal_delete']);
+
 
     Route::get('/sell-car', function () {
         return view('Car.sell-car');
@@ -86,16 +90,14 @@ if (env('EnableMigrationAndOptimizeClearRoutes') == true) {
 
 
 // BeCarSmart routing list
-
+Route::get('/', [HomeController::class, 'index'])->name('frontend/index');
 Route::get('/index', [HomeController::class, 'index'])->name('frontend/index');
 
-Route::get('/home/home', function () {
+Route::get('/home', function () {
     return view('frontend/sellcar/home');
 })->name('frontend/home');
 
-Route::get('/blog/blog', function () {
-    return view('frontend/sellcar/blog');
-})->name('frontend/blog');
+Route::get('/blog/{id}', [BlogController::class, 'Blog_details'])->name('blog');
 
 Route::get('/contact', function () {
     return view('frontend/sellcar/contact');

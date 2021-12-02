@@ -78,7 +78,7 @@
                                                             <div class="col-md-12">
                                                                 <div class="form-check" >
                                                                     <input class="form-check-input" type="checkbox" value="" id="myCheck" onclick="myFunction()" >
-                                                                    <label class="form-check-label" for="myCheck" >
+                                                                    <label class="form-check-label" for="myCheck" style="width: 30%;" >
                                                                     I have read the Privacy Policy and accept the Terms.
                                                                 </label>
                                                                 </div>
@@ -88,7 +88,7 @@
                                                         <div class="row mb-4 mt-5">
                                                             <div class="col-md-12 ">
                                                                 <div class="d-gridd">
-                                                                    <button type="button" id="first-page" class="btn text-light main-bg">Next page</button>
+                                                                    <button type="button" id="first-page" class="btn text-light main-bg">Next</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -220,7 +220,7 @@
                                                         <div class="row mb-4 mt-5">
                                                             <div class="col-md-12 ">
                                                                 <div class="d-gridd">
-                                                                    <button type="button" id="second-page" class="btn text-light main-bg">Next page</button>
+                                                                    <button type="button" id="second-page" class="btn text-light main-bg">Next</button>
                                                                 </div>
                                                             </div>
                                                         </div>
