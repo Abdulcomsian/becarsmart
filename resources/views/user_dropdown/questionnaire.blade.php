@@ -42,125 +42,6 @@
                 </ul>
                 <!--end::Breadcrumb-->
             </div>
-            <!--end::Page title-->
-            <!--begin::Actions-->
-            {{-- <div class="d-flex align-items-center py-1">--}}
-            {{-- <!--begin::Wrapper-->--}}
-            {{-- <div class="me-4">--}}
-            {{-- <!--begin::Menu-->--}}
-            {{-- <a href="#" class="btn btn-sm btn-flex btn-light btn-active-primary fw-bolder"--}}
-            {{-- data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end"--}}
-            {{-- data-kt-menu-flip="top-end">--}}
-            {{-- <!--begin::Svg Icon | path: icons/duotone/Text/Filter.svg-->--}}
-            {{-- <span class="svg-icon svg-icon-5 svg-icon-gray-500 me-1">--}}
-            {{-- <svg xmlns="http://www.w3.org/2000/svg"--}}
-            {{-- xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"--}}
-            {{-- viewBox="0 0 24 24" version="1.1">--}}
-            {{-- <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">--}}
-            {{-- <rect x="0" y="0" width="24" height="24"/>--}}
-            {{-- <path--}}
-            {{-- d="M5,4 L19,4 C19.2761424,4 19.5,4.22385763 19.5,4.5 C19.5,4.60818511 19.4649111,4.71345191 19.4,4.8 L14,12 L14,20.190983 C14,20.4671254 13.7761424,20.690983 13.5,20.690983 C13.4223775,20.690983 13.3458209,20.6729105 13.2763932,20.6381966 L10,19 L10,12 L4.6,4.8 C4.43431458,4.5790861 4.4790861,4.26568542 4.7,4.1 C4.78654809,4.03508894 4.89181489,4 5,4 Z"--}}
-            {{-- fill="#000000"/>--}}
-            {{-- </g>--}}
-            {{-- </svg>--}}
-            {{-- </span>--}}
-            {{-- <!--end::Svg Icon-->Filter</a>--}}
-            {{-- <!--begin::Menu 1-->--}}
-            {{-- <div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true">--}}
-            {{-- <!--begin::Header-->--}}
-            {{-- <div class="px-7 py-5">--}}
-            {{-- <div class="fs-5 text-dark fw-bolder">Filter Options</div>--}}
-            {{-- </div>--}}
-            {{-- <!--end::Header-->--}}
-            {{-- <!--begin::Menu separator-->--}}
-            {{-- <div class="separator border-gray-200"></div>--}}
-            {{-- <!--end::Menu separator-->--}}
-            {{-- <!--begin::Form-->--}}
-            {{-- <div class="px-7 py-5">--}}
-            {{-- <!--begin::Input group-->--}}
-            {{-- <div class="mb-10">--}}
-            {{-- <!--begin::Label-->--}}
-            {{-- <label class="form-label fw-bold">Status:</label>--}}
-            {{-- <!--end::Label-->--}}
-            {{-- <!--begin::Input-->--}}
-            {{-- <div>--}}
-            {{-- <select class="form-select form-select-solid" data-kt-select2="true"--}}
-            {{-- data-placeholder="Select option" data-allow-clear="true">--}}
-            {{-- <option></option>--}}
-            {{-- <option value="1">Approved</option>--}}
-            {{-- <option value="2">Pending</option>--}}
-            {{-- <option value="2">In Process</option>--}}
-            {{-- <option value="2">Rejected</option>--}}
-            {{-- </select>--}}
-            {{-- </div>--}}
-            {{-- <!--end::Input-->--}}
-            {{-- </div>--}}
-            {{-- <!--end::Input group-->--}}
-            {{-- <!--begin::Input group-->--}}
-            {{-- <div class="mb-10">--}}
-            {{-- <!--begin::Label-->--}}
-            {{-- <label class="form-label fw-bold">Member Type:</label>--}}
-            {{-- <!--end::Label-->--}}
-            {{-- <!--begin::Options-->--}}
-            {{-- <div class="d-flex">--}}
-            {{-- <!--begin::Options-->--}}
-            {{-- <label--}}
-            {{-- class="form-check form-check-sm form-check-custom form-check-solid me-5">--}}
-            {{-- <input class="form-check-input" type="checkbox" value="1"/>--}}
-            {{-- <span class="form-check-label">Author</span>--}}
-            {{-- </label>--}}
-            {{-- <!--end::Options-->--}}
-            {{-- <!--begin::Options-->--}}
-            {{-- <label--}}
-            {{-- class="form-check form-check-sm form-check-custom form-check-solid">--}}
-            {{-- <input class="form-check-input" type="checkbox" value="2"--}}
-            {{-- checked="checked"/>--}}
-            {{-- <span class="form-check-label">Customer</span>--}}
-            {{-- </label>--}}
-            {{-- <!--end::Options-->--}}
-            {{-- </div>--}}
-            {{-- <!--end::Options-->--}}
-            {{-- </div>--}}
-            {{-- <!--end::Input group-->--}}
-            {{-- <!--begin::Input group-->--}}
-            {{-- <div class="mb-10">--}}
-            {{-- <!--begin::Label-->--}}
-            {{-- <label class="form-label fw-bold">Notifications:</label>--}}
-            {{-- <!--end::Label-->--}}
-            {{-- <!--begin::Switch-->--}}
-            {{-- <div--}}
-            {{-- class="form-check form-switch form-switch-sm form-check-custom form-check-solid">--}}
-            {{-- <input class="form-check-input" type="checkbox" value=""--}}
-            {{-- name="notifications" checked="checked"/>--}}
-            {{-- <label class="form-check-label">Enabled</label>--}}
-            {{-- </div>--}}
-            {{-- <!--end::Switch-->--}}
-            {{-- </div>--}}
-            {{-- <!--end::Input group-->--}}
-            {{-- <!--begin::Actions-->--}}
-            {{-- <div class="d-flex justify-content-end">--}}
-            {{-- <button type="reset"--}}
-            {{-- class="btn btn-sm btn-white btn-active-light-primary me-2"--}}
-            {{-- data-kt-menu-dismiss="true">Reset--}}
-            {{-- </button>--}}
-            {{-- <button type="submit" class="btn btn-sm btn-primary"--}}
-            {{-- data-kt-menu-dismiss="true">Apply--}}
-            {{-- </button>--}}
-            {{-- </div>--}}
-            {{-- <!--end::Actions-->--}}
-            {{-- </div>--}}
-            {{-- <!--end::Form-->--}}
-            {{-- </div>--}}
-            {{-- <!--end::Menu 1-->--}}
-            {{-- <!--end::Menu-->--}}
-            {{-- </div>--}}
-            {{-- <!--end::Wrapper-->--}}
-            {{-- <!--begin::Button-->--}}
-            {{-- <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal"--}}
-            {{-- data-bs-target="#kt_modal_create_app" id="kt_toolbar_primary_button">Create</a>--}}
-            {{-- <!--end::Button-->--}}
-            {{-- </div>--}}
-            <!--end::Actions-->
         </div>
         <!--end::Container-->
     </div>
@@ -192,80 +73,113 @@
                         </div>
                         <!--end::Search-->
                     </div>
-                    <!--begin::Card toolbar-->
-                    <!--end::Card toolbar-->
                 </div>
                 <!--end::Card header-->
                 <!--begin::Card body-->
-                <div class="card-body pt-5">
-                    <div class="section-2 pt-5 pb-5">
-                        <h2>step 1</h2>
-                    </div>
-                    <form class="pt-5">
+                <div class="card-body pt-5 questionnaire">
+
+                    <form class="pt-5" method="post" action="/insert-questions">
+
+                        @csrf
+
+                        <!-- Section Heading -->
                         <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Row 1</label>
+                            <label for="text" class="col-sm-2 col-form-label">Section Heading</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-1" placeholder="Row 1">
+                                <input type="text" name="sec_heading" class="form-control" id="row-1" placeholder="e.g Questioniare section">
                             </div>
                         </div>
+
                         <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Row 2</label>
+                            <label for="text" class="col-sm-2 col-form-label">Section Sub Heading</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 2">
+                                <input type="text" name="sec_subHeading" class="form-control" id="row-1" placeholder="e.g fill the questions below">
                             </div>
                         </div>
-                        <div class=" row pb-5">
+
+                        <div id="input_row">
+                            <div class="section-2 pt-5 pb-5">
+                                <div class="row">
+                                    <div class="col" id="step_number">
+                                        <h2>Step</h2>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Question</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="question[]" class="form-control" id="row-1" placeholder="Enter your Question">
+                                </div>
+                            </div>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Placeholder</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="placeholder[]" class="form-control" id="row-3" placeholder="Enter placeholder text">
+                                </div>
+                            </div>
+
+                            <div class="form-group row pb-5 d-none">
+                                <label for="text" class="col-sm-2 col-form-label">Enter Question Order</label>
+                                <div class="col-sm-10">
+                                    <input type="hidden" name="step[]" class="form-control" id="row-3" placeholder="e.g 1,2">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row pb-5">
                             <div class="col-sm-12">
-                                <a type="submit" class="btn btn-success btn-md" id="row-3" style="float-right" href="#">Submit</a>
+
+                                <button type="button" class="btn btn-success btn-md m-3" id="add_row" style="float:right" href="#"> <i class="fa fa-plus"></i> Add Step</button>
+                                <button type="submit" class="btn btn-success btn-md m-3" id="row-3" style="float:right" href="#">Submit</button>
                             </div>
                         </div>
+
                     </form>
-                    <div class="section-2 pt-5 pb-5">
-                        <h2>step 3</h2>
-                    </div>
-                    <form class="pt-5">
-                        <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Row 1</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-1" placeholder="Row 1">
-                            </div>
-                        </div>
-                        <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Row 2</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 2">
-                            </div>
-                        </div>
-                        <div class=" row pb-5">
-                            <div class="col-sm-12">
-                                <a type="submit" class="btn btn-success btn-md" id="row-3" style="float-right" href="#">Submit</a>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="section-2 pt-5 pb-5">
-                        <h2>step 3</h2>
-                    </div>
-                    <form class="pt-5">
-                        <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Row 1</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-1" placeholder="Row 1">
-                            </div>
-                        </div>
-                        <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Row 2</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="row-3" placeholder="Row 2">
-                            </div>
-                        </div>
-                        <div class=" row pb-5">
-                            <div class="col-sm-12">
-                                <a type="submit" class="btn btn-success btn-md" id="row-3" style="float-right" href="#">Submit</a>
-                            </div>
-                        </div>
-                    </form>
+
                 </div>
                 <!--end::Card body-->
+                <!--end::Card-->
+                <div class="card mt-5">
+                    <div class="card-header pt-5">
+                        <h2>All Questions</h2>
+                    </div>
+
+                    <div class="card-body">
+
+                        <table class="table table-hovered">
+                            <thead>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Placeholder</th>
+                                    <th>Step</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($data as $_data)
+                                <tr>
+                                    <td>{{$_data->question}}</td>
+                                    <td>{{$_data->placeholder}}</td>
+                                    <td>{{$_data->step}}</td>
+
+                                    <td>
+                                        <i class="fa fa-trash confirm cursor-pointer" id="{{$_data->id}}"></i>
+                                        <form method="post" id="form_{{$_data->id}}" action="{{url('delete-questionnaire')}}">
+                                            @csrf
+                                            <input type="hidden" name="id" value="{{$_data->id}}" />
+                                        </form>
+
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
             </div>
             <!--end::Card-->
         </div>
@@ -275,5 +189,56 @@
 </div>
 @endsection
 @section('scripts')
-@include('layouts.sweetalert.sweetalert_js')
+@include('layouts.sweetalert.sweetalert_js');
+
+
+<script>
+    var counter = 1;
+    $(document).ready(function() {
+
+
+
+        //when the Add Field button is clicked
+        $("#add_row").click(function() {
+            counter++;
+
+            $("#input_row").append(`<div id="step_` + counter + `"><div class="section-2 pt-5 pb-5">
+                    <div class="row">
+                    <div class="col" id="step_number` + counter + `">
+                    <h2>Step</h2>
+                    </div>
+                    <div class="col">
+                    <button style="float:right" type="button" onclick="deleteRecord(` + counter + `)" id="delete_` + counter + `" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+                        </div>
+
+                        <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Question</label>
+                                <div class="col-sm-10">
+                                <input type="text" name="question[]" class="form-control" id="row-1" placeholder="Enter your Question">
+                                </div>
+                            </div>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Placeholder</label>
+                                <div class="col-sm-10">
+                                <input type="text" name="placeholder[]" class="form-control" id="row-3" placeholder="Enter placeholder text">
+                                </div>
+                            </div>
+
+                            <div class="form-group row pb-5 d-none">
+                                <label for="text" class="col-sm-2 col-form-label">Enter Question Order</label>
+                                <div class="col-sm-10">
+                                <input type="hidden" name="step[]" class="form-control" id="row-3" placeholder="e.g 1,2">
+                                
+                                </div>
+                            </div></div>`);
+        });
+
+    });
+
+    function deleteRecord(counter) {
+        $("#step_" + counter).remove();
+    }
+</script>
 @endsection

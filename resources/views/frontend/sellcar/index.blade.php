@@ -2,10 +2,15 @@
     @section('title')
     BeCarSmart | index
     @endsection
+    @section('css')
+    <style>
+        #progressbar #account:before {
+            font-family: FontAwesome;
+            content: "step";
+        }
+    </style>
+    @endsection
     @section('content')
-
-
-
     <!-- Hero Section -->
     <section id="Sell-Your-Car" class="hero-section text-center">
         <div class="container">
@@ -76,9 +81,9 @@
 
             <div class="row steps pt-5">
                 @foreach($howitworks as $work)
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-12  align-items-center ">
                     <div class="blurb">
-                        <img src="{{asset ('images/home/'.'/'.$work->file)}}" alt="{{$work->title}}" class="float-center pb-3" width="17%" height="auto">
+                        <img src="{{asset ('images/home/'.'/'.$work->file)}}" alt="{{$work->title}}" class="float-center pb-3" width="18%" height="auto">
                         <h2>{{$work->title ?? 'Value your Car'}}</h2>
                         <p>{{$work->title ?? 'Get a free no obligation  valuation above.'}} </p>
                     </div>
@@ -108,19 +113,59 @@
                         </div>
                     </div>
                     <div class="col-12 p-0">
-                        <form id="msform">
+                        <form id="msform" method="post" action="{{url('buy-car-leads-save')}}">
+                            @csrf
                             <!-- progressbar -->
                             <ul id="progressbar">
-                                <li class="active" id="account"><strong></strong></li>
-                                <li id="personal"><strong></strong></li>
+                                @foreach($questionair as $key=> $q)
+                                @php
+                                $class="";
+                                if($key==0)
+                                {
+                                $class="active";
+                                }
+                                @endphp
+                                <li class="{{$class}}" id="account"><strong>{{$key+1}}</strong></li>
+                                @endforeach
+                                <!-- <li id="personal"><strong></strong></li>
                                 <li id="payment"><strong></strong></li>
-                                <li id="confirm"><strong></strong></li>
+                                <li id="confirm"><strong></strong></li> -->
                             </ul>
+                            @php
+                            $i=0;
+                            @endphp
+                            @foreach($questionair as $x=> $question)
+                            @php
+                            $i++
+                            @endphp
                             <fieldset>
+                                <div class="form-card">
+                                    <h2 class="fs-title">{{$question->question}}</h2>
+                                    <input type="hidden" name="question[]" value="{{$question->question}}" />
+                                    <input type="text" name="answer[]" id="answer{{$i}}" placeholder="{{$question->placeholder}}" @if(count($questionair)==$i){{'required'}}@endif>
+                                </div>
+                                @if(count($questionair)!=$i)
+                                <input type="button" name="next" id="{{$i}}" class="next action-button" value="Next">
+                                @else
+                                <div class="form-card">
+                                    <input type="text" name="name" placeholder="Enter name" required>
+                                </div>
+                                <div class="form-card">
+                                    <input type="text" name="phone" placeholder="Enter Phone no" required>
+                                </div>
+                                <div class="form-card">
+                                    <input type="email" name="email" placeholder="Enter Email" required>
+                                </div>
+                                <input type="submit" class="action-button" value="Confirm">
+                                @endif
+                            </fieldset>
+                            @endforeach
+                            <!-- <fieldset>
                                 <div class="form-card">
                                     <h2 class="fs-title">Hey, What is your good name</h2>
                                     <input type="text" name="text" placeholder="Enter Your Name">
                                 </div>
+                             
                                 <input type="button" name="next" class="next action-button" value="Next">
                             </fieldset>
                             <fieldset>
@@ -128,15 +173,7 @@
                                     <h2 class="fs-title">Hey, What is your good name</h2>
                                     <input type="text" name="text" placeholder="Enter Your Name">
                                 </div>
-                                <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous"> -->
-                                <input type="button" name="next" class="next action-button" value="Next">
-                            </fieldset>
-                            <fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title">Hey, What is your good name</h2>
-                                    <input type="text" name="text" placeholder="Enter Your Name">
-                                </div>
-                                <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
+                               
                                 <input type="button" name="make_payment" class="next action-button" value="Confirm">
                             </fieldset>
                             <fieldset>
@@ -151,7 +188,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </fieldset>
+                            </fieldset> -->
+
                         </form>
                     </div>
                 </div>
@@ -197,12 +235,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="clock-img pt-5">
-<<<<<<< HEAD
-                        <img src="{{asset ('assets/img/clock (1).png')}}" alt="" width="22%">
-
-=======
                         <img src="@if(isset($whysellcar->file)){{asset('images/home/'.'/'.$whysellcar->file ?? '')}}@endif" alt="">
->>>>>>> f61ebb6704638bd799fd38bc21dc9e8a5b2831fe
                     </div>
                     <div class="clock-content text-center">
                         <h2>{{ $whysellcar->title ?? 'Why sell your car with BeCarSmart.com?'}}</h2>
@@ -349,7 +382,7 @@
                             }
                             @endphp
                             <div class="carousel-item {{ $class}}">
-                                <img src="{{asset ('images/testominal/'.'/'.$testominal->image)}}" class="thumbnail circled" alt="...">
+                                <img style="max-width:20%" src="{{asset ('images/testominal/'.'/'.$testominal->image)}}" class="thumbnail circled" alt="...">
                                 <div class="user_name">
                                     <h3>{{$testominal->title ?? ''}}</h3>
                                 </div>
@@ -371,7 +404,7 @@
 
                             </div>
                             @endforeach
-                            <!-- <div class="carousel-item ">
+                            <div class="carousel-item ">
                                 <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
                                 <div class="user_name">
                                     <h3 class="mt-2">John Doe</h3>
@@ -391,7 +424,7 @@
 
                             </div>
 
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
                                 <div class="user_name">
                                     <h3>John Doe</h3>
@@ -460,4 +493,9 @@
         </div>
     </section>
 
+    @endsection
+    @section('script')
+    <script>
+
+    </script>
     @endsection

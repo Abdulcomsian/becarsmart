@@ -3,6 +3,8 @@
 use App\Http\Controllers\Dashboard\RoleController;
 use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\Admin\Home\HomeSectionController;
+use App\Http\Controllers\Admin\QuestionnaireController;
+use App\Http\Controllers\Admin\BuyCarLeadController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\SellCar\CarController;
@@ -46,27 +48,23 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/testominal', [HomeSectionController::class, 'testominal']);
     Route::post('/testominal-delete', [HomeSectionController::class, 'testominal_delete']);
 
+    // Questionnaire Routes
+    Route::get('/questionnaire', [QuestionnaireController::class, 'index'])->name('user_dropdown/questionnaire');
+    Route::post('/insert-questions', [QuestionnaireController::class, 'insert']);
+    Route::post('/delete-questionnaire', [QuestionnaireController::class, 'delete'])->name('delete-questionnaire');
+
 
     Route::get('/sell-car', function () {
         return view('Car.sell-car');
     })->name('Car.sell-car');
 
-    Route::get('/buy-car', function () {
-        return view('Car.buy-car');
-    })->name('Car.buy-car');
+    Route::get('/buy-car', [BuyCarLeadController::class, 'index'])->name('Car.buy-car');
+    Route::get('/buy-car-lead-delete', [BuyCarLeadController::class, 'buy_car_delete'])->name('buy-car-delete');
+    Route::get('/evaluate-car/{id}', [BuyCarLeadController::class, 'evaluate_car'])->name('Car.evaluate-car');
 
     Route::get('/leads-details', function () {
         return view('Car.leads-details');
     })->name('Car.leads-details');
-
-    Route::get('/evaluate-car', function () {
-        return view('Car.evaluate-car');
-    })->name('Car.evaluate-car');
-
-
-    Route::get('/questionnaire', function () {
-        return view('user_dropdown/questionnaire');
-    })->name('user_dropdown/questionnaire');
 });
 
 Route::get('/dashboard', function () {
@@ -92,7 +90,7 @@ if (env('EnableMigrationAndOptimizeClearRoutes') == true) {
 // BeCarSmart routing list
 Route::get('/', [HomeController::class, 'index'])->name('frontend/index');
 Route::get('/index', [HomeController::class, 'index'])->name('frontend/index');
-
+Route::post('/buy-car-leads-save', [HomeController::class, 'buy_car_lead'])->name('buy-car-leads-save');
 Route::get('/home', function () {
     return view('frontend/sellcar/home');
 })->name('frontend/home');

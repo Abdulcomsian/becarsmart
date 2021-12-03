@@ -1070,21 +1070,28 @@ button.btn.btn-primary.btn-md.btn-block {
 button.accordion-button{
 font-size: 20px;
 font-weight: 700;
-font-family: helvari;
+font-family: "Poppins", sans-serif;
 }
 .accordion-body {
     padding: 1rem 1.25rem;
     border: none;
     background: #f8f8f8;
     font-weight: 400;
-    font-family: helvari;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     line-height: 23.92px;
 }
 button.accordion-button.collapsed {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: helvari;
+  font-size: 17px;
+  font-weight: 600;
+  /* font-family: helvari; */
+  font-family: "Poppins", sans-serif;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  box-shadow: none;
+  font-size: 17px;
+  font-family: 'Poppins';
 }
 .accordion-item {
   margin-bottom: 7%;
