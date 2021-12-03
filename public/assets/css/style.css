@@ -1070,21 +1070,28 @@ button.btn.btn-primary.btn-md.btn-block {
 button.accordion-button{
 font-size: 20px;
 font-weight: 700;
-font-family: helvari;
+font-family: "Poppins", sans-serif;
 }
 .accordion-body {
     padding: 1rem 1.25rem;
     border: none;
     background: #f8f8f8;
     font-weight: 400;
-    font-family: helvari;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     line-height: 23.92px;
 }
 button.accordion-button.collapsed {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: helvari;
+  font-size: 17px;
+  font-weight: 600;
+  /* font-family: helvari; */
+  font-family: "Poppins", sans-serif;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  box-shadow: none;
+  font-size: 17px;
+  font-family: 'Poppins';
 }
 .accordion-item {
   margin-bottom: 7%;
@@ -1470,7 +1477,7 @@ h1.heading-h1 {
   max-width: 75%;
 }
 .Why-sell-your-car img{
-    max-width: 25%;
+    max-width: 20%;
     padding-bottom: 2rem;
 
 }
@@ -1641,7 +1648,7 @@ h1.heading-h1 {
 }
 
 .post .post-img>img {
-	width: 100%
+	max-width: 100%
 }
 
 .post .post-meta {
@@ -2535,3 +2542,7 @@ button:hover {
   width: 10%;
   height: 20%;
 } */
+
+.textarea#textarea{
+  
+}
