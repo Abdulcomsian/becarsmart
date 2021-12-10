@@ -632,14 +632,26 @@ select.list-dt:focus {
   background: black;
 }
 .formSell input[type="submit"]{
-  width: 277px !important;
+  /* width: 277px !important;
     background: #000;
+    border-radius: 0; */
+
+
+    width: 277px !important;
+    background: #000;
+    border-radius: 0;
+    border: 1px solid black !important;
+    max-width: 67%;
+    padding: 2%;
 }
 .want_to_sell form{
   justify-content: space-between;
+  padding-right: 4%;
+
 }
 .formSell input[type="text"]{
-  width: 520px;
+  width: 519px;
+  height: 68px;
   border-radius: 0px !important;
 }
 /* Footer style  */
@@ -1332,7 +1344,7 @@ textarea.form-control {
  color: #9b9696;
 }
 a.btn.continue.btn-danger {
-  padding: 30px 10%;
+  padding: 22px 10%;
 }
 .home-search-form  .chevron-left {
   padding: 18px;
@@ -1424,7 +1436,7 @@ h1.heading-h1 {
 .hero-section h1 {
   font-weight: 700;
   color: rgba(75, 75, 75, 1);
-    font-size: 65px;
+    font-size: 55px;
 }
 .hero-section h3 span {
   color: #f24026;
@@ -1452,12 +1464,12 @@ h1.heading-h1 {
 }
 
 .hero-section .form-control {
-  padding: 30px;
+  padding: 22px 45px 22px 45px;
   border-radius: 0px;
 }
 
 .hero-section .btn {
-  padding: 30px;
+  padding: 22px 45px 22px 45px; 
   background: #f24026;
   border-radius: 0px;
 }

@@ -29,7 +29,7 @@
 
                                 <div class="col-md-6 col-12 pb-3">
                                     <div class="input-perent d-flex" style="position: relative;">
-                                        <img src="{{asset ('assets/img/vrm-euro.png')}}" alt="" style="position: absolute;left:0;height: 85px;width: 30px;">
+                                        <img src="{{asset ('assets/img/vrm-euro1.png')}}" alt="" style="position: absolute;left:0;height: 70px;width: 30px;">
                                         <input type="text" name="reg_number" class="form-control" placeholder="# Registration Number">
                                     </div>
                                 </div>
@@ -473,7 +473,7 @@
     </section>
 
     <!-- Suppport Section -->
-    <section class="want_to_sell p-3 text-white">
+    <section class="want_to_sell text-white" style="padding: 0.6rem;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center d-flex alignCenter">
@@ -484,7 +484,7 @@
                         <div class="col-lg-12">
                             <form action="" class="d-flex formSell">
                                 <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
-                                <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
+                                <input type="submit" class="btn btn-danger w-100" value="Enter" >
                             </form>
                         </div>
                     </div>
