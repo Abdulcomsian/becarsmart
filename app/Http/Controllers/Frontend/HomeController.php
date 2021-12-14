@@ -11,6 +11,7 @@ use App\Models\Home\Blogs;
 use App\Models\Home\BlogHeader;
 use App\Models\Home\Testominal;
 use App\Models\Home\QuestionnaireModel;
+use App\Models\SellCarLead;
 use App\Models\BuyCarLead;
 use Illuminate\Support\Facades\Redirect;
 
@@ -38,6 +39,29 @@ class HomeController extends Controller
         $model->questions = $request->question;
         $model->answers = $request->answer;
         if ($model->save()) {
+            return Redirect::back();
+        }
+    }
+
+    //
+    public function sell_car_lead(Request $request)
+    {
+        $request->validate([
+            'fullname' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'phone' => ['required'],
+            'mot_due' => ['required'],
+            'comments' => ['required'],
+
+        ]);
+        try {
+            $inputs = $request->except('_token');
+            if (SellCarLead::create($inputs)) {
+                toastSuccess('Lead Created Successfully!');
+                return Redirect::back();
+            }
+        } catch (\Exception $exception) {
+            toastError('Something went wrong, try again!');
             return Redirect::back();
         }
     }

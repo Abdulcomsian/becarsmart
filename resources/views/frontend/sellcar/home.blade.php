@@ -1,8 +1,7 @@
-    
     @extends('frontend.layouts.master')
-        @section('title')
-            BeCarSmart | Home
-        @endsection
+    @section('title')
+    BeCarSmart | Home
+    @endsection
     @section('content')
 
     <!-- Hero Section -->
@@ -14,7 +13,7 @@
                         <h1 class="heading-h1">ZS33 FS</h1>
                         <h3>Hyundai I30 Active Blue Drive CRDI</h3>
                         <!-- <p>Hyundai I30 Active Blue Drive CRDI</p> -->
-                        
+
                     </div>
                     <div class="home-ul-li pt-3 pb-5">
                         <ul class="d-flex">
@@ -30,16 +29,23 @@
                             <li> <span> Diesel</span></li>
                         </ul>
                     </div>
+                    <form action="{{url ('/sellcar_new') }}" method="get">
+                        <input type="hidden" name="model_no" value="123">
+                        <input type="hidden" name="color" value="white">
+                        <input type="hidden" name="engine" value="diesel">
 
-                    <!-- Form -->
-                    <div class="home-search-form">
-                        <div class="row">
-                            <div class="col-md-12 col-12">
-                                <a  href="{{url ('/sellcar_new') }}" class="btn continue btn-danger">Continue</a>
-                                <a  href="{{url ('/sellcar_new') }}" class="btn chevron-left btn-danger"><span><i class="fa fa-chevron-right"></i></span></a>
+                        <!-- Form -->
+                        <div class="home-search-form">
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <button type="submit" class="btn continue btn-danger">Continue</button>
+                                    <a href="{{url ('/sellcar_new') }}" class="btn chevron-left btn-danger"><span><i class="fa fa-chevron-right"></i></span></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+
+
                 </div>
             </div>
 
@@ -57,17 +63,17 @@
         </div>
     </section>
 
-        <!-- Suppport Section -->
-        <section class="support_section p-3 pb-1 text-center text-white">
+    <!-- Suppport Section -->
+    <section class="support_section p-3 pb-1 text-center text-white">
         <div class="container">
             <div class="row">
                 <div class="col">
-                        <p>For Support mail us at: Info@websitename.com</p>
+                    <p>For Support mail us at: Info@websitename.com</p>
                 </div>
             </div>
         </div>
     </section>
-        
+
     <!-- How it Works -->
     <section id="How-it-Works" class="how_it_Works text-center">
         <div class="container">
@@ -75,7 +81,7 @@
                 <div class="col">
                     <div class="title">
                         <h2>How it Works?</h2>
-                    <p>3 Easy Steps</p>
+                        <p>3 Easy Steps</p>
                     </div>
                 </div>
             </div>
@@ -123,23 +129,23 @@
                     <div class="col-12 p-0">
                         <form id="msform">
                             <!-- progressbar -->
-                                <ul id="progressbar">
+                            <ul id="progressbar">
                                 <li class="active" id="account"><strong></strong></li>
                                 <li id="personal"><strong></strong></li>
                                 <li id="payment"><strong></strong></li>
                                 <li id="confirm"><strong></strong></li>
-                            </ul> 
+                            </ul>
                             <fieldset>
                                 <div class="form-card">
                                     <h2 class="fs-title">Hey, What is your good name</h2>
-                                        <input type="text" name="text" placeholder="Enter Your Name">
+                                    <input type="text" name="text" placeholder="Enter Your Name">
                                 </div>
                                 <input type="button" name="next" class="next action-button" value="Next">
                             </fieldset>
                             <fieldset>
                                 <div class="form-card">
                                     <h2 class="fs-title">Hey, What is your good name</h2>
-                                        <input type="text" name="text" placeholder="Enter Your Name">
+                                    <input type="text" name="text" placeholder="Enter Your Name">
                                 </div>
                                 <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous"> -->
                                 <input type="button" name="next" class="next action-button" value="Next">
@@ -147,7 +153,7 @@
                             <fieldset>
                                 <div class="form-card">
                                     <h2 class="fs-title">Hey, What is your good name</h2>
-                                        <input type="text" name="text" placeholder="Enter Your Name">
+                                    <input type="text" name="text" placeholder="Enter Your Name">
                                 </div>
                                 <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
                                 <input type="button" name="make_payment" class="next action-button" value="Confirm">
@@ -171,7 +177,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
     <!-- Blog Section -->
@@ -200,15 +206,15 @@
                                         <div class="date-card">
                                             <div class="day">26</div>
                                             <div>
-                                            <div class="month">Feb</div>
+                                                <div class="month">Feb</div>
                                             </div>
                                         </div>
                                         <h5 class="card-title aliqn-bottom">Lorem Ipsum</h5>
                                     </div>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                                    
+
                                     <p class="card-text">
-                                    <a href="/blog/blog" class="mt-auto btn">Read More</a>
+                                        <a href="/blog/blog" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>
@@ -223,29 +229,29 @@
                                     <img src="{{asset ('assets/img/featured3.png')}}" class="img-fluid rounded-start" alt="featured Image">
                                 </a>
                             </div>
-                        <div class="col-md-7 p-0">
-                            <div class="card-body">
-                                <div class="cardHeader">
-                                    <div class="date-card">
-                                        <div class="day">26</div>
-                                        <div>
-                                        <div class="month">Feb</div>
+                            <div class="col-md-7 p-0">
+                                <div class="card-body">
+                                    <div class="cardHeader">
+                                        <div class="date-card">
+                                            <div class="day">26</div>
+                                            <div>
+                                                <div class="month">Feb</div>
+                                            </div>
                                         </div>
+                                        <h5 class="card-title aliqn-bottom">Lorem Ipsum</h5>
                                     </div>
-                                    <h5 class="card-title aliqn-bottom">Lorem Ipsum</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+
+                                    <p class="card-text">
+                                        <a href="/blog/blog" class="mt-auto btn">Read More</a>
+                                    </p>
                                 </div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                            
-                            <p class="card-text">
-                                <a href="/blog/blog" class="mt-auto btn">Read More</a>
-                                </p>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
 
-                
+
 
                 <div class="col-md-4">
                     <div class="card blog_card mb-3 height100 nomargin">
@@ -261,15 +267,15 @@
                                         <div class="date-card">
                                             <div class="day">26</div>
                                             <div>
-                                            <div class="month">Feb</div>
+                                                <div class="month">Feb</div>
                                             </div>
                                         </div>
                                         <h5 class="card-title aliqn-bottom">Lorem Ipsum</h5>
                                     </div>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                                
-                                <p class="card-text">
-                                    <a href="/blog/blog" class="mt-auto btn">Read More</a>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+
+                                    <p class="card-text">
+                                        <a href="/blog/blog" class="mt-auto btn">Read More</a>
                                     </p>
                                 </div>
                             </div>
@@ -287,90 +293,90 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    
+
                         <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
-                            <div class="user_name">
-                                <h3>John Doe</h3>
+                            <div class="carousel-item active">
+                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
+                                <div class="user_name">
+                                    <h3>John Doe</h3>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="para">
+                                    <p>
+                                        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
+                                    </p>
+                                </div>
+
                             </div>
-                            <div class="rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+
+                            <div class="carousel-item ">
+                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
+                                <div class="user_name">
+                                    <h3 class="mt-2">John Doe</h3>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="para">
+                                    <p>
+                                        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
+                                    </p>
+                                </div>
+
                             </div>
-                            <div class="para">
-                                <p>
-                                    Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
-                                </p>
+
+                            <div class="carousel-item">
+                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
+                                <div class="user_name">
+                                    <h3>John Doe</h3>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="para">
+                                    <p>
+                                        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
+                                    </p>
+                                </div>
+
                             </div>
-                        
+
+                            <div class="carousel-item">
+                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
+                                <div class="user_name">
+                                    <h3>John Doe</h3>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="para">
+                                    <p>
+                                        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
+                                    </p>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <div class="carousel-item ">
-                            <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
-                            <div class="user_name">
-                                <h3 class="mt-2">John Doe</h3>
-                            </div>
-                            <div class="rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="para">
-                                <p>
-                                    Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
-                                </p>
-                            </div>
-                        
-                        </div>
-
-                        <div class="carousel-item">
-                        <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
-                            <div class="user_name">
-                                <h3>John Doe</h3>
-                            </div>
-                            <div class="rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="para">
-                                <p>
-                                    Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
-                                </p>
-                            </div>
-                        
-                        </div>
-
-                        <div class="carousel-item">
-                        <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
-                            <div class="user_name">
-                                <h3>John Doe</h3>
-                            </div>
-                            <div class="rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="para">
-                                <p>
-                                    Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
-                                </p>
-                            </div>
-                        
-                        </div>
-                        
-                        </div>
-                    
                     </div>
                 </div>
             </div>
@@ -382,18 +388,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center d-flex alignCenter">
-                        <p>Want to Sell Your Car?</p>
+                    <p>Want to Sell Your Car?</p>
                 </div>
                 <div class="col-md-8 float-center">
-                   <div class="row">
-                       <div class="col-lg-12">
-                           <form action="" class="d-flex formSell">
-                            <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number"  style="padding: 15px;">
-                            <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
-                           </form>
-                       </div>
-                   </div>
-            </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form action="" class="d-flex formSell">
+                                <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
+                                <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

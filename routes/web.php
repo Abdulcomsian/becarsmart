@@ -91,6 +91,11 @@ if (env('EnableMigrationAndOptimizeClearRoutes') == true) {
 Route::get('/', [HomeController::class, 'index'])->name('frontend/index');
 Route::get('/index', [HomeController::class, 'index'])->name('frontend/index');
 Route::post('/buy-car-leads-save', [HomeController::class, 'buy_car_lead'])->name('buy-car-leads-save');
+Route::post('/sellcar_new', [HomeController::class, 'sell_car_lead'])->name('sell-car-leads-save');
+
+Route::get('/sellcar_new', function () {
+    return view('frontend/sellcar/sellcar_new');
+})->name('frontend/sellcar_new');
 Route::get('/home', function () {
     return view('frontend/sellcar/home');
 })->name('frontend/home');
@@ -116,10 +121,6 @@ Route::get('/privacy_policy', function () {
 Route::get('/sellcar', function () {
     return view('frontend/sellcar/sellcar');
 })->name('frontend/sellcar');
-
-Route::get('/sellcar_new', function () {
-    return view('frontend/sellcar/sellcar_new');
-})->name('frontend/sellcar_new');
 
 Route::get('/term', function () {
     return view('frontend/sellcar/term');
