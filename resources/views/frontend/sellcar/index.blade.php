@@ -17,9 +17,9 @@
             <div class="row pb-5">
                 <div class="col-md-8 offset-md-2">
                     <div class="blurb">
-                        <h1>{{$herosection->header ?? 'Sell Any Car Instantly'}}</h1>
-                        <h3><span>No.1</span> {{$herosection->sub_header ?? 'Car Buying Service'}}</h3>
-                        <p>{{$herosection->text ?? 'Trusted, Easy & Secure Way to Sell your car'}}</p>
+                        <h1>{{$herosection->header}}</h1>
+                        <h3><span>No.1</span> {{$herosection->sub_header}}</h3>
+                        <p>{{$herosection->text}}</p>
                     </div>
 
                     <!-- Form -->
@@ -73,8 +73,8 @@
             <div class="row">
                 <div class="col">
                     <div class="title">
-                        <h2>{{$howitworks[0]->header ?? 'How it Works?'}}</h2>
-                        <p>{{$howitworks[0]->sub_header ?? '3 Easy Steps'}}</p>
+                        <h2>{{$howitworks[0]->header}}</h2>
+                        <p>{{$howitworks[0]->sub_header}}</p>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 @foreach($howitworks as $work)
                 <div class="col-md-4 col-12  align-items-center ">
                     <div class="blurb">
-                        <img src="{{asset ('images/home/'.'/'.$work->file)}}" alt="{{$work->title}}" class="float-center pb-3" width="18%" height="auto">
+                        <img alt="{{$work->file}}" src="{{asset('images/home'.'/'.$work->file)}}" class="float-center pb-3" width="18%" height="auto">
                         <h2>{{$work->title ?? 'Value your Car'}}</h2>
                         <p>{{$work->title ?? 'Get a free no obligation  valuation above.'}} </p>
                     </div>
@@ -96,10 +96,10 @@
                         <p>Book an appointment for <br> a free car inspection <br> near you.</p>
                     </div>
                 </div> -->
+
             </div>
         </div>
     </section>
-
 
     <!-- Buy a Car Section -->
     <section id="Buy-a-Car" class="buy_a_car">
@@ -404,7 +404,7 @@
 
                             </div>
                             @endforeach
-                            <div class="carousel-item ">
+                            <div class="carousel-item">
                                 <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
                                 <div class="user_name">
                                     <h3 class="mt-2">John Doe</h3>
@@ -424,7 +424,7 @@
 
                             </div>
 
-                            <!-- <div class="carousel-item">
+                            <div class="carousel-item">
                                 <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
                                 <div class="user_name">
                                     <h3>John Doe</h3>
@@ -462,7 +462,7 @@
                                     </p>
                                 </div>
 
-                            </div> -->
+                            </div>
 
                         </div>
 
@@ -484,7 +484,7 @@
                         <div class="col-lg-12">
                             <form action="" class="d-flex formSell">
                                 <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
-                                <input type="submit" class="btn btn-danger w-100" value="Enter" >
+                                <input type="submit" class="btn btn-danger w-100" value="Enter">
                             </form>
                         </div>
                     </div>
