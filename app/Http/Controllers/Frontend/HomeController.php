@@ -91,13 +91,17 @@ class HomeController extends Controller
             $response = curl_exec($curl);
             curl_close($curl);
             $data = json_decode($response);
+            $title = 'something went wrong';
+            if (isset($data->errors[0]->status)) {
+                $title = $data->errors[0]->title;
+            }
             $color = $data->colour;
             $model = $data->make;
             $fueltype = $data->fuelType;
             $capacity = $data->engineCapacity;
             return view('frontend/sellcar/home', compact('color', 'model', 'fueltype', 'capacity'));
         } catch (\Exception $exception) {
-            toastError('Something went wrong, try again!');
+            toastError($title);
             return Redirect::back();
         }
     }
