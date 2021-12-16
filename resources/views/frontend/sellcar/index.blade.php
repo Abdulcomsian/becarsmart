@@ -84,8 +84,8 @@
                 <div class="col-md-4 col-12  align-items-center ">
                     <div class="blurb">
                         <img alt="{{$work->file}}" src="{{asset('images/home'.'/'.$work->file)}}" class="float-center pb-3" width="18%" height="auto">
-                        <h2>{{$work->title ?? 'Value your Car'}}</h2>
-                        <p>{{$work->title ?? 'Get a free no obligation  valuation above.'}} </p>
+                        <h2>{{$work->title}}</h2>
+                        <p>{{$work->title}} </p>
                     </div>
                 </div>
                 @endforeach
@@ -238,9 +238,9 @@
                         <img src="@if(isset($whysellcar->file)){{asset('images/home/'.'/'.$whysellcar->file ?? '')}}@endif" alt="">
                     </div>
                     <div class="clock-content text-center">
-                        <h2>{{ $whysellcar->title ?? 'Why sell your car with BeCarSmart.com?'}}</h2>
+                        <h2>{{ $whysellcar->title}}</h2>
                         <!-- <hr> --> <br><br>
-                        <p>@if(isset($whysellcar->message)){{$whysellcar->message}}@else Whether it’s time for you to upgrade your car or you simply don’t need your vehicle anymore, you will want to know how much your car is worth. Our <a _ngcontent-public-website-c48="" href="#">free car valuation tool</a> provides you with a valuation in under 60 seconds - simply enter your reg plate and a few details about your car for an accurate valuation. If you’re happy with your valuation, you can sell your car in less than an hour by booking an appointment at <a _ngcontent-public-website-c48="" href="#">your local branch</a>, which is less than 15 minutes away on average. @endif</p>
+                        <p>{{$whysellcar->message}}</p>
                     </div>
                 </div>
             </div>
@@ -254,8 +254,8 @@
             <div class="row text-center pb-5">
                 <div class="col">
                     <div class="title">
-                        <h2>{{$blogheader->header ?? 'Tips & Guide'}}</h2>
-                        <p>{{$blogheader->sub_header ?? 'We are worried for you, follow the tips & guides to avoid the bad situations'}}</p>
+                        <h2>{{$blogheader->header}}</h2>
+                        <p>{{$blogheader->sub_header}}</p>
                     </div>
                 </div>
             </div>
@@ -404,7 +404,7 @@
 
                             </div>
                             @endforeach
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
                                 <div class="user_name">
                                     <h3 class="mt-2">John Doe</h3>
@@ -462,7 +462,7 @@
                                     </p>
                                 </div>
 
-                            </div>
+                            </div> -->
 
                         </div>
 

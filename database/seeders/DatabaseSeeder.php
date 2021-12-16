@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call(WantToBuyCarSection::class);
         $this->call(WhySellCarSeeder::class);
         $this->call(BlogSeeder::class);
+        $this->call(BlogHeaderSeeder::class);
         // \App\Models\User::factory(10)->create();
     }
 }
