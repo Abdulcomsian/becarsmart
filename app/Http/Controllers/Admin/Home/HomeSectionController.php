@@ -133,7 +133,7 @@ class HomeSectionController extends Controller
             $model->sub_header = $request->sub_header;
             if ($model->save()) {
                 toastSuccess($message);
-                return redirect('/blog');
+                return Redirect::back();
             }
         } catch (\Exception $exception) {
             toastError('Something went wrong,try again');

@@ -106,18 +106,19 @@
                     <div class="section-2 pt-5 pb-5">
                         <h2>How it Works Section</h2>
                     </div>
+
                     <form class="pt-5" method="post" action="{{url('/how-it-work')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row pb-5">
                             <label for="text" class="col-sm-2 col-form-label">Header</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="header" placeholder="Enter Your Header" required>
+                                <input type="text" class="form-control" value="{{$howitworks[0]->header ?? ''}}" name="header" placeholder="Enter Your Header" required>
                             </div>
                         </div>
                         <div class="form-group row pb-5">
                             <label for="text" class="col-sm-2 col-form-label">Sub Header</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="sub_header" placeholder="Enter Your Sub Header" required>
+                                <input type="text" class="form-control" value="{{$howitworks[0]->sub_header ?? ''}}" name="sub_header" placeholder="Enter Your Sub Header" required>
                             </div>
                         </div>
                         <div id="howitwokrs">
@@ -170,7 +171,7 @@
                                         <td>{{$loop->index+1}}</td>
                                         <td>{{$work->title}}</td>
                                         <td>{{$work->exceed}}</td>
-                                        <td><img class="img img-circle" src="{{asset('images/home/'.'/'.$work->file)}}" width="100px" height="70px" /></td>
+                                        <td><img class="img img-circle" src="{{asset('images/home'.'/'.$work->file)}}" width="100px" height="70px" /></td>
                                         <td>{{$work->created_at}}</td>
                                         <td>
                                             <i class="fa fa-trash confirm cursor-pointer" id="{{$work->id}}"></i>
