@@ -48,6 +48,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/testominal', [HomeSectionController::class, 'testominal']);
     Route::post('/testominal-delete', [HomeSectionController::class, 'testominal_delete']);
 
+
     // Questionnaire Routes
     Route::get('/questionnaire', [QuestionnaireController::class, 'index'])->name('user_dropdown/questionnaire');
     Route::post('/insert-questions', [QuestionnaireController::class, 'insert']);
@@ -92,6 +93,7 @@ Route::get('/', [HomeController::class, 'index'])->name('frontend/index');
 Route::get('/index', [HomeController::class, 'index'])->name('frontend/index');
 Route::post('/buy-car-leads-save', [HomeController::class, 'buy_car_lead'])->name('buy-car-leads-save');
 Route::post('/sellcar_new', [HomeController::class, 'sell_car_lead'])->name('sell-car-leads-save');
+Route::post('/find-vehicle', [HomeController::class, 'find_vehicle'])->name('find.vehicle');
 
 Route::get('/sellcar_new', function () {
     return view('frontend/sellcar/sellcar_new');

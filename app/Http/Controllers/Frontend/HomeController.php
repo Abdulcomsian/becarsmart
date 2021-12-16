@@ -65,4 +65,40 @@ class HomeController extends Controller
             return Redirect::back();
         }
     }
+
+    public function find_vehicle(Request $request)
+    {
+        try {
+            $reg_number = (string)$request->reg_number;
+            $curl = curl_init();
+
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://driver-vehicle-licensing.api.gov.uk/vehicle-enquiry/v1/vehicles",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => "",
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => "POST",
+                CURLOPT_POSTFIELDS => "{\n\t\"registrationNumber\": \"$reg_number\"\n}",
+                CURLOPT_HTTPHEADER => array(
+                    "x-api-key: 2vbQSp98Zh6TEObOPpjoa5Rro7wgr6sDaKfXc2Qp",
+                    "Content-Type: application/json"
+                ),
+            ));
+
+            $response = curl_exec($curl);
+            curl_close($curl);
+            $data = json_decode($response);
+            $color = $data->colour;
+            $model = $data->make;
+            $fueltype = $data->fuelType;
+            $capacity = $data->engineCapacity;
+            return view('frontend/sellcar/home', compact('color', 'model', 'fueltype', 'capacity'));
+        } catch (\Exception $exception) {
+            toastError('Something went wrong, try again!');
+            return Redirect::back();
+        }
+    }
 }

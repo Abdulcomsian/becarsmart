@@ -20,10 +20,10 @@ BeCarSmart | Sellcar New
                     <div class="col-md-12">
                         <div class="sellcar-ul-li  pt-1 pb-2">
                             <ul class="d-flex">
-                                <li><b>model: </b>&nbsp 2013</li>&nbsp &nbsp
-                                <li><b>Color: </b>&nbsp white</li>&nbsp &nbsp
-                                <li><b>Engine: </b>&nbsp Diesel</li>&nbsp &nbsp
-                                <li><b>Mileage: </b>&nbsp 83,000km</li>
+                                <li><b>model: </b>&nbsp {{$_GET['model_no'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Color: </b>&nbsp {{$_GET['color'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Engine: </b>&nbsp {{$_GET['engine'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Mileage: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>
                             </ul>
                         </div>
                     </div>
@@ -39,10 +39,10 @@ BeCarSmart | Sellcar New
                             @csrf
                             <x-auth-validation-errors class="mb-4" :errors="$errors" />
                             <!-- api field -->
-                            <input type="hidden" name="model_no" value="123">
-                            <input type="hidden" name="color" value="white">
-                            <input type="hidden" name="engine" value="diesel">
-                            <input type="hidden" name="mileage" value="5000">
+                            <input type="hidden" name="model_no" value="{{$_GET['model_no'] ?? ''}}">
+                            <input type="hidden" name="color" value="{{$_GET['color'] ?? ''}}">
+                            <input type="hidden" name="engine" value="{{$_GET['engine'] ?? ''}}">
+                            <input type="hidden" name="mileage" value="{{$_GET['enginecapacity'] ?? ''}}">
 
                             <div class="row">
                                 <div class="col-md-12" style="justify-content: left;">

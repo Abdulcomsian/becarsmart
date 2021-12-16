@@ -18,22 +18,27 @@
                     <div class="home-ul-li pt-3 pb-5">
                         <ul class="d-flex">
                             <li><b>model:</b></li>
-                            <li> <span> 2021</span></li>
+                            <li> <span> {{$model ?? ''}}</span></li>
                         </ul>
                         <ul class="d-flex">
                             <li><b>Color:</b></li>
-                            <li> <span> White</span></li>
+                            <li> <span> {{$color ?? ''}}</span></li>
                         </ul>
                         <ul class="d-flex">
                             <li><b>Engine:</b></li>
-                            <li> <span> Diesel</span></li>
+                            <li> <span> {{$fueltype ?? ''}}</span></li>
                         </ul>
+                        <ul class="d-flex">
+                            <li><b>Engine capacity:</b></li>
+                            <li> <span> {{$capacity ?? ''}}</span></li>
+                        </ul>
+
                     </div>
                     <form action="{{url ('/sellcar_new') }}" method="get">
-                        <input type="hidden" name="model_no" value="123">
-                        <input type="hidden" name="color" value="white">
-                        <input type="hidden" name="engine" value="diesel">
-
+                        <input type="hidden" name="model_no" value="{{$model ?? ''}}">
+                        <input type="hidden" name="color" value="{{$color ?? ''}}">
+                        <input type="hidden" name="engine" value="{{$fueltype ?? ''}}">
+                        <input type="hidden" name="enginecapacity" value="{{$capacity ?? ''}}">
                         <!-- Form -->
                         <div class="home-search-form">
                             <div class="row">

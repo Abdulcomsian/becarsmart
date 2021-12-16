@@ -24,17 +24,18 @@
 
                     <!-- Form -->
                     <div class="search-form">
-                        <form action="#">
+                        <form action="{{route('find.vehicle')}}" method="post">
+                            @csrf
                             <div class="row">
-
                                 <div class="col-md-6 col-12 pb-3">
                                     <div class="input-perent d-flex" style="position: relative;">
                                         <img src="{{asset ('assets/img/vrm-euro1.png')}}" alt="" style="position: absolute;left:0;height: 70px;width: 30px;">
-                                        <input type="text" name="reg_number" class="form-control" placeholder="# Registration Number">
+                                        <input type="text" name="reg_number" class="form-control" placeholder="# Registration Number" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
-                                    <a href="{{url ('/home')}}" class="btn btn-danger w-100">Value My Car</a>
+                                    <button type="submit" class="btn btn-danger w-100">Value My Car</button>
+                                    <!-- <a href="{{url ('/home')}}" class="btn btn-danger w-100">Value My Car</a> -->
                                 </div>
                             </div>
                         </form>
