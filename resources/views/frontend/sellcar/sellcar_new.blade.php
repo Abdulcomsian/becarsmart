@@ -82,12 +82,18 @@ BeCarSmart | Sellcar New
 
                                                     <div class="row mb-5">
                                                         <div class="col-md-12">
-                                                            <div class="form-check">
+                                                            <!-- <div class="form-check">
                                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" chceked>
                                                                 <label class="form-check-label" for="checked">
                                                                     I have read the Privacy Policy and accept the Terms.
                                                                 </label>
-                                                            </div>
+                                                            </div> -->
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                                                <label class="form-check-label" for="flexCheckDisabled">
+                                                                    I have read the Privacy Policy and accept the Terms.
+                                                                </label>
+                                                                </div>
                                                         </div>
                                                     </div>
                                                     <div class="" style="float:right" ;>
@@ -111,7 +117,6 @@ BeCarSmart | Sellcar New
         <div class="row" id="step_2" style="display:none;">
             <div class="col-lg-12 col-md-12">
                 <div class="sellcar-blurb-content py-5">
-
                     <div class="row">
                         <div class="col-md-12" style="justify-content: left;">
 
@@ -213,7 +218,7 @@ BeCarSmart | Sellcar New
                                             <div class="row ">
                                                 <div class="col-md-6">
                                                     <div class="row">
-                                                        <div class="col-md-12 " style="padding-bottom: 2%;">
+                                                        <div class="col-md-12 months-untill" style="padding-bottom: 2%;">
                                                             <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT ?</label>
                                                         </div>
                                                         <div class="col-md-12">
@@ -229,7 +234,7 @@ BeCarSmart | Sellcar New
                                                 <div class="col-md-6 ">
                                                     <div class="row">
                                                         <div class="col-md-12 " style="padding-bottom: 2%;">
-                                                            <label for="fname" class="form-label" style="font-size:13px; font-weight:600">how your vehicle over been subject to an insurance write off or been accident damaged?</label>
+                                                            <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How your vehicle over been subject to an insurance write off or been accident damaged?</label>
                                                         </div>
                                                         <div class="col-md-12">
                                                             <div class="input-Group">

@@ -2360,7 +2360,17 @@ button:hover {
     padding: 100px 15px 33px 15px;
   }
 }
+
+@media screen and (max-width: 1400px) and (min-width: 900px) {
+  .months-untill{
+    padding-bottom: 5% !important;
+  }
+}
+
 @media (max-width: 1200px) {
+  .months-untill{
+    padding-bottom: 5%;
+  }
   .moving-left-tyr{
     top: 129px;
     left: 79px;
