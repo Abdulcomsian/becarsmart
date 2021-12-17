@@ -11,10 +11,14 @@ BeCarSmart | Sellcar New
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 style="float: left;" class="heading-h1">ZS33 FS</h1>
+                        <h1 style="float: left;" class="heading-h1">
+                            {{$_GET['regno'] ?? 'ZS33 FS'}}
+                        </h1>
                     </div>
                 </div>
-                <h3 style="text-align: left;">“Hyundai I30 Active Blue Drive CRDI”</h3>
+                <h3 style="text-align: left;">
+                    {{$_GET['euroStatus'] ?? 'Hyundai I30 Active Blue Drive CRDI'}}
+                </h3>
 
                 <div class="row">
                     <div class="col-md-12">

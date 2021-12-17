@@ -9,13 +9,13 @@
         <div class="container">
             <div class="row pb-5">
                 <div class="col-md-8 offset-md-2">
-                    <div class="home-blurb">
-                        <h1 class="heading-h1">{{$regno ?? 'ZS33 FS'}}</h1>
-                        <h3>{{$euroStatus ?? 'Hyundai I30 Active Blue Drive CRDI'}}</h3>
-                        <!-- <p>Hyundai I30 Active Blue Drive CRDI</p> -->
+                    <!-- <div class="home-blurb">
+                        <h1 class="heading-h1">ZS33 FS</h1>
+                        <h3>Hyundai I30 Active Blue Drive CRDI</h3>
+                       
 
-                    </div>
-                    <div class="home-ul-li pt-3 pb-5">
+                    </div> -->
+                    <!-- <div class="home-ul-li pt-3 pb-5">
                         <ul class="d-flex">
                             <li><b>model:</b></li>
                             <li> <span> {{$model ?? ''}}</span></li>
@@ -33,15 +33,68 @@
                             <li> <span> {{$capacity ?? ''}}</span></li>
                         </ul>
 
-                    </div>
+                    </div> -->
                     <form action="{{url ('/sellcar_new') }}" method="get">
-                        <input type="hidden" name="model_no" value="{{$model ?? ''}}">
-                        <input type="hidden" name="color" value="{{$color ?? ''}}">
-                        <input type="hidden" name="engine" value="{{$fueltype ?? ''}}">
-                        <input type="hidden" name="enginecapacity" value="{{$capacity ?? ''}}">
-                        <input type="hidden" name="regno" value="{{$regno ?? ''}}">
-                        <input type="hidden" name="euroStatus" value="{{$euroStatus ?? ''}}">
-                        <!-- Form -->
+                        <div class="row">
+                            <div class="col-md-12" style="justify-content: left;">
+                                <div class="row d-flex align-items-left">
+                                    <div class="col-lg-10 col-md-12 col-sm-12 " style="width: 100%;">
+                                        <div class="card shadow card-shadow ">
+                                            <div class="card-title">
+                                                <h2 class="p-3 pb-0">Enter Car Details Manually</h2>
+                                                <p class="p-3 pt-0">Enter your details to get an instant valuation.</p>
+                                            </div>
+                                            <div class="home-card-body card-body">
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="input-Group">
+                                                            <input type="text" name="model_no" class="form-control" placeholder="Enter Model No" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="input-Group">
+                                                            <input type="text" name="color" class="form-control" placeholder="Enter Color" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="input-Group">
+                                                            <input type="text" name="engine" class="form-control" placeholder="Enter Engine Type" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="input-Group">
+                                                            <input type="text" name="enginecapacity" class="form-control" placeholder="Engine Capacity" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="home-search-form">
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-12">
+                                                            <button type="submit" class="btn continue btn-danger">Continue</button>
+                                                            <button type="submit" class="btn chevron-left btn-danger"><span><i class="fa fa-chevron-right"></i></span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- <form action="{{url ('/sellcar_new') }}" method="get">
+                        <input type="text" name="model_no" class="form-control" value="{{$model ?? ''}}">
+                        <input type="text" name="color" class="form-control" value="{{$color ?? ''}}">
+                        <input type="text" name="engine" class="form-control" value="{{$fueltype ?? ''}}">
+                        <input type="text" name="enginecapacity" class="form-control" value="{{$capacity ?? ''}}">
+                        <!-- Form --
                         <div class="home-search-form">
                             <div class="row">
                                 <div class="col-md-12 col-12">
@@ -50,7 +103,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
 
 
                 </div>
