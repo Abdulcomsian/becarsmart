@@ -1,11 +1,11 @@
 
-    @extends('frontend.layouts.master')
-        @section('title')
-            BeCarSmart | SellCar
-        @endsection
-    @section('content')
+@extends('frontend.layouts.master')
+    @section('title')
+        BeCarSmart | SellCar
+    @endsection
+@section('content')
 
-             <!-- Hero Section -->
+    <!-- Hero Section -->
     <section class="SellCar-section text-center">
         <div class="container">
             <div class="row d-flex d-block" id="step-1">
@@ -408,11 +408,7 @@
             </div>
         </div>
     </section>
-
-    
-
     <!-- How it Works -->
-
     <section class="how_it_Works text-center">
         <div class="container">
             <div class="row">
@@ -452,121 +448,39 @@
         </div>
     </section>
 
-    <!-- Suppport Section -->
+@endsection
+@section('script')
+    <script>
 
-    <section class="want_to_sell p-3 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center d-flex alignCenter">
-                        <p>Want to Sell Your Car?</p>
-                </div>
-                <div class="col-md-8 float-center">
-                   <div class="row">
-                       <div class="col-lg-12">
-                           <form action="" class="d-flex formSell">
-                            <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number"  style="padding: 15px;">
-                            <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
-                           </form>
-                       </div>
-                   </div>
-            </div>
-            </div>
-        </div>
-    </section>
+        $("#scratchesradio1").change(function(){
+                if ($(this).is(':checked')){
+                    $("#textarea").show();
+                } else {
+                    $("#textarea").hide();
+                }
+        });
+        
 
-
-    @endsection
-    @section('script')
-
-                                              
-
-
-<script>
-
-   $("#scratchesradio1").change(function(){
-    if ($(this).is(':checked')){
-        $("#textarea").show();
-    } else {
-        $("#textarea").hide();
-    }
-   });
-
-   $("#scratchesradio2").change(function(){
-    $("#textarea").hide();
-    // if ($(this).is(':checked')){
-    //     $("#textarea").hide();
-    // } else {
-    //     $("#textarea").hide();
-    // }
-   });
     
+        $( document ).ready(function() {
+            $("#first-page").on('click', function() {
+                $("#step-1").hide();
+                $("#step-2").show();
+                $("#step-3").hide();
+                $("#step-4").hide();
+                $("#step-5").hide();
+                $("#step-6").hide();
+            });
 
-   
-$( document ).ready(function() {
-     $("#first-page").on('click', function() {
-        $("#step-1").hide();
-        $("#step-2").show();
-        $("#step-3").hide();
-        $("#step-4").hide();
-        $("#step-5").hide();
-        $("#step-6").hide();
-    });
-
-    $("#second-page").on('click', function() {
-        $("#step-1").hide();
-        $("#step-2").hide();
-        $("#step-3").show();
-        $("#step-4").hide();
-        $("#step-5").hide();
-        $("#step-6").hide();
-    });
-
-    // $("#third-page").on('click', function() {
-    //     $("#step-1").hide();
-    //     $("#step-2").hide();
-    //     $("#step-3").hide();
-    //     $("#step-4").show();    
-    //     $("#step-5").hide();
-    //     $("#step-6").hide();
-    // });
-    // $("#third-page").on('click', function(){
-    //     location.reload();
-    // })
-    
-
-    // $("#fourth-page").on('click', function() {
-    //     $("#step-1").hide();
-    //     $("#step-2").hide();
-    //     $("#step-3").hide();
-    //     $("#step-4").hide();
-    //     $("#step-5").show();
-    //     $("#step-6").hide();
-    // });
-
-    // $("#fifth-page").on('click', function() {
-    //     $("#step-1").hide();
-    //     $("#step-2").hide();
-    //     $("#step-3").hide();
-    //     $("#step-4").hide();
-    //     $("#step-5").hide();
-    //     $("#step-6").show();
-    // });
-
-    // $("#last-page").on('click', function() {
-    //     $("#step-1").hide();
-    //     $("#step-2").hide();
-    //     $("#step-3").hide();
-    //     $("#step-4").hide();
-    //     $("#step-5").hide();
-    //     $("#step-6").hide();
-    //     $('#myModal').modal('show'); 
-    // });
-    
-    // $("#redirect").on('click', function(){
-    //     location.reload();
-    // })
-    
-    
-});
-</script>
+            $("#second-page").on('click', function() {
+                $("#step-1").hide();
+                $("#step-2").hide();
+                $("#step-3").show();
+                $("#step-4").hide();
+                $("#step-5").hide();
+                $("#step-6").hide();
+            });
+            
+        });
+    </script>
 @endsection

@@ -1,16 +1,16 @@
-    @extends('frontend.layouts.master')
+@extends('frontend.layouts.master')
     @section('title')
-    BeCarSmart | index
+        BeCarSmart | index
     @endsection
     @section('css')
-    <style>
-        #progressbar #account:before {
-            font-family: FontAwesome;
-            content: "step";
-        }
-    </style>
+        <style>
+            #progressbar #account:before {
+                font-family: FontAwesome;
+                content: "step";
+            }
+        </style>
     @endsection
-    @section('content')
+@section('content')
     <!-- Hero Section -->
     <section id="Sell-Your-Car" class="hero-section text-center">
         <div class="container">
@@ -30,7 +30,7 @@
                                 <div class="col-md-6 col-12 pb-3">
                                     <div class="input-perent d-flex" style="position: relative;">
                                         <img src="{{asset ('assets/img/vrm-euro1.png')}}" alt="" style="position: absolute;left:0;height: 70px;width: 30px;">
-                                        <input type="text" name="reg_number" class="form-control" placeholder="# Registration Number" required>
+                                        <input id="reg_number" type="text" name="reg_number" class="form-control" placeholder="AA19AAA" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
@@ -56,7 +56,6 @@
             </div>
         </div>
     </section>
-
     <!-- Suppport Section -->
     <section class="support_section p-3 pb-1 text-center text-white">
         <div class="container">
@@ -67,7 +66,6 @@
             </div>
         </div>
     </section>
-
     <!-- How it Works -->
     <section id="How-it-Works" class="how_it_Works text-center">
         <div class="container">
@@ -101,7 +99,6 @@
             </div>
         </div>
     </section>
-
     <!-- Buy a Car Section -->
     <section id="Buy-a-Car" class="buy_a_car">
         <div class="row">
@@ -229,7 +226,6 @@
         </div>
 
     </section>
-
     <!-- Why-sell-your-car -->
     <section class="Why-sell-your-car">
         <div class="container text-center">
@@ -247,8 +243,6 @@
             </div>
         </div>
     </section>
-
-
     <!-- Blog Section -->
     <section class="blog_section">
         <div class="container">
@@ -362,8 +356,6 @@
             </div>
         </div>
     </section>
-
-
     <!-- Testimonial Section -->
     <section class="testimonial text-center p-5">
         <div class="container">
@@ -473,30 +465,4 @@
         </div>
     </section>
 
-    <!-- Suppport Section -->
-    <section class="want_to_sell text-white" style="padding: 0.6rem;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center d-flex alignCenter">
-                    <p>Want to Sell Your Car?</p>
-                </div>
-                <div class="col-md-8 float-center">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <form action="" class="d-flex formSell">
-                                <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
-                                <input type="submit" class="btn btn-danger w-100" value="Enter">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    @endsection
-    @section('script')
-    <script>
-
-    </script>
-    @endsection
+@endsection
