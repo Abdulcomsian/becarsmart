@@ -33,45 +33,10 @@
     <div class="trust_pilot_container" style="height:295px;width: 100%; ">
 
         <div class="trust_pilot" style="width: 20%;height: 100px; margin: auto;margin-top: 30px;">
-            <div class="star" style="height: 40px;">
-
-                <ul style="display: flex;list-style: none;text-align: center;margin-top: 10px; margin-left:30px">
-                    <li><img style="height: 50px;width: 50px;margin-top: -15px;" src="{{asset('images/star_icon (1).png')}}" alt="" srcset=""></li>
-                    <li>TrustPilot</li>
-                </ul>
-            </div>
-            <div class="rating" style="text-align: center;">
-                <img style="height: 70px;width: 80px;margin-top: -15px;" src="{{asset('images/star_icon (2).png')}}" alt="">
-            </div>
+            <h3>Thank you for sign up</h3>
         </div>
-        <div class="trust_text" style="height: 200px; width: 60%;margin:auto;">
-            <h4 style="text-align: center;">Over <span style="color: green;"> 115,000</span> Trustpilot reviews. We are rated <span style="color: green;"> 'Excellent'</span> </h4>
 
-            <h4 style="text-align: center;"> <strong> "The service was fast,efficient and friendly."</strong> </h4>
-            <h6 style="text-align: center;"> <strong> "P.Salter-McLean - 13th July 2021"</strong> </h6>
-            <div class="button" style="width: 30%;margin: auto;">
-                <button style="background-color: #FFc107;border:transparent;color: white;padding: 10px 30px;" type="button">BOOK YOUR APPOINTMENT</button>
-            </div>
-        </div>
     </div>
-    <div class="icons-container" style="height: 250px;display: flex;height: 180px;width:45%;margin: auto;">
-        <div class="icon-div" style="height: 175px;width: 33%;text-align: center;">
-            <img style="height: 80px ;width: 33%;margin-top: 30px;" src="{{asset('images/clock.png')}}" alt="">
-            <P style="margin-top: -14px; padding: 0px 30px;">Sell your car in under an hour</P>
-        </div>
-
-        <div class="icon-div" style="height: 175px;width: 33%;text-align: center;">
-            <img style="height: 50px ;width: 33%; margin-top: 48px;" src="{{asset('images/pound.png')}}" alt="">
-            <P style="margin-top: 0px;margin-left: 12px;padding:0px 10px;">We can pay you immediately</P>
-        </div>
-
-        <div class="icon-div" style="height: 175px;width: 33%;text-align: center;">
-            <img style="height: 65px ;width: 30%; margin-top: 32px;" src="{{asset('images/thumb.png')}}" alt="">
-            <P style="margin-top: 0px;margin-left: 12px;padding:0px 30px;">No Obligation to sell</P>
-        </div>
-    </div>
-
-
     <div class="contact-us" style="height:100px;width: 20%;margin: auto; ;margin-top:30px">
         <h5 style="text-align: center;"><strong>Contact US</strong> <br> <strong>Terms and Conditions </strong>
             <br> <strong>FAQS</strong> <br> <strong>About-Us</strong> <br> <strong>Un-subscribe</strong>
