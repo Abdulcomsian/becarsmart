@@ -50,7 +50,7 @@ a#row-3 {
     border-radius: 50%;
     z-index: 2;
     position: absolute;
-    right: 30px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;

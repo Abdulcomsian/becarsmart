@@ -1,9 +1,9 @@
     
-    @extends('frontend.layouts.master')
-        @section('title')
-            BeCarSmart | FAQ
-        @endsection
-    @section('content')
+@extends('frontend.layouts.master')
+    @section('title')
+        BeCarSmart | FAQ
+    @endsection
+@section('content')
 
     <section id="faq-section">
         <div class="row">
@@ -14,9 +14,7 @@
             </div>
         </div>
     </section>
-
     <!-- Generel Information -->
-
     <section id="generel-information">
         <div class="container">
             <div class="row generel-information-content">
@@ -127,26 +125,5 @@
             </div>
         </div>
     </section>
-     <!-- Suppport Section -->
-
-    <section class="want_to_sell p-3 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center d-flex alignCenter">
-                        <p>Want to Sell Your Car?</p>
-                </div>
-                <div class="col-md-8 float-center">
-                   <div class="row">
-                       <div class="col-lg-12">
-                           <form action="" class="d-flex formSell">
-                            <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number"  style="padding: 15px;">
-                            <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
-                           </form>
-                       </div>
-                   </div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    @endsection
+    
+@endsection

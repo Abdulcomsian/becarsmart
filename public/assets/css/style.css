@@ -632,15 +632,10 @@ select.list-dt:focus {
   background: black;
 }
 .formSell input[type="submit"]{
-  /* width: 277px !important;
-    background: #000;
-    border-radius: 0; */
-
-
     width: 277px !important;
-    background: #000;
+    background: #2c3b53;
     border-radius: 0;
-    border: 1px solid black !important;
+    border: 1px solid #2c3b53 !important;
     max-width: 67%;
     padding: 2%;
 }
@@ -651,9 +646,13 @@ select.list-dt:focus {
 }
 .formSell input[type="text"]{
   width: 519px;
+  font-size: 22px;
   height: 68px;
   border-radius: 0px !important;
+  font-weight: 600;
+  text-transform: uppercase;
 }
+
 /* Footer style  */
 #footer{
 
@@ -1463,10 +1462,24 @@ h1.heading-h1 {
   animation: fadeinphoto 7s 20s infinite;
 }
 
-.hero-section .form-control {
+/* .hero-section .form-control {
   padding: 22px 45px 22px 45px;
   border-radius: 0px;
+} */
+
+.hero-section .form-control {
+  padding: 14px 0px 21px 45px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
 }
+
+.hero-section #reg_number::placeholder{
+  font-size: 22px;
+  font-weight: 600;
+}
+
 
 .hero-section .btn {
   padding: 22px 45px 22px 45px; 
@@ -2360,7 +2373,17 @@ button:hover {
     padding: 100px 15px 33px 15px;
   }
 }
+
+@media screen and (max-width: 1400px) and (min-width: 900px) {
+  .months-untill{
+    padding-bottom: 5% !important;
+  }
+}
+
 @media (max-width: 1200px) {
+  .months-untill{
+    padding-bottom: 5%;
+  }
   .moving-left-tyr{
     top: 129px;
     left: 79px;

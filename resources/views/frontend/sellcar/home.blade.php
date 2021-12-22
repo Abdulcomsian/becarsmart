@@ -1,8 +1,8 @@
-    @extends('frontend.layouts.master')
+@extends('frontend.layouts.master')
     @section('title')
-    BeCarSmart | Home
+        BeCarSmart | Home
     @endsection
-    @section('content')
+@section('content')
 
     <!-- Hero Section -->
     <section id="Sell-Your-Car" class="hero-section text-center">
@@ -69,7 +69,6 @@
             </div>
         </div>
     </section>
-
     <!-- Suppport Section -->
     <section class="support_section p-3 pb-1 text-center text-white">
         <div class="container">
@@ -80,7 +79,6 @@
             </div>
         </div>
     </section>
-
     <!-- How it Works -->
     <section id="How-it-Works" class="how_it_Works text-center">
         <div class="container">
@@ -120,8 +118,6 @@
             </div>
         </div>
     </section>
-
-
     <!-- Buy a Car Section -->
     <section id="Buy-a-Car" class="buy_a_car">
         <div class="row">
@@ -184,9 +180,6 @@
             </div>
         </div>
     </section>
-
-
-
     <!-- Blog Section -->
     <section class="blog_section">
         <div class="container">
@@ -292,8 +285,6 @@
             </div>
         </div>
     </section>
-
-
     <!-- Testimonial Section -->
     <section class="testimonial text-center p-5">
         <div class="container">
@@ -390,27 +381,4 @@
         </div>
     </section>
 
-    <!-- Suppport Section -->
-    <section class="want_to_sell p-3 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center d-flex alignCenter">
-                    <p>Want to Sell Your Car?</p>
-                </div>
-                <div class="col-md-8 float-center">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <form action="" class="d-flex formSell">
-                                <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
-                                <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    @endsection
+@endsection

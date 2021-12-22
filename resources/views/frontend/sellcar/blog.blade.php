@@ -1,8 +1,8 @@
-    @extends('frontend.layouts.master')
-    @section('title')
-    BeCarSmart | Blog
-    @endsection
-    @section('content')
+@extends('frontend.layouts.master')
+   @section('title')
+      BeCarSmart | Blog
+   @endsection
+@section('content')
     <section id="terms-section">
        <div class="row">
           <div class="col-md-12">
@@ -91,4 +91,4 @@
           </div>
        </div>
     </div>
-    @endsection
+@endsection
