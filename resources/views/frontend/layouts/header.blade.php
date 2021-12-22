@@ -15,11 +15,36 @@
                     <a class="nav-link" href="#How-it-Works">How It Works</a>
                  </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="#Buy-a-Car">Buy A Car</a>
+                    <a class="nav-link" href="#Buy-a-Car">Source A Car</a>
                  </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/faq') }}">FAQ</a>
-                 </li>
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+
+                        <li class="nav-item">
+                           <a class="dropdown-item" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="dropdown-item" href="#">For Motor Traders</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="dropdown-item" href="{{ url('/faq') }}">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="dropdown-item" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="dropdown-item" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="dropdown-item" href="#">Reviews</a>
+                        </li>
+                     </ul>
+                  </li>
+                 
               </ul>
               <!-- <ul class="navbar-nav sm-icons mr-0">
                  <li class=""><a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
