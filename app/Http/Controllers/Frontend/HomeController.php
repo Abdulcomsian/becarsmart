@@ -13,6 +13,8 @@ use App\Models\Home\Testominal;
 use App\Models\Home\QuestionnaireModel;
 use App\Models\SellCarLead;
 use App\Models\BuyCarLead;
+use App\Notifications\SellCarNotification;
+use Notification;
 use Illuminate\Support\Facades\Redirect;
 
 class HomeController extends Controller
@@ -54,16 +56,18 @@ class HomeController extends Controller
             'comments' => ['required'],
 
         ]);
-        try {
-            $inputs = $request->except('_token');
-            if (SellCarLead::create($inputs)) {
-                toastSuccess('Lead Created Successfully!');
-                return Redirect::back();
-            }
-        } catch (\Exception $exception) {
-            toastError('Something went wrong, try again!');
+        // try {
+        $inputs = $request->except('_token');
+        if (SellCarLead::create($inputs)) {
+            //send email to admin and user
+            Notification::route('mail', 'admin@example.com')->notify(new SellCarNotification($inputs));
+            toastSuccess('Lead Created Successfully!');
             return Redirect::back();
         }
+        // } catch (\Exception $exception) {
+        //     toastError('Something went wrong, try again!');
+        //     return Redirect::back();
+        // }
     }
 
     public function find_vehicle(Request $request)
@@ -93,13 +97,19 @@ class HomeController extends Controller
             $data = json_decode($response);
             $title = 'something went wrong';
             if (isset($data->errors[0]->status)) {
+                if ($data->errors[0]->status == 404) {
+                    return view('frontend/sellcar/manuallcar');
+                }
                 $title = $data->errors[0]->title;
+            } else {
+                $color = $data->colour;
+                $model = $data->make;
+                $fueltype = $data->fuelType;
+                $capacity = $data->engineCapacity;
+                $regno = $data->registrationNumber;
+                $euroStatus = $data->euroStatus;
             }
-            $color = $data->colour;
-            $model = $data->make;
-            $fueltype = $data->fuelType;
-            $capacity = $data->engineCapacity;
-            return view('frontend/sellcar/home', compact('color', 'model', 'fueltype', 'capacity'));
+            return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model', 'fueltype', 'capacity'));
         } catch (\Exception $exception) {
             toastError($title);
             return Redirect::back();

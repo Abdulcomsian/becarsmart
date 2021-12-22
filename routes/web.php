@@ -5,6 +5,7 @@ use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\Admin\Home\HomeSectionController;
 use App\Http\Controllers\Admin\QuestionnaireController;
 use App\Http\Controllers\Admin\BuyCarLeadController;
+use App\Http\Controllers\Admin\SellCarController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\SellCar\CarController;
@@ -54,11 +55,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/insert-questions', [QuestionnaireController::class, 'insert']);
     Route::post('/delete-questionnaire', [QuestionnaireController::class, 'delete'])->name('delete-questionnaire');
 
-
-    Route::get('/sell-car', function () {
-        return view('Car.sell-car');
-    })->name('Car.sell-car');
-
+    Route::get('/sell-car', [SellCarController::class, 'index'])->name('Car.sell-car');
     Route::get('/buy-car', [BuyCarLeadController::class, 'index'])->name('Car.buy-car');
     Route::get('/buy-car-lead-delete', [BuyCarLeadController::class, 'buy_car_delete'])->name('buy-car-delete');
     Route::get('/evaluate-car/{id}', [BuyCarLeadController::class, 'evaluate_car'])->name('Car.evaluate-car');

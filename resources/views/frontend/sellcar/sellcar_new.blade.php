@@ -3,27 +3,32 @@
         BeCarSmart | Sellcar New
     @endsection
 @section('content')
-    <!-- Hero Section -->
-    <section class="SellCar-section text-center">
-        <div class="container">
-            <div class="row d-flex pt-5">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 style="float: left;" class="heading-h1">ZS33 FS</h1>
-                        </div>
+
+<!-- Hero Section -->
+<section class="SellCar-section text-center">
+    <div class="container">
+        <div class="row d-flex pt-5">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 style="float: left;" class="heading-h1">
+                            {{$_GET['regno'] ?? 'ZS33 FS'}}
+                        </h1>
                     </div>
-                    <h3 style="text-align: left;">“Hyundai I30 Active Blue Drive CRDI”</h3>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="sellcar-ul-li  pt-1 pb-2">
-                                <ul class="d-flex">
-                                    <li><b>model: </b>&nbsp {{$_GET['model_no'] ?? ''}}</li>&nbsp &nbsp
-                                    <li><b>Color: </b>&nbsp {{$_GET['color'] ?? ''}}</li>&nbsp &nbsp
-                                    <li><b>Engine: </b>&nbsp {{$_GET['engine'] ?? ''}}</li>&nbsp &nbsp
-                                    <li><b>Mileage: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>
-                                </ul>
-                            </div>
+                </div>
+                <h3 style="text-align: left;">
+                    {{$_GET['euroStatus'] ?? 'Hyundai I30 Active Blue Drive CRDI'}}
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sellcar-ul-li  pt-1 pb-2">
+                            <ul class="d-flex">
+                                <li><b>model: </b>&nbsp {{$_GET['model_no'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Color: </b>&nbsp {{$_GET['color'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Engine: </b>&nbsp {{$_GET['engine'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Mileage: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
