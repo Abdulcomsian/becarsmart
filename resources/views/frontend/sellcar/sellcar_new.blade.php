@@ -77,12 +77,11 @@ BeCarSmart | Sellcar New
                                                                 <div class="row mb-4">
                                                                     <div class="col-md-12">
                                                                         <div class="input-Group">
-                                                                            <input type="email" value="{{old('email')}}" name="email" class="form-control" id="email" placeholder="Email" require>
 
                                                                             <div class="row mb-4">
                                                                                 <div class="col-md-12">
                                                                                     <div class="input-Group">
-                                                                                        <input type="email" value="{{old('email')}}" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" require>
+                                                                                        <input type="email" value="{{old('email')}}" name="email" class="form-control" id="email" placeholder="Email" require>
                                                                                     </div>
 
                                                                                 </div>
@@ -91,12 +90,11 @@ BeCarSmart | Sellcar New
                                                                             <div class="row mb-4">
                                                                                 <div class="col-md-12">
                                                                                     <div class="input-Group">
-                                                                                        <input type="number" value="{{old('phone')}}" name="phone" class="form-control" id="phone" placeholder="Phone number" require>
 
                                                                                         <div class="row mb-4">
                                                                                             <div class="col-md-12">
                                                                                                 <div class="input-Group">
-                                                                                                    <input type="number" value="{{old('phone')}}" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="Phone number" require>
+                                                                                                    <input type="number" value="{{old('phone')}}" name="phone" class="form-control" id="phone" placeholder="Phone number" require>
                                                                                                 </div>
 
                                                                                             </div>
@@ -105,38 +103,15 @@ BeCarSmart | Sellcar New
 
                                                                                         <div class="row mb-5">
                                                                                             <div class="col-md-12">
-                                                                                                <!-- <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" chceked>
-                                                                    <label class="form-check-label" for="checked">
-                                                                        I have read the Privacy Policy and accept the Terms.
-                                                                    </label>
-                                                                </div> -->
+
                                                                                                 <div class="form-check">
                                                                                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
                                                                                                     <label class="form-check-label" for="flexCheckDisabled">
                                                                                                         I have read the Privacy Policy and accept the Terms.
                                                                                                     </label>
                                                                                                 </div>
-
-                                                                                                <div class="row mb-5">
-                                                                                                    <div class="col-md-12">
-                                                                                                        <!-- <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" chceked>
-                                                                        <label class="form-check-label" for="checked">
-                                                                            I have read the Privacy Policy and accept the Terms.
-                                                                        </label>
-                                                                    </div> -->
-                                                                                                        <div class="form-check">
-                                                                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
-                                                                                                            <label class="form-check-label" for="flexCheckDisabled">
-                                                                                                                I have read the Privacy Policy and accept the Terms.
-                                                                                                            </label>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
                                                                                                 <div class="" style="float:right" ;>
                                                                                                     <button type="button" id="first-button" class="btn text-light main-bg" disabled>Next</button>
-
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -581,13 +556,11 @@ BeCarSmart | Sellcar New
         });
 
         $('input[type=radio][name=accurate]').change(function() {
-        if (this.value == 1) {
-            $("#accurate_textarea").removeClass('d-none');
-        } else {
-            $("#accurate_textarea").addClass('d-none');
-        }
-
-        });
+            if (this.value == 1) {
+                $("#accurate_textarea").removeClass('d-none');
+            } else {
+                $("#accurate_textarea").addClass('d-none');
+            }
 
         });
     </script>
