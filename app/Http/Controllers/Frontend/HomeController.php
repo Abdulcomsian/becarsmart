@@ -14,6 +14,7 @@ use App\Models\Home\QuestionnaireModel;
 use App\Models\SellCarLead;
 use App\Models\BuyCarLead;
 use App\Notifications\SellCarNotification;
+use App\Utils\HelperFunctions;
 use Notification;
 use Illuminate\Support\Facades\Redirect;
 
@@ -57,7 +58,11 @@ class HomeController extends Controller
 
         ]);
         try {
-            $inputs = $request->except('_token');
+            $inputs = $request->except('_token', 'file');
+            if ($request->file('file')) {
+                $filePath = HelperFunctions::sellCarFilePath();
+                $inputs['image'] = HelperFunctions::saveFile(null, $request->file('file'), $filePath);
+            }
             if (SellCarLead::create($inputs)) {
                 //send email to admin and user
                 Notification::route('mail', 'admin@example.com')->notify(new SellCarNotification($inputs));

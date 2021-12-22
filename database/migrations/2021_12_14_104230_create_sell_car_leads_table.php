@@ -28,13 +28,19 @@ class CreateSellCarLeadsTable extends Migration
 
             $table->string('service_history')->nullable();
             $table->tinyInteger('non_runner')->default(0);
-            $table->tinyInteger('set_of_keys')->default(1);
+            $table->tinyInteger('set_of_keys')->default(0);
             $table->integer('mot_due')->nullable();
+            $table->tinyInteger('accident_damaged')->default(0);
             $table->text('comments')->nullable();
 
             $table->string('gearbox_condition')->nullable();
             $table->tinyInteger('warning_light')->default(0);
+            $table->text('warning_comments')->nullable();
             $table->tinyInteger('scratches')->default(0);
+            $table->text('scratches_comments')->nullable();
+            $table->string('vehicle_condtion')->nullable();
+            $table->string('more_info')->nullable();
+            $table->string('image')->nullable();
 
 
 
