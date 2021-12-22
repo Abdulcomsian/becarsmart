@@ -62,14 +62,12 @@ BeCarSmart | Sellcar New
                                                         <div class="row mb-4">
                                                             <div class="col-md-12">
                                                                 <div class="input-Group">
-                                                                    <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="fullname" placeholder="Full name" require>
+
 
                                                                     <div class="row mb-4">
                                                                         <div class="col-md-12">
                                                                             <div class="input-Group">
-                                                                                <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="6+months" placeholder="Full name" require>
-
-
+                                                                                <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="fullname" placeholder="Full name" required>
                                                                             </div>
                                                                         </div>
                                                                     </div>
