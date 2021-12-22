@@ -51,23 +51,23 @@ class HomeController extends Controller
         $request->validate([
             'fullname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
-            'phone' => ['required'],
+            'phone' => ['required', 'digits_between:10,11'],
             'mot_due' => ['required'],
             'comments' => ['required'],
 
         ]);
-        // try {
-        $inputs = $request->except('_token');
-        if (SellCarLead::create($inputs)) {
-            //send email to admin and user
-            Notification::route('mail', 'admin@example.com')->notify(new SellCarNotification($inputs));
-            toastSuccess('Lead Created Successfully!');
+        try {
+            $inputs = $request->except('_token');
+            if (SellCarLead::create($inputs)) {
+                //send email to admin and user
+                Notification::route('mail', 'admin@example.com')->notify(new SellCarNotification($inputs));
+                toastSuccess('Lead Created Successfully!');
+                return Redirect::back();
+            }
+        } catch (\Exception $exception) {
+            toastError('Something went wrong, try again!');
             return Redirect::back();
         }
-        // } catch (\Exception $exception) {
-        //     toastError('Something went wrong, try again!');
-        //     return Redirect::back();
-        // }
     }
 
     public function find_vehicle(Request $request)

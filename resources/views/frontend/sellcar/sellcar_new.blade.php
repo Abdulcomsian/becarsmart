@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
-    @section('title')
-        BeCarSmart | Sellcar New
-    @endsection
+@section('title')
+BeCarSmart | Sellcar New
+@endsection
 @section('content')
 
     <!-- Hero Section -->
@@ -59,30 +59,69 @@
                                                         </div>
                                                         <div class="home-card-body card-body">
 
+<<<<<<< HEAD
+                                                        <div class="row mb-4">
+                                                            <div class="col-md-12">
+                                                                <div class="input-Group">
+                                                                    <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="fullname" placeholder="Full name" require>
+=======
                                                             <div class="row mb-4">
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="6+months" placeholder="Full name" require>
+>>>>>>> 51d7b236dd326e2a108ffe1bbcddb39275c6a763
 
                                                                     </div>
                                                                 </div>
                                                             </div>
+<<<<<<< HEAD
+                                                        </div>
+                                                        <div class="row mb-4">
+                                                            <div class="col-md-12">
+                                                                <div class="input-Group">
+                                                                    <input type="email" value="{{old('email')}}" name="email" class="form-control" id="email" placeholder="Email" require>
+=======
                                                             <div class="row mb-4">
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <input type="email" value="{{old('email')}}" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" require>
                                                                     </div>
+>>>>>>> 51d7b236dd326e2a108ffe1bbcddb39275c6a763
                                                                 </div>
                                                             </div>
 
+<<<<<<< HEAD
+                                                        <div class="row mb-4">
+                                                            <div class="col-md-12">
+                                                                <div class="input-Group">
+                                                                    <input type="number" value="{{old('phone')}}" name="phone" class="form-control" id="phone" placeholder="Phone number" require>
+=======
                                                             <div class="row mb-4">
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <input type="number" value="{{old('phone')}}" name="phone" class="form-control" id="exampleFormControlInput1"  placeholder="Phone number" require>
                                                                     </div>
+>>>>>>> 51d7b236dd326e2a108ffe1bbcddb39275c6a763
                                                                 </div>
+                                                                <span class="text-danger phoneerror"></span>
                                                             </div>
 
+<<<<<<< HEAD
+                                                        <div class="row mb-5">
+                                                            <div class="col-md-12">
+                                                                <!-- <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" chceked>
+                                                                    <label class="form-check-label" for="checked">
+                                                                        I have read the Privacy Policy and accept the Terms.
+                                                                    </label>
+                                                                </div> -->
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                                                    <label class="form-check-label" for="flexCheckDisabled">
+                                                                        I have read the Privacy Policy and accept the Terms.
+                                                                    </label>
+                                                                </div>
+=======
                                                             <div class="row mb-5">
                                                                 <div class="col-md-12">
                                                                     <!-- <div class="form-check">
@@ -101,6 +140,7 @@
                                                             </div>
                                                             <div class="" style="float:right" ;>
                                                                 <button type="button" id="first-button" class="btn text-light main-bg" disabled>Next</button>
+>>>>>>> 51d7b236dd326e2a108ffe1bbcddb39275c6a763
                                                             </div>
                                                         </div>
                                                     </div>
@@ -158,6 +198,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <span class="text-danger service_history"></span>
                                                     </div>
                                                     <div class="row mb-4">
                                                         <div class="col-md-6 ">
@@ -178,6 +219,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <span class="text-danger non_runner"></span>
                                                         </div>
                                                         <div class="col-md-6 ">
                                                             <div class="row">
@@ -197,8 +239,48 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <span class="text-danger set_of_keys"></span>
                                                         </div>
                                                     </div>
+<<<<<<< HEAD
+                                                </div>
+                                                <div class="row ">
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-12 ">
+                                                                <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="inputGroup">
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option selected>1</option>
+                                                                        <option value="1">2</option>
+                                                                        <option value="2">3</option>
+                                                                        <option value="3">4</option>
+                                                                        <option value="4">5</option>
+                                                                        <option value="5">6</option>
+                                                                        <option value="6">7</option>
+                                                                        <option value="7">8</option>
+                                                                        <option value="8">9</option>
+                                                                        <option value="9">10</option>
+                                                                        <option value="10">11</option>
+                                                                        <option value="11">12</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 ">
+                                                        <div class="row">
+                                                            <div class="col-md-12 " style="">
+                                                                <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How your vehicle over been subject to an insurance write off or been accident damaged?</label>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="inputGroup">
+                                                                    <input id="accident-damaged-yes" name="accident_damaged" class="-yes" type="radio" value="1">
+                                                                    <label for="accident-damaged-yes">Yes</label>
+=======
                                                     <div class="row ">
                                                         <div class="col-md-6">
                                                             <div class="row">
@@ -230,6 +312,7 @@
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
+>>>>>>> 51d7b236dd326e2a108ffe1bbcddb39275c6a763
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">                                                               
@@ -246,7 +329,15 @@
                                                                 <div id="home_textarea" class="col-md-12 d-none">
                                                                     <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                 </div>
+<<<<<<< HEAD
                                                             </div>
+                                                            <span class="text-danger accident_damaged"></span>
+                                                            <div id="home_textarea" class="col-md-12 d-none">
+                                                                <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
+=======
+>>>>>>> 51d7b236dd326e2a108ffe1bbcddb39275c6a763
+                                                            </div>
+                                                            <span class="text-danger home_textarea"></span>
                                                         </div>
                                                     </div>
                                                     <div class="d-gri pt-5" style="float:right">
@@ -396,11 +487,26 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+<<<<<<< HEAD
+
+                                                            <div id="accurate_textarea" class="col-md-12 d-none">
+                                                                <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="d-gridd">
+                                                    <button type="submit" id="third-page" class="btn text-light main-bg">Submit</button>
+=======
                                                         </div>
                                                     </div>
                                                     <div class="d-gridd mt-4">
                                                         <button type="submit" id="third-page" class="btn text-light main-bg">Submit</button>
                                                     </div>
+>>>>>>> 51d7b236dd326e2a108ffe1bbcddb39275c6a763
                                                 </div>
                                             </div>
                                         </div>
@@ -412,87 +518,99 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- How it Works -->
-    <section class="how_it_Works text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="title">
-                        <h2>How it Works?</h2>
-                        <p>3 Easy Steps</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row steps">
-                <div class="col-md-4 col-sm-12 pt-5">
-                    <div class="blurb-icons">
-                        <img src="{{asset ('assets/img/valuate -your-car.png')}}" alt="Value my Car" class="float-center pb-3">
-                        <h2>Sell Your Car</h2>
-                        <p class="get-a-free">Get a free no obligation <br> valuation above.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 pt-5">
-                    <div class="blurb-icons">
-                        <img src="{{asset ('assets/img/book-appointment.png')}}" alt="Value my Car" class="float-center pb-3">
-                        <h2>Book Appointment</h2>
-                        <p>Book an appointment for <br>a free car inspection <br> near you.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 pt-5">
-                    <div class="blurb-icons">
-                        <img src="{{asset ('assets/img/sell-your-car.png')}}" alt="Value my Car" class="float-center pb-3">
-                        <h2>Sell your Car</h2>
-                        <p>Complete the sale and <br> get paid if you are happy with <br> the offer.</p>
-                    </div>
+</section>
+<!-- How it Works -->
+<section class="how_it_Works text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title">
+                    <h2>How it Works?</h2>
+                    <p>3 Easy Steps</p>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Suppport Section -->
-    <section class="want_to_sell p-3 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center d-flex alignCenter">
-                    <p>Want to Sell Your Car?</p>
-                </div>
-                <div class="col-md-8 float-center">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <form action="" class="d-flex formSell">
-                                <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
-                                <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
-                            </form>
-                        </div>
-                    </div>
+
+        <div class="row steps">
+            <div class="col-md-4 col-sm-12 pt-5">
+                <div class="blurb-icons">
+                    <img src="{{asset ('assets/img/valuate -your-car.png')}}" alt="Value my Car" class="float-center pb-3">
+                    <h2>Sell Your Car</h2>
+                    <p class="get-a-free">Get a free no obligation <br> valuation above.</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Modal HTML -->
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog modal-confirm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="icon-box">
-                        <!-- <i class="material-icons">&#xE876;</i> -->
-                        <i class="fa fa-check" aria-hidden="true"></i>
 
-                    </div>
-                    <h4 class="modal-title w-100">Awesome!</h4>
+            <div class="col-md-4 col-sm-12 pt-5">
+                <div class="blurb-icons">
+                    <img src="{{asset ('assets/img/book-appointment.png')}}" alt="Value my Car" class="float-center pb-3">
+                    <h2>Book Appointment</h2>
+                    <p>Book an appointment for <br>a free car inspection <br> near you.</p>
                 </div>
-                <div class="modal-body">
-                    <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
-                </div>
-                <div class="modal-footer">
-                    <button id="redirect" class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+            </div>
+
+            <div class="col-md-4 col-sm-12 pt-5">
+                <div class="blurb-icons">
+                    <img src="{{asset ('assets/img/sell-your-car.png')}}" alt="Value my Car" class="float-center pb-3">
+                    <h2>Sell your Car</h2>
+                    <p>Complete the sale and <br> get paid if you are happy with <br> the offer.</p>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<!-- Suppport Section -->
+<section class="want_to_sell p-3 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center d-flex alignCenter">
+                <p>Want to Sell Your Car?</p>
+            </div>
+            <div class="col-md-8 float-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form action="" class="d-flex formSell">
+                            <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
+                            <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-box">
+                    <!-- <i class="material-icons">&#xE876;</i> -->
+                    <i class="fa fa-check" aria-hidden="true"></i>
+
+                </div>
+                <h4 class="modal-title w-100">Awesome!</h4>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="redirect" class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+<<<<<<< HEAD
+</div>
+@endsection
+@section('script')
+<script>
+    $(document).ready(function() {
+        $('input[type=radio][name=accident_damaged]').change(function() {
+            if (this.value == 1) {
+                $("#home_textarea").removeClass('d-none');
+            } else {
+                $("#home_textarea").addClass('d-none');
+            }
+=======
 
     @endsection
 @section('script')
@@ -528,47 +646,111 @@
 
             });
 
+>>>>>>> 51d7b236dd326e2a108ffe1bbcddb39275c6a763
         });
-    </script>
 
-    <script>
 
-        $("#flexCheckDisabled").change(function() {
-            if (this.checked) {
-                $("#first-button").removeAttr('disabled');
+        $('input[type=radio][name=warning_light]').change(function() {
+            if (this.value == 1) {
+                $("#warning_textarea").removeClass('d-none');
             } else {
-                $("#first-button").attr('disabled', 'disabled');
+                $("#warning_textarea").addClass('d-none');
             }
-        })
-        $(document).ready(function() {
-            $("#first-button").on('click', function() {
-                $("#step_1").hide();
-                $("#step_2").show();
-                $("#step_3").hide();
-            });
-
-            $("#second-button").on('click', function() {
-                $("#step_1").hide();
-                $("#step_2").hide();
-                $("#step_3").show();
-
-            });
-
-            $("#third-page").on('click', function() {
-                $("#step_1").show();
-                $("#step_2").hide();
-                $("#step_3").hide();
-
-            });
-
-
-
-        
-
-            //    $("#third-button").on('click', function(){
-            //         location.reload();
-            //     })
 
         });
-    </script>
+
+        $('input[type=radio][name=accurate]').change(function() {
+            if (this.value == 1) {
+                $("#accurate_textarea").removeClass('d-none');
+            } else {
+                $("#accurate_textarea").addClass('d-none');
+            }
+
+        });
+
+    });
+</script>
+
+<script>
+    $("#flexCheckDisabled").change(function() {
+        if (this.checked) {
+            $("#first-button").removeAttr('disabled');
+        } else {
+            $("#first-button").attr('disabled', 'disabled');
+        }
+    })
+    $(document).ready(function() {
+        $("#first-button").on('click', function() {
+            var fullname = $("#fullname").val();
+            var email = $("#email").val();
+            var phone = $("#phone").val();
+            $("#fullname").css("border", "none");
+            $("#email").css("border", "none");
+            $("#phone").css("border", "none");
+            $(".phoneerror").html("");
+            if (fullname == "") {
+                $("#fullname").css("border", "1px solid red");
+                return false;
+            }
+            if (email == "") {
+                $("#email").css("border", "1px solid red");
+                return false;
+            }
+            if (phone == "") {
+                $("#phone").css("border", "1px solid red");
+                return false;
+            }
+            if (phone.length < 10 || phone.length > 11) {
+                $(".phoneerror").html("Phone number must be 10 digits or 11 digits");
+                return false;
+            }
+            $("#step_1").hide();
+            $("#step_2").show();
+            $("#step_3").hide();
+        });
+
+        $("#second-button").on('click', function() {
+            //step2 form validations
+            $(".service_history").html("");
+            $(".non_runner").html("");
+            $(".accident_damaged").html("");
+            $(".set_of_keys").html("");
+            $(".home_textarea").html("");
+            if ($('input[name="service_history"]:checked').length == 0) {
+                $(".service_history").html("Please Select Service History");
+                return false;
+            }
+            if ($('input[name="non_runner"]:checked').length == 0) {
+                $(".non_runner").html("Please Select non runner ");
+                return false;
+            }
+            if ($('input[name="set_of_keys"]:checked').length == 0) {
+                $(".set_of_keys").html("Please Select  set of keys");
+                return false;
+            }
+            if ($('input[name="accident_damaged"]:checked').length == 0) {
+                $(".accident_damaged").html("Please Select  Accident Damaged");
+                return false;
+            }
+
+            if ($("#textarea").val() == "") {
+                $(".home_textarea").html("Please Enter Comment");
+                return false;
+            }
+
+            $("#step_1").hide();
+            $("#step_2").hide();
+            $("#step_3").show();
+
+        });
+
+        $("#third-page").on('click', function() {
+            $("#step_1").show();
+            $("#step_2").hide();
+            $("#step_3").hide();
+
+        });
+
+    });
+</script>
 @endsection
