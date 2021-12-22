@@ -452,6 +452,7 @@
             </div>
         </div>
     </section>
+    
     <!-- Suppport Section -->
     <section class="want_to_sell p-3 text-white">
         <div class="container">
@@ -461,10 +462,10 @@
                 </div>
                 <div class="col-md-8 float-center">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <form action="" class="d-flex formSell">
-                                <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
-                                <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
+                        <div class="col-lg-12 d-flex">
+                            <form action="" class=" formSell">
+                                <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 15px;font-size: 22px;font-weight: 600;text-transform: uppercase;">
+                                <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #13293D; ">
                             </form>
                         </div>
                     </div>
@@ -472,6 +473,8 @@
             </div>
         </div>
     </section>
+
+
     <!-- Modal HTML -->
     <div id="myModal" class="modal fade">
         <div class="modal-dialog modal-confirm">

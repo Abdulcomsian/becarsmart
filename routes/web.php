@@ -128,3 +128,11 @@ Route::get('/term', function () {
 Route::get('/frontend/login', function () {
     return view('frontend/sellcar/login');
 })->name('frontend/login');
+
+Route::get('/how_it_works', function () {
+    return view('frontend/sellcar/how_it_works');
+})->name('frontend/how_it_works');
+
+Route::get('/blog', function () {
+    return view('frontend/sellcar//blog');
+})->name('frontend//blog');
