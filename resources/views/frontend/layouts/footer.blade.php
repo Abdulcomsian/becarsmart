@@ -1,24 +1,3 @@
-  <!-- Suppport Section -->
-
-  <section class="want_to_sell p-3 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center d-flex alignCenter">
-                    <p>Want to Sell Your Car?</p>
-                </div>
-                <div class="col-md-8 float-center">
-                   <div class="row">
-                       <div class="col-lg-12">
-                           <form action="" class="d-flex formSell">
-                                <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA"  style="padding: 15px;">
-                                <input type="submit" class="btn btn-danger w-100" value="Value" style="padding: 15px; max-width: 67%;">
-                           </form>
-                       </div>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer Section -->
     <section id="footer">
