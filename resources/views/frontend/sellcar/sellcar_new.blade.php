@@ -38,7 +38,7 @@
                         <div class="col-lg-5 col-md-12">
                             <div class="sellcar-blurb-content py-5">
                                 <!-- Form start -->
-                                <form method="post" action="{{url('sellcar_new')}}">
+                                <form id="basic-form" method="post" action="{{url('sellcar_new')}}">
                                     @csrf
                                     <x-auth-validation-errors class="mb-4" :errors="$errors" />
                                     <!-- api field -->
@@ -59,26 +59,31 @@
                                                         </div>
                                                         <div class="home-card-body card-body">
 
-                                                            <div class="row mb-4">
+                                                            <div class="row">
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
-                                                                        <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="6+months" placeholder="Full name" require>
-
+                                                                        <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="fullName" placeholder="Full name" required>
+                                                                        <br>
+                                                                        <p id="p1"></p>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row mb-4">
+                                                            <div class="row">
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
-                                                                        <input type="email" value="{{old('email')}}" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" require>
+                                                                        <input type="email" value="{{old('email')}}" name="email" class="form-control" id="Email" placeholder="Email" required>
+                                                                        <br>
+                                                                        <p id="p2"></p>
                                                                     </div>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="row mb-4">
+                                                            <div class="row">
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
-                                                                        <input type="number" value="{{old('phone')}}" name="phone" class="form-control" id="exampleFormControlInput1"  placeholder="Phone number" require>
+                                                                        <input type="number" value="{{old('phone')}}" name="phone" class="form-control" id="Number"  placeholder="Phone number" required>
+                                                                        <br>
+                                                                        <p id="p3"></p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -120,144 +125,146 @@
                 <div class="row" id="step_2" style="display:none;">
                     <div class="col-lg-12 col-md-12">
                         <div class="sellcar-blurb-content py-5">
-                            <div class="row">
-                                <div class="col-md-12" style="justify-content: left;">
-                                    <div class="row d-flex align-items-left">
-                                        <div class="col-lg-10 col-md-12 col-sm-12 " style="width: 100%;">
-                                            <div class="card shadow card-shadow ">
-                                                <div class="home-card-body card-body">
-                                                    <div class="row mb-4">
-                                                        <div class="col-md-12 ">
-                                                            <div class="row">
-                                                                <div class="col-md-12">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Service History</label>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <div class="inputGroup">
-                                                                        <input id="full" name="service_history" class="check-am" type="radio" value="full" {{ old('service_history') == 'full' ? 'checked' : '' }}>
-                                                                        <label for="full">Full</label>
+                            <form id="second_basic_form" method="post" action="">
+                                <div class="row">
+                                    <div class="col-md-12" style="justify-content: left;">
+                                        <div class="row d-flex align-items-left">
+                                            <div class="col-lg-10 col-md-12 col-sm-12 " style="width: 100%;">
+                                                <div class="card shadow card-shadow ">
+                                                    <div class="home-card-body card-body">
+                                                        <div class="row mb-4">
+                                                            <div class="col-md-12 ">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Service History</label>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <div class="inputGroup">
-                                                                        <input id="some" name="service_history" class="check-am" type="radio" value="some" {{ old('service_history') == 'some' ? 'checked' : '' }} />
-                                                                        <label for="some">Some</label>
+                                                                    <div class="col-md-3">
+                                                                        <div class="inputGroup">
+                                                                            <input id="full" name="service_history" class="check-am" type="radio" value="full" {{ old('service_history') == 'full' ? 'checked' : '' }}>
+                                                                            <label for="full">Full</label>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <div class="inputGroup">
-                                                                        <input id="None" name="service_history" class="check-am" type="radio" value="none" {{ old('service_history') == 'none' ? 'checked' : '' }}>
-                                                                        <label for="None">None</label>
+                                                                    <div class="col-md-3">
+                                                                        <div class="inputGroup">
+                                                                            <input id="some" name="service_history" class="check-am" type="radio" value="some" {{ old('service_history') == 'some' ? 'checked' : '' }} />
+                                                                            <label for="some">Some</label>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-md-3">
-                                                                    <div class="inputGroup">
-                                                                        <input id="first" name="service_history" class="check-am" type="radio" value="first not due" {{ old('service_history') == 'first not due' ? 'checked' : '' }} />
-                                                                        <label for="first">First not due</label>
+                                                                    <div class="col-md-3">
+                                                                        <div class="inputGroup">
+                                                                            <input id="None" name="service_history" class="check-am" type="radio" value="none" {{ old('service_history') == 'none' ? 'checked' : '' }}>
+                                                                            <label for="None">None</label>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-4">
-                                                        <div class="col-md-6 ">
-                                                            <div class="row">
-                                                                <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="driving" name="non_runner" class="-yes" type="radio" value="1" {{ old('non_runner') == '1' ? 'checked' : '' }}>
-                                                                        <label for="driving">Yes</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="police" name="non_runner" class="-no" type="radio" value="0" {{ old('non_runner') == '0' ? 'checked' : '' }} />
-                                                                        <label for="police">No</label>
+                                                                    <div class="col-md-3">
+                                                                        <div class="inputGroup">
+                                                                            <input id="first" name="service_history" class="check-am" type="radio" value="first not due" {{ old('service_history') == 'first not due' ? 'checked' : '' }} />
+                                                                            <label for="first">First not due</label>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6 ">
-                                                            <div class="row">
-                                                                <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="driving " name="set_of_keys" class="-yes" type="radio" value="1" {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
-                                                                        <label for="driving ">1</label>
+                                                        <div class="row mb-4">
+                                                            <div class="col-md-6 ">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 " style="">
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="inputGroup">
+                                                                            <input id="driving" name="non_runner" class="-yes" type="radio" value="1" {{ old('non_runner') == '1' ? 'checked' : '' }}>
+                                                                            <label for="driving">Yes</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="inputGroup">
+                                                                            <input id="police" name="non_runner" class="-no" type="radio" value="0" {{ old('non_runner') == '0' ? 'checked' : '' }} />
+                                                                            <label for="police">No</label>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="tuition" name="set_of_keys" class="-no" type="radio" value="2" {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
-                                                                        <label for="tuition">2 or more</label>
+                                                            </div>
+                                                            <div class="col-md-6 ">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 " style="">
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="inputGroup">
+                                                                            <input id="driving " name="set_of_keys" class="-yes" type="radio" value="1" {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
+                                                                            <label for="driving ">1</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="inputGroup">
+                                                                            <input id="tuition" name="set_of_keys" class="-no" type="radio" value="2" {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
+                                                                            <label for="tuition">2 or more</label>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row ">
-                                                        <div class="col-md-6">
-                                                            <div class="row">
-                                                                <div class="col-md-12 ">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT?</label>
+                                                        <div class="row ">
+                                                            <div class="col-md-6">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 ">
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT?</label>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="inputGroup">
+                                                                            <select class="form-select" aria-label="Default select example">
+                                                                                <option selected>1</option>
+                                                                                <option value="1">2</option>
+                                                                                <option value="2">3</option>
+                                                                                <option value="3">4</option>
+                                                                                <option value="4">5</option>
+                                                                                <option value="5">6</option>
+                                                                                <option value="6">7</option>
+                                                                                <option value="7">8</option>
+                                                                                <option value="8">9</option>
+                                                                                <option value="9">10</option>
+                                                                                <option value="10">11</option>
+                                                                                <option value="11">12</option>
+                                                                                
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="col-md-12">
-                                                                    <div class="inputGroup">
-                                                                        <select class="form-select" aria-label="Default select example">
-                                                                            <option selected>1</option>
-                                                                            <option value="1">2</option>
-                                                                            <option value="2">3</option>
-                                                                            <option value="3">4</option>
-                                                                            <option value="4">5</option>
-                                                                            <option value="5">6</option>
-                                                                            <option value="6">7</option>
-                                                                            <option value="7">8</option>
-                                                                            <option value="8">9</option>
-                                                                            <option value="9">10</option>
-                                                                            <option value="10">11</option>
-                                                                            <option value="11">12</option>
-                                                                            
-                                                                        </select>
+                                                            </div>
+                                                            <div class="col-md-6 ">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 " style="">
+                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="inputGroup">                                                               
+                                                                            <input id="accident-damaged-yes" name="accident_damaged" class="-yes" type="radio" value="1" >
+                                                                            <label for="accident-damaged-yes">Yes</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="inputGroup">
+                                                                            <input id="accident-damaged-no" name="accident_damaged" class="-no" type="radio" value="0" />
+                                                                            <label for="accident-damaged-no">No</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="home_textarea" class="col-md-12 d-none">
+                                                                        <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6 ">
-                                                            <div class="row">
-                                                                <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">                                                               
-                                                                        <input id="accident-damaged-yes" name="accident_damaged" class="-yes" type="radio" value="1" >
-                                                                        <label for="accident-damaged-yes">Yes</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="accident-damaged-no" name="accident_damaged" class="-no" type="radio" value="0" />
-                                                                        <label for="accident-damaged-no">No</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div id="home_textarea" class="col-md-12 d-none">
-                                                                    <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
-                                                                </div>
-                                                            </div>
+                                                        <div class="d-gri pt-5" style="float:right">
+                                                            <button type="button" id="second-button" class="btn text-light main-bg">Next</button>
                                                         </div>
-                                                    </div>
-                                                    <div class="d-gri pt-5" style="float:right">
-                                                        <button type="button" id="second-button" class="btn text-light main-bg">Next</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -473,8 +480,6 @@
             </div>
         </div>
     </section>
-
-
     <!-- Modal HTML -->
     <div id="myModal" class="modal fade">
         <div class="modal-dialog modal-confirm">
@@ -499,7 +504,9 @@
 
     @endsection
 @section('script')
+
     <script>
+
         $(document).ready(function(){
             $('input[type=radio][name=accident_damaged]').change(function() {
                 if (this.value == 1) {
@@ -545,15 +552,48 @@
         })
         $(document).ready(function() {
             $("#first-button").on('click', function() {
-                $("#step_1").hide();
-                $("#step_2").show();
-                $("#step_3").hide();
+
+                var name = $('#fullName').val();
+                var email = $('#Email').val();
+                var phone = $('#Number').val();
+                
+                if (name == '') {
+                    $('#fullName').css('border','2px solid #ff0000');
+                    $('#p1').text("Please Enter Your Name");
+                    return false;
+                } else if (email == '') {
+                    $('#Email').css('border','2px solid #ff0000');
+                    $('#p2').text("Please Enter Your Email");
+                    return false;
+                } else if (phone == '') {
+                    $('#Number').css('border','2px solid #ff0000');
+                    $('#p3').text("Please Enter Your Number");
+                    return false;
+                } else {
+                  
+                    $("#step_1").hide();
+                    $("#step_2").show();
+                    $("#step_3").hide();
+                }
+
+               
+
+               
             });
 
             $("#second-button").on('click', function() {
-                $("#step_1").hide();
-                $("#step_2").hide();
-                $("#step_3").show();
+                var name = $('#fullName').val();
+                
+                if (name == '') {
+                    $('#fullName').css('border','2px solid #ff0000');
+                    $('#p1').text("Please Enter Your Name");
+                    return false;
+                } else {
+                
+                    $("#step_1").hide();
+                    $("#step_2").hide();
+                    $("#step_3").show();
+                }
 
             });
 

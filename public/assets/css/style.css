@@ -2045,7 +2045,11 @@ h1.heading-h1 {
   width: 100%;
   max-width: 50%;
 }
-
+#p1, #p2, #p3 {
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 14px;
+} 
 @media only screen and (max-width:767px) {
 	.page-header h1 {
 		font-size: 28px
