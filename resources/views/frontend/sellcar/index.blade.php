@@ -374,7 +374,7 @@ BeCarSmart | index
     </div>
 </section>
 <!-- Testimonial Section -->
-<section class="testimonial text-center p-5">
+<!-- <section class="testimonial text-center p-5">
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -414,93 +414,84 @@ BeCarSmart | index
 
                         </div>
                         @endforeach
-                        <!-- <div class="carousel-item">
-                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
-                                <div class="user_name">
-                                    <h3 class="mt-2">John Doe</h3>
-                                </div>
-                                <div class="rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <div class="para">
-                                    <p>
-                                        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
-                                    </p>
-                                </div>
-
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
-                                <div class="user_name">
-                                    <h3>John Doe</h3>
-                                </div>
-                                <div class="rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <div class="para">
-                                    <p>
-                                        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
-                                    </p>
-                                </div>
-
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="{{asset ('assets/img/testimonial1.png')}}" class="thumbnail circled" alt="...">
-                                <div class="user_name">
-                                    <h3>John Doe</h3>
-                                </div>
-                                <div class="rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <div class="para">
-                                    <p>
-                                        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
-                                    </p>
-                                </div>
-
-                            </div> -->
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Suppport Section -->
-    <section class="want_to_sell p-3 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center d-flex alignCenter">
-                    <p>Want to Sell Your Car?</p>
-                </div>
-                <div class="col-md-8 float-center">
-                    <div class="row">
-                        <div class="col-lg-12 ">
-                            <form action="" class=" formSell d-flex">
-                                <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 15px;font-size: 22px;font-weight: 600;text-transform: uppercase;">
-                                <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
-                            </form>
-                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
+</section> -->
+
+<section class="testimonial text-center p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="slider">
+                    <img src="{{asset('assets/img/audi.png')}}"/>
+                    <img src="{{asset('assets/img/Toyota.png')}}"/>
+                    <img src="{{asset('assets/img/land-rover.png')}}"/>
+                    <img src="{{asset('assets/img/mer.png')}}"/>
+                    <img src="{{asset('assets/img/nissan.png')}}"/>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+    
+<!-- Suppport Section -->
+<section class="want_to_sell p-3 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center d-flex alignCenter">
+                <p>Want to Sell Your Car?</p>
+            </div>
+            <div class="col-md-8 float-center">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <form action="" class=" formSell d-flex">
+                            <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 15px;font-size: 22px;font-weight: 600;text-transform: uppercase;">
+                            <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+@endsection
+@section('script')
+    <script>
+        jQuery(document).ready(function($) {
+            $('.slider').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 4,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '30px',
+                        slidesToShow: 1
+                    }
+                    }
+                ]
+            });
+        });
+
+    </script>
 @endsection
