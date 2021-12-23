@@ -12,7 +12,7 @@
                     <a class="nav-link" href="#Sell-Your-Car">Sell Your Car</a>
                  </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="#How-it-Works">How It Works</a>
+                    <a class="nav-link" href="{{ url('/how_it_works') }}">How It Works</a>
                  </li>
                  <li class="nav-item">
                     <a class="nav-link" href="#Buy-a-Car">Source A Car</a>
@@ -25,7 +25,7 @@
                         <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
 
                         <li class="nav-item">
-                           <a class="dropdown-item" href="#">About Us</a>
+                           <a class="dropdown-item" href="{{url ('/about')}}">About Us</a>
                         </li>
                         <li class="nav-item">
                            <a class="dropdown-item" href="#">For Motor Traders</a>
@@ -34,13 +34,13 @@
                            <a class="dropdown-item" href="{{ url('/faq') }}">FAQ</a>
                         </li>
                         <li class="nav-item">
-                           <a class="dropdown-item" href="#">Contact Us</a>
+                           <a class="dropdown-item" href="{{ url('/contact')}}">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                           <a class="dropdown-item" href="#">Blog</a>
+                           <a class="dropdown-item" href="{{url('/blog')}}">Blog</a>
                         </li>
                         <li class="nav-item">
-                           <a class="dropdown-item" href="#">Reviews</a>
+                           <a class="dropdown-item" href="{{url('/reviews')}}">Reviews</a>
                         </li>
                      </ul>
                   </li>

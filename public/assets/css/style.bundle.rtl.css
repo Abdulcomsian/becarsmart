@@ -32008,7 +32008,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-muted {
-  color: !important;
+  color: #E4E6EF !important;
 }
 
 .text-hover-muted {
@@ -32041,11 +32041,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-muted:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-hover-inverse-muted:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-hover-inverse-muted:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32084,11 +32084,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-muted.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-active-inverse-muted.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-active-inverse-muted.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32102,7 +32102,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-gray-100 {
-  color: !important;
+  color: #E4E6EF !important;
 }
 
 .text-hover-gray-100 {
@@ -32135,11 +32135,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-gray-100:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-hover-inverse-gray-100:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-hover-inverse-gray-100:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32178,11 +32178,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-gray-100.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-active-inverse-gray-100.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-active-inverse-gray-100.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32196,7 +32196,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-gray-200 {
-  color: !important;
+  color: #E4E6EF !important;
 }
 
 .text-hover-gray-200 {
@@ -32229,11 +32229,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-gray-200:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-hover-inverse-gray-200:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-hover-inverse-gray-200:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32272,11 +32272,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-gray-200.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-active-inverse-gray-200.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-active-inverse-gray-200.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32290,7 +32290,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-gray-300 {
-  color: !important;
+  color: #E4E6EF !important;
 }
 
 .text-hover-gray-300 {
@@ -32323,11 +32323,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-gray-300:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-hover-inverse-gray-300:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  color: #E4E6EF !important;
 }
 .text-hover-inverse-gray-300:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32366,11 +32366,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-gray-300.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-300.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-300.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32384,7 +32384,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-gray-400 {
-  color: !important;
+  /* color: !important; */
 }
 
 .text-hover-gray-400 {
@@ -32417,11 +32417,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-gray-400:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-400:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-400:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32460,11 +32460,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-gray-400.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-400.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-400.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32478,7 +32478,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-gray-500 {
-  color: !important;
+  /* color: !important; */
 }
 
 .text-hover-gray-500 {
@@ -32511,11 +32511,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-gray-500:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-500:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-500:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32554,11 +32554,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-gray-500.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-500.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-500.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32572,7 +32572,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-gray-600 {
-  color: !important;
+  /* color: !important; */
 }
 
 .text-hover-gray-600 {
@@ -32605,11 +32605,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-gray-600:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-600:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-600:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32648,11 +32648,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-gray-600.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-600.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-600.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32666,7 +32666,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-gray-700 {
-  color: !important;
+  /* color: !important; */
 }
 
 .text-hover-gray-700 {
@@ -32699,11 +32699,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-gray-700:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-700:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-700:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32742,11 +32742,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-gray-700.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-700.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-700.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32760,7 +32760,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-gray-800 {
-  color: !important;
+  /* color: !important; */
 }
 
 .text-hover-gray-800 {
@@ -32793,11 +32793,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-gray-800:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-800:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-800:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32836,11 +32836,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-gray-800.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-800.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-800.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32854,7 +32854,7 @@ textarea.form-control-lg {
 }
 
 .text-inverse-gray-900 {
-  color: !important;
+  /* color: !important; */
 }
 
 .text-hover-gray-900 {
@@ -32887,11 +32887,11 @@ textarea.form-control-lg {
 }
 .text-hover-inverse-gray-900:hover {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-900:hover i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-hover-inverse-gray-900:hover .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -32930,11 +32930,11 @@ textarea.form-control-lg {
 }
 .text-active-inverse-gray-900.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-900.active i {
   transition: color 0.2s ease, background-color 0.2s ease;
-  color: !important;
+  /* color: !important; */
 }
 .text-active-inverse-gray-900.active .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;

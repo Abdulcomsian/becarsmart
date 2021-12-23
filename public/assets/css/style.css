@@ -631,26 +631,105 @@ select.list-dt:focus {
   border-radius: 0;
   background: black;
 }
-.formSell input[type="submit"]{
-    width: 277px !important;
-    background: #2c3b53;
-    border-radius: 0;
-    border: 1px solid #2c3b53 !important;
-    max-width: 67%;
-    padding: 2%;
-}
+
 .want_to_sell form{
   justify-content: space-between;
   padding-right: 4%;
-
 }
-.formSell input[type="text"]{
-  width: 519px;
-  font-size: 22px;
-  height: 68px;
-  border-radius: 0px !important;
-  font-weight: 600;
-  text-transform: uppercase;
+
+.blurbdiv .about-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #747474;
+  line-height: 30px;
+  padding: 0px 50px;
+}
+
+/* ***********excellent*************** */
+#excellent{
+  padding: 60px 0px;
+}
+
+#excellent .excellent_content{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#excellent .excellent_content h2{
+  font-size: 35px;
+  font-weight: 500;
+  font-style: none;
+}
+#excellent .excellent_content span i{
+  font-size: 25px;
+  font-weight: 500;
+  font-style: none;
+  color: #ffffff;
+  background-color: #e73e2c;
+  padding: 4px;
+}
+#excellent .excellent_content-text a{
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  font-style: none;
+}
+#excellent .excellent_content-text a p span{
+  font-size: 18px;
+  font-weight: 500;
+  color: #191919;
+  text-decoration: underline;
+  font-style: none;
+}
+#excellent .excellent_content-text{
+  display: flex;
+  align-items: baseline;
+}
+#excellent .excellent_content-text span i{
+  font-size: 25px;
+  font-weight: 500;
+  font-style: none;
+  color: #e73e2c;
+  padding: 4px;
+}
+#excellent .excellent_content-text p{
+  font-size: 19px;
+}
+
+#excellent .reviews_main_section .reviews_shadow .showing_content{
+  display: flex;
+}
+#excellent .reviews_main_section .reviews_shadow .showing_content span i{
+    background-color: #e73e2c;
+    padding: 4px;
+    color: #FFFFFF;
+}
+#excellent .reviews_main_section .reviews_shadow {
+  /* box-shadow: ; */
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  padding: 20px 30px;
+}
+#excellent .reviews_main_section .reviews_shadow .header-text{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 10px;
+}
+#excellent .reviews_main_section .reviews_shadow .dark-text{
+  font-size: 16px;
+  font-weight: 400;
+  color: #747474;
+}
+
+
+#excellent .reviews_main_section .reviews_shadow .date-time{
+  float: right;
+}
+#excellent .excellent_content-text span.fa_star {  
+  display: flex;
+  align-items: baseline;
 }
 
 /* Footer style  */
@@ -792,6 +871,39 @@ hr:not([size]) {
   
 }
 @media only screen and (max-width: 600px) {
+
+  #excellent .excellent_content span i {
+      font-size: 21px;
+      font-weight: 500;
+      color: #ffffff;
+      background-color: #e73e2c;
+      padding: 4px;
+  }
+  #excellent .reviews_main_section .reviews_shadow .showing_content span i {
+    background-color: #e73e2c;
+    padding: 3px;
+    color: #FFFFFF;
+    font-size: 12px;
+  }
+  #excellent .reviews_main_section .reviews_shadow .showing_content {
+    line-height: 2 !important;
+    display: block;
+  }
+  #excellent .reviews_main_section .reviews_shadow .header-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  #excellent .reviews_main_section .reviews_shadow .date-time {
+    float: left;
+}
+#excellent .excellent_content-text {
+  display: block;
+  align-items: baseline;
+}
+#excellent .excellent_content-text span.fa_star {
+  display: flex;
+}
   
   .hero-section h1 {
     font-weight: 700 !important;
@@ -1036,7 +1148,7 @@ button.btn.btn-primary.btn-md.btn-block {
   background-image: url("../img/bg.png");
   background-position: inherit;
   background-size: cover;
-  padding: 20px;
+  padding: 0px 50px;
 }
 #faq-section{
   background-image: url("../img/faq-banner.png");
@@ -2038,6 +2150,33 @@ h1.heading-h1 {
 }
 
 
+/* How it Works Style start */
+#how-it-work-content{
+  padding: 0px 50px;
+}
+#how-it-work-content .blurbdiv h2{
+  font-family: 'Helvetica';
+  font-weight: 600;
+  color: inherit;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+#how-it-work-content .blurbdiv p{
+  font-size: 20px;
+  font-weight: 400;
+  color: #747474;
+  line-height: 30px;
+}
+#how-it-works-content .blurb-img img{
+  width: 100%;
+  max-width: 50%;
+}
+#p1, #p2, #p3 {
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 14px;
+} 
 @media only screen and (max-width:767px) {
 	.page-header h1 {
 		font-size: 28px
