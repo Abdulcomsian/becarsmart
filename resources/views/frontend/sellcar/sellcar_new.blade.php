@@ -1,38 +1,40 @@
 @extends('frontend.layouts.master')
-    @section('title')
-        BeCarSmart | Sellcar New
-    @endsection
+@section('title')
+BeCarSmart | Sellcar New
+@endsection
 @section('content')
 
-    <!-- Hero Section -->
-    <section class="SellCar-section text-center">
-        <div class="container">
-            <div class="row d-flex pt-5">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 style="float: left;" class="heading-h1">
-                                {{$_GET['regno'] ?? 'ZS33 FS'}}
-                            </h1>
-                        </div>
+<!-- Hero Section -->
+<section class="SellCar-section text-center">
+    <div class="container">
+        <div class="row d-flex pt-5">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 style="float: left;" class="heading-h1">
+                            {{$_GET['regno'] ?? 'ZS33 FS'}}
+                        </h1>
                     </div>
-                    <h3 style="text-align: left;">
-                        {{$_GET['euroStatus'] ?? 'Hyundai I30 Active Blue Drive CRDI'}}
-                    </h3>
+                </div>
+                <h3 style="text-align: left;">
+                    {{$_GET['euroStatus'] ?? 'Hyundai I30 Active Blue Drive CRDI'}}
+                </h3>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="sellcar-ul-li  pt-1 pb-2">
-                                <ul class="d-flex">
-                                    <li><b>model: </b>&nbsp {{$_GET['model_no'] ?? ''}}</li>&nbsp &nbsp
-                                    <li><b>Color: </b>&nbsp {{$_GET['color'] ?? ''}}</li>&nbsp &nbsp
-                                    <li><b>Engine: </b>&nbsp {{$_GET['engine'] ?? ''}}</li>&nbsp &nbsp
-                                    <li><b>Mileage: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>
-                                </ul>
-                            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sellcar-ul-li  pt-1 pb-2">
+                            <ul class="d-flex">
+                                <li><b>model: </b>&nbsp {{$_GET['model_no'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Color: </b>&nbsp {{$_GET['color'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Engine: </b>&nbsp {{$_GET['engine'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Mileage: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
+            <form id="sellcarform" method="post" action="{{url('sellcar_new')}}" enctype="multipart/form-data">
+                @csrf
                 <div id="step_1" style="display:block;">
                     <div class="row d-flex" ;>
                         <div class="col-lg-5 col-md-12">
@@ -77,6 +79,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                        </div>
 
                                                             <div class="row">
                                                                 <div class="col-md-12">
@@ -86,33 +89,35 @@
                                                                         <p id="p3"></p>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger phoneerror"></span>
                                                             </div>
+                                                        </div>
 
-                                                            <div class="row mb-5">
-                                                                <div class="col-md-12">
-                                                                    <!-- <div class="form-check">
+                                                        <div class="row mb-5">
+                                                            <div class="col-md-12">
+                                                                <!-- <div class="form-check">
                                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" chceked>
                                                                         <label class="form-check-label" for="checked">
                                                                             I have read the Privacy Policy and accept the Terms.
                                                                         </label>
                                                                     </div> -->
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
-                                                                        <label class="form-check-label" for="flexCheckDisabled">
-                                                                            I have read the Privacy Policy and accept the Terms.
-                                                                        </label>
-                                                                        </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
+                                                                    <label class="form-check-label" for="flexCheckDisabled">
+                                                                        I have read the Privacy Policy and accept the Terms.
+                                                                    </label>
                                                                 </div>
                                                             </div>
-                                                            <div class="" style="float:right" ;>
-                                                                <button type="button" id="first-button" class="btn text-light main-bg" disabled>Next</button>
-                                                            </div>
+                                                        </div>
+                                                        <div class="" style="float:right" ;>
+                                                            <button type="button" id="first-button" class="btn text-light main-bg" disabled>Next</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-12">
@@ -163,6 +168,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger service_history"></span>
                                                             </div>
                                                         </div>
                                                         <div class="row mb-4">
@@ -184,6 +190,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger non_runner"></span>
                                                             </div>
                                                             <div class="col-md-6 ">
                                                                 <div class="row">
@@ -203,8 +210,10 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger set_of_keys"></span>
                                                             </div>
                                                         </div>
+<<<<<<< HEAD
                                                         <div class="row ">
                                                             <div class="col-md-6">
                                                                 <div class="row">
@@ -236,6 +245,45 @@
                                                                 <div class="row">
                                                                     <div class="col-md-12 " style="">
                                                                         <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
+=======
+                                                    </div>
+                                                    <div class="row ">
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-12 ">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT?</label>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="inputGroup">
+                                                                        <select class="form-select" aria-label="Default select example" name="mot_due">
+                                                                            <option selected>1</option>
+                                                                            <option value="1">2</option>
+                                                                            <option value="2">3</option>
+                                                                            <option value="3">4</option>
+                                                                            <option value="4">5</option>
+                                                                            <option value="5">6</option>
+                                                                            <option value="6">7</option>
+                                                                            <option value="7">8</option>
+                                                                            <option value="8">9</option>
+                                                                            <option value="9">10</option>
+                                                                            <option value="10">11</option>
+                                                                            <option value="11">12</option>
+
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12 " style="">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="accident-damaged-yes" name="accident_damaged" class="-yes" type="radio" value="1">
+                                                                        <label for="accident-damaged-yes">Yes</label>
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="inputGroup">                                                               
@@ -252,7 +300,15 @@
                                                                     <div id="home_textarea" class="col-md-12 d-none">
                                                                         <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                     </div>
+<<<<<<< HEAD
+=======
                                                                 </div>
+                                                                <span class="text-danger accident_damaged"></span>
+                                                                <div id="home_textarea" class="col-md-12 d-none">
+                                                                    <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
+                                                                </div>
+                                                                <span class="text-danger home_textarea"></span>
                                                             </div>
                                                         </div>
                                                         <div class="d-gri pt-5" style="float:right">
@@ -291,7 +347,7 @@
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Gearbox Condition</label>
                                                                 </div>
                                                                 <div class="col-md-4">
-                                                                    <div class="inputGroup">                                                                
+                                                                    <div class="inputGroup">
                                                                         <input id="hradio" name="gearbox_condition" class="check-am" type="radio" value="no faults" {{ old('gearbox_condition') == 'no faults' ? 'checked' : '' }} />
                                                                         <label for="hradio">NO FAULTS</label>
                                                                     </div>
@@ -308,6 +364,7 @@
                                                                         <label for="jradio">DOESN'T RUN </label>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger  gearbox_condition"></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-5">
@@ -327,9 +384,12 @@
                                                                         <label for="yradio">No</label>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger warning_light"></span>
                                                                 <div id="warning_textarea" class="col-md-12 d-none">
-                                                                    <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
+                                                                    <textarea id="textarea" name="warning_comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                 </div>
+                                                                <span class="text-danger textarea"></span>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -351,11 +411,12 @@
                                                                         <label for="scratchesradio2">No</label>
                                                                     </div>
                                                                 </div>
-                                                                
-                                                                <div id="scratches_textarea" class="col-md-12 d-none">
-                                                                    <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
-                                                                </div>
+                                                                <span class="text-danger scratches"></span>
 
+                                                                <div id="scratches_textarea" class="col-md-12 d-none">
+                                                                    <textarea id="textarea" name="scratches_comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px" requried>{{old('comments')}}</textarea>
+                                                                </div>
+                                                                <span class="text-danger scratches_textarea"></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
@@ -365,7 +426,7 @@
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div class="inputGroup">
-                                                                        <select class="form-select" aria-label="Default select example">
+                                                                        <select class="form-select" aria-label="Default select example" name="vehicle_condtion">
                                                                             <option selected>Excellent</option>
                                                                             <option value="1">Good</option>
                                                                             <option value="2">Average</option>
@@ -386,7 +447,7 @@
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <div class="input-Group">
-                                                                            <input type="file" class="form-control" id="Written" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
+                                                                            <input type="file" class="form-control" id="Written" style="padding: 7px; border-radius: 0; border: 1px solid grey;" name="file">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -399,14 +460,15 @@
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div id="accurate_textarea" class="col-md-12 ">
-                                                                        <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
+                                                                        <textarea id="comments" name="more_info" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px" requried>{{old('comments')}}</textarea>
                                                                     </div>
+                                                                    <span class="text-danger comments"></span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="d-gridd mt-4">
-                                                        <button type="submit" id="third-page" class="btn text-light main-bg">Submit</button>
+                                                        <button type="button" id="third-page" class="btn text-light main-bg">Submit</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -417,47 +479,48 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
-    </section>
-    <!-- How it Works -->
-    <section class="how_it_Works text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="title">
-                        <h2>How it Works?</h2>
-                        <p>3 Easy Steps</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row steps">
-                <div class="col-md-4 col-sm-12 pt-5">
-                    <div class="blurb-icons">
-                        <img src="{{asset ('assets/img/valuate -your-car.png')}}" alt="Value my Car" class="float-center pb-3">
-                        <h2>Sell Your Car</h2>
-                        <p class="get-a-free">Get a free no obligation <br> valuation above.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 pt-5">
-                    <div class="blurb-icons">
-                        <img src="{{asset ('assets/img/book-appointment.png')}}" alt="Value my Car" class="float-center pb-3">
-                        <h2>Book Appointment</h2>
-                        <p>Book an appointment for <br>a free car inspection <br> near you.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 pt-5">
-                    <div class="blurb-icons">
-                        <img src="{{asset ('assets/img/sell-your-car.png')}}" alt="Value my Car" class="float-center pb-3">
-                        <h2>Sell your Car</h2>
-                        <p>Complete the sale and <br> get paid if you are happy with <br> the offer.</p>
-                    </div>
+    </div>
+</section>
+<!-- How it Works -->
+<section class="how_it_Works text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title">
+                    <h2>How it Works?</h2>
+                    <p>3 Easy Steps</p>
                 </div>
             </div>
         </div>
+
+        <div class="row steps">
+            <div class="col-md-4 col-sm-12 pt-5">
+                <div class="blurb-icons">
+                    <img src="{{asset ('assets/img/valuate -your-car.png')}}" alt="Value my Car" class="float-center pb-3">
+                    <h2>Sell Your Car</h2>
+                    <p class="get-a-free">Get a free no obligation <br> valuation above.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 pt-5">
+                <div class="blurb-icons">
+                    <img src="{{asset ('assets/img/book-appointment.png')}}" alt="Value my Car" class="float-center pb-3">
+                    <h2>Book Appointment</h2>
+                    <p>Book an appointment for <br>a free car inspection <br> near you.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 pt-5">
+                <div class="blurb-icons">
+                    <img src="{{asset ('assets/img/sell-your-car.png')}}" alt="Value my Car" class="float-center pb-3">
+                    <h2>Sell your Car</h2>
+                    <p>Complete the sale and <br> get paid if you are happy with <br> the offer.</p>
+                </div>
+            </div>
+        </div>
+<<<<<<< HEAD
     </section>
     
     <!-- Suppport Section -->
@@ -475,35 +538,55 @@
                                 <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #13293D; ">
                             </form>
                         </div>
-                    </div>
-                </div>
+=======
+    </div>
+</section>
+<!-- Suppport Section -->
+<section class="want_to_sell p-3 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center d-flex alignCenter">
+                <p>Want to Sell Your Car?</p>
             </div>
-        </div>
-    </section>
-    <!-- Modal HTML -->
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog modal-confirm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="icon-box">
-                        <!-- <i class="material-icons">&#xE876;</i> -->
-                        <i class="fa fa-check" aria-hidden="true"></i>
-
+            <div class="col-md-8 float-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form action="" class="d-flex formSell">
+                            <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
+                            <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
+                        </form>
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
                     </div>
-                    <h4 class="modal-title w-100">Awesome!</h4>
-                </div>
-                <div class="modal-body">
-                    <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
-                </div>
-                <div class="modal-footer">
-                    <button id="redirect" class="btn btn-success btn-block" data-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-box">
+                    <!-- <i class="material-icons">&#xE876;</i> -->
+                    <i class="fa fa-check" aria-hidden="true"></i>
 
-    @endsection
+                </div>
+                <h4 class="modal-title w-100">Awesome!</h4>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="redirect" class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@endsection
 @section('script')
+<<<<<<< HEAD
 
     <script>
 
@@ -538,17 +621,26 @@
 
             });
 
-        });
-    </script>
-
-    <script>
-
-        $("#flexCheckDisabled").change(function() {
-            if (this.checked) {
-                $("#first-button").removeAttr('disabled');
+=======
+<script>
+    $(document).ready(function() {
+        $('input[type=radio][name=accident_damaged]').change(function() {
+            if (this.value == 1) {
+                $("#home_textarea").removeClass('d-none');
             } else {
-                $("#first-button").attr('disabled', 'disabled');
+                $("#home_textarea").addClass('d-none');
             }
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
+        });
+
+
+        $('input[type=radio][name=warning_light]').change(function() {
+            if (this.value == 1) {
+                $("#warning_textarea").removeClass('d-none');
+            } else {
+                $("#warning_textarea").addClass('d-none');
+            }
+<<<<<<< HEAD
         })
         $(document).ready(function() {
             $("#first-button").on('click', function() {
@@ -594,24 +686,151 @@
                     $("#step_2").hide();
                     $("#step_3").show();
                 }
-
-            });
-
-            $("#third-page").on('click', function() {
-                $("#step_1").show();
-                $("#step_2").hide();
-                $("#step_3").hide();
-
-            });
-
-
-
-        
-
-            //    $("#third-button").on('click', function(){
-            //         location.reload();
-            //     })
+=======
 
         });
-    </script>
+
+        $('input[type=radio][name=scratches]').change(function() {
+            if (this.value == 1) {
+                $("#scratches_textarea").removeClass('d-none');
+            } else {
+                $("#scratches_textarea").addClass('d-none');
+            }
+
+        });
+
+    });
+
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
+
+    $('input[type=radio][name=warning_light]').change(function() {
+        if (this.value == 1) {
+            $("#warning_textarea").removeClass('d-none');
+        } else {
+            $("#warning_textarea").addClass('d-none');
+        }
+
+    });
+
+    $('input[type=radio][name=accurate]').change(function() {
+        if (this.value == 1) {
+            $("#accurate_textarea").removeClass('d-none');
+        } else {
+            $("#accurate_textarea").addClass('d-none');
+        }
+
+    });
+</script>
+
+<script>
+    $("#flexCheckDisabled").change(function() {
+        if (this.checked) {
+            $("#first-button").removeAttr('disabled');
+        } else {
+            $("#first-button").attr('disabled', 'disabled');
+        }
+    })
+    $(document).ready(function() {
+        $("#first-button").on('click', function() {
+            var fullname = $("#fullname").val();
+            var email = $("#email").val();
+            var phone = $("#phone").val();
+            $("#fullname").css("border", "none");
+            $("#email").css("border", "none");
+            $("#phone").css("border", "none");
+            $(".phoneerror").html("");
+            if (fullname == "") {
+                $("#fullname").css("border", "1px solid red");
+                return false;
+            }
+            if (email == "") {
+                $("#email").css("border", "1px solid red");
+                return false;
+            }
+            if (phone == "") {
+                $("#phone").css("border", "1px solid red");
+                return false;
+            }
+            if (phone.length < 10 || phone.length > 11) {
+                $(".phoneerror").html("Phone number must be 10 digits or 11 digits");
+                return false;
+            }
+            $("#step_1").hide();
+            $("#step_2").show();
+            $("#step_3").hide();
+        });
+
+        $("#second-button").on('click', function() {
+            //step2 form validations
+            $(".service_history").html("");
+            $(".non_runner").html("");
+            $(".accident_damaged").html("");
+            $(".set_of_keys").html("");
+            $(".home_textarea").html("");
+            if ($('input[name="service_history"]:checked').length == 0) {
+                $(".service_history").html("Please Select Service History");
+                return false;
+            }
+            if ($('input[name="non_runner"]:checked').length == 0) {
+                $(".non_runner").html("Please Select non runner ");
+                return false;
+            }
+            if ($('input[name="set_of_keys"]:checked').length == 0) {
+                $(".set_of_keys").html("Please Select  set of keys");
+                return false;
+            }
+            if ($('input[name="accident_damaged"]:checked').length == 0) {
+                $(".accident_damaged").html("Please Select  Accident Damaged");
+                return false;
+            }
+
+            if ($('input[name="accident_damaged"]:checked').val() == "1" && $("#textarea").val() == "") {
+                $(".home_textarea").html("Please Enter Comment");
+                return false;
+            }
+
+            $("#step_1").hide();
+            $("#step_2").hide();
+            $("#step_3").show();
+
+        });
+
+        $("#third-page").on('click', function() {
+            //3rd page validations
+            $(".gearbox_condition").html("");
+            $(".warning_light").html("");
+            $("span.text-danger.scratches").html("");
+            $(".scratches_textarea").html("");
+            $(".comments").html("");
+            if ($('input[name="gearbox_condition"]:checked').length == 0) {
+                $(".gearbox_condition").html("Please Select Conditon");
+                return false;
+            }
+            if ($('input[name="warning_light"]:checked').length == 0) {
+                $(".warning_light").html("Please Select Warning Light");
+                return false;
+            }
+            if ($('input[name="warning_light"]:checked').val() == "1" && $('textarea[name="warning_comments"]').val() == "") {
+                $(".textarea").html("Enter Comment");
+                return false;
+            }
+            if ($('input[name="scratches"]:checked').length == 0) {
+                $("span.text-danger.scratches").html("Please Select One Radio Button");
+                return false;
+            }
+            if ($('input[name="scratches"]:checked').val() == "1" && $('textarea[name="scratches_comments"]').val() == "") {
+                $(".scratches_textarea").html("Please Enter Comment");
+                return false;
+            }
+            if ($('textarea[name="more_info"]').val() == "") {
+                $(".comments").html("Please Enter Comment");
+                return false;
+            }
+
+            $("#sellcarform").submit();
+
+        });
+
+    });
+</script>
 @endsection

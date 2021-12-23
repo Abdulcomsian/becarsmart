@@ -14,6 +14,8 @@ use App\Models\Home\QuestionnaireModel;
 use App\Models\SellCarLead;
 use App\Models\BuyCarLead;
 use App\Notifications\SellCarNotification;
+use App\Notifications\BuyCarNotification;
+use App\Utils\HelperFunctions;
 use Notification;
 use Illuminate\Support\Facades\Redirect;
 
@@ -34,6 +36,14 @@ class HomeController extends Controller
     //insert buy car lead
     public function buy_car_lead(Request $request)
     {
+        $request->validate([
+            'fullname' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'phone' => ['required', 'digits_between:10,11'],
+            'mot_due' => ['required'],
+            'comments' => ['required'],
+
+        ]);
         $model = new BuyCarLead();
         $model->name = $request->name;
         $model->email = $request->email;
@@ -41,7 +51,9 @@ class HomeController extends Controller
         $model->questions = $request->question;
         $model->answers = $request->answer;
         if ($model->save()) {
-            return Redirect::back();
+            Notification::route('mail', 'admin@example.com')->notify(new BuyCarNotification($request->all()));
+            toastSuccess('  You Have Successfully Signed Up!');
+            return Redirect::back()->with('thankyou', 'thankyou');
         }
     }
 
@@ -51,23 +63,27 @@ class HomeController extends Controller
         $request->validate([
             'fullname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
-            'phone' => ['required'],
+            'phone' => ['required', 'digits_between:10,11'],
             'mot_due' => ['required'],
             'comments' => ['required'],
 
         ]);
-        // try {
-        $inputs = $request->except('_token');
-        if (SellCarLead::create($inputs)) {
-            //send email to admin and user
-            Notification::route('mail', 'admin@example.com')->notify(new SellCarNotification($inputs));
-            toastSuccess('Lead Created Successfully!');
+        try {
+            $inputs = $request->except('_token', 'file');
+            if ($request->file('file')) {
+                $filePath = HelperFunctions::sellCarFilePath();
+                $inputs['image'] = HelperFunctions::saveFile(null, $request->file('file'), $filePath);
+            }
+            if (SellCarLead::create($inputs)) {
+                //send email to admin and user
+                Notification::route('mail', 'admin@example.com')->notify(new SellCarNotification($inputs));
+                toastSuccess('Lead Created Successfully!');
+                return Redirect::back();
+            }
+        } catch (\Exception $exception) {
+            toastError('Something went wrong, try again!');
             return Redirect::back();
         }
-        // } catch (\Exception $exception) {
-        //     toastError('Something went wrong, try again!');
-        //     return Redirect::back();
-        // }
     }
 
     public function find_vehicle(Request $request)
