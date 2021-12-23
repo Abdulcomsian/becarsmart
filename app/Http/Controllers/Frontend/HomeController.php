@@ -49,7 +49,8 @@ class HomeController extends Controller
         $model->questions = $request->question;
         $model->answers = $request->answer;
         if ($model->save()) {
-            Notification::route('mail', 'admin@example.com')->notify(new BuyCarNotification($request->all()));
+            Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
+            Notification::route('mail', $request->email)->notify(new BuyCarNotification($request->all()));
             toastSuccess('  You Have Successfully Signed Up!');
             return Redirect::back()->with('thankyou', 'thankyou');
         }
@@ -63,10 +64,9 @@ class HomeController extends Controller
             'email' => ['required', 'string', 'email', 'max:255'],
             'phone' => ['required', 'digits_between:10,11'],
             'mot_due' => ['required'],
-            'comments' => ['required'],
 
         ]);
-        // try {
+        try {
               $inputs = $request->except('_token', 'file');
             if ($sellcar=SellCarLead::create($inputs)) {
                  if ($request->file('file')) {
@@ -81,14 +81,15 @@ class HomeController extends Controller
                         }
                     }
                 //send email to admin and user
-                Notification::route('mail', 'admin@example.com')->notify(new SellCarNotification($inputs));
+                Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new SellCarNotification($inputs));
+                Notification::route('mail',$request->email)->notify(new SellCarNotification($inputs));
                 toastSuccess('Lead Created Successfully!');
                 return Redirect::back();
             }
-        // } catch (\Exception $exception) {
-        //     toastError('Something went wrong, try again!');
-        //     return Redirect::back();
-        // }
+        } catch (\Exception $exception) {
+            toastError('Something went wrong, try again!');
+            return Redirect::back();
+        }
     }
 
     public function find_vehicle(Request $request)
