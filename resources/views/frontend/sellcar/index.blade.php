@@ -496,9 +496,11 @@ BeCarSmart | index
                             </form>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 @endsection

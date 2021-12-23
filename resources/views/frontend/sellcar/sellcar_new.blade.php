@@ -210,10 +210,9 @@ BeCarSmart | Sellcar New
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <span class="text-danger set_of_keys"></span>
+                                                                <span class="text-danger set_of_keys non_runner"></span>
                                                             </div>
                                                         </div>
-<<<<<<< HEAD
                                                         <div class="row ">
                                                             <div class="col-md-6">
                                                                 <div class="row">
@@ -240,50 +239,12 @@ BeCarSmart | Sellcar New
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger set_of_keys"></span>
                                                             </div>
                                                             <div class="col-md-6 ">
                                                                 <div class="row">
                                                                     <div class="col-md-12 " style="">
                                                                         <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
-=======
-                                                    </div>
-                                                    <div class="row ">
-                                                        <div class="col-md-6">
-                                                            <div class="row">
-                                                                <div class="col-md-12 ">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT?</label>
-                                                                </div>
-                                                                <div class="col-md-12">
-                                                                    <div class="inputGroup">
-                                                                        <select class="form-select" aria-label="Default select example" name="mot_due">
-                                                                            <option selected>1</option>
-                                                                            <option value="1">2</option>
-                                                                            <option value="2">3</option>
-                                                                            <option value="3">4</option>
-                                                                            <option value="4">5</option>
-                                                                            <option value="5">6</option>
-                                                                            <option value="6">7</option>
-                                                                            <option value="7">8</option>
-                                                                            <option value="8">9</option>
-                                                                            <option value="9">10</option>
-                                                                            <option value="10">11</option>
-                                                                            <option value="11">12</option>
-
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6 ">
-                                                            <div class="row">
-                                                                <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="accident-damaged-yes" name="accident_damaged" class="-yes" type="radio" value="1">
-                                                                        <label for="accident-damaged-yes">Yes</label>
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <div class="inputGroup">                                                               
@@ -300,13 +261,10 @@ BeCarSmart | Sellcar New
                                                                     <div id="home_textarea" class="col-md-12 d-none">
                                                                         <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                     </div>
-<<<<<<< HEAD
-=======
                                                                 </div>
                                                                 <span class="text-danger accident_damaged"></span>
                                                                 <div id="home_textarea" class="col-md-12 d-none">
                                                                     <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
                                                                 </div>
                                                                 <span class="text-danger home_textarea"></span>
                                                             </div>
@@ -521,6 +479,7 @@ BeCarSmart | Sellcar New
             </div>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     </section>
     
     <!-- Suppport Section -->
@@ -539,6 +498,8 @@ BeCarSmart | Sellcar New
                             </form>
                         </div>
 =======
+=======
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
     </div>
 </section>
 <!-- Suppport Section -->
@@ -555,6 +516,9 @@ BeCarSmart | Sellcar New
                             <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
                             <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
                         </form>
+<<<<<<< HEAD
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
+=======
 >>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
                     </div>
                 </div>
@@ -586,6 +550,7 @@ BeCarSmart | Sellcar New
 
 @endsection
 @section('script')
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     <script>
@@ -622,6 +587,8 @@ BeCarSmart | Sellcar New
             });
 
 =======
+=======
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
 <script>
     $(document).ready(function() {
         $('input[type=radio][name=accident_damaged]').change(function() {
@@ -630,6 +597,9 @@ BeCarSmart | Sellcar New
             } else {
                 $("#home_textarea").addClass('d-none');
             }
+<<<<<<< HEAD
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
+=======
 >>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
         });
 
@@ -640,6 +610,7 @@ BeCarSmart | Sellcar New
             } else {
                 $("#warning_textarea").addClass('d-none');
             }
+<<<<<<< HEAD
 <<<<<<< HEAD
         })
         $(document).ready(function() {
@@ -702,6 +673,37 @@ BeCarSmart | Sellcar New
     });
 
 >>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
+
+    $('input[type=radio][name=warning_light]').change(function() {
+        if (this.value == 1) {
+            $("#warning_textarea").removeClass('d-none');
+        } else {
+            $("#warning_textarea").addClass('d-none');
+        }
+
+    });
+
+    $('input[type=radio][name=accurate]').change(function() {
+        if (this.value == 1) {
+            $("#accurate_textarea").removeClass('d-none');
+        } else {
+            $("#accurate_textarea").addClass('d-none');
+        }
+=======
+
+        });
+
+        $('input[type=radio][name=scratches]').change(function() {
+            if (this.value == 1) {
+                $("#scratches_textarea").removeClass('d-none');
+            } else {
+                $("#scratches_textarea").addClass('d-none');
+            }
+
+        });
+
+    });
+
 
     $('input[type=radio][name=warning_light]').change(function() {
         if (this.value == 1) {
@@ -828,9 +830,123 @@ BeCarSmart | Sellcar New
             }
 
             $("#sellcarform").submit();
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
+
+    });
+</script>
+
+<script>
+    $("#flexCheckDisabled").change(function() {
+        if (this.checked) {
+            $("#first-button").removeAttr('disabled');
+        } else {
+            $("#first-button").attr('disabled', 'disabled');
+        }
+    })
+    $(document).ready(function() {
+        $("#first-button").on('click', function() {
+            var fullname = $("#fullname").val();
+            var email = $("#email").val();
+            var phone = $("#phone").val();
+            $("#fullname").css("border", "none");
+            $("#email").css("border", "none");
+            $("#phone").css("border", "none");
+            $(".phoneerror").html("");
+            if (fullname == "") {
+                $("#fullname").css("border", "1px solid red");
+                return false;
+            }
+            if (email == "") {
+                $("#email").css("border", "1px solid red");
+                return false;
+            }
+            if (phone == "") {
+                $("#phone").css("border", "1px solid red");
+                return false;
+            }
+            if (phone.length < 10 || phone.length > 11) {
+                $(".phoneerror").html("Phone number must be 10 digits or 11 digits");
+                return false;
+            }
+            $("#step_1").hide();
+            $("#step_2").show();
+            $("#step_3").hide();
+        });
+
+<<<<<<< HEAD
+        $("#second-button").on('click', function() {
+            //step2 form validations
+            $(".service_history").html("");
+            $(".non_runner").html("");
+            $(".accident_damaged").html("");
+            $(".set_of_keys").html("");
+            $(".home_textarea").html("");
+            if ($('input[name="service_history"]:checked').length == 0) {
+                $(".service_history").html("Please Select Service History");
+                return false;
+            }
+            if ($('input[name="non_runner"]:checked').length == 0) {
+                $(".non_runner").html("Please Select non runner ");
+                return false;
+            }
+            if ($('input[name="set_of_keys"]:checked').length == 0) {
+                $(".set_of_keys").html("Please Select  set of keys");
+                return false;
+            }
+            if ($('input[name="accident_damaged"]:checked').length == 0) {
+                $(".accident_damaged").html("Please Select  Accident Damaged");
+                return false;
+            }
+
+            if ($('input[name="accident_damaged"]:checked').val() == "1" && $("#textarea").val() == "") {
+                $(".home_textarea").html("Please Enter Comment");
+                return false;
+            }
+
+            $("#step_1").hide();
+            $("#step_2").hide();
+            $("#step_3").show();
 
         });
 
+        $("#third-page").on('click', function() {
+            //3rd page validations
+            $(".gearbox_condition").html("");
+            $(".warning_light").html("");
+            $("span.text-danger.scratches").html("");
+            $(".scratches_textarea").html("");
+            $(".comments").html("");
+            if ($('input[name="gearbox_condition"]:checked').length == 0) {
+                $(".gearbox_condition").html("Please Select Conditon");
+                return false;
+            }
+            if ($('input[name="warning_light"]:checked').length == 0) {
+                $(".warning_light").html("Please Select Warning Light");
+                return false;
+            }
+            if ($('input[name="warning_light"]:checked').val() == "1" && $('textarea[name="warning_comments"]').val() == "") {
+                $(".textarea").html("Enter Comment");
+                return false;
+            }
+            if ($('input[name="scratches"]:checked').length == 0) {
+                $("span.text-danger.scratches").html("Please Select One Radio Button");
+                return false;
+            }
+            if ($('input[name="scratches"]:checked').val() == "1" && $('textarea[name="scratches_comments"]').val() == "") {
+                $(".scratches_textarea").html("Please Enter Comment");
+                return false;
+            }
+            if ($('textarea[name="more_info"]').val() == "") {
+                $(".comments").html("Please Enter Comment");
+                return false;
+            }
+
+            $("#sellcarform").submit();
+
+        });
+
+=======
+>>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
     });
 </script>
 @endsection
