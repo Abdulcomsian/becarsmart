@@ -25,7 +25,7 @@
                         <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
 
                         <li class="nav-item">
-                           <a class="dropdown-item" href="#">About Us</a>
+                           <a class="dropdown-item" href="{{url ('/about')}}">About Us</a>
                         </li>
                         <li class="nav-item">
                            <a class="dropdown-item" href="#">For Motor Traders</a>
@@ -37,10 +37,10 @@
                            <a class="dropdown-item" href="{{ url('/contact')}}">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                           <a class="dropdown-item" href="#">Blog</a>
+                           <a class="dropdown-item" href="{{url('/blog')}}">Blog</a>
                         </li>
                         <li class="nav-item">
-                           <a class="dropdown-item" href="#">Reviews</a>
+                           <a class="dropdown-item" href="{{url('/reviews')}}">Reviews</a>
                         </li>
                      </ul>
                   </li>

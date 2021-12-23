@@ -134,5 +134,14 @@ Route::get('/how_it_works', function () {
 })->name('frontend/how_it_works');
 
 Route::get('/blog', function () {
-    return view('frontend/sellcar//blog');
+    return view('frontend/sellcar/blog');
 })->name('frontend//blog');
+
+Route::get('/about', function () {
+    return view('frontend/sellcar/about');
+})->name('frontend//about');
+
+Route::get('/reviews', function () {
+    return view('frontend/sellcar/reviews');
+})->name('frontend//reviews');
+

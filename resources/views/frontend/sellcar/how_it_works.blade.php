@@ -1,7 +1,7 @@
 
 @extends('frontend.layouts.master')
     @section('title')
-        BeCarSmart | Terms and Conditions
+        BeCarSmart | How It Work
     @endsection
 @section('content')
 

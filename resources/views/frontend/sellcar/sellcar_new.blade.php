@@ -40,54 +40,46 @@ BeCarSmart | Sellcar New
                         <div class="col-lg-5 col-md-12">
                             <div class="sellcar-blurb-content py-5">
                                 <!-- Form start -->
-                                <form id="basic-form" method="post" action="{{url('sellcar_new')}}">
-                                    @csrf
-                                    <x-auth-validation-errors class="mb-4" :errors="$errors" />
-                                    <!-- api field -->
-                                    <input type="hidden" name="model_no" value="{{$_GET['model_no'] ?? ''}}">
-                                    <input type="hidden" name="color" value="{{$_GET['color'] ?? ''}}">
-                                    <input type="hidden" name="engine" value="{{$_GET['engine'] ?? ''}}">
-                                    <input type="hidden" name="mileage" value="{{$_GET['enginecapacity'] ?? ''}}">
 
-                                    <div class="row">
-                                        <div class="col-md-12" style="justify-content: left;">
+                                <x-auth-validation-errors class="mb-4" :errors="$errors" />
+                                <!-- api field -->
+                                <input type="hidden" name="model_no" value="{{$_GET['model_no'] ?? ''}}">
+                                <input type="hidden" name="color" value="{{$_GET['color'] ?? ''}}">
+                                <input type="hidden" name="engine" value="{{$_GET['engine'] ?? ''}}">
+                                <input type="hidden" name="mileage" value="{{$_GET['enginecapacity'] ?? ''}}">
 
-                                            <div class="row d-flex align-items-left">
-                                                <div class="col-lg-10 col-md-12 col-sm-12 " style="width: 100%;">
-                                                    <div class="card shadow card-shadow ">
-                                                        <div class="card-title">
-                                                            <h2 class="p-3 pb-0">Enter Details</h2>
-                                                            <p class="p-3 pt-0">Enter your details to get an instant valuation.</p>
-                                                        </div>
-                                                        <div class="home-card-body card-body">
+                                <div class="row">
+                                    <div class="col-md-12" style="justify-content: left;">
 
-                                                            <div class="row">
-                                                                <div class="col-md-12">
-                                                                    <div class="input-Group">
-                                                                        <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="fullName" placeholder="Full name" required>
-                                                                        <br>
-                                                                        <p id="p1"></p>
-                                                                    </div>
+                                        <div class="row d-flex align-items-left">
+                                            <div class="col-lg-10 col-md-12 col-sm-12 " style="width: 100%;">
+                                                <div class="card shadow card-shadow ">
+                                                    <div class="card-title">
+                                                        <h2 class="p-3 pb-0">Enter Details</h2>
+                                                        <p class="p-3 pt-0">Enter your details to get an instant valuation.</p>
+                                                    </div>
+                                                    <div class="home-card-body card-body">
+
+                                                        <div class="row mb-4">
+                                                            <div class="col-md-12">
+                                                                <div class="input-Group">
+                                                                    <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="fullname" placeholder="Full name" require>
+
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
-                                                                <div class="col-md-12">
-                                                                    <div class="input-Group">
-                                                                        <input type="email" value="{{old('email')}}" name="email" class="form-control" id="Email" placeholder="Email" required>
-                                                                        <br>
-                                                                        <p id="p2"></p>
-                                                                    </div>
+                                                        </div>
+                                                        <div class="row mb-4">
+                                                            <div class="col-md-12">
+                                                                <div class="input-Group">
+                                                                    <input type="email" value="{{old('email')}}" name="email" class="form-control" id="email" placeholder="Email" require>
                                                                 </div>
                                                             </div>
                                                         </div>
 
-                                                            <div class="row">
-                                                                <div class="col-md-12">
-                                                                    <div class="input-Group">
-                                                                        <input type="number" value="{{old('phone')}}" name="phone" class="form-control" id="Number"  placeholder="Phone number" required>
-                                                                        <br>
-                                                                        <p id="p3"></p>
-                                                                    </div>
+                                                        <div class="row mb-4">
+                                                            <div class="col-md-12">
+                                                                <div class="input-Group">
+                                                                    <input type="number" value="{{old('phone')}}" name="phone" class="form-control" id="phone" placeholder="Phone number" require>
                                                                 </div>
                                                                 <span class="text-danger phoneerror"></span>
                                                             </div>
@@ -130,136 +122,130 @@ BeCarSmart | Sellcar New
                 <div class="row" id="step_2" style="display:none;">
                     <div class="col-lg-12 col-md-12">
                         <div class="sellcar-blurb-content py-5">
-                            <form id="second_basic_form" method="post" action="">
-                                <div class="row">
-                                    <div class="col-md-12" style="justify-content: left;">
-                                        <div class="row d-flex align-items-left">
-                                            <div class="col-lg-10 col-md-12 col-sm-12 " style="width: 100%;">
-                                                <div class="card shadow card-shadow ">
-                                                    <div class="home-card-body card-body">
-                                                        <div class="row mb-4">
-                                                            <div class="col-md-12 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Service History</label>
+                            <div class="row">
+                                <div class="col-md-12" style="justify-content: left;">
+                                    <div class="row d-flex align-items-left">
+                                        <div class="col-lg-10 col-md-12 col-sm-12 " style="width: 100%;">
+                                            <div class="card shadow card-shadow ">
+                                                <div class="home-card-body card-body">
+                                                    <div class="row mb-4">
+                                                        <div class="col-md-12 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Service History</label>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="inputGroup">
+                                                                        <input id="full" name="service_history" class="check-am" type="radio" value="full" {{ old('service_history') == 'full' ? 'checked' : '' }}>
+                                                                        <label for="full">Full</label>
                                                                     </div>
-                                                                    <div class="col-md-3">
-                                                                        <div class="inputGroup">
-                                                                            <input id="full" name="service_history" class="check-am" type="radio" value="full" {{ old('service_history') == 'full' ? 'checked' : '' }}>
-                                                                            <label for="full">Full</label>
-                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="inputGroup">
+                                                                        <input id="some" name="service_history" class="check-am" type="radio" value="some" {{ old('service_history') == 'some' ? 'checked' : '' }} />
+                                                                        <label for="some">Some</label>
                                                                     </div>
-                                                                    <div class="col-md-3">
-                                                                        <div class="inputGroup">
-                                                                            <input id="some" name="service_history" class="check-am" type="radio" value="some" {{ old('service_history') == 'some' ? 'checked' : '' }} />
-                                                                            <label for="some">Some</label>
-                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="inputGroup">
+                                                                        <input id="None" name="service_history" class="check-am" type="radio" value="none" {{ old('service_history') == 'none' ? 'checked' : '' }}>
+                                                                        <label for="None">None</label>
                                                                     </div>
-                                                                    <div class="col-md-3">
-                                                                        <div class="inputGroup">
-                                                                            <input id="None" name="service_history" class="check-am" type="radio" value="none" {{ old('service_history') == 'none' ? 'checked' : '' }}>
-                                                                            <label for="None">None</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3">
-                                                                        <div class="inputGroup">
-                                                                            <input id="first" name="service_history" class="check-am" type="radio" value="first not due" {{ old('service_history') == 'first not due' ? 'checked' : '' }} />
-                                                                            <label for="first">First not due</label>
-                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="inputGroup">
+                                                                        <input id="first" name="service_history" class="check-am" type="radio" value="first not due" {{ old('service_history') == 'first not due' ? 'checked' : '' }} />
+                                                                        <label for="first">First not due</label>
                                                                     </div>
                                                                 </div>
                                                                 <span class="text-danger service_history"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="row mb-4">
-                                                            <div class="col-md-6 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 " style="">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-md-6 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12 " style="">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="driving" name="non_runner" class="-yes" type="radio" value="1" {{ old('non_runner') == '1' ? 'checked' : '' }}>
+                                                                        <label for="driving">Yes</label>
                                                                     </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="driving" name="non_runner" class="-yes" type="radio" value="1" {{ old('non_runner') == '1' ? 'checked' : '' }}>
-                                                                            <label for="driving">Yes</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="police" name="non_runner" class="-no" type="radio" value="0" {{ old('non_runner') == '0' ? 'checked' : '' }} />
-                                                                            <label for="police">No</label>
-                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="police" name="non_runner" class="-no" type="radio" value="0" {{ old('non_runner') == '0' ? 'checked' : '' }} />
+                                                                        <label for="police">No</label>
                                                                     </div>
                                                                 </div>
                                                                 <span class="text-danger non_runner"></span>
                                                             </div>
-                                                            <div class="col-md-6 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 " style="">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="driving " name="set_of_keys" class="-yes" type="radio" value="1" {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
-                                                                            <label for="driving ">1</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="tuition" name="set_of_keys" class="-no" type="radio" value="2" {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
-                                                                            <label for="tuition">2 or more</label>
-                                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12 " style="">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="driving " name="set_of_keys" class="-yes" type="radio" value="1" {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
+                                                                        <label for="driving ">1</label>
                                                                     </div>
                                                                 </div>
-                                                                <span class="text-danger set_of_keys non_runner"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row ">
-                                                            <div class="col-md-6">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 ">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT?</label>
-                                                                    </div>
-                                                                    <div class="col-md-12">
-                                                                        <div class="inputGroup">
-                                                                            <select class="form-select" aria-label="Default select example">
-                                                                                <option selected>1</option>
-                                                                                <option value="1">2</option>
-                                                                                <option value="2">3</option>
-                                                                                <option value="3">4</option>
-                                                                                <option value="4">5</option>
-                                                                                <option value="5">6</option>
-                                                                                <option value="6">7</option>
-                                                                                <option value="7">8</option>
-                                                                                <option value="8">9</option>
-                                                                                <option value="9">10</option>
-                                                                                <option value="10">11</option>
-                                                                                <option value="11">12</option>
-                                                                                
-                                                                            </select>
-                                                                        </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="tuition" name="set_of_keys" class="-no" type="radio" value="2" {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
+                                                                        <label for="tuition">2 or more</label>
                                                                     </div>
                                                                 </div>
                                                                 <span class="text-danger set_of_keys"></span>
                                                             </div>
-                                                            <div class="col-md-6 ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 " style="">
-                                                                        <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-12 ">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT?</label>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="inputGroup">
+                                                                        <select class="form-select" aria-label="Default select example" name="mot_due">
+                                                                            <option selected>1</option>
+                                                                            <option value="1">2</option>
+                                                                            <option value="2">3</option>
+                                                                            <option value="3">4</option>
+                                                                            <option value="4">5</option>
+                                                                            <option value="5">6</option>
+                                                                            <option value="6">7</option>
+                                                                            <option value="7">8</option>
+                                                                            <option value="8">9</option>
+                                                                            <option value="9">10</option>
+                                                                            <option value="10">11</option>
+                                                                            <option value="11">12</option>
+
+                                                                        </select>
                                                                     </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">                                                               
-                                                                            <input id="accident-damaged-yes" name="accident_damaged" class="-yes" type="radio" value="1" >
-                                                                            <label for="accident-damaged-yes">Yes</label>
-                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12 " style="">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="accident-damaged-yes" name="accident_damaged" class="-yes" type="radio" value="1">
+                                                                        <label for="accident-damaged-yes">Yes</label>
                                                                     </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="inputGroup">
-                                                                            <input id="accident-damaged-no" name="accident_damaged" class="-no" type="radio" value="0" />
-                                                                            <label for="accident-damaged-no">No</label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div id="home_textarea" class="col-md-12 d-none">
-                                                                        <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="accident-damaged-no" name="accident_damaged" class="-no" type="radio" value="0" />
+                                                                        <label for="accident-damaged-no">No</label>
                                                                     </div>
                                                                 </div>
                                                                 <span class="text-danger accident_damaged"></span>
@@ -269,16 +255,16 @@ BeCarSmart | Sellcar New
                                                                 <span class="text-danger home_textarea"></span>
                                                             </div>
                                                         </div>
-                                                        <div class="d-gri pt-5" style="float:right">
-                                                            <button type="button" id="second-button" class="btn text-light main-bg">Next</button>
-                                                        </div>
+                                                    </div>
+                                                    <div class="d-gri pt-5" style="float:right">
+                                                        <button type="button" id="second-button" class="btn text-light main-bg">Next</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -478,28 +464,6 @@ BeCarSmart | Sellcar New
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    </section>
-    
-    <!-- Suppport Section -->
-    <section class="want_to_sell p-3 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center d-flex alignCenter">
-                    <p>Want to Sell Your Car?</p>
-                </div>
-                <div class="col-md-8 float-center">
-                    <div class="row">
-                        <div class="col-lg-12 d-flex">
-                            <form action="" class=" formSell">
-                                <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 15px;font-size: 22px;font-weight: 600;text-transform: uppercase;">
-                                <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #13293D; ">
-                            </form>
-                        </div>
-=======
-=======
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
     </div>
 </section>
 <!-- Suppport Section -->
@@ -516,10 +480,6 @@ BeCarSmart | Sellcar New
                             <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
                             <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
                         </form>
-<<<<<<< HEAD
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
-=======
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
                     </div>
                 </div>
             </div>
@@ -550,45 +510,6 @@ BeCarSmart | Sellcar New
 
 @endsection
 @section('script')
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    <script>
-
-        $(document).ready(function(){
-            $('input[type=radio][name=accident_damaged]').change(function() {
-                if (this.value == 1) {
-                    $("#home_textarea").removeClass('d-none');
-                }
-                else {
-                    $("#home_textarea").addClass('d-none');
-                }
-            });
-
-
-            $('input[type=radio][name=warning_light]').change(function() {
-                if (this.value == 1) {
-                    $("#warning_textarea").removeClass('d-none');
-                }
-                else {
-                    $("#warning_textarea").addClass('d-none');
-                }
-
-            });
-
-            $('input[type=radio][name=scratches]').change(function() {
-                if (this.value == 1) {
-                    $("#scratches_textarea").removeClass('d-none');
-                }
-                else {
-                    $("#scratches_textarea").addClass('d-none');
-                }
-
-            });
-
-=======
-=======
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
 <script>
     $(document).ready(function() {
         $('input[type=radio][name=accident_damaged]').change(function() {
@@ -597,10 +518,6 @@ BeCarSmart | Sellcar New
             } else {
                 $("#home_textarea").addClass('d-none');
             }
-<<<<<<< HEAD
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
-=======
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
         });
 
 
@@ -610,86 +527,6 @@ BeCarSmart | Sellcar New
             } else {
                 $("#warning_textarea").addClass('d-none');
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-        })
-        $(document).ready(function() {
-            $("#first-button").on('click', function() {
-
-                var name = $('#fullName').val();
-                var email = $('#Email').val();
-                var phone = $('#Number').val();
-                
-                if (name == '') {
-                    $('#fullName').css('border','2px solid #ff0000');
-                    $('#p1').text("Please Enter Your Name");
-                    return false;
-                } else if (email == '') {
-                    $('#Email').css('border','2px solid #ff0000');
-                    $('#p2').text("Please Enter Your Email");
-                    return false;
-                } else if (phone == '') {
-                    $('#Number').css('border','2px solid #ff0000');
-                    $('#p3').text("Please Enter Your Number");
-                    return false;
-                } else {
-                  
-                    $("#step_1").hide();
-                    $("#step_2").show();
-                    $("#step_3").hide();
-                }
-
-               
-
-               
-            });
-
-            $("#second-button").on('click', function() {
-                var name = $('#fullName').val();
-                
-                if (name == '') {
-                    $('#fullName').css('border','2px solid #ff0000');
-                    $('#p1').text("Please Enter Your Name");
-                    return false;
-                } else {
-                
-                    $("#step_1").hide();
-                    $("#step_2").hide();
-                    $("#step_3").show();
-                }
-=======
-
-        });
-
-        $('input[type=radio][name=scratches]').change(function() {
-            if (this.value == 1) {
-                $("#scratches_textarea").removeClass('d-none');
-            } else {
-                $("#scratches_textarea").addClass('d-none');
-            }
-
-        });
-
-    });
-
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
-
-    $('input[type=radio][name=warning_light]').change(function() {
-        if (this.value == 1) {
-            $("#warning_textarea").removeClass('d-none');
-        } else {
-            $("#warning_textarea").addClass('d-none');
-        }
-
-    });
-
-    $('input[type=radio][name=accurate]').change(function() {
-        if (this.value == 1) {
-            $("#accurate_textarea").removeClass('d-none');
-        } else {
-            $("#accurate_textarea").addClass('d-none');
-        }
-=======
 
         });
 
@@ -830,123 +667,9 @@ BeCarSmart | Sellcar New
             }
 
             $("#sellcarform").submit();
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
-
-    });
-</script>
-
-<script>
-    $("#flexCheckDisabled").change(function() {
-        if (this.checked) {
-            $("#first-button").removeAttr('disabled');
-        } else {
-            $("#first-button").attr('disabled', 'disabled');
-        }
-    })
-    $(document).ready(function() {
-        $("#first-button").on('click', function() {
-            var fullname = $("#fullname").val();
-            var email = $("#email").val();
-            var phone = $("#phone").val();
-            $("#fullname").css("border", "none");
-            $("#email").css("border", "none");
-            $("#phone").css("border", "none");
-            $(".phoneerror").html("");
-            if (fullname == "") {
-                $("#fullname").css("border", "1px solid red");
-                return false;
-            }
-            if (email == "") {
-                $("#email").css("border", "1px solid red");
-                return false;
-            }
-            if (phone == "") {
-                $("#phone").css("border", "1px solid red");
-                return false;
-            }
-            if (phone.length < 10 || phone.length > 11) {
-                $(".phoneerror").html("Phone number must be 10 digits or 11 digits");
-                return false;
-            }
-            $("#step_1").hide();
-            $("#step_2").show();
-            $("#step_3").hide();
-        });
-
-<<<<<<< HEAD
-        $("#second-button").on('click', function() {
-            //step2 form validations
-            $(".service_history").html("");
-            $(".non_runner").html("");
-            $(".accident_damaged").html("");
-            $(".set_of_keys").html("");
-            $(".home_textarea").html("");
-            if ($('input[name="service_history"]:checked').length == 0) {
-                $(".service_history").html("Please Select Service History");
-                return false;
-            }
-            if ($('input[name="non_runner"]:checked').length == 0) {
-                $(".non_runner").html("Please Select non runner ");
-                return false;
-            }
-            if ($('input[name="set_of_keys"]:checked').length == 0) {
-                $(".set_of_keys").html("Please Select  set of keys");
-                return false;
-            }
-            if ($('input[name="accident_damaged"]:checked').length == 0) {
-                $(".accident_damaged").html("Please Select  Accident Damaged");
-                return false;
-            }
-
-            if ($('input[name="accident_damaged"]:checked').val() == "1" && $("#textarea").val() == "") {
-                $(".home_textarea").html("Please Enter Comment");
-                return false;
-            }
-
-            $("#step_1").hide();
-            $("#step_2").hide();
-            $("#step_3").show();
 
         });
 
-        $("#third-page").on('click', function() {
-            //3rd page validations
-            $(".gearbox_condition").html("");
-            $(".warning_light").html("");
-            $("span.text-danger.scratches").html("");
-            $(".scratches_textarea").html("");
-            $(".comments").html("");
-            if ($('input[name="gearbox_condition"]:checked').length == 0) {
-                $(".gearbox_condition").html("Please Select Conditon");
-                return false;
-            }
-            if ($('input[name="warning_light"]:checked').length == 0) {
-                $(".warning_light").html("Please Select Warning Light");
-                return false;
-            }
-            if ($('input[name="warning_light"]:checked').val() == "1" && $('textarea[name="warning_comments"]').val() == "") {
-                $(".textarea").html("Enter Comment");
-                return false;
-            }
-            if ($('input[name="scratches"]:checked').length == 0) {
-                $("span.text-danger.scratches").html("Please Select One Radio Button");
-                return false;
-            }
-            if ($('input[name="scratches"]:checked').val() == "1" && $('textarea[name="scratches_comments"]').val() == "") {
-                $(".scratches_textarea").html("Please Enter Comment");
-                return false;
-            }
-            if ($('textarea[name="more_info"]').val() == "") {
-                $(".comments").html("Please Enter Comment");
-                return false;
-            }
-
-            $("#sellcarform").submit();
-
-        });
-
-=======
->>>>>>> fa2abfd34b638f98adc8422e0c3c7d3bcd955b71
     });
 </script>
 @endsection
