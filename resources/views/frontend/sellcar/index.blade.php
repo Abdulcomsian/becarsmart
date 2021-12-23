@@ -6,7 +6,7 @@ BeCarSmart | index
 <style>
     #progressbar #account:before {
         font-family: FontAwesome;
-        content: "step";
+        content: "";
     }
 </style>
 @endsection
@@ -123,7 +123,7 @@ BeCarSmart | index
                             $class="active";
                             }
                             @endphp
-                            <li class="{{$class}}" id="account"><strong>{{$key+1}}</strong></li>
+                            <li class="{{$class}}" id="account"><strong></strong></li>
                             @endforeach
                             <!-- <li id="personal"><strong></strong></li>
                                 <li id="payment"><strong></strong></li>
@@ -504,3 +504,4 @@ BeCarSmart | index
 </section>
 
 @endsection
+@

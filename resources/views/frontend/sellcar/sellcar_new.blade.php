@@ -2,6 +2,8 @@
 @section('title')
 BeCarSmart | Sellcar New
 @endsection
+@section('css')
+@endsection
 @section('content')
 
 <!-- Hero Section -->
@@ -391,7 +393,7 @@ BeCarSmart | Sellcar New
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <div class="input-Group">
-                                                                            <input type="file" class="form-control" id="Written" style="padding: 7px; border-radius: 0; border: 1px solid grey;" name="file">
+                                                                            <input type="file" class="form-control" id="Written" style="padding: 7px; border-radius: 0; border: 1px solid grey;" name="file[]" multiple>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -510,6 +512,7 @@ BeCarSmart | Sellcar New
 
 @endsection
 @section('script')
+<script type="text/javascript" src="{{asset('js/image-uploader.min.js')}}"></script>
 <script>
     $(document).ready(function() {
         $('input[type=radio][name=accident_damaged]').change(function() {
