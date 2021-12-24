@@ -160,11 +160,15 @@ BeCarSmart | index
                             @if(count($questionair)!=$i)
                             <input type="button" name="next" id="{{$i}}" class="next action-button" value="Next">
                             @else
+                            <h2 class="fs-title">Other Details:</h2>
+                            <div class="form-card">
+                                <input type="text" name="lead_source" placeholder="Lead Source e.g Social Media" required>
+                            </div>
                             <div class="form-card">
                                 <input type="text" name="name" placeholder="Enter name" required>
                             </div>
                             <div class="form-card">
-                                <input type="text" name="phone" placeholder="Enter Phone no"  minlength="10" maxlength="11" required>
+                                <input type="text" name="phone" placeholder="Enter Phone no" minlength="10" maxlength="11" required>
                             </div>
                             <div class="form-card">
                                 <input type="email" name="email" placeholder="Enter Email" required>
@@ -427,19 +431,19 @@ BeCarSmart | index
         <div class="row">
             <div class="col-md-12 ">
                 <div class="slider">
-                    <img src="{{asset('assets/img/audi.png')}}"/>
-                    <img src="{{asset('assets/img/Toyota.png')}}"/>
-                    <img src="{{asset('assets/img/land-rover.png')}}"/>
-                    <img src="{{asset('assets/img/mer.png')}}"/>
-                    <img src="{{asset('assets/img/nissan.png')}}"/>
-                    
+                    <img src="{{asset('assets/img/audi.png')}}" />
+                    <img src="{{asset('assets/img/Toyota.png')}}" />
+                    <img src="{{asset('assets/img/land-rover.png')}}" />
+                    <img src="{{asset('assets/img/mer.png')}}" />
+                    <img src="{{asset('assets/img/nissan.png')}}" />
+
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-    
+
 <!-- Suppport Section -->
 <section class="want_to_sell p-3 text-white">
     <div class="container">
@@ -464,14 +468,13 @@ BeCarSmart | index
 
 @endsection
 @section('script')
-    <script>
-        jQuery(document).ready(function($) {
-            $('.slider').slick({
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 4,
-                responsive: [
-                    {
+<script>
+    jQuery(document).ready(function($) {
+        $('.slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 4,
+            responsive: [{
                     breakpoint: 768,
                     settings: {
                         arrows: false,
@@ -479,8 +482,8 @@ BeCarSmart | index
                         centerPadding: '40px',
                         slidesToShow: 3
                     }
-                    },
-                    {
+                },
+                {
                     breakpoint: 480,
                     settings: {
                         arrows: false,
@@ -488,10 +491,9 @@ BeCarSmart | index
                         centerPadding: '30px',
                         slidesToShow: 1
                     }
-                    }
-                ]
-            });
+                }
+            ]
         });
-
-    </script>
+    });
+</script>
 @endsection

@@ -45,13 +45,14 @@ class HomeController extends Controller
         $model = new BuyCarLead();
         $model->name = $request->name;
         $model->email = $request->email;
+        $model->lead_source = $request->lead_source;
         $model->phone_no = $request->phone;
         $model->questions = $request->question;
         $model->answers = $request->answer;
         if ($model->save()) {
             Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
             Notification::route('mail', $request->email)->notify(new BuyCarNotification($request->all()));
-            toastSuccess('  You Have Successfully Signed Up!');
+            toastSuccess('Thank you for your information. We will be in touch soon.');
             return Redirect::back()->with('thankyou', 'thankyou');
         }
     }
@@ -67,22 +68,22 @@ class HomeController extends Controller
 
         ]);
         try {
-              $inputs = $request->except('_token', 'file');
-            if ($sellcar=SellCarLead::create($inputs)) {
-                 if ($request->file('file')) {
-                        $filePath = HelperFunctions::sellCarFilePath();
-                        $files = $request->file('file');
-                        foreach ($files  as $key => $file) {
-                            $imagename = HelperFunctions::saveFile(null, $file, $filePath);
-                            $model = new SellCarLeadImages();
-                            $model->image_name = $imagename;
-                            $model->sell_car_lead_id = $sellcar->id;
-                            $model->save();
-                        }
+            $inputs = $request->except('_token', 'file');
+            if ($sellcar = SellCarLead::create($inputs)) {
+                if ($request->file('file')) {
+                    $filePath = HelperFunctions::sellCarFilePath();
+                    $files = $request->file('file');
+                    foreach ($files  as $key => $file) {
+                        $imagename = HelperFunctions::saveFile(null, $file, $filePath);
+                        $model = new SellCarLeadImages();
+                        $model->image_name = $imagename;
+                        $model->sell_car_lead_id = $sellcar->id;
+                        $model->save();
                     }
+                }
                 //send email to admin and user
                 Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new SellCarNotification($inputs));
-                Notification::route('mail',$request->email)->notify(new SellCarNotification($inputs));
+                Notification::route('mail', $request->email)->notify(new SellCarNotification($inputs));
                 toastSuccess('Lead Created Successfully!');
                 return Redirect::back();
             }

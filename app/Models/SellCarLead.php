@@ -10,4 +10,10 @@ class SellCarLead extends Model
 
     use HasFactory;
     protected $guarded = [];
+
+
+    public function sellcarimages()
+    {
+        return $this->hasMany(SellCarLeadImages::class);
+    }
 }
