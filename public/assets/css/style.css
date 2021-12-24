@@ -28,12 +28,6 @@ h1 h2 h3 h4 h5 h6{
 .sm-icons {
 flex-direction: row;
 }
-@media only screen and (max-width: 960px) {
-.sm-icons .nav-item {
-  padding-right: 1em;
-}
-}  
-
 /* Header */
 .bg-dark {
   background-color: #ffff!important;
@@ -624,6 +618,7 @@ select.list-dt:focus {
 .last-search-form input::placeholder{
   color: rgba(187, 183, 183, 1);
   text-align: center;
+  
 }
 .last-search-form .btn-danger{
   padding: 15px;
@@ -644,6 +639,7 @@ select.list-dt:focus {
   line-height: 30px;
   padding: 0px 50px;
 }
+
 
 /* ***********excellent*************** */
 #excellent{
@@ -811,152 +807,6 @@ hr:not([size]) {
   max-width: 100%;
 }
 
-/* BreakPoints */
-
-@media only screen and (max-width: 992px) {
-
-  .navBar{
-    padding: 0px 15px;
-  }
-  .menuList li{
-    margin: 0px 15px;
-  }
-  .how_it_Works .steps h2 {
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 37.5px;
-    font-style: normal;
-}
-.blurb-icons .get-a-free {
-  padding-bottom: 48px;
-}
-}
-@media only screen and (max-width: 768px) {
-  .navbar-brand img{
-    max-width: 100%;
-  }
-  
-  .form_overlap_row {
-    margin-top: 0px;
-    margin: 15px !important;
-  }
-  .hero-section .car img {
-    width: 50%;
-  }
-  /* .moving-left-tyr {
-    position: absolute;
-    top: 114px;
-    left: 38px;
-    width: 100px;
-  }
-  .moving-right-tyr {
-    position: absolute;
-    top: 114px;
-    left: 263px;
-    width: 100px;
-  }
-  .car {
-    position: relative;
-    top: -1px;
-} */
-.navbar-light .navbar-brand {
-  color: rgba(0,0,0,.9);
-  max-width: 56%;
-}
-.hero-section .search-form {
-  background: #fff !important;
-  box-shadow: 0px 0px 9px 4px rgb(0 0 0 / 20%) !important;
-  padding: 15px 15px 15px 15px !important;
-}
-  
-}
-@media only screen and (max-width: 600px) {
-
-  #excellent .excellent_content span i {
-      font-size: 21px;
-      font-weight: 500;
-      color: #ffffff;
-      background-color: #e73e2c;
-      padding: 4px;
-  }
-  #excellent .reviews_main_section .reviews_shadow .showing_content span i {
-    background-color: #e73e2c;
-    padding: 3px;
-    color: #FFFFFF;
-    font-size: 12px;
-  }
-  #excellent .reviews_main_section .reviews_shadow .showing_content {
-    line-height: 2 !important;
-    display: block;
-  }
-  #excellent .reviews_main_section .reviews_shadow .header-text{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 25px;
-  }
-  #excellent .reviews_main_section .reviews_shadow .date-time {
-    float: left;
-}
-#excellent .excellent_content-text {
-  display: block;
-  align-items: baseline;
-}
-#excellent .excellent_content-text span.fa_star {
-  display: flex;
-}
-  
-  .hero-section h1 {
-    font-weight: 700 !important;
-    color: rgba(75, 75, 75, 1) !important;
-    font-size: 45px !important;
-  }
-
-  .blurb h3 {
-    font-weight: 400 !important;
-    font-size: 24px !important;
-  }
-  .blurb p {
-    font-size: 15px !important;
-    font-weight: 700 !important;
-  }
-  .support_section p {
-    font-size: 12px !important;
-  }
-  .buy_a_car .blurb p {
-    font-size: 20px !important;
-    font-weight: 400 !important;
-    color: #747474 !important;
-    line-height: 30px !important;
-}
-.how_it_Works .steps .blurb p {
-  font-size: 20px;
-  font-weight: 400;
-  color: #747474;
-  line-height: 30px;
-}
-.card-text {
-  font-size: 18px;
-  margin-bottom: 100px;
-}
-.blog_section .btn {
-  /* float: right; */
-  background-color: #f24026 !important;
-  border-radius: 0px;
-  color: #fff;
-  padding: 6px 25px;
-  font-size: 15px;
-}
-.hero-section .car img {
-  -moz-animation: fadeinphoto 7s 20s infinite;
-  -webkit-animation: fadeinphoto 7s 20s infinite;
-  -o-animation: fadeinphoto 7s 20s infinite;
-  animation: fadeinphoto 7s 20s infinite;
-}
-
-
-}
-
-
 /* ******************** Contact Us ***************** */
 
 
@@ -1032,115 +882,6 @@ button.btn.btn-primary.btn-md.btn-block {
 .map-img{
   margin-left: 6%;
   margin-top: 5%;
-}
-@media only screen and (max-width: 600px) {
-  .form-content .form-items {
-    /* padding: 40px; */
-    display: inline-block;
-    width: 100%;
-    background-color: #FFFFFF;
-    min-width: 20% !important;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 0;
-    text-align: left;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-  .form-holder .form-content {
-    position: relative;
-    text-align: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    /* padding-top: 12%; */
-}
-
-
-}
-
-@media only screen and (max-width: 768px) {
-  .contact-details {
-    margin-top: 0%;
-}
-.form {
-  margin-left: 0%;
-  margin-bottom: 5%;
-}
-
-.map-img {
-    margin-left: 0%;
-    justify-content: center;
-    margin-top: 5%;
-}
-.form-title h1{
-  margin-left: 0%;
-  margin-bottom: 5%;
-  color: #0F001A;
-  text-align: center;
-  font-size: 36px;
-  line-height: 54px;
-  font-weight: 500;
-}
-.want_to_sell p {
-  font-size: 23px;
-  font-weight: 600;
-}
-.Why-sell-your-car .clock-content h2 {
-  font-size: 20px !important;
-  font-weight: bold !important;
-  text-align: left !important;
-}
-.Why-sell-your-car img {
-  max-width: 45% !important;
-  padding-bottom: 1rem !important;
-  margin-top: 25px !important;
-}
-.Why-sell-your-car .clock-content p {
-  text-align: left;
-  font-size: 16px;
-  font-weight: 400;
-  }  
-}
-
-@media only screen and (max-width: 992px) {
-  .form-holder {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 10vh !important;
-  }
-  .contact-details {
-    margin-top: 0%;
-}
-.form {
-  margin-left: 0%;
-  margin-bottom: 5%;
-}
-.map-img {
-  margin-left: 0%;
-  justify-content: center;
-  margin-top: 10%;
-  margin-bottom:10%
-}
-.form-title h1{
-  /* margin-left: 10%; */
-  margin-bottom: 5%;
-  color: #0F001A;
-  text-align: center;
-  font-size: 36px;
-  line-height: 54px;
-  font-weight: 500;
-}
-
 }
 
 /* ************************* FAQ Section ************************* */
@@ -2489,129 +2230,6 @@ button:hover {
 
 
 
-
-
-
-/* @media (max-width: 600px) {
-  .moving-left-tyr{
-    top: 91px !important;
-    left: 30px !important
-  }
-  .hero-section .car img{
-    width: 258px;
-  }
-  .moving-left-tyr img{
-    width: 44px !important;
-  }
-} */
-@media (max-width: 576px) {
-  .car{
-    width: 100%;
-  }
-  .wrap-login100 {
-    padding: 100px 15px 33px 15px;
-  }
-}
-
-@media screen and (max-width: 1400px) and (min-width: 900px) {
-  .months-untill{
-    padding-bottom: 5% !important;
-  }
-}
-
-@media (max-width: 1200px) {
-  .months-untill{
-    padding-bottom: 5%;
-  }
-  .moving-left-tyr{
-    top: 129px;
-    left: 79px;
-  }
-  .moving-left-tyr img,
-  .moving-right-tyr img{
-    width: 70px !important;
-  }
-  .moving-right-tyr {
-    top: 129px;
-    left: 382px;
-}
-  .car .float-start{
-    width: 50% !important;
-  }
-  /* .moving-left-tyr img,
-  .moving-right-tyr img{
-    width: 40px !important;
-  }
-  .moving-right-tyr{
-    top: 79px;
-    left: 154px;
-  }
-  .moving-left-tyr{
-    left: 33px;
-    top: 79px;
-  } */
-}
-
-@media (max-width: 992px) {
-  .moving-left-tyr {
-    top: 105px;
-    left: 57px;
-  }
-  .moving-right-tyr {
-    top: 105px;
-    left: 282px;
-}
-  .moving-left-tyr img, .moving-right-tyr img {
-    width: 60px !important;
-  }
-  .hero-section .car img{
-    width: 187px;
-  }
-  .wrap-login100 {
-    padding: 177px 90px 33px 85px;
-  }
-
-  .login100-pic {
-    width: 35%;
-  }
-
-  .login100-form {
-    width: 50%;
-  }
-}
-@media (max-width: 768px) {
- 
-  .moving-left-tyr {
-    top: 91px;
-    left: 45px;
-}
-.moving-left-tyr img, .moving-right-tyr img {
-  width: 44px !important;
-}
-.moving-right-tyr {
-  position: absolute;
-  top: 91px;
-  left: 214px;
-}
-  .wrap-login100 {
-    padding: 100px 80px 33px 80px;
-  }
-  .login100-pic {
-    display: none;
-  }
-
-  .login100-form {
-    width: 100%;
-  }
-  .hero-section .car img {
-    width: 50%;
-  }
-}
-@media (max-width: 600px) {
-  .car .float-start{
-    width: 258px !important;
-  }
-}
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 
@@ -2717,6 +2335,341 @@ button:hover {
   height: 20%;
 } */
 
-.textarea#textarea{
+
+/* BreakPoints */
+
+
+@media (max-width: 576px) {
+  .car{
+    width: 100%;
+  }
+  .wrap-login100 {
+    padding: 100px 15px 33px 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .car .float-start{
+    width: 258px !important;
+  }
+  .form-content .form-items {
+    /* padding: 40px; */
+    display: inline-block;
+    width: 100%;
+    background-color: #FFFFFF;
+    min-width: 20% !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 0;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* padding-top: 12%; */
+}
+  #excellent .excellent_content span i {
+      font-size: 21px;
+      font-weight: 500;
+      color: #ffffff;
+      background-color: #e73e2c;
+      padding: 4px;
+  }
+  #excellent .reviews_main_section .reviews_shadow .showing_content span i {
+    background-color: #e73e2c;
+    padding: 3px;
+    color: #FFFFFF;
+    font-size: 12px;
+  }
+  #excellent .reviews_main_section .reviews_shadow .showing_content {
+    line-height: 2 !important;
+    display: block;
+  }
+  #excellent .reviews_main_section .reviews_shadow .header-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  #excellent .reviews_main_section .reviews_shadow .date-time {
+    float: left;
+}
+#excellent .excellent_content-text {
+  display: block;
+  align-items: baseline;
+}
+#excellent .excellent_content-text span.fa_star {
+  display: flex;
+}
+  
+  .hero-section h1 {
+    font-weight: 700 !important;
+    color: rgba(75, 75, 75, 1) !important;
+    font-size: 45px !important;
+  }
+
+  .blurb h3 {
+    font-weight: 400 !important;
+    font-size: 24px !important;
+  }
+  .blurb p {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+  }
+  .support_section p {
+    font-size: 12px !important;
+  }
+  .buy_a_car .blurb p {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: #747474 !important;
+    line-height: 30px !important;
+}
+.how_it_Works .steps .blurb p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #747474;
+  line-height: 30px;
+}
+.card-text {
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+.blog_section .btn {
+  /* float: right; */
+  background-color: #f24026 !important;
+  border-radius: 0px;
+  color: #fff;
+  padding: 6px 25px;
+  font-size: 15px;
+}
+.hero-section .car img {
+  -moz-animation: fadeinphoto 7s 20s infinite;
+  -webkit-animation: fadeinphoto 7s 20s infinite;
+  -o-animation: fadeinphoto 7s 20s infinite;
+  animation: fadeinphoto 7s 20s infinite;
+}
+
+
+}
+@media only screen and (max-width: 768px) {
+  .moving-left-tyr {
+    top: 91px;
+    left: 45px;
+}
+.moving-left-tyr img, .moving-right-tyr img {
+  width: 44px !important;
+}
+.moving-right-tyr {
+  position: absolute;
+  top: 91px;
+  left: 214px;
+}
+  .wrap-login100 {
+    padding: 100px 80px 33px 80px;
+  }
+  .login100-pic {
+    display: none;
+  }
+
+  .login100-form {
+    width: 100%;
+  }
+  .hero-section .car img {
+    width: 50%;
+  }
+  .contact-details {
+    margin-top: 0%;
+  }
+  .form {
+    margin-left: 0%;
+    margin-bottom: 5%;
+  }
+
+  .map-img {
+      margin-left: 0%;
+      justify-content: center;
+      margin-top: 5%;
+  }
+  .form-title h1{
+    margin-left: 0%;
+    margin-bottom: 5%;
+    color: #0F001A;
+    text-align: center;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 500;
+  }
+  .want_to_sell p {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  .Why-sell-your-car .clock-content h2 {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-align: left !important;
+  }
+  .Why-sell-your-car img {
+    max-width: 45% !important;
+    padding-bottom: 1rem !important;
+    margin-top: 25px !important;
+  }
+  .Why-sell-your-car .clock-content p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    } 
+  .navbar-brand img{
+    max-width: 100%;
+  }
+  
+  .form_overlap_row {
+    margin-top: 0px;
+    margin: 15px !important;
+  }
+  .hero-section .car img {
+    width: 50%;
+  }
+  /* .moving-left-tyr {
+    position: absolute;
+    top: 114px;
+    left: 38px;
+    width: 100px;
+  }
+  .moving-right-tyr {
+    position: absolute;
+    top: 114px;
+    left: 263px;
+    width: 100px;
+  }
+  .car {
+    position: relative;
+    top: -1px;
+} */
+.navbar-light .navbar-brand {
+  color: rgba(0,0,0,.9);
+  max-width: 56%;
+}
+.hero-section .search-form {
+  background: #fff !important;
+  box-shadow: 0px 0px 9px 4px rgb(0 0 0 / 20%) !important;
+  padding: 15px 15px 15px 15px !important;
+}
+  
+}
+@media only screen and (max-width: 992px) {
+  .moving-left-tyr {
+    top: 105px;
+    left: 57px;
+  }
+  .moving-right-tyr {
+    top: 105px;
+    left: 282px;
+}
+  .moving-left-tyr img, .moving-right-tyr img {
+    width: 60px !important;
+  }
+  .hero-section .car img{
+    width: 187px;
+  }
+  .wrap-login100 {
+    padding: 177px 90px 33px 85px;
+  }
+
+  .login100-pic {
+    width: 35%;
+  }
+
+  .login100-form {
+    width: 50%;
+  }
+    .form-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 10vh !important;
+    }
+    .contact-details {
+      margin-top: 0%;
+  }
+  .form {
+    margin-left: 0%;
+    margin-bottom: 5%;
+  }
+  .map-img {
+    margin-left: 0%;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom:10%
+  }
+  .form-title h1{
+    /* margin-left: 10%; */
+    margin-bottom: 5%;
+    color: #0F001A;
+    text-align: center;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 500;
+  }
+
+    .navBar{
+      padding: 0px 15px;
+    }
+    .menuList li{
+      margin: 0px 15px;
+    }
+    .how_it_Works .steps h2 {
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 37.5px;
+      font-style: normal;
+  }
+  .blurb-icons .get-a-free {
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 1200px) {
+  .months-untill{
+    padding-bottom: 5%;
+  }
+  .moving-left-tyr{
+    top: 129px;
+    left: 79px;
+  }
+  .moving-left-tyr img,
+  .moving-right-tyr img{
+    width: 70px !important;
+  }
+  .moving-right-tyr {
+    top: 129px;
+    left: 382px;
+}
+  .car .float-start{
+    width: 50% !important;
+  }
+
+}
+@media only screen and (max-width: 960px) {
+  .sm-icons .nav-item {
+    padding-right: 1em;
+  }
+}  
+@media screen and (max-width: 1400px) and (min-width: 900px) {
+  .months-untill{
+    padding-bottom: 5% !important;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 1200px){
   
 }

@@ -8,6 +8,102 @@ BeCarSmart | index
         font-family: FontAwesome;
         content: "";
     }
+
+    
+.slider-area {
+	margin-top: 30px;
+}
+.single-slider h3 {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 18px;
+}
+
+
+button.slick-prev.slick-arrow {
+    position: relative;
+    width: 30px;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    position: absolute;
+    left: 0px;
+    right: auto;
+    z-index: 11;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+}
+
+button.slick-prev.slick-arrow:after {
+    content: "<";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #e73e2c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+button.slick-next.slick-arrow {
+    position: relative;
+    width: 40px;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    position: absolute;
+    left: auto;
+    right: 0px;
+    z-index: 11;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+}
+
+button.slick-next.slick-arrow:after {
+    content: ">";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #e73e2c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.sliders-list.slick-initialized.slick-slider {
+    position: relative;
+}
+
+.single-slider {
+    padding: 30px 0;
+}
+
+.slider-img img {
+    display: block;
+    width: 55%;
+    margin: 50px;
+}
+
+.single-slider.slick-slide {
+    padding: 15px;
+}
+
+.sliders-list.slick-initialized.slick-slider {
+    padding: 0 40px;
+}
+
+  
 </style>
 @endsection
 @section('content')
@@ -426,25 +522,43 @@ BeCarSmart | index
     </div>
 </section> -->
 
-<section class="testimonial text-center p-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 ">
-                <div class="slider">
-                    <img src="{{asset('assets/img/audi.png')}}" />
-                    <img src="{{asset('assets/img/Toyota.png')}}" />
-                    <img src="{{asset('assets/img/land-rover.png')}}" />
-                    <img src="{{asset('assets/img/mer.png')}}" />
-                    <img src="{{asset('assets/img/nissan.png')}}" />
 
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="slider-area">
+		<div class="container">
+			<div class="sliders-list">
+				<div class="single-slider">
+					<div class="slider-img">
+                        <img src="{{asset('assets/img/audi.png')}}"/>
+					</div>
+				</div> <!-- /.single-slider -->
+				<div class="single-slider">
+					<div class="slider-img">
+                        <img src="{{asset('assets/img/Toyota.png')}}"/>
+					</div>
+				</div> <!-- /.single-slider -->
+				<div class="single-slider">
+					<div class="slider-img">
+                        <img src="{{asset('assets/img/land-rover.png')}}"/>
+					</div>
+				</div> <!-- /.single-slider -->
+				<div class="single-slider">
+					<div class="slider-img">
+                        <img src="{{asset('assets/img/mer.png')}}"/>
+					</div>
+				</div> <!-- /.single-slider -->
+				<div class="single-slider">
+					<div class="slider-img">
+                        <img src="{{asset('assets/img/nissan.png')}}"/>
+					</div>
+				</div> <!-- /.single-slider -->
+			</div> <!-- /.sliders-list -->
 
 
-<!-- Suppport Section -->
+		</div><!-- end container -->
+	</div><!-- end slider area -->
+    
+
+    <!-- Suppport Section -->
 <section class="want_to_sell p-3 text-white">
     <div class="container">
         <div class="row">
@@ -454,7 +568,8 @@ BeCarSmart | index
             <div class="col-md-8 float-center">
                 <div class="row">
                     <div class="col-lg-12 ">
-                        <form action="" class=" formSell d-flex">
+                        <form action="{{route('find.vehicle')}}" method="post" class=" formSell d-flex">
+                        @csrf
                             <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 15px;font-size: 22px;font-weight: 600;text-transform: uppercase;">
                             <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
                         </form>
@@ -466,34 +581,40 @@ BeCarSmart | index
     </div>
 </section>
 
+
 @endsection
 @section('script')
-<script>
-    jQuery(document).ready(function($) {
-        $('.slider').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 4,
-            responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '30px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-    });
-</script>
+    <script>        
+        
+        $(document).ready(function(){
+	  $('.sliders-list').slick({
+		  slidesToShow: 4,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  arrows: true,
+		  autoplaySpeed: 2000,
+		  responsive: [
+		    {
+		      breakpoint: 991,
+		      settings: {
+		        slidesToShow: 3,
+		      }
+		    },
+		    {
+		      breakpoint: 767,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    },
+		    ]
+	  });
+	});
+
+    </script>
 @endsection
