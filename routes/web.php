@@ -9,6 +9,8 @@ use App\Http\Controllers\Admin\SellCarController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\SellCar\CarController;
+use App\Models\BuyCarLead;
+use App\Models\SellCarLead;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -56,18 +58,21 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/delete-questionnaire', [QuestionnaireController::class, 'delete'])->name('delete-questionnaire');
 
     Route::get('/sell-car', [SellCarController::class, 'index'])->name('Car.sell-car');
+    Route::get('/leads-details/{id}', [SellCarController::class, 'sell_car_lead_details'])->name('Car.leads-details');
     Route::get('/buy-car', [BuyCarLeadController::class, 'index'])->name('Car.buy-car');
     Route::get('/buy-car-lead-delete', [BuyCarLeadController::class, 'buy_car_delete'])->name('buy-car-delete');
     Route::get('/evaluate-car/{id}', [BuyCarLeadController::class, 'evaluate_car'])->name('Car.evaluate-car');
 
-    Route::get('/leads-details', function () {
-        return view('Car.leads-details');
-    })->name('Car.leads-details');
+    Route::get('/dashboard', function () {
+        $totalsellcarleads = SellCarLead::count();
+        $buycarlead = BuyCarLead::count();
+        return view('dashboard', compact('totalsellcarleads', 'buycarlead'));
+    })->name('dashboard');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
+
+
 
 require __DIR__ . '/auth.php';
 
@@ -142,7 +147,4 @@ Route::get('/about', function () {
 
 Route::get('/reviews', function () {
     return view('frontend/sellcar/reviews');
-})->name('frontend//reviews');
-
-;
-
+})->name('frontend//reviews');;
