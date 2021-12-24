@@ -133,15 +133,18 @@ Route::get('/how_it_works', function () {
     return view('frontend/sellcar/how_it_works');
 })->name('frontend/how_it_works');
 
-Route::get('/blog', function () {
-    return view('frontend/sellcar/blog');
-})->name('frontend//blog');
+Route::get('/blogs', function () {
+    
+    return view('frontend/sellcar/blogs');
+})->name('frontend//blogs');
 
 Route::get('/about', function () {
     return view('frontend/sellcar/about');
-})->name('frontend//about');
+})->name('frontend/about');
 
 Route::get('/reviews', function () {
     return view('frontend/sellcar/reviews');
 })->name('frontend//reviews');
+
+;
 

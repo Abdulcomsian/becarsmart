@@ -217,7 +217,7 @@ g{
 /* Buy A Car */
 
 .buy_a_car {
-  background: rgba(242, 242, 242, 0.5);
+  /* background: rgba(242, 242, 242, 0.5); */
 }
 
 .form_overlap_row {
@@ -587,7 +587,7 @@ select.list-dt:focus {
 
 
 .testimonial{
-  background-color: #F2F2F280;
+  /* background-color: #F2F2F280; */
 }
 
 .testimonial .rating .checked {
