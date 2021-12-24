@@ -478,7 +478,8 @@ BeCarSmart | Sellcar New
             <div class="col-md-8 float-center">
                 <div class="row">
                     <div class="col-lg-12">
-                        <form action="" class="d-flex formSell">
+                        <form action="{{route('find.vehicle')}}" method="post" class="d-flex formSell">
+                        @csrf
                             <input type="text" name="reg_number" class="form-control" placeholder="Enter Registration Number" style="padding: 15px;">
                             <input type="submit" class="btn btn-danger w-100" value="Enter" style="padding: 15px; max-width: 67%;">
                         </form>
