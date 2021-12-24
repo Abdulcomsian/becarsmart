@@ -14,4 +14,9 @@ class BlogController extends Controller
         $featureblogs = Blogs::limit(3)->get();
         return view('frontend/sellcar/blog', compact('blog', 'featureblogs'));
     }
+
+    public function allblogs(){
+        $blog = Blogs::with('user')->paginate(20);
+        return view('frontend/sellcar/blogs',compact('blog'));
+    }
 }
