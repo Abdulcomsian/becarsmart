@@ -100,6 +100,7 @@ Route::get('/home', function () {
 })->name('frontend/home');
 
 Route::get('/blog/{id}', [BlogController::class, 'Blog_details'])->name('blog');
+Route::get('/blogs', [BlogController::class, 'allblogs'])->name('frontend/allblogs');
 
 Route::get('/contact', function () {
     return view('frontend/sellcar/contact');
@@ -133,10 +134,7 @@ Route::get('/how_it_works', function () {
     return view('frontend/sellcar/how_it_works');
 })->name('frontend/how_it_works');
 
-Route::get('/blogs', function () {
-    
-    return view('frontend/sellcar/blogs');
-})->name('frontend//blogs');
+
 
 Route::get('/about', function () {
     return view('frontend/sellcar/about');
