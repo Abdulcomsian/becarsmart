@@ -256,11 +256,15 @@ button.slick-next.slick-arrow:after {
                             @if(count($questionair)!=$i)
                             <input type="button" name="next" id="{{$i}}" class="next action-button" value="Next">
                             @else
+                            <h2 class="fs-title">Other Details:</h2>
+                            <div class="form-card">
+                                <input type="text" name="lead_source" placeholder="Lead Source e.g Social Media" required>
+                            </div>
                             <div class="form-card">
                                 <input type="text" name="name" placeholder="Enter name" required>
                             </div>
                             <div class="form-card">
-                                <input type="text" name="phone" placeholder="Enter Phone no"  minlength="10" maxlength="11" required>
+                                <input type="text" name="phone" placeholder="Enter Phone no" minlength="10" maxlength="11" required>
                             </div>
                             <div class="form-card">
                                 <input type="email" name="email" placeholder="Enter Email" required>

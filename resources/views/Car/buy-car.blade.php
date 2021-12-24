@@ -94,6 +94,7 @@
                                 <th class="min-w-125px">Name</th>
                                 <th class="min-w-125px">Phone number</th>
                                 <th class="min-w-125px">Email</th>
+                                <th>Lead Source</th>
                                 <th class="min-w-125px">Action</th>
 
 
@@ -105,9 +106,10 @@
                         <tbody class="text-gray-600 fw-bold">
                             @foreach($buycarleads as $lead)
                             <tr>
-                                <td class="">{{$lead->name}}</td>
-                                <td class="">{{$lead->phone_no}}</td>
-                                <td class="">{{$lead->email}}</td>
+                                <td class="">{{$lead->name ?? ''}}</td>
+                                <td class="">{{$lead->phone_no ?? ''}}</td>
+                                <td class="">{{$lead->email ?? ''}}</td>
+                                <td class="">{{$lead->lead_source ?? ''}}</td>
                                 <td class="">
 
                                     <button type="button" class="btn btn-primary py-3 px-4"><a class="" href="{{url('/evaluate-car',$lead->id)}}">

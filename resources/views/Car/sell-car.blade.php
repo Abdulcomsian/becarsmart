@@ -227,7 +227,7 @@
                                 <td class="">{{$lead->engine ?? ''}}</td>
                                 <td class="">
                                     <div class="view-btn" styles=" ">
-                                        <a class="btn btn-danger btn-md" href="{{url('/leads-details')}}">View</a>
+                                        <a class="btn btn-danger btn-md" href="{{url('/leads-details',$lead->id)}}">View</a>
                                     </div>
                                 </td>
                             </tr>
