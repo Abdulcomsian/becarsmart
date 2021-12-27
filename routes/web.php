@@ -147,4 +147,9 @@ Route::get('/about', function () {
 
 Route::get('/reviews', function () {
     return view('frontend/sellcar/reviews');
-})->name('frontend//reviews');;
+})->name('frontend/reviews');;
+
+Route::get('/thankyou_page1', function () {
+    return view('frontend/sellcar/thankyou_page1');
+})->name('frontend/thankyou_page1');;
+

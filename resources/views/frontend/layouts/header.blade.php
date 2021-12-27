@@ -22,7 +22,6 @@
                         More
                      </a>
                      <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
 
                         <li class="nav-item">
                            <a class="dropdown-item" href="{{url ('/about')}}">About Us</a>
@@ -44,8 +43,8 @@
                         </li>
                      </ul>
                   </li>
-                 
-              </ul>
+
+               </ul>
               <!-- <ul class="navbar-nav sm-icons mr-0">
                  <li class=""><a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                  <li>|</li>
