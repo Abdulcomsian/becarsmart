@@ -35,7 +35,10 @@ button.slick-prev.slick-arrow {
     width: 40px;
     height: 40px;
 }
-
+button.slick-prev.slick-arrow ,
+button.slick-next.slick-arrow{
+    display: none !important;
+}
 button.slick-prev.slick-arrow:after {
     content: "<";
     position: absolute;
@@ -43,9 +46,9 @@ button.slick-prev.slick-arrow:after {
     right: 0;
     top: 0;
     bottom: 0;
-    background: #e73e2c;
+    background: #2c3b53;
     color: #fff;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     font-size: 22px;
@@ -73,9 +76,9 @@ button.slick-next.slick-arrow:after {
     right: 0;
     top: 0;
     bottom: 0;
-    background: #e73e2c;
+    background: #2c3b53;
     color: #fff;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     font-size: 22px;
@@ -523,7 +526,7 @@ button.slick-next.slick-arrow:after {
 </section> -->
 
 
-<div class="slider-area">
+    <div class="slider-area">
 		<div class="container">
 			<div class="sliders-list">
 				<div class="single-slider">
@@ -559,40 +562,40 @@ button.slick-next.slick-arrow:after {
     
 
     <!-- Suppport Section -->
-<section class="want_to_sell p-3 text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center d-flex alignCenter">
-                <p>Want to Sell Your Car?</p>
-            </div>
-            <div class="col-md-8 float-center">
-                <div class="row">
-                    <div class="col-lg-12 ">
-                        <form action="{{route('find.vehicle')}}" method="post" class=" formSell d-flex">
-                        @csrf
-                            <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 15px;font-size: 22px;font-weight: 600;text-transform: uppercase;">
-                            <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
-                        </form>
-                    </div>
+    <section class="want_to_sell p-3 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center d-flex alignCenter">
+                    <p>Want to Sell Your Car?</p>
                 </div>
+                <div class="col-md-8 float-center">
+                    <div class="row">
+                        <div class="col-lg-12 ">
+                            <form action="{{route('find.vehicle')}}" method="post" class=" formSell d-flex">
+                            @csrf
+                                <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 15px;font-size: 22px;font-weight: 600;text-transform: uppercase;">
+                                <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
+                            </form>
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 @endsection
 @section('script')
     <script>        
         
-        $(document).ready(function(){
-	  $('.sliders-list').slick({
+    $(document).ready(function(){
+	      $('.sliders-list').slick({
 		  slidesToShow: 4,
 		  slidesToScroll: 1,
 		  autoplay: true,
 		  arrows: true,
-		  autoplaySpeed: 2000,
+		  autoplaySpeed: 3000,
 		  responsive: [
 		    {
 		      breakpoint: 991,

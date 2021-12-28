@@ -153,3 +153,7 @@ Route::get('/thankyou_page1', function () {
     return view('frontend/sellcar/thankyou_page1');
 })->name('frontend/thankyou_page1');;
 
+Route::get('/thankyou_page2', function () {
+    return view('frontend/sellcar/thankyou_page2');
+})->name('frontend/thankyou_page2');;
+

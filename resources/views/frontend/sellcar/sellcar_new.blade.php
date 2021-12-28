@@ -10,7 +10,7 @@ BeCarSmart | Sellcar New
 <section class="SellCar-section text-center">
     <div class="container">
         <div class="row d-flex pt-5">
-            <div class="col-md-12">
+            <div class="col-md-5">
                 <div class="row">
                     <div class="col-md-12">
                         <h1 style="float: left;" class="heading-h1">
@@ -31,6 +31,16 @@ BeCarSmart | Sellcar New
                                 <li><b>Engine: </b>&nbsp {{$_GET['engine'] ?? ''}}</li>&nbsp &nbsp
                                 <li><b>Mileage: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="how_it_works_header pt-3">
+                            <h2>How it Works?</h2>
+                            <p>3 Easy Steps</p>
                         </div>
                     </div>
                 </div>
@@ -117,9 +127,45 @@ BeCarSmart | Sellcar New
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-md-12">
+                        <!-- <div class="col-lg-7 col-md-12">
                             <div class="sellcar-blurb " style="padding: 0% 0% 0% 20%">
                                 <img src="{{asset ('assets/img/right-col.png')}}" alt="">
+                            </div>
+                        </div> -->
+                        <div class="col-lg-7 col-md-12">
+                            
+                            <div class="row pt-5">
+                                <div class="col-md-12 ">
+                                    <div class="sell-blurb-icons">
+                                        <img src="{{asset ('assets/img/valuate -your-car.png')}}" alt="Value my Car" class="float-center pb-3">
+                                        <div class="sell-blurb-text">
+                                            <h2>Sell Your Car</h2>
+                                            <p class="get-a-free">Get a free no obligation valuation above.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-md-12 ">
+                                    <div class="sell-blurb-icons">
+                                        <img src="{{asset ('assets/img/book-appointment.png')}}" alt="Value my Car" class="float-center pb-3">
+                                        <div class="sell-blurb-text">
+                                            <h2>Book Appointment</h2>
+                                            <p class="get-a-free">Book an appointment for a free car inspection  near you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-md-12 ">
+                                    <div class="sell-blurb-icons">
+                                        <img src="{{asset ('assets/img/sell-your-car.png')}}" alt="Value my Car" class="float-center pb-3">
+                                        <div class="sell-blurb-text">
+                                            <h2>Sell your Car</h2>
+                                            <p class="get-a-free">Complete the sale and get paid if you are happy with the offer.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -426,13 +472,25 @@ BeCarSmart | Sellcar New
                                                     <div class="row mb-4">
                                                         <div class="col-md-6">
                                                             <div class="row">
-                                                                <div class="col-md-12 pb-3">
+                                                                <div class="col-md-12 pb-">
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Please feel free to share images of your vehicle:</label>
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <div class="input-Group">
                                                                             <input type="file" class="form-control" id="Written" style="padding: 7px; border-radius: 0; border: 1px solid grey;" name="file[]" multiple>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600"><img src="https://www.freepnglogos.com/uploads/whatsapp-png-14.png" width="25%" alt=""></label>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="input-Group">
+                                                                        <div class="col-md-12">
+                                                                            <label for="fname" class="form-label" style="font-size:13px; font-weight:600">You can also send us photos with your rag number via whatsapp to 01234567899.</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -450,6 +508,11 @@ BeCarSmart | Sellcar New
                                                                     <span class="text-danger comments"></span>
                                                                 </div>
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-md-6">
+                                                           
                                                         </div>
                                                     </div>
                                                     <div class="d-gridd mt-4">
@@ -482,7 +545,7 @@ BeCarSmart | Sellcar New
 
         <div class="row steps">
             <div class="col-md-4 col-sm-12 pt-5">
-                <div class="blurb-icons">
+                <div class="blurb-icons " style="padding-bottom:13.10%">
                     <img src="{{asset ('assets/img/valuate -your-car.png')}}" alt="Value my Car" class="float-center pb-3">
                     <h2>Sell Your Car</h2>
                     <p class="get-a-free">Get a free no obligation <br> valuation above.</p>
@@ -493,7 +556,7 @@ BeCarSmart | Sellcar New
                 <div class="blurb-icons">
                     <img src="{{asset ('assets/img/book-appointment.png')}}" alt="Value my Car" class="float-center pb-3">
                     <h2>Book Appointment</h2>
-                    <p>Book an appointment for <br>a free car inspection <br> near you.</p>
+                    <p class="get-a-free">Book an appointment for <br>a free car inspection <br> near you.</p>
                 </div>
             </div>
 
@@ -501,7 +564,7 @@ BeCarSmart | Sellcar New
                 <div class="blurb-icons">
                     <img src="{{asset ('assets/img/sell-your-car.png')}}" alt="Value my Car" class="float-center pb-3">
                     <h2>Sell your Car</h2>
-                    <p>Complete the sale and <br> get paid if you are happy with <br> the offer.</p>
+                    <p class="get-a-free">Complete the sale and <br> get paid if you are happy with <br> the offer.</p>
                 </div>
             </div>
         </div>
