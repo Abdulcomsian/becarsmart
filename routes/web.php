@@ -6,11 +6,15 @@ use App\Http\Controllers\Admin\Home\HomeSectionController;
 use App\Http\Controllers\Admin\QuestionnaireController;
 use App\Http\Controllers\Admin\BuyCarLeadController;
 use App\Http\Controllers\Admin\SellCarController;
+use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\Home\FaqController;
+use App\Models\Faq;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\SellCar\CarController;
 use App\Models\BuyCarLead;
 use App\Models\SellCarLead;
+use App\Models\AboutUs;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -50,6 +54,16 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/update-blog', [HomeSectionController::class, 'update_Blog']);
     Route::post('/testominal', [HomeSectionController::class, 'testominal']);
     Route::post('/testominal-delete', [HomeSectionController::class, 'testominal_delete']);
+
+    //about page csm url
+    Route::get('dashboard/about', [AboutController::class, 'index']);
+    Route::post('dashboard-about-save', [AboutController::class, 'store'])->name('dashboard.about.store');
+    Route::post('about-us-delete', [AboutController::class, 'delete']);
+    //faq page
+
+    Route::get('dashboard/faq', [FaqController::class, 'index']);
+    Route::post('dashboard-faq-save', [FaqController::class, 'store'])->name('dashboard.faq.store');
+    Route::post('faq-delete', [FaqController::class, 'delete']);
 
 
     // Questionnaire Routes
@@ -116,7 +130,8 @@ Route::get('/cookies', function () {
 })->name('frontend/cookies');
 
 Route::get('/faq', function () {
-    return view('frontend/sellcar/faq');
+    $faqdata = Faq::get();
+    return view('frontend/sellcar/faq', compact('faqdata'));
 })->name('frontend/faq');
 
 Route::get('/privacy_policy', function () {
@@ -142,18 +157,18 @@ Route::get('/how_it_works', function () {
 
 
 Route::get('/about', function () {
-    return view('frontend/sellcar/about');
+    $aboutdata = AboutUs::get();
+    return view('frontend/sellcar/about', compact('aboutdata'));
 })->name('frontend/about');
 
 Route::get('/reviews', function () {
     return view('frontend/sellcar/reviews');
 })->name('frontend/reviews');;
 
-Route::get('/thankyou_page1', function () {
+Route::get('/thankyou_buy_car', function () {
     return view('frontend/sellcar/thankyou_page1');
-})->name('frontend/thankyou_page1');;
+})->name('thankyou.buy.car');;
 
-Route::get('/thankyou_page2', function () {
+Route::get('/thankyou_sell_car', function () {
     return view('frontend/sellcar/thankyou_page2');
-})->name('frontend/thankyou_page2');;
-
+})->name('thankyou.sell.car');;

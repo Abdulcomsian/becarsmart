@@ -53,7 +53,8 @@ class HomeController extends Controller
             Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
             Notification::route('mail', $request->email)->notify(new BuyCarNotification($request->all()));
             toastSuccess('Thank you for your information. We will be in touch soon.');
-            return Redirect::back()->with('thankyou', 'thankyou');
+            return redirect()->route('thankyou.buy.car');
+            //return Redirect::back()->with('thankyou', 'thankyou');
         }
     }
 
@@ -85,7 +86,8 @@ class HomeController extends Controller
                 Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new SellCarNotification($inputs));
                 Notification::route('mail', $request->email)->notify(new SellCarNotification($inputs));
                 toastSuccess('Lead Created Successfully!');
-                return Redirect::back();
+                return redirect()->route('thankyou.sell.car');
+                // return Redirect::back();
             }
         } catch (\Exception $exception) {
             toastError('Something went wrong, try again!');

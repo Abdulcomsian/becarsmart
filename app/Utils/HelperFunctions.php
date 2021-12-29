@@ -43,4 +43,14 @@ class HelperFunctions
         }
         return $path;
     }
+
+    public static function aboutusimagepath($user = null)
+    {
+        if ($user) {
+            $path = 'images/' . strtolower(str_replace(' ', '_', trim($user->name))) . '-id-' . $user->id . '/profile_images/';
+        } else {
+            $path  = 'images/aboutus/';
+        }
+        return $path;
+    }
 }
