@@ -19,19 +19,38 @@ BeCarSmart | About Us
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 offset-md-1">
+                @php $i=1;@endphp
+                @foreach($aboutdata as $data)
+                @if($i%2==1)
                 <div class="row pt-5" style="align-items:center">
                     <div class="col-md-6 pb-3">
                         <div class="blurb-img">
-                            <img src="{{asset ('assets/img/pexels-talha-riaz-2379998.jpg')}}" class="img-fluid" alt="">
+                            <img src="{{asset($data->image ?? '')}}" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-md-6 pb-3">
                         <div class="blurbdiv">
-                            <p class="about-text">BeCarSmart started in 2017 with a vision to build a better car market for everyone, harnessing the power of technology to deliver an amazing experience.</p>
+                            <p class="about-text">{{$data->image_text ?? ''}}</p>
                         </div>
                     </div>
                 </div>
+                @else
                 <div class="row pt-5" style="align-items:center">
+                    <div class="col-md-6 pb-3">
+                        <div class="blurbdiv">
+                            <p class="about-text">{{$data->image_text ?? ''}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pb-3">
+                        <div class="blurb-img">
+                            <img src="{{asset($data->image ?? '')}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                @endif
+                @php $i++;@endphp
+                @endforeach
+                <!-- <div class="row pt-5" style="align-items:center">
                     <div class="col-md-6 pb-3">
                         <div class="blurbdiv">
                             <p class="about-text">With our network of more than 4,000 professional car dealers directly bidding on vehicles, we enable customers to sell their car for up to £1,000 more in as little as 24 hours - while supporting our car dealer partners to acquire the best used car stock, 100% online. <br><br>This is the way to sell your car. This is the BeCarSmart.</p>
@@ -54,7 +73,7 @@ BeCarSmart | About Us
                             <p class="about-text">In our first 4 years we’ve helped over 2.5 million customers value and sell their car, and have grown at over 300% year on year. And the journey’s only just begun.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -62,26 +81,26 @@ BeCarSmart | About Us
 </section>
 
 
-    <!-- Suppport Section -->
-    <section class="want_to_sell p-3 mt-5 text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center d-flex alignCenter">
-                    <p>Want to Sell Your Car?</p>
-                </div>
-                <div class="col-md-8 float-center">
-                    <div class="row">
-                        <div class="col-lg-12 ">
-                            <form action="{{route('find.vehicle')}}" method="post" class=" formSell d-flex">
+<!-- Suppport Section -->
+<section class="want_to_sell p-3 mt-5 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center d-flex alignCenter">
+                <p>Want to Sell Your Car?</p>
+            </div>
+            <div class="col-md-8 float-center">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <form action="{{route('find.vehicle')}}" method="post" class=" formSell d-flex">
                             @csrf
-                                <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 15px;font-size: 22px;font-weight: 600;text-transform: uppercase;">
-                                <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
-                            </form>
-                        </div>
+                            <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 15px;font-size: 22px;font-weight: 600;text-transform: uppercase;">
+                            <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 

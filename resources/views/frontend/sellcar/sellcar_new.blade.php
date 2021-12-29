@@ -58,7 +58,6 @@ BeCarSmart | Sellcar New
                                 <input type="hidden" name="model_no" value="{{$_GET['model_no'] ?? ''}}">
                                 <input type="hidden" name="color" value="{{$_GET['color'] ?? ''}}">
                                 <input type="hidden" name="engine" value="{{$_GET['engine'] ?? ''}}">
-                                <input type="hidden" name="mileage" value="{{$_GET['enginecapacity'] ?? ''}}">
 
                                 <div class="row">
                                     <div class="col-md-12" style="justify-content: left;">
@@ -133,7 +132,7 @@ BeCarSmart | Sellcar New
                             </div>
                         </div> -->
                         <div class="col-lg-7 col-md-12">
-                            
+
                             <div class="row pt-5">
                                 <div class="col-md-12 ">
                                     <div class="sell-blurb-icons">
@@ -151,7 +150,7 @@ BeCarSmart | Sellcar New
                                         <img src="{{asset ('assets/img/book-appointment.png')}}" alt="Value my Car" class="float-center pb-3">
                                         <div class="sell-blurb-text">
                                             <h2>Book Appointment</h2>
-                                            <p class="get-a-free">Book an appointment for a free car inspection  near you.</p>
+                                            <p class="get-a-free">Book an appointment for a free car inspection near you.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -179,7 +178,7 @@ BeCarSmart | Sellcar New
                                         <div class="col-lg-10 col-md-12 col-sm-12 " style="width: 100%;">
                                             <div class="card shadow card-shadow ">
                                                 <div class="home-card-body card-body">
-                                                <div class="row ">
+                                                    <div class="row ">
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="padding-bottom: 10px;">
@@ -188,10 +187,11 @@ BeCarSmart | Sellcar New
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <div class="input-Group">
-                                                                            <input type="number" class="form-control" id="mileage" placeholder="KM" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
+                                                                            <input type="number" class="form-control" name="mileage" id="mileage" placeholder="KM" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger" id="mileageerr"></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 ">
@@ -207,7 +207,7 @@ BeCarSmart | Sellcar New
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="finance-no" name="finance" class="-no" type="radio" value="0" {{ old('finance') == '0' ? 'checked' : '' }}/>
+                                                                        <input id="finance-no" name="finance" class="-no" type="radio" value="0" {{ old('finance') == '0' ? 'checked' : '' }} />
                                                                         <label for="finance-no">No</label>
                                                                     </div>
                                                                 </div>
@@ -503,7 +503,7 @@ BeCarSmart | Sellcar New
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div id="accurate_textarea" class="col-md-12 ">
-                                                                        <textarea id="comments" name="more_info" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px" >{{old('comments')}}</textarea>
+                                                                        <textarea id="comments" name="more_info" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                     </div>
                                                                     <span class="text-danger comments"></span>
                                                                 </div>
@@ -512,7 +512,7 @@ BeCarSmart | Sellcar New
                                                     </div>
                                                     <div class="row mb-4">
                                                         <div class="col-md-6">
-                                                           
+
                                                         </div>
                                                     </div>
                                                     <div class="d-gridd mt-4">
@@ -581,8 +581,8 @@ BeCarSmart | Sellcar New
                 <div class="row">
                     <div class="col-lg-12 ">
                         <form action="{{route('find.vehicle')}}" method="post" class=" formSell d-flex">
-                        @csrf
-                        <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 5px;font-size: 45px;font-weight: 600;text-transform: uppercase;text-align: center;">
+                            @csrf
+                            <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 5px;font-size: 45px;font-weight: 600;text-transform: uppercase;text-align: center;">
                             <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
                         </form>
                     </div>
@@ -593,7 +593,7 @@ BeCarSmart | Sellcar New
     </div>
 </section>
 
-    
+
 <!-- Modal HTML -->
 <div id="myModal" class="modal fade">
     <div class="modal-dialog modal-confirm">
@@ -723,7 +723,12 @@ BeCarSmart | Sellcar New
             $(".accident_damaged").html("");
             $(".set_of_keys").html("");
             $(".home_textarea").html("");
-            if($('input[name="finance"]:checked').length == 0){
+            $("#mileageerr").html("");
+
+            if ($("#mileage").val() == "") {
+                $("#mileageerr").html("Please Enter Mileage");
+            }
+            if ($('input[name="finance"]:checked').length == 0) {
                 $(".finance").html("Please Select Outstanding finance");
                 return false;
             }
