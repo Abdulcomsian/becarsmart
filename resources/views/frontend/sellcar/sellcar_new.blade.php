@@ -490,7 +490,7 @@ BeCarSmart | Sellcar New
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <div class="col-md-12">
-                                                                            <label for="fname" class="form-label" style="font-size:13px; font-weight:600">You can also send us photos with your rag number via whatsapp to 01234567899.</label>
+                                                                            <label for="fname" class="form-label" style="font-size:13px; font-weight:normal">You can also send us photos with your rag number via whatsapp to (01234567899).</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -532,7 +532,7 @@ BeCarSmart | Sellcar New
     </div>
 </section>
 <!-- How it Works -->
-<section class="how_it_Works text-center">
+<!-- <section class="how_it_Works text-center">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -569,7 +569,7 @@ BeCarSmart | Sellcar New
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Suppport Section -->
 <section class="want_to_sell p-3 text-white">
     <div class="container">
@@ -680,6 +680,9 @@ BeCarSmart | Sellcar New
     })
     $(document).ready(function() {
         $("#first-button").on('click', function() {
+
+            
+
             var fullname = $("#fullname").val();
             var email = $("#email").val();
             var phone = $("#phone").val();
@@ -710,6 +713,7 @@ BeCarSmart | Sellcar New
                 $(".postalerror").html("Phone number must be 5 digits or 7 digits");
                 return false;
             }
+            $(".how_it_works_header").hide();
             $("#step_1").hide();
             $("#step_2").show();
             $("#step_3").hide();
@@ -749,6 +753,8 @@ BeCarSmart | Sellcar New
                 return false;
             }
 
+            $(".how_it_works_header").hide();
+
             $("#step_1").hide();
             $("#step_2").hide();
             $("#step_3").show();
@@ -786,6 +792,8 @@ BeCarSmart | Sellcar New
             //     $(".comments").html("Please Enter Comment");
             //     return false;
             // }
+
+            $(".how_it_works_header").hide();
 
             $("#sellcarform").submit();
 
