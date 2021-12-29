@@ -38,28 +38,28 @@
                         <div class="col-md-3">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="https://freepngimg.com/thumb/car/3-2-car-free-download-png.png" width="100%"/>
+                                    <img src="{{asset ('assets/img/free-collection.png')}}" width="100%"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="https://freepngimg.com/thumb/car/12-2-car-png-image.png" width="100%"/>
+                                    <img src="{{asset ('assets/img/car-logo.png')}}" width="100%"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="https://freepngimg.com/thumb/car/13-2-car-png.png" width="100%"/>
+                                    <img src="{{asset ('assets/img/instant-payment.png')}}" width="100%"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="https://freepngimg.com/thumb/car/6-2-car-png-file.png" width="100%"/>
+                                    <img src="{{asset ('assets/img/payment-logo.png')}}" width="100%"/>
                                 </div>
                             </div>
                         </div>
