@@ -87,6 +87,23 @@
                                 <span class="menu-title">Blog </span>
                             </a>
                         </div>
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{url('dashboard/about')}}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">About Page</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{url('dashboard/faq')}}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">FAQ</span>
+                            </a>
+                        </div>
                         <!-- <div class="menu-item">
                             <a class="menu-link" href="/add-blog">
 												<span class="menu-bullet">
@@ -95,15 +112,6 @@
                                 <span class="menu-title">Add New Blog</span>
                             </a>
                         </div> -->
-
-                        {{-- <div class="menu-item">--}}
-                        {{-- <a class="menu-link" href="">--}}
-                        {{-- <span class="menu-bullet">--}}
-                        {{-- <span class="bullet bullet-dot"></span>--}}
-                        {{-- </span>--}}
-                        {{-- <span class="menu-title">Roles & Permissions</span>--}}
-                        {{-- </a>--}}
-                        {{-- </div>--}}
                     </div>
                 </div>
             </div>

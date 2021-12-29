@@ -25,7 +25,9 @@ class CreateSellCarLeadsTable extends Migration
             $table->string('fullname')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
+            $table->string('postal')->nullable();
 
+            $table->tinyInteger('finance')->nullable();
             $table->string('service_history')->nullable();
             $table->tinyInteger('non_runner')->default(0);
             $table->tinyInteger('set_of_keys')->default(0);
