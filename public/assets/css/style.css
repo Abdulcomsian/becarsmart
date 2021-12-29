@@ -1243,7 +1243,7 @@ a.btn.continue.btn-danger {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 30px;
   color: #13293D;
 }
@@ -1252,7 +1252,7 @@ a.btn.continue.btn-danger {
 font-family: Poppins;
 font-style: normal;
 font-weight: normal;
-font-size: 20px;
+font-size: 22px;
 line-height: 30px;
 text-align: center;
 color: #747474;
@@ -1262,7 +1262,7 @@ color: #747474;
   padding: 6%;
 }
 .sell-blurb-icons{
-  box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 15%);
+  /* box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 15%); */
   /* padding: 6%; */
   padding: 35px;
   text-align: left;
@@ -1270,7 +1270,7 @@ color: #747474;
 }
 .sell-blurb-icons img {
   width: 100%;
-  max-width: 15%;
+  max-width: 11%;
   height: 100%;
 }
 .sell-blurb-icons .sell-blurb-text{
@@ -1434,7 +1434,7 @@ h1.heading-h1 {
   border-radius: 0px;
   text-transform: uppercase;
   font-size: 45px;
-  color: #2c3b53;
+  color: rgba(75, 75, 75, 1);
   font-weight: 600;
   text-align: center;
 }
@@ -1443,7 +1443,8 @@ h1.heading-h1 {
   font-size: 45px;
   font-weight: 600;
   text-align: center;
-  color: #2c3b53;
+  /* color: #2c3b53; */
+  color: #2c3b538f;
 }
 
 
@@ -2462,7 +2463,7 @@ button:hover {
 }
 @media only screen and (max-width: 600px) {
   .sell-blurb-icons {
-    box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 15%);
+    /* box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 15%); */
     padding: 6%;
     text-align: center;
     display: block;
