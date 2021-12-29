@@ -197,12 +197,12 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any outstanding finance?</label>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="driving" name="non_runner" class="-yes" type="radio" value="1" {{ old('non_runner') == '1' ? 'checked' : '' }}>
-                                                                        <label for="driving">Yes</label>
+                                                                        <input id="finance-yes" name="finance" class="-yes" type="radio" value="1" {{ old('finance') == '1' ? 'checked' : '' }}>
+                                                                        <label for="finance-yes">Yes</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
@@ -211,11 +211,10 @@ BeCarSmart | Sellcar New
                                                                         <label for="finance-no">No</label>
                                                                     </div>
                                                                 </div>
-                                                                <span class="text-danger non_runner"></span>
+                                                                <span class="text-danger finance"></span>
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                     <div class="row mb-4">
                                                         <div class="col-md-12 ">
                                                             <div class="row">
@@ -250,8 +249,49 @@ BeCarSmart | Sellcar New
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                     <div class="row mb-4">
+                                                        <div class="col-md-6 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12 " style="">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="driving" name="non_runner" class="-yes" type="radio" value="1" {{ old('non_runner') == '1' ? 'checked' : '' }}>
+                                                                        <label for="driving">Yes</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="police" name="non_runner" class="-no" type="radio" value="0" {{ old('non_runner') == '0' ? 'checked' : '' }} />
+                                                                        <label for="police">No</label>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="text-danger non_runner"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12 " style="">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="driving " name="set_of_keys" class="-yes" type="radio" value="1" {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
+                                                                        <label for="driving ">1</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="tuition" name="set_of_keys" class="-no" type="radio" value="2" {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
+                                                                        <label for="tuition">2 or more</label>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="text-danger set_of_keys"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row ">
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12 ">
@@ -276,49 +316,6 @@ BeCarSmart | Sellcar New
                                                                         </select>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6 ">
-                                                            <div class="row">
-                                                                <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="driving " name="set_of_keys" class="-yes" type="radio" value="1" {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
-                                                                        <label for="driving ">1</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="tuition" name="set_of_keys" class="-no" type="radio" value="2" {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
-                                                                        <label for="tuition">2 or more</label>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="text-danger set_of_keys"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="row ">
-                                                        <div class="col-md-6 ">
-                                                            <div class="row">
-                                                                <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any outstanding finance?</label>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="finance-yes" name="finance" class="-yes" type="radio" value="1" {{ old('finance') == '1' ? 'checked' : '' }}>
-                                                                        <label for="finance-yes">Yes</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="finance-no" name="finance" class="-no" type="radio" value="0" {{ old('finance') == '0' ? 'checked' : '' }}/>
-                                                                        <label for="finance-no">No</label>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="text-danger finance"></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 ">
@@ -493,7 +490,7 @@ BeCarSmart | Sellcar New
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <div class="col-md-12">
-                                                                            <label for="fname" class="form-label" style="font-size:13px; font-weight:normal">You can also send us photos with your rag number via whatsapp to (01234567899).</label>
+                                                                            <label for="fname" class="form-label" style="font-size:13px; font-weight:600">You can also send us photos with your rag number via whatsapp to 01234567899.</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -502,7 +499,7 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Feel free to give more information on this vehicle:<span style="font-size: 12px; font-weight: 500">( The more we know about your vehicle, the more accurate we will be the valuation.)</span></label>
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Feel free to give us more information on this vehicle. <span style="font-size: 14px; font-weight: 500">( The more we know about your vehicle means the more accurate we will be with the valuation)</span> :</label>
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div id="accurate_textarea" class="col-md-12 ">
@@ -535,7 +532,7 @@ BeCarSmart | Sellcar New
     </div>
 </section>
 <!-- How it Works -->
-<!-- <section class="how_it_Works text-center">
+<section class="how_it_Works text-center">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -572,7 +569,7 @@ BeCarSmart | Sellcar New
             </div>
         </div>
     </div>
-</section> -->
+</section>
 <!-- Suppport Section -->
 <section class="want_to_sell p-3 text-white">
     <div class="container">
@@ -584,12 +581,13 @@ BeCarSmart | Sellcar New
                 <div class="row">
                     <div class="col-lg-12 ">
                         <form action="{{route('find.vehicle')}}" method="post" class=" formSell d-flex">
-                        @csrf
-                        <input id="footer_reg_number" type="text" name="reg_number" class="form-control" placeholder="AA19AAA">
+                            @csrf
+                            <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 5px;font-size: 45px;font-weight: 600;text-transform: uppercase;text-align: center;">
                             <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -682,9 +680,6 @@ BeCarSmart | Sellcar New
     })
     $(document).ready(function() {
         $("#first-button").on('click', function() {
-
-            
-
             var fullname = $("#fullname").val();
             var email = $("#email").val();
             var phone = $("#phone").val();
@@ -715,7 +710,6 @@ BeCarSmart | Sellcar New
                 $(".postalerror").html("Phone number must be 5 digits or 7 digits");
                 return false;
             }
-            $(".how_it_works_header").hide();
             $("#step_1").hide();
             $("#step_2").show();
             $("#step_3").hide();
@@ -760,8 +754,6 @@ BeCarSmart | Sellcar New
                 return false;
             }
 
-            $(".how_it_works_header").hide();
-
             $("#step_1").hide();
             $("#step_2").hide();
             $("#step_3").show();
@@ -799,8 +791,6 @@ BeCarSmart | Sellcar New
             //     $(".comments").html("Please Enter Comment");
             //     return false;
             // }
-
-            $(".how_it_works_header").hide();
 
             $("#sellcarform").submit();
 
