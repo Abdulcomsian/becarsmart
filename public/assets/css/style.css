@@ -32,12 +32,21 @@ flex-direction: row;
 .bg-dark {
   background-color: #ffff!important;
 }
-.navbar-brand img{
- 
+
+.navbar.dropdown{
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+/* .dropdown-item{
+padding: .25rem 0rem;
+} */
+.navbar-nav .dropdown-menu{
+  position:absolute !important;
 }
 
 
-.fa-search:before {
+/* .fa-search:before {
   content: "\f002";
   margin-right: 10px;
   color: #13293D;
@@ -46,7 +55,7 @@ flex-direction: row;
   content: "\f007";
   color: #2c3b53;
   margin-left: 10px;
-}
+} */
 .menuList{
   margin-right: 80px !important;
 }
@@ -76,11 +85,19 @@ ul.dropdown-menu.dropdown-menu-light.show .navbar-nav li a{
 /* Hero Section */
 
 .hero-section {
-  padding: 10% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
   background-image: url("../img/banner.png");
   background-position: bottom left;
   background-size: auto;
   background-repeat: repeat-x;
+}
+
+.hero-section .top{
+  padding-top: 10%;
+}
+
+.hero-section .car_row{
+  margin-top: -50px;
 }
 
 .car{
@@ -2750,6 +2767,7 @@ button:hover {
     }
     .menuList li{
       margin: 0px 15px;
+      width: 100%;
     }
     .how_it_Works .steps h2 {
       font-size: 19px;
