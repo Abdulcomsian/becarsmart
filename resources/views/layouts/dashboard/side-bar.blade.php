@@ -101,7 +101,15 @@
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
-                                <span class="menu-title">FAQ</span>
+                                <span class="menu-title">FAQ Page</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{url('dashboard/contact-us')}}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">Contact Us Page</span>
                             </a>
                         </div>
                         <!-- <div class="menu-item">

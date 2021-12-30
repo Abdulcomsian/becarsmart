@@ -8,6 +8,8 @@ use App\Http\Controllers\Admin\BuyCarLeadController;
 use App\Http\Controllers\Admin\SellCarController;
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\Home\FaqController;
+use App\Http\Controllers\Admin\ContactUsController;
+use App\Http\Controllers\Frontend\ContactController;
 use App\Models\Faq;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\BlogController;
@@ -64,6 +66,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('dashboard/faq', [FaqController::class, 'index']);
     Route::post('dashboard-faq-save', [FaqController::class, 'store'])->name('dashboard.faq.store');
     Route::post('faq-delete', [FaqController::class, 'delete']);
+    //contact page url
+    Route::get('dashboard/contact-us', [ContactUsController::class, 'index']);
+    Route::post('dashboard-contact-us-save', [ContactUsController::class, 'store'])->name('dashboard.contact.store');
 
 
     // Questionnaire Routes
@@ -111,6 +116,12 @@ Route::post('/buy-car-leads-save', [HomeController::class, 'buy_car_lead'])->nam
 Route::post('/sellcar_new', [HomeController::class, 'sell_car_lead'])->name('sell-car-leads-save');
 Route::post('/find-vehicle', [HomeController::class, 'find_vehicle'])->name('find.vehicle');
 
+//frontend contact us controller
+Route::get('/contact',  [ContactController::class, 'index'])->name('frontend/contact');
+Route::post('/contact-send',  [ContactController::class, 'store'])->name('contact-store');
+
+
+
 Route::get('/sellcar_new', function () {
     return view('frontend/sellcar/sellcar_new');
 })->name('frontend/sellcar_new');
@@ -121,9 +132,6 @@ Route::get('/home', function () {
 Route::get('/blog/{id}', [BlogController::class, 'Blog_details'])->name('blog');
 Route::get('/blogs', [BlogController::class, 'allblogs'])->name('frontend/allblogs');
 
-Route::get('/contact', function () {
-    return view('frontend/sellcar/contact');
-})->name('frontend/contact');
 
 Route::get('/cookies', function () {
     return view('frontend/sellcar/cookies');
