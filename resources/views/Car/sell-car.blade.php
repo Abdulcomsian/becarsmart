@@ -226,7 +226,7 @@
                                 <td class="">{{$lead->model_no}}</td>
                                 <td class="">{{$lead->color ?? ''}}</td>
                                 <td class="">{{$lead->engine ?? ''}}</td>
-                                <td class="">{{ date('F,d, Y ', strtotime($lead->created_at));}}</td>
+                                <td class="">{{ date('F,d,Y H:i:s ', strtotime($lead->created_at));}}</td>
                                 <td class="">
                                     <div class="view-btn" styles=" ">
                                         <a class="btn btn-danger btn-md" href="{{url('/leads-details',$lead->id)}}">View</a>
