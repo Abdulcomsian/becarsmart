@@ -39,7 +39,7 @@
                 <div class="card-body pt-5 ">
 
                     <div class="add-new-btn" style="float:right" style="padding-bottom:10%">
-                        <a class="btn btn-danger" href="/add-blog"> Add new </a>
+                        <a class="btn btn-danger" href="{{url('/add-blog')}}"> Add new </a>
                     </div>
 
                     <div class="blog-table">

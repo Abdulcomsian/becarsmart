@@ -1,4 +1,4 @@
-@extends('layouts.dashboard.master',['title' => 'About Page'])
+@extends('layouts.dashboard.master',['title' => 'Faq Page'])
 @section('styles')
 @include('layouts.sweetalert.sweetalert_css')
 <style>
@@ -16,7 +16,7 @@
             <!--begin::Page title-->
             <div data-kt-place="true" data-kt-place-mode="prepend" data-kt-place-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" class="page-title d-flex align-items-center me-3 flex-wrap mb-5 mb-lg-0 lh-1">
                 <!--begin::Title-->
-                <h1 class="d-flex align-items-center text-dark fw-bolder my-1 fs-3">About Page</h1>
+                <h1 class="d-flex align-items-center text-dark fw-bolder my-1 fs-3">Faq Page</h1>
                 <!--end::Title-->
                 <!--begin::Separator-->
                 <span class="h-20px border-gray-200 border-start mx-4"></span>
@@ -34,7 +34,7 @@
                     </li>
                     <!--end::Item-->
                     <!--begin::Item-->
-                    <li class="breadcrumb-item text-muted">About Page</li>
+                    <li class="breadcrumb-item text-muted">Faq Page</li>
                     <!--end::Item-->
                     <!--begin::Item-->
                     <li class="breadcrumb-item">
@@ -42,7 +42,7 @@
                     </li>
                     <!--end::Item-->
                     <!--begin::Item-->
-                    <li class="breadcrumb-item text-dark">About</li>
+                    <li class="breadcrumb-item text-dark">FAQ</li>
                     <!--end::Item-->
                 </ul>
                 <!--end::Breadcrumb-->
@@ -72,7 +72,7 @@
                 <!--begin::Card body-->
                 <div class="card-body pt-0">
                     <div class="section-2 pt-5 pb-5">
-                        <h2>About Us </h2>
+                        <h2>FAQ</h2>
                     </div>
                     <form class="pt-5" method="post" action="{{route('dashboard.faq.store')}}" enctype="multipart/form-data">
                         @csrf
