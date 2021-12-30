@@ -17,7 +17,7 @@
     <section id="generel-information">
         <div class="container">
             <div class="row generel-information-content">
-                <div class="col-lg-6 col-md-12 col-sm-12 ">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
                     <div class="heading pt-5 ">
                         <h1>Generel Information</h1>
                     </div>
@@ -41,7 +41,7 @@
                     </div>
                     @endforeach
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 pb-4">
+                <!-- <div class="col-lg-6 col-md-12 col-sm-12 pb-4">
                     <div class="generel-information-content">
                         <div class="form-body">
                             <div class="row">
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
