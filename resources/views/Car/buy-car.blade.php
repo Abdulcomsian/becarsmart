@@ -111,7 +111,7 @@
                                 <td class="">{{$lead->phone_no ?? ''}}</td>
                                 <td class="">{{$lead->email ?? ''}}</td>
                                 <td class="">{{$lead->lead_source ?? ''}}</td>
-                                <td class="">{{ date('F,d, Y ', strtotime($lead->created_at));}}</td>
+                                <td class="">{{ date('F,d,Y H:i:s ', strtotime($lead->created_at));}}</td>
                                 <td class="">
 
                                     <button type="button" class="btn btn-primary py-3 px-4"><a class="" href="{{url('/evaluate-car',$lead->id)}}">
