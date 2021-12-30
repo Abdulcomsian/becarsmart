@@ -78,7 +78,7 @@
                 <!--begin::Card body-->
                 <div class="card-body pt-5 questionnaire">
 
-                    <form class="pt-5" method="post" action="/insert-questions">
+                    <form class="pt-5" method="post" action="{{url('/insert-questions')}}">
 
                         @csrf
 

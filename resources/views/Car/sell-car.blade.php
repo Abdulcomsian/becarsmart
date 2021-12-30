@@ -199,18 +199,19 @@
                 <!--begin::Card body-->
                 <div class="card-body pt-0">
                     <!--begin::Table-->
-                    <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_table_users">
+                    <table class="table table-responsive align-middle table-row-dashed fs-6 gy-5" id="kt_table_users">
                         <!--begin::Table head-->
                         <thead>
                             <!--begin::Table row-->
                             <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                                <th class="min-w-125px">Full Name</th>
-                                <th class="min-w-125px">Email</th>
-                                <th class="min-w-125px">Phone number</th>
-                                <th class="min-w-125px">Model</th>
-                                <th class="min-w-125px">Color</th>
-                                <th class="min-w-125px">Engine</th>
-                                <th class="min-w-125px">Action</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Phone number</th>
+                                <th>Model</th>
+                                <th>Color</th>
+                                <th>Engine</th>
+                                <th>Date</th>
+                                <th>Action</th>
                             </tr>
                             <!--end::Table row-->
                         </thead>
@@ -225,6 +226,7 @@
                                 <td class="">{{$lead->model_no}}</td>
                                 <td class="">{{$lead->color ?? ''}}</td>
                                 <td class="">{{$lead->engine ?? ''}}</td>
+                                <td class="">{{ date('F,d, Y ', strtotime($lead->created_at));}}</td>
                                 <td class="">
                                     <div class="view-btn" styles=" ">
                                         <a class="btn btn-danger btn-md" href="{{url('/leads-details',$lead->id)}}">View</a>
