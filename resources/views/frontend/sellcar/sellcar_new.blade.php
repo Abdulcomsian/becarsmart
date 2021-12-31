@@ -300,18 +300,19 @@ BeCarSmart | Sellcar New
                                                                 <div class="col-md-12">
                                                                     <div class="inputGroup">
                                                                         <select class="form-select" aria-label="Default select example" name="mot_due">
-                                                                            <option selected>1</option>
-                                                                            <option value="1">2</option>
-                                                                            <option value="2">3</option>
-                                                                            <option value="3">4</option>
-                                                                            <option value="4">5</option>
-                                                                            <option value="5">6</option>
-                                                                            <option value="6">7</option>
-                                                                            <option value="7">8</option>
-                                                                            <option value="8">9</option>
-                                                                            <option value="9">10</option>
-                                                                            <option value="10">11</option>
-                                                                            <option value="11">12</option>
+                                                                            <option  value="0">0</option>
+                                                                            <option  value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6" selected>6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
 
                                                                         </select>
                                                                     </div>
@@ -719,7 +720,7 @@ BeCarSmart | Sellcar New
             //step2 form validations
             $(".service_history").html("");
             $(".non_runner").html("");
-            $(".finance").html("");
+            // $(".finance").html("");
             $(".accident_damaged").html("");
             $(".set_of_keys").html("");
             $(".home_textarea").html("");
@@ -728,10 +729,10 @@ BeCarSmart | Sellcar New
             if ($("#mileage").val() == "") {
                 $("#mileageerr").html("Please Enter Mileage");
             }
-            if ($('input[name="finance"]:checked').length == 0) {
-                $(".finance").html("Please Select Outstanding finance");
-                return false;
-            }
+            // if ($('input[name="finance"]:checked').length == 0) {
+            //     $(".finance").html("Please Select Outstanding finance");
+            //     return false;
+            // }
             if ($('input[name="service_history"]:checked').length == 0) {
                 $(".service_history").html("Please Select Service History");
                 return false;
