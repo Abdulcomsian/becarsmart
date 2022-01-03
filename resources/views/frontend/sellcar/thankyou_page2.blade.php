@@ -15,12 +15,13 @@
         </div>
     </section> -->
     <!-- Generel Information -->
+
     <section id="generel-information">
         <div class="container">
             <div class="row generel-information-content">
                 <div class="col-md-8 offset-md-2 ">
                     <div class="heading pt-5 text-center">
-                        <h1 class="pb-2">Thank You for completing our vehicle valuation form.</h1>
+                        <h1 id="thankHeader" class="pb-2">Thank You for completing our vehicle valuation form.</h1>
                         
                         <p class="thankyour-text pb-2">You are now one step closer to selling your vehicle.</p>
                         
@@ -31,35 +32,36 @@
                         <p class="thankyour-text pb-2">The payment will be made on collection. It will be an instant bank transfer payment.</p>
                     </div>
                 </div>
+            </div>
             </div><br><br>
             <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row" style="align-items: baseline;">
                         <div class="col-md-3">
                             <div class="single-slider ">
-                                <div class="slider-img ">
-                                    <img src="{{asset ('assets/img/free-collection.png')}}" width="100%"/>
+                                <div class="slider-text text-center">
+                                    <h2><span>FREE<br>COLLECTION!</span></h2>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="{{asset ('assets/img/car-logo.png')}}" width="100%"/>
+                                    <img src="{{asset ('assets/img/cars/tesla-roadster.png')}}" width="80%"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="single-slider ">
+                                <div class="slider-text text-center">
+                                    <h2><span>INSTANT <br>PAYMENT!</span></h2>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="{{asset ('assets/img/instant-payment.png')}}" width="100%"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="single-slider ">
-                                <div class="slider-img ">
-                                    <img src="{{asset ('assets/img/payment-logo.png')}}" width="100%"/>
+                                    <img src="{{asset ('assets/img/cars/dollor-logo.png')}}" width="80%"/>
                                 </div>
                             </div>
                         </div>
@@ -68,6 +70,8 @@
             </div>
         </div>
     </section>
+    <br>
+  
     <!-- Suppport Section -->
     <section class="want_to_sell p-3 text-white">
         <div class="container">

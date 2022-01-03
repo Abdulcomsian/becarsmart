@@ -123,7 +123,7 @@ button.slick-next.slick-arrow:after {
         <div class="row top">
             <div class="col-md-8 offset-md-2">
                 <div class="blurb">
-                    <h1>{{$herosection->header}}</h1>
+                    <h1>{{$herosection->header ?? ''}}</h1>
                     <h3><span>No.1</span> {{$herosection->sub_header}}</h3>
                     <p>{{$herosection->text}}</p>
                 </div>

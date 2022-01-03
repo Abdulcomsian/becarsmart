@@ -20,7 +20,7 @@
             <div class="row generel-information-content">
                 <div class="col-md-8 offset-md-2 ">
                     <div class="heading pt-5 text-center">
-                        <h1 class="pb-2">Thank You for completing our vehicle sourcing form.</h1>
+                        <h1 id="thankHeader" class="pb-2">Thank You for completing our vehicle sourcing form.</h1>
                         
                         <p class="thankyour-text pb-2">You are now one step closer to finding your next vehicle.</p>
                         
@@ -40,35 +40,35 @@
                         <div class="col">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="https://freepngimg.com/thumb/car/3-2-car-free-download-png.png" width="100%"/>
+                                    <img src="{{asset ('assets/img/cars/range-rover.png')}}" width="80%"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="https://freepngimg.com/thumb/car/12-2-car-png-image.png" width="100%"/>
+                                    <img src="{{asset ('assets/img/cars/porsche.png')}}" width="80%"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="https://freepngimg.com/thumb/car/13-2-car-png.png" width="100%"/>
+                                    <img src="{{asset ('assets/img/cars/mercedes-benz.png')}}" width="80%"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="https://freepngimg.com/thumb/car/6-2-car-png-file.png" width="100%"/>
+                                    <img src="{{asset ('assets/img/cars/mini-cooper.png')}}" width="80%"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="single-slider ">
                                 <div class="slider-img ">
-                                    <img src="https://freepngimg.com/thumb/ferrari/1-2-ferrari-png-pic.png" width="100%"/>
+                                    <img src="{{asset ('assets/img/cars/bmw-car.png')}}" width="80%"/>
                                 </div>
                             </div>
                         </div>
@@ -77,6 +77,7 @@
             </div>
         </div>
     </section>
+    <br>
     <!-- Suppport Section -->
     <section class="want_to_sell p-3 text-white">
         <div class="container">

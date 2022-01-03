@@ -203,13 +203,13 @@ g{
   font-size: 26px !important;
   font-weight: bold !important; 
   list-style: 15px !important;
-  color: #2c3b53 !important;
+  color: rgb(44 59 83) !important;
 }
 
 .how_it_Works .title p {
   font-size: 20px;
   font-weight: 500;
-  color: #2c3b53;
+  color: rgb(44 59 83);
 }
 
 .how_it_Works .steps h2 {
@@ -224,7 +224,7 @@ g{
   font-weight: 600;
   line-height: 20px;
   padding-bottom: 10px;
-  color: rgba(19, 41, 61, 1);
+  color: rgb(44 59 83);
 }
 .how_it_Works .steps .blurb p {
   font-size: 20px;
@@ -256,6 +256,7 @@ g{
 .buy_a_car .title p {
   font-size: 18px;
   font-weight: normal;
+  color: rgb(44 59 83);
 }
 
 .buy_a_car .title h2 {
@@ -263,6 +264,7 @@ g{
   font-weight: 600;
   line-height: 15px;
   padding-bottom: 10px;
+  color: rgb(44 59 83);
 }
 
 /* Multi step Car selling form */
@@ -391,7 +393,7 @@ select.list-dt:focus {
 
 .fs-title {
   font-size: 20px;
-  color: black;
+  color: rgb(44 59 83);
   margin-bottom: 10px;
   font-weight: 400;
   text-align: center;
@@ -512,7 +514,7 @@ select.list-dt:focus {
   font-weight: 600;
   line-height: 15px;
   padding-bottom: 10px;
-  color: rgba(19, 41, 61, 1);
+  color: rgb(44 59 83);
 }
 .buy_a_car .blurb img{
   padding-bottom: 31px !important;
@@ -529,12 +531,13 @@ select.list-dt:focus {
 .blog_section .title h2 {
   font-size: 26px;
   font-weight: bold;
-  list-style: 15px;
+  color: rgb(44 59 83);
 }
 
 .blog_section .title p {
   font-size: 16px;
   font-weight: normal;
+  color: rgb(44 59 83);
 }
 
 .blog_section .btn {
@@ -578,10 +581,13 @@ select.list-dt:focus {
   margin-bottom: 0px;
   font-size: 20px;
   font-weight: 600;
+  color: rgb(44 59 83);
 }
 .card-text{
   font-size: 14px;
   margin-bottom: 100px;
+  color: rgb(44 59 83);
+
 }
 .date-card {
   border: 1px solid;
@@ -594,12 +600,13 @@ select.list-dt:focus {
 .date-card .day {
   font-size: 25px;
   margin: 0px 10px;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(44 59 83);
   font-weight: 700;
 }
 
 .date-card .month {
   font-weight: bold;
+  color: rgb(44 59 83);
 }
 
 /* Testimonials */
@@ -1375,17 +1382,29 @@ h1.heading-h1 {
 .SellCar-section {
   padding: 0% 0% 0% 0%;
   /* background: rgba(242, 242, 242, 0.5); */
-
+}
+#generel-information .generel-information-content .heading #thankHeader{
+  font-weight: 600 !important;
+  color: #2c3b53 !important;
+  line-height: 67.5px !important;
+  font-size: 45px !important;
 }
  #generel-information .generel-information-content .heading .thankyour-text {
-   font-size: 19px;
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(44 59 83);
 
+}
+#generel-information .single-slider .slider-text h2 span{
+  color: #e62e2d;
+  font-weight: 500;
+  
 }
 
 
 .hero-section h1 {
   font-weight: 700;
-  color: rgba(75, 75, 75, 1);
+  color: rgb(44 59 83);
     font-size: 55px;
 }
 .hero-section h3 span {
@@ -1399,12 +1418,12 @@ h1.heading-h1 {
 .blurb h3{
   font-weight: 400;
   font-size: 35px;
-  color: #2c3b53;
+  color: rgb(44 59 83);
 }
 .blurb p{
   font-size: 24px;
   font-weight: 700;
-  color: #2c3b53;
+  color: rgb(44 59 83);
 }
 
 .hero-section .car img {
@@ -1473,7 +1492,7 @@ h1.heading-h1 {
 
 
 .Why-sell-your-car .clock-content h2{
-
+    color: rgb(44 59 83);
     font-size: 26px;
     font-weight: bold;
 }
@@ -1482,6 +1501,7 @@ h1.heading-h1 {
   text-align: left;
   font-size: 16px;
   font-weight: 400;
+  color: rgb(44 59 83);
 }
 
 

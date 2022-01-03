@@ -187,7 +187,7 @@ BeCarSmart | Sellcar New
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <div class="input-Group">
-                                                                            <input type="number" class="form-control" name="mileage" id="mileage" placeholder="KM" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
+                                                                            <input type="number" class="form-control" name="mileage" id="mileage" placeholder="Miles" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -534,7 +534,7 @@ BeCarSmart | Sellcar New
     </div>
 </section>
 <!-- How it Works -->
-<section class="how_it_Works text-center">
+<!-- <section class="how_it_Works text-center">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -571,7 +571,7 @@ BeCarSmart | Sellcar New
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Suppport Section -->
 <section class="want_to_sell p-3 text-white">
     <div class="container">
