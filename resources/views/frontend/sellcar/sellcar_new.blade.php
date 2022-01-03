@@ -35,7 +35,7 @@ BeCarSmart | Sellcar New
                     </div>
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 ">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="how_it_works_header pt-3">
@@ -197,21 +197,21 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any outstanding finance?</label>
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="finance-yes" name="finance" class="-yes" type="radio" value="1" {{ old('finance') == '1' ? 'checked' : '' }}>
-                                                                        <label for="finance-yes">Yes</label>
+                                                                        <input id="driving" name="non_runner" class="-yes" type="radio" value="1" {{ old('non_runner') == '1' ? 'checked' : '' }}>
+                                                                        <label for="driving">Yes</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="finance-no" name="finance" class="-no" type="radio" value="0" {{ old('finance') == '0' ? 'checked' : '' }} />
-                                                                        <label for="finance-no">No</label>
+                                                                        <input id="police" name="non_runner" class="-no" type="radio" value="0" {{ old('non_runner') == '0' ? 'checked' : '' }} />
+                                                                        <label for="police">No</label>
                                                                     </div>
                                                                 </div>
-                                                                <span class="text-danger finance"></span>
+                                                                <span class="text-danger non_runner"></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -253,26 +253,6 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="driving" name="non_runner" class="-yes" type="radio" value="1" {{ old('non_runner') == '1' ? 'checked' : '' }}>
-                                                                        <label for="driving">Yes</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="inputGroup">
-                                                                        <input id="police" name="non_runner" class="-no" type="radio" value="0" {{ old('non_runner') == '0' ? 'checked' : '' }} />
-                                                                        <label for="police">No</label>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="text-danger non_runner"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6 ">
-                                                            <div class="row">
-                                                                <div class="col-md-12 " style="">
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
                                                                 </div>
                                                                 <div class="col-md-6">
@@ -290,8 +270,6 @@ BeCarSmart | Sellcar New
                                                                 <span class="text-danger set_of_keys"></span>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row ">
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12 ">
@@ -319,6 +297,9 @@ BeCarSmart | Sellcar New
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div class="row ">
+                                                        
                                                         <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
@@ -341,6 +322,26 @@ BeCarSmart | Sellcar New
                                                                     <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                 </div>
                                                                 <span class="text-danger home_textarea"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12 " style="">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any outstanding finance?</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="finance-yes" name="finance" class="-yes" type="radio" value="1" {{ old('finance') == '1' ? 'checked' : '' }}>
+                                                                        <label for="finance-yes">Yes</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="finance-no" name="finance" class="-no" type="radio" value="0" {{ old('finance') == '0' ? 'checked' : '' }} />
+                                                                        <label for="finance-no">No</label>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="text-danger finance"></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -473,7 +474,7 @@ BeCarSmart | Sellcar New
                                                     <div class="row mb-4">
                                                         <div class="col-md-6">
                                                             <div class="row">
-                                                                <div class="col-md-12 pb-">
+                                                                <div class="col-md-12 pb-3">
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Please feel free to share images of your vehicle:</label>
                                                                 </div>
                                                                 <div class="col-md-12">
@@ -711,6 +712,8 @@ BeCarSmart | Sellcar New
                 $(".postalerror").html("Phone number must be 5 digits or 7 digits");
                 return false;
             }
+
+            $(".how_it_works_header").hide();
             $("#step_1").hide();
             $("#step_2").show();
             $("#step_3").hide();
@@ -755,6 +758,7 @@ BeCarSmart | Sellcar New
                 return false;
             }
 
+            $(".how_it_works_header").hide();
             $("#step_1").hide();
             $("#step_2").hide();
             $("#step_3").show();
@@ -792,6 +796,7 @@ BeCarSmart | Sellcar New
             //     $(".comments").html("Please Enter Comment");
             //     return false;
             // }
+
 
             $("#sellcarform").submit();
 

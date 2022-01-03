@@ -13,7 +13,7 @@
                         <a href="{{ url('/cookies') }}">Cookies</a>
                     </div>
                     <div class="footer-para">
-                        <p class="footer-text">Follow us On:</p>
+                        <p class="footer-text">Follow us on:</p>
                     </div>
                     <div class="footer-para text-center d-flex socialIcon" style="justify-content: center;">
                         <p><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></p>
