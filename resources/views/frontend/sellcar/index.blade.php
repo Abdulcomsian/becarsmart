@@ -386,23 +386,23 @@ BeCarSmart | index
                 <div class="blurb">
                     <img src="{{asset ('assets/img/choose_car.png')}}" alt="Value my Car" class="float-center pb-3">
                     <h2>Choose a Car</h2>
-                    <p>Fill the form above to<br> select desired car or<br> visit.</p>
+                    <p>Fill in the form so we know what car you’re looking for</p>
                 </div>
             </div>
 
             <div class="col-md-4 col-12">
                 <div class="blurb">
                     <img src="{{asset ('assets/img/make_deal.png')}}" alt="Value my Car" class="float-center pb-3">
-                    <h2>Make a deal</h2>
-                    <p>Check the car and<br> confirm deal.</p>
+                    <h2>Sourcing Consultation</h2>
+                    <p>One of our vehicle sourcing specialists will get in touch and go into more detail to help you find the exact vehicle you want.</p>
                 </div>
             </div>
 
             <div class="col-md-4 col-12">
                 <div class="blurb">
                     <img src="{{asset ('assets/img/get_car.png')}}" alt="Value my Car" class="float-center pb-3">
-                    <h2>Get The Car</h2>
-                    <p>Pay The Cash and<br> get your car</p>
+                    <h2>Getting your Car</h2>
+                    <p>Finalising a deal, taking care of the paperwork and getting your car.</p>
                 </div>
             </div>
         </div>
@@ -599,12 +599,7 @@ BeCarSmart | index
             </div> <!-- /.single-slider -->
             <div class="single-slider">
                 <div class="slider-img">
-                    <img src="{{asset('assets/img/Toyota.png')}}" />
-                </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/land-rover.png')}}" />
+                    <img src="{{asset('assets/img/vippng.com-bmw-png-509573.png')}}" />
                 </div>
             </div> <!-- /.single-slider -->
             <div class="single-slider">
@@ -614,7 +609,68 @@ BeCarSmart | index
             </div> <!-- /.single-slider -->
             <div class="single-slider">
                 <div class="slider-img">
-                    <img src="{{asset('assets/img/nissan.png')}}" />
+                    <img src="{{asset('assets/img/land-rover.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+           
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-jaguar-png-logo-944830.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-porsche-911-png-2875804.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-aston-martin-png-889778.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-rolls-royce-png-4302769.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-bentley-logo-png-4708966.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-ferrari-png-4313862.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-mclaren-png-4450343.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-volvo-png-4188595.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-volkswagen-logo-png-32910.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-toyota-logo-png-transparent-4193482.png')}}" />
+                </div>
+            </div> <!-- /.single-slider -->
+            <div class="single-slider">
+                <div class="slider-img">
+                    <img src="{{asset('assets/img/vippng.com-black-bmw-png-328595.png')}}" />
                 </div>
             </div> <!-- /.single-slider -->
         </div> <!-- /.sliders-list -->
