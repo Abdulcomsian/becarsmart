@@ -11,6 +11,7 @@ use App\Models\Home\WhySellCar;
 use App\Models\Home\BlogHeader;
 use App\Models\Home\Blogs;
 use App\Models\Home\Testominal;
+use App\Models\HowItWorkHeader;
 use Auth;
 
 class HomeSectionController extends Controller
@@ -20,11 +21,12 @@ class HomeSectionController extends Controller
     {
         try {
             $herosection = HeroSection::first();
+            $howitworksheader = HowItWorkHeader::first();
             $howitworks  = HowItWorkSection::get();
             $whycarsell  = WhySellCar::first();
             $blogheading = BlogHeader::first();
             $testominals = Testominal::get();
-            return view('user_dropdown/home', compact('herosection', 'howitworks', 'whycarsell', 'blogheading', 'testominals'));
+            return view('user_dropdown/home', compact('howitworksheader', 'herosection', 'howitworks', 'whycarsell', 'blogheading', 'testominals'));
         } catch (\Exception $exception) {
             toastError('Something went wrong,try again');
             return Redirect::back();
@@ -48,6 +50,27 @@ class HomeSectionController extends Controller
                 toastSuccess($message);
                 return Redirect::back();
             }
+        } catch (\Exception $exception) {
+            toastError('Something went wrong,try again');
+            return Redirect::back();
+        }
+    }
+
+    public function store_how_it_work_header(Request $request)
+    {
+        try {
+            if ($request->type == "Add") {
+                $model = new HowItWorkHeader();
+                $message = "Save";
+            } else {
+                $model = HowItWorkHeader::find($request->id);
+                $message = "Update";
+            }
+            $model->header = $request->header;
+            $model->sub_header = $request->sub_header;
+            $model->save();
+            toastSuccess('Header info ' . $message . ' successfully');
+            return Redirect::back();
         } catch (\Exception $exception) {
             toastError('Something went wrong,try again');
             return Redirect::back();

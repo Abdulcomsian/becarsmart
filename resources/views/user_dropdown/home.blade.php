@@ -106,21 +106,37 @@
                     <div class="section-2 pt-5 pb-5">
                         <h2>How it Works Section</h2>
                     </div>
-
+                    <form class="pt-5" method="post" action="{{url('/how-it-work-header')}}">
+                        @csrf
+                        @if($howitworksheader->header)
+                        <input type="hidden" name="type" value="Edit" />
+                        <input type="hidden" name="id" value="{{$howitworksheader->id ?? ''}}" />
+                        @else
+                        <input type="hidden" name="type" value="Add" />
+                        @endif
+                        <div class="row">
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Header</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" value="{{$howitworksheader->header ?? ''}}" name="header" placeholder="Enter Your Header" required>
+                                </div>
+                            </div>
+                            <div class="form-group row pb-5">
+                                <label for="text" class="col-sm-2 col-form-label">Sub Header</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" value="{{$howitworksheader->sub_header ?? ''}}" name="sub_header" placeholder="Enter Your Sub Header" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-5">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-success btn-md">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                     <form class="pt-5" method="post" action="{{url('/how-it-work')}}" enctype="multipart/form-data">
                         @csrf
-                        <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Header</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" value="{{$howitworks[0]->header ?? ''}}" name="header" placeholder="Enter Your Header" required>
-                            </div>
-                        </div>
-                        <div class="form-group row pb-5">
-                            <label for="text" class="col-sm-2 col-form-label">Sub Header</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" value="{{$howitworks[0]->sub_header ?? ''}}" name="sub_header" placeholder="Enter Your Sub Header" required>
-                            </div>
-                        </div>
+
                         <div id="howitwokrs">
                             <div class="row">
                                 <div class="form-group row pb-5">

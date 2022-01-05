@@ -230,8 +230,8 @@ BeCarSmart | index
         <div class="row">
             <div class="col">
                 <div class="title">
-                    <h2>{{$howitworks[0]->header}}</h2>
-                    <p>{{$howitworks[0]->sub_header}}</p>
+                    <h2>{{$howitworksheader->header ?? ''}}</h2>
+                    <p>{{$howitworksheader->sub_header ?? ''}}</p>
                 </div>
             </div>
         </div>

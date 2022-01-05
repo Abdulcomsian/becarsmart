@@ -45,6 +45,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('dashboard/home',  [HomeSectionController::class, 'home'])->name('user_dropdown/home');
     Route::post('/hero-section', [HomeSectionController::class, 'store_hero_section']);
     Route::post('/how-it-work', [HomeSectionController::class, 'store_how_it_work']);
+    Route::post('/how-it-work-header', [HomeSectionController::class, 'store_how_it_work_header']);
     Route::post('/how-it-work-delete', [HomeSectionController::class, 'how_it_work_delete']);
     Route::post('/why-sell-car', [HomeSectionController::class, 'why_sell_car']);
     Route::post('/blog-heading', [HomeSectionController::class, 'blog_heading']);

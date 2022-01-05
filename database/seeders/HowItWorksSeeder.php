@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Home\HowItWorkSection;
+use App\Models\HowItWorkHeader;
 use Illuminate\Database\Seeder;
 
 class HowItWorksSeeder extends Seeder
@@ -17,8 +18,6 @@ class HowItWorksSeeder extends Seeder
 
         $data = [
             [
-                'header' => 'How it Works?',
-                'sub_header' => '3 Easy Steps',
                 'file' => 'book-appointment.png',
                 'title' => 'Value your Car',
                 'exceed' => 'Get a free no obligation valuation above.',
@@ -27,8 +26,6 @@ class HowItWorksSeeder extends Seeder
             ],
 
             [
-                'header' => 'How it Works?',
-                'sub_header' => '3 Easy Steps',
                 'file' => 'book-appointment.png',
                 'title' => 'Book Apointment',
                 'exceed' => 'Get a free no obligation valuation above.',
@@ -37,8 +34,6 @@ class HowItWorksSeeder extends Seeder
             ],
 
             [
-                'header' => 'How it Works?',
-                'sub_header' => '3 Easy Steps',
                 'file' => 'book-appointment.png',
                 'title' => 'Book Apointment',
                 'exceed' => 'Get a free no obligation valuation above.',
@@ -48,6 +43,11 @@ class HowItWorksSeeder extends Seeder
 
         ];
 
+        $data1 = [
+            'header' => 'How it Works?',
+            'sub_header' => '3 Easy Steps',
+        ];
+        HowItWorkHeader::create($data1);
         foreach ($data as $data) {
 
             HowItWorkSection::create($data);
