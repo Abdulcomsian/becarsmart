@@ -14,6 +14,7 @@ use App\Models\Home\QuestionnaireModel;
 use App\Models\SellCarLead;
 use App\Models\BuyCarLead;
 use App\Models\SellCarLeadImages;
+use App\Models\HowItWorkHeader;
 use App\Notifications\SellCarNotification;
 use App\Notifications\BuyCarNotification;
 use App\Utils\HelperFunctions;
@@ -26,12 +27,13 @@ class HomeController extends Controller
     {
         $herosection = HeroSection::first();
         $howitworks  = HowItWorkSection::get();
+        $howitworksheader = HowItWorkHeader::first();
         $whysellcar  = WhySellCar::first();
         $blogs       = Blogs::limit(3)->get();
         $blogheader  = BlogHeader::first();
         $testominals = Testominal::get();
         $questionair = QuestionnaireModel::get();
-        return view('frontend/sellcar/index', compact('blogheader', 'herosection', 'howitworks', 'whysellcar', 'blogs', 'testominals', 'questionair'));
+        return view('frontend/sellcar/index', compact('howitworksheader', 'blogheader', 'herosection', 'howitworks', 'whysellcar', 'blogs', 'testominals', 'questionair'));
     }
 
     //insert buy car lead
@@ -52,7 +54,7 @@ class HomeController extends Controller
         if ($model->save()) {
             Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
             Notification::route('mail', $request->email)->notify(new BuyCarNotification($request->all()));
-            toastSuccess('Thank you for your information. We will be in touch soon.');
+            //toastSuccess('Thank you for your information. We will be in touch soon.');
             return redirect()->route('thankyou.buy.car');
             //return Redirect::back()->with('thankyou', 'thankyou');
         }
