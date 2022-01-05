@@ -86,8 +86,6 @@ class HomeSectionController extends Controller
                 $imageName = time() . $file->getClientOriginalName();
                 $file->move(public_path('images/home/'), $imageName);
                 $model = new HowItWorkSection();
-                $model->header = $request->header;
-                $model->sub_header = $request->sub_header;
                 $model->file = $imageName;
                 $model->title = $request->title[$key];
                 $model->exceed = $request->exceed[$key];
@@ -100,11 +98,9 @@ class HomeSectionController extends Controller
     //dlete how it works
     public function how_it_work_delete(Request $request)
     {
-        echo   $oldFile = public_path() . '/images/home/' . $request->image;
-        exit;
         try {
             HowItWorkSection::find($request->id)->delete();
-            $oldFile = public_path() . '/images/home/' . $request->image;
+            $oldFile = asset('/images/home/') . '/' . $request->image;
             @unlink($oldFile);
             toastSuccess("Record Deleted Successfully!");
             return Redirect::back();
@@ -282,7 +278,8 @@ class HomeSectionController extends Controller
         try {
             $res = Testominal::find($request->id)->delete();
             if ($res) {
-                unlink(public_path() . '/images/home/' . $request->image);
+                $oldFile = asset('/images/home/') . '/' . $request->image;
+                @unlink($oldFile);
                 toastSuccess("Record Deleted Successfully!");
                 return Redirect::back();
             }
