@@ -100,10 +100,12 @@ class HomeSectionController extends Controller
     //dlete how it works
     public function how_it_work_delete(Request $request)
     {
-
+        echo   $oldFile = public_path() . '/images/home/' . $request->image;
+        exit;
         try {
             HowItWorkSection::find($request->id)->delete();
-            unlink(public_path() . '/images/home/' . $request->image);
+            $oldFile = public_path() . '/images/home/' . $request->image;
+            @unlink($oldFile);
             toastSuccess("Record Deleted Successfully!");
             return Redirect::back();
         } catch (\Exception $exception) {
