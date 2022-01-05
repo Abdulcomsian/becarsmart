@@ -79,12 +79,10 @@ class HomeSectionController extends Controller
     {
 
         try {
-            $res = HowItWorkSection::find($request->id)->delete();
-            if ($res) {
-                unlink(public_path() . '/images/home/' . $request->image);
-                toastSuccess("Record Deleted Successfully!");
-                return Redirect::back();
-            }
+            HowItWorkSection::find($request->id)->delete();
+            unlink(public_path() . '/images/home/' . $request->image);
+            toastSuccess("Record Deleted Successfully!");
+            return Redirect::back();
         } catch (\Exception $exception) {
             toastError('Something went wrong,try again');
             return Redirect::back();

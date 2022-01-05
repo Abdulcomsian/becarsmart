@@ -278,8 +278,8 @@ BeCarSmart | Sellcar New
                                                                 <div class="col-md-12">
                                                                     <div class="inputGroup">
                                                                         <select class="form-select" aria-label="Default select example" name="mot_due">
-                                                                            <option  value="0">0</option>
-                                                                            <option  value="1">1</option>
+                                                                            <option value="0">0</option>
+                                                                            <option value="1">1</option>
                                                                             <option value="2">2</option>
                                                                             <option value="3">3</option>
                                                                             <option value="4">4</option>
@@ -299,7 +299,7 @@ BeCarSmart | Sellcar New
                                                         </div>
                                                     </div>
                                                     <div class="row ">
-                                                        
+
                                                         <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
@@ -478,11 +478,14 @@ BeCarSmart | Sellcar New
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Please feel free to share images of your vehicle:</label>
                                                                 </div>
                                                                 <div class="col-md-12">
-                                                                    <div class="input-Group">
+                                                                    <div class="uploadDiv" style="padding-left: 10px;">
+                                                                        <div class="input-images"></div>
+                                                                    </div>
+                                                                    <!-- <div class="input-Group">
                                                                         <div class="input-Group">
                                                                             <input type="file" class="form-control" id="Written" style="padding: 7px; border-radius: 0; border: 1px solid grey;" name="file[]" multiple>
                                                                         </div>
-                                                                    </div>
+                                                                    </div> -->
                                                                 </div>
                                                             </div>
                                                             <div class="row">

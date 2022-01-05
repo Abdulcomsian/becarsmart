@@ -69,11 +69,11 @@ class HomeController extends Controller
 
         ]);
         try {
-            $inputs = $request->except('_token', 'file');
+            $inputs = $request->except('_token', 'images');
             if ($sellcar = SellCarLead::create($inputs)) {
-                if ($request->file('file')) {
+                if ($request->file('images')) {
                     $filePath = HelperFunctions::sellCarFilePath();
-                    $files = $request->file('file');
+                    $files = $request->file('images');
                     foreach ($files  as $key => $file) {
                         $imagename = HelperFunctions::saveFile(null, $file, $filePath);
                         $model = new SellCarLeadImages();
@@ -85,7 +85,7 @@ class HomeController extends Controller
                 //send email to admin and user
                 Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new SellCarNotification($inputs));
                 Notification::route('mail', $request->email)->notify(new SellCarNotification($inputs));
-                toastSuccess('Lead Created Successfully!');
+                //toastSuccess('Lead Created Successfully!');
                 return redirect()->route('thankyou.sell.car');
                 // return Redirect::back();
             }
