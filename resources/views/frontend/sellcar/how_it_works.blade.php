@@ -78,7 +78,7 @@ BeCarSmart | How It Work
                                     <p>When we contact you, we will collect the correct details and arrange for a time and a date for the vehicle to be collected.</p>
                                 </div>
                                 <div class="col-lg-3">
-                                    <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" class="img-fluid">
+                                    <img style="width: 200px;" src="{{asset ('assets/img/DEAL.png')}}" class="img-fluid">
                                 </div>
                             </div>
                             <br>

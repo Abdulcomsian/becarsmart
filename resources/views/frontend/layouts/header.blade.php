@@ -1,7 +1,7 @@
   <!-- navbar -->
   <div class="container-fluid navBar">
      <nav class="navbar navbar-expand-lg navbar-light  ">
-        <a class="navbar-brand" href="{{ url('/index') }}"><img src="{{asset ('assets/img/sellcar-logo.png')}}"></a>
+        <a class="navbar-brand" href="{{ url('/index') }}"><img src="{{asset ('assets/img/FFF_BeCar_LO.svg')}}"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler10" aria-controls="myNavbarToggler10" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
         </button>
