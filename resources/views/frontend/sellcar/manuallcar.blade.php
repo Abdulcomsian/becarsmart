@@ -134,7 +134,7 @@
         </div>
     </section>
 
-    <!-- How it Works -->
+    <!-- How it Works
     <section id="How-it-Works" class="how_it_Works text-center">
         <div class="container">
             <div class="row">
@@ -175,7 +175,7 @@
     </section>
 
 
-    <!-- Buy a Car Section -->
+    
     <section id="Buy-a-Car" class="buy_a_car">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -188,7 +188,6 @@
                     </div>
                     <div class="col-12 p-0">
                         <form id="msform">
-                            <!-- progressbar -->
                             <ul id="progressbar">
                                 <li class="active" id="account"><strong></strong></li>
                                 <li id="personal"><strong></strong></li>
@@ -207,7 +206,7 @@
                                     <h2 class="fs-title">Hey, What is your good name</h2>
                                     <input type="text" name="text" placeholder="Enter Your Name">
                                 </div>
-                                <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous"> -->
+                                
                                 <input type="button" name="next" class="next action-button" value="Next">
                             </fieldset>
                             <fieldset>
@@ -215,7 +214,7 @@
                                     <h2 class="fs-title">Hey, What is your good name</h2>
                                     <input type="text" name="text" placeholder="Enter Your Name">
                                 </div>
-                                <!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
+                                
                                 <input type="button" name="make_payment" class="next action-button" value="Confirm">
                             </fieldset>
                             <fieldset>
@@ -240,7 +239,7 @@
 
 
 
-    <!-- Blog Section -->
+ 
     <section class="blog_section">
         <div class="container">
             <div class="row text-center pb-5">
@@ -281,7 +280,6 @@
                         </div>
                     </div>
 
-                    <!-- blog post -->
                     <div class="card blog_card nomargin">
                         <div class="row g-0">
                             <div class="col-md-5">
@@ -347,7 +345,7 @@
     </section>
 
 
-    <!-- Testimonial Section -->
+  
     <section class="testimonial text-center p-5">
         <div class="container">
             <div class="row">
@@ -443,7 +441,7 @@
         </div>
     </section>
 
-    <!-- Suppport Section -->
+
     <section class="want_to_sell p-3 text-white">
         <div class="container">
             <div class="row">
@@ -463,7 +461,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
