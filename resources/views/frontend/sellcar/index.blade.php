@@ -116,6 +116,10 @@ BeCarSmart | index
     .move_car svg {
         float: left;
     }
+
+    #How-it-Works .blurb img{
+        width: 150px;
+    }
 </style>
 @endsection
 @section('content')

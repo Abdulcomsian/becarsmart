@@ -40,7 +40,7 @@ BeCarSmart | Sellcar New
                     <div class="col-md-12">
                         <div class="how_it_works_header pt-3">
                             <h2>How it Works?</h2>
-                            <p>3 Easy Steps</p>
+                            <p>4 Easy Steps</p>
                         </div>
                     </div>
                 </div>
