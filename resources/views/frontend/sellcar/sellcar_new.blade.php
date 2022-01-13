@@ -67,14 +67,17 @@ BeCarSmart | Sellcar New
                                                 <div class="card shadow card-shadow ">
                                                     <div class="card-title">
                                                         <h2 class="p-3 pb-0">Enter Details</h2>
-                                                        <p class="p-3 pt-0">Enter your details to get an instant valuation.</p>
+                                                        <p class="p-3 pt-0">Enter your details to get an instant
+                                                            valuation.</p>
                                                     </div>
                                                     <div class="home-card-body card-body">
 
                                                         <div class="row mb-4">
                                                             <div class="col-md-12">
                                                                 <div class="input-Group">
-                                                                    <input type="text" value="{{old('fullname')}}" name="fullname" class="form-control" id="fullname" placeholder="Full name" require>
+                                                                    <input type="text" value="{{old('fullname')}}"
+                                                                        name="fullname" class="form-control"
+                                                                        id="fullname" placeholder="Full name" require>
 
                                                                 </div>
                                                             </div>
@@ -82,7 +85,9 @@ BeCarSmart | Sellcar New
                                                         <div class="row mb-4">
                                                             <div class="col-md-12">
                                                                 <div class="input-Group">
-                                                                    <input type="email" value="{{old('email')}}" name="email" class="form-control" id="email" placeholder="Email" require>
+                                                                    <input type="email" value="{{old('email')}}"
+                                                                        name="email" class="form-control" id="email"
+                                                                        placeholder="Email" require>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -90,7 +95,10 @@ BeCarSmart | Sellcar New
                                                         <div class="row mb-4">
                                                             <div class="col-md-12">
                                                                 <div class="input-Group">
-                                                                    <input type="number" value="{{old('phone')}}" name="phone" class="form-control" minlength="10" maxlength="11" id="phone" placeholder="Phone number" require>
+                                                                    <input type="number" value="{{old('phone')}}"
+                                                                        name="phone" class="form-control" minlength="10"
+                                                                        maxlength="11" id="phone"
+                                                                        placeholder="Phone number" require>
                                                                 </div>
                                                                 <span class="text-danger phoneerror"></span>
                                                             </div>
@@ -99,7 +107,10 @@ BeCarSmart | Sellcar New
                                                         <div class="row mb-4">
                                                             <div class="col-md-12">
                                                                 <div class="input-Group">
-                                                                    <input type="text" value="{{old('postal')}}" name="postal" class="form-control" minlength="5" maxlength="7" id="postal" placeholder="Postal Code" require>
+                                                                    <input type="text" value="{{old('postal')}}"
+                                                                        name="postal" class="form-control" minlength="5"
+                                                                        maxlength="7" id="postal"
+                                                                        placeholder="Postal Code" require>
                                                                 </div>
                                                                 <span class="text-danger postalerror"></span>
                                                             </div>
@@ -108,15 +119,19 @@ BeCarSmart | Sellcar New
                                                         <div class="row mb-5">
                                                             <div class="col-md-12">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
-                                                                    <label class="form-check-label" for="flexCheckDisabled">
-                                                                        I have read the Privacy Policy and accept the Terms.
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDisabled">
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckDisabled">
+                                                                        I have read the Privacy Policy and accept the
+                                                                        Terms.
                                                                     </label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="" style="float:right" ;>
-                                                            <button type="button" id="first-button" class="btn text-light main-bg" disabled>Next</button>
+                                                            <button type="button" id="first-button"
+                                                                class="btn text-light main-bg" disabled>Next</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -134,22 +149,30 @@ BeCarSmart | Sellcar New
                         <div class="col-lg-7 col-md-12">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image.png')}}" class="img-fluid">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image.png')}}"
+                                        class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image (2).png')}}" class="img-fluid">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <img style="width: 200px;"
+                                        src="{{asset ('assets/img/MicrosoftTeams-image (2).png')}}" class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" class="img-fluid">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <img style="width: 200px;"
+                                        src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image (4).png')}}" class="img-fluid">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <img style="width: 200px;"
+                                        src="{{asset ('assets/img/MicrosoftTeams-image (4).png')}}" class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                 </div>
                             </div>
                             <!-- <div class="row pt-5">
@@ -201,12 +224,17 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="padding-bottom: 10px;">
-                                                                    <label for="mileage" class="form-label" style="font-size:13px; font-weight:600">What is the mileage?</label>
+                                                                    <label for="mileage" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">What is
+                                                                        the mileage?</label>
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <div class="input-Group">
-                                                                            <input type="number" class="form-control" name="mileage" id="mileage" placeholder="Miles" style="padding: 7px; border-radius: 0; border: 1px solid grey;">
+                                                                            <input type="number" class="form-control"
+                                                                                name="mileage" id="mileage"
+                                                                                placeholder="Miles"
+                                                                                style="padding: 7px; border-radius: 0; border: 1px solid grey;">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -216,17 +244,23 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Is the vehicle a non-runner?</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">Is the
+                                                                        vehicle a non-runner?</label>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="driving" name="non_runner" class="-yes" type="radio" value="1" {{ old('non_runner') == '1' ? 'checked' : '' }}>
+                                                                        <input id="driving" name="non_runner"
+                                                                            class="-yes" type="radio" value="1"
+                                                                            {{ old('non_runner') == '1' ? 'checked' : '' }}>
                                                                         <label for="driving">Yes</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="police" name="non_runner" class="-no" type="radio" value="0" {{ old('non_runner') == '0' ? 'checked' : '' }} />
+                                                                        <input id="police" name="non_runner" class="-no"
+                                                                            type="radio" value="0"
+                                                                            {{ old('non_runner') == '0' ? 'checked' : '' }} />
                                                                         <label for="police">No</label>
                                                                     </div>
                                                                 </div>
@@ -238,29 +272,40 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-12 ">
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Service History</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">Service
+                                                                        History</label>
                                                                 </div>
                                                                 <div class="col-md-3">
                                                                     <div class="inputGroup">
-                                                                        <input id="full" name="service_history" class="check-am" type="radio" value="full" {{ old('service_history') == 'full' ? 'checked' : '' }}>
+                                                                        <input id="full" name="service_history"
+                                                                            class="check-am" type="radio" value="full"
+                                                                            {{ old('service_history') == 'full' ? 'checked' : '' }}>
                                                                         <label for="full">Full</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-3">
                                                                     <div class="inputGroup">
-                                                                        <input id="some" name="service_history" class="check-am" type="radio" value="some" {{ old('service_history') == 'some' ? 'checked' : '' }} />
+                                                                        <input id="some" name="service_history"
+                                                                            class="check-am" type="radio" value="some"
+                                                                            {{ old('service_history') == 'some' ? 'checked' : '' }} />
                                                                         <label for="some">Some</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-3">
                                                                     <div class="inputGroup">
-                                                                        <input id="None" name="service_history" class="check-am" type="radio" value="none" {{ old('service_history') == 'none' ? 'checked' : '' }}>
+                                                                        <input id="None" name="service_history"
+                                                                            class="check-am" type="radio" value="none"
+                                                                            {{ old('service_history') == 'none' ? 'checked' : '' }}>
                                                                         <label for="None">None</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-3">
                                                                     <div class="inputGroup">
-                                                                        <input id="first" name="service_history" class="check-am" type="radio" value="first not due" {{ old('service_history') == 'first not due' ? 'checked' : '' }} />
+                                                                        <input id="first" name="service_history"
+                                                                            class="check-am" type="radio"
+                                                                            value="first not due"
+                                                                            {{ old('service_history') == 'first not due' ? 'checked' : '' }} />
                                                                         <label for="first">First not due</label>
                                                                     </div>
                                                                 </div>
@@ -272,17 +317,24 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many sets of keys do you have for this vehicle?</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">How many
+                                                                        sets of keys do you have for this
+                                                                        vehicle?</label>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="driving " name="set_of_keys" class="-yes" type="radio" value="1" {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
+                                                                        <input id="driving " name="set_of_keys"
+                                                                            class="-yes" type="radio" value="1"
+                                                                            {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
                                                                         <label for="driving ">1</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="tuition" name="set_of_keys" class="-no" type="radio" value="2" {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
+                                                                        <input id="tuition" name="set_of_keys"
+                                                                            class="-no" type="radio" value="2"
+                                                                            {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
                                                                         <label for="tuition">2 or more</label>
                                                                     </div>
                                                                 </div>
@@ -292,11 +344,16 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12 ">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">How many months untill the vehicle is due its MOT?</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">How many
+                                                                        months untill the vehicle is due its
+                                                                        MOT?</label>
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div class="inputGroup">
-                                                                        <select class="form-select" aria-label="Default select example" name="mot_due">
+                                                                        <select class="form-select"
+                                                                            aria-label="Default select example"
+                                                                            name="mot_due">
                                                                             <option value="0">0</option>
                                                                             <option value="1">1</option>
                                                                             <option value="2">2</option>
@@ -322,23 +379,32 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Has this vehicle been subject to an insurance write off or been in an accident?</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">Has this
+                                                                        vehicle been subject to an insurance write off
+                                                                        or been in an accident?</label>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="accident-damaged-yes" name="accident_damaged" class="-yes" type="radio" value="1">
+                                                                        <input id="accident-damaged-yes"
+                                                                            name="accident_damaged" class="-yes"
+                                                                            type="radio" value="1">
                                                                         <label for="accident-damaged-yes">Yes</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="accident-damaged-no" name="accident_damaged" class="-no" type="radio" value="0" />
+                                                                        <input id="accident-damaged-no"
+                                                                            name="accident_damaged" class="-no"
+                                                                            type="radio" value="0" />
                                                                         <label for="accident-damaged-no">No</label>
                                                                     </div>
                                                                 </div>
                                                                 <span class="text-danger accident_damaged"></span>
                                                                 <div id="home_textarea" class="col-md-12 d-none">
-                                                                    <textarea id="textarea" name="comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
+                                                                    <textarea id="textarea" name="comments" type="text"
+                                                                        placeholder="Enter your comment"
+                                                                        style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                 </div>
                                                                 <span class="text-danger home_textarea"></span>
                                                             </div>
@@ -346,17 +412,23 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any outstanding finance?</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">Any
+                                                                        outstanding finance?</label>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="finance-yes" name="finance" class="-yes" type="radio" value="1" {{ old('finance') == '1' ? 'checked' : '' }}>
+                                                                        <input id="finance-yes" name="finance"
+                                                                            class="-yes" type="radio" value="1"
+                                                                            {{ old('finance') == '1' ? 'checked' : '' }}>
                                                                         <label for="finance-yes">Yes</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="finance-no" name="finance" class="-no" type="radio" value="0" {{ old('finance') == '0' ? 'checked' : '' }} />
+                                                                        <input id="finance-no" name="finance"
+                                                                            class="-no" type="radio" value="0"
+                                                                            {{ old('finance') == '0' ? 'checked' : '' }} />
                                                                         <label for="finance-no">No</label>
                                                                     </div>
                                                                 </div>
@@ -365,7 +437,8 @@ BeCarSmart | Sellcar New
                                                         </div>
                                                     </div>
                                                     <div class="d-gri pt-5" style="float:right">
-                                                        <button type="button" id="second-button" class="btn text-light main-bg">Next</button>
+                                                        <button type="button" id="second-button"
+                                                            class="btn text-light main-bg">Next</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -393,52 +466,72 @@ BeCarSmart | Sellcar New
                                                         </div>
                                                     </div>
                                                     <div class="row mb-4">
-                                                        <div class="col-md-7 ">
+                                                        <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Gearbox Condition</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">Any
+                                                                        mechanical faults with the car?</label>
                                                                 </div>
-                                                                <div class="col-md-4">
+                                                                <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="hradio" name="gearbox_condition" class="check-am" type="radio" value="no faults" {{ old('gearbox_condition') == 'no faults' ? 'checked' : '' }} />
-                                                                        <label for="hradio">NO FAULTS</label>
+                                                                        <input id="hradio" name="gearbox_condition"
+                                                                            class="check-am" type="radio" value="1"
+                                                                            {{ old('gearbox_condition') == 'no faults' ? 'checked' : '' }} />
+                                                                        <label for="hradio">YES</label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-4">
+                                                                <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="iradio" name="gearbox_condition" class="check-am" type="radio" value="faults but run" {{ old('gearbox_condition') == 'faults but run' ? 'checked' : '' }}>
-                                                                        <label for="iradio">FAULTY BUT RUNS</label>
+                                                                        <input id="iradio" name="gearbox_condition"
+                                                                            class="check-am" type="radio" value="0"
+                                                                            {{ old('gearbox_condition') == 'faults but run' ? 'checked' : '' }}>
+                                                                        <label for="iradio">NO</label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-4">
+                                                                <!-- <div class="col-md-4">
                                                                     <div class="inputGroup">
                                                                         <input id="jradio" name="gearbox_condition" class="check-am" type="radio" value="does not" {{ old('gearbox_condition') == 'does not' ? 'checked' : '' }} />
                                                                         <label for="jradio">DOESN'T RUN </label>
                                                                     </div>
+                                                                </div> -->
+                                                                <div id="mechanicalTextArea" class="col-md-12 d-none">
+                                                                    <textarea id="textarea" name="warning_comments"
+                                                                        type="text" placeholder="Enter your comment"
+                                                                        style="width: 100%;height: 100px; padding-left:7px 17px"></textarea>
                                                                 </div>
                                                                 <span class="text-danger  gearbox_condition"></span>
+
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-5">
+                                                        <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any Warning lights or messages on the dash?</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">Any
+                                                                        Warning lights or messages on the dash?</label>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="xradio" name="warning_light" class="check-am" type="radio" value="1" {{ old('warning_light') == '1' ? 'checked' : '' }} />
+                                                                        <input id="xradio" name="warning_light"
+                                                                            class="check-am" type="radio" value="1"
+                                                                            {{ old('warning_light') == '1' ? 'checked' : '' }} />
                                                                         <label for="xradio">YES</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="yradio" name="warning_light" class="check-am" type="radio" value="0" {{ old('warning_light') == '0' ? 'checked' : '' }}>
+                                                                        <input id="yradio" name="warning_light"
+                                                                            class="check-am" type="radio" value="0"
+                                                                            {{ old('warning_light') == '0' ? 'checked' : '' }}>
                                                                         <label for="yradio">No</label>
                                                                     </div>
                                                                 </div>
                                                                 <span class="text-danger warning_light"></span>
                                                                 <div id="warning_textarea" class="col-md-12 d-none">
-                                                                    <textarea id="textarea" name="warning_comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
+                                                                    <textarea id="textarea" name="warning_comments"
+                                                                        type="text" placeholder="Enter your comment"
+                                                                        style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                 </div>
                                                                 <span class="text-danger textarea"></span>
 
@@ -449,9 +542,12 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Any Scratches, marks or dents on the body?</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">How
+                                                                        would you describe the bodywork of this
+                                                                        vehicle?</label>
                                                                 </div>
-                                                                <div class="col-md-6">
+                                                                <!-- <div class="col-md-6">
                                                                     <div class="inputGroup">
                                                                         <input id="scratchesradio1" name="scratches" class="check-am" type="radio" value="1" {{ old('warning_light') == '1' ? 'checked' : '' }} />
                                                                         <label for="scratchesradio1">YES</label>
@@ -462,11 +558,27 @@ BeCarSmart | Sellcar New
                                                                         <input id="scratchesradio2" name="scratches" class="check-am" type="radio" value="0" {{ old('warning_light') == '0' ? 'checked' : '' }}>
                                                                         <label for="scratchesradio2">No</label>
                                                                     </div>
+                                                                </div> -->
+                                                                <div class="col-md-12">
+                                                                    <div class="inputGroup">
+                                                                        <select class="form-select"
+                                                                            aria-label="Default select example"
+                                                                            name="vehicle_condtion">
+                                                                            <option selected>Excellent</option>
+                                                                            <option value="1">Good</option>
+                                                                            <option value="2">Average</option>
+                                                                            <option value="3">Poor</option>
+                                                                            <option value="4">Very bad</option>
+                                                                        </select>
+                                                                    </div>
                                                                 </div>
                                                                 <span class="text-danger scratches"></span>
 
                                                                 <div id="scratches_textarea" class="col-md-12 d-none">
-                                                                    <textarea id="textarea" name="scratches_comments" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px" requried>{{old('comments')}}</textarea>
+                                                                    <textarea id="textarea" name="scratches_comments"
+                                                                        type="text" placeholder="Enter your comment"
+                                                                        style="width: 100%;height: 100px; padding-left:7px 17px"
+                                                                        requried>{{old('comments')}}</textarea>
                                                                 </div>
                                                                 <span class="text-danger scratches_textarea"></span>
                                                             </div>
@@ -474,11 +586,16 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">What is the condition of this vehicle? Please select one:</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">What is
+                                                                        the condition of this vehicle? Please select
+                                                                        one:</label>
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div class="inputGroup">
-                                                                        <select class="form-select" aria-label="Default select example" name="vehicle_condtion">
+                                                                        <select class="form-select"
+                                                                            aria-label="Default select example"
+                                                                            name="vehicle_condtion">
                                                                             <option selected>Excellent</option>
                                                                             <option value="1">Good</option>
                                                                             <option value="2">Average</option>
@@ -494,7 +611,9 @@ BeCarSmart | Sellcar New
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12 pb-3">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Please feel free to share images of your vehicle:</label>
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">Please feel free to upload images of your vehicle.  <span
+                                                                            style="font-size: 14px; font-weight: 500"> (Take clear pictures of any damage e.g dents, scratches, and poor previous repairs).</span></label>
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div class="uploadDiv" style="padding-left: 10px;">
@@ -507,7 +626,7 @@ BeCarSmart | Sellcar New
                                                                     </div> -->
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
+                                                            <!-- <div class="row">
                                                                 <div class="col-md-12">
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600"><img src="https://www.freepnglogos.com/uploads/whatsapp-png-14.png" width="25%" alt=""></label>
                                                                 </div>
@@ -518,29 +637,142 @@ BeCarSmart | Sellcar New
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
+                                                          
+                                                            
+
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600">Feel free to give us more information on this vehicle. <span style="font-size: 14px; font-weight: 500">( The more we know about your vehicle means the more accurate we will be with the valuation)</span> :</label>
+                                                                    <label for="fname" class="form-label pb-3"
+                                                                        style="font-size:13px; font-weight:600">Feel
+                                                                        free to list the features/extras of this vehicle
+                                                                        <span
+                                                                            style="font-size: 14px; font-weight: 500">(Leather
+                                                                            seats, Electric seats, Panoramic roof, Nav,
+                                                                            Head-up display, etc)</span> .</label>
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div id="accurate_textarea" class="col-md-12 ">
-                                                                        <textarea id="comments" name="more_info" type="text" placeholder="Enter your comment" style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
+                                                                        <textarea id="comments" name="more_info"
+                                                                            type="text" placeholder="Enter your comment"
+                                                                            style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                     </div>
                                                                     <span class="text-danger comments"></span>
                                                                 </div>
                                                             </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                        <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">How
+                                                                        would you describe the interior of this
+                                                                        vehicle?</label>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="inputGroup">
+                                                                        <select class="form-select"
+                                                                            aria-label="Default select example"
+                                                                            name="vehicle_condtion">
+                                                                            <option selected>Excellent</option>
+                                                                            <option value="1">Good</option>
+                                                                            <option value="2">Average</option>
+                                                                            <option value="3">Poor</option>
+                                                                            <option value="4">Very bad</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="row">
+                                                            <div class="col-md-12">
+                                                                <label for="fname" class="form-label"
+                                                                    style="font-size:13px; font-weight:600">What is
+                                                                    condition of the alloys?</label>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="inputGroup">
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example"
+                                                                        name="vehicle_condtion">
+                                                                        <option selected>Excellent</option>
+                                                                        <option value="1">Good</option>
+                                                                        <option value="2">Average</option>
+                                                                        <option value="3">Poor</option>
+                                                                        <option value="4">Very bad</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </divcl>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-md-6">
+                                                            
+                                                            <!-- <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600"><img src="https://www.freepnglogos.com/uploads/whatsapp-png-14.png" width="25%" alt=""></label>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="input-Group">
+                                                                        <div class="col-md-12">
+                                                                            <label for="fname" class="form-label" style="font-size:13px; font-weight:600">You can also send us photos with your rag number via whatsapp to 01234567899.</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div> -->
+                                                           
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">When are you planning to sell your car:</label>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="inputGroup">
+                                                                        <select class="form-select"
+                                                                            aria-label="Default select example"
+                                                                            name="vehicle_condtion">
+                                                                            <option selected>As soon as I can</option>
+                                                                            <option value="1">Within a week</option>
+                                                                            <option value="2">Within a month</option>
+                                                                            <option value="3">Not sure</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            
                                                         </div>
                                                     </div>
                                                     <div class="row mb-4">
                                                         <div class="col-md-6">
-
+   <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <label for="fname" class="form-label" style="font-size:13px; font-weight:600"><img src="{{asset('assets/img/email.png')}}" style="width: 50px;" alt=""></label>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="input-Group">
+                                                                        <div class="col-md-12">
+                                                                            <label for="fname" class="form-label" style="font-size:13px; font-weight:600">You can also send us photos with your rag number via whatsapp to 01234567899.</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="d-gridd mt-4">
-                                                        <button type="button" id="third-page" class="btn text-light main-bg">Submit</button>
+                                                    <button type="button" id=""
+                                                            class="btn text-light main-bg"><a href="" style="color: #fff; text-decoration: none;">Previous</a></button>
+                                                        <button type="button" id="third-page"
+                                                            class="btn text-light main-bg">Submit</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -606,8 +838,10 @@ BeCarSmart | Sellcar New
                     <div class="col-lg-12 ">
                         <form action="{{route('find.vehicle')}}" method="post" class=" formSell d-flex">
                             @csrf
-                            <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA" style="padding: 5px;font-size: 45px;font-weight: 600;text-transform: uppercase;text-align: center;">
-                            <input type="submit" class="btn btn-danger w-100" value="Value" style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
+                            <input type="text" name="reg_number" class="form-control" placeholder="AA19AAA"
+                                style="padding: 5px;font-size: 45px;font-weight: 600;text-transform: uppercase;text-align: center;">
+                            <input type="submit" class="btn btn-danger w-100" value="Value"
+                                style="max-width: 35% !important; margin: 0px 0px 0px 20px;background: #2c3b53; ">
                         </form>
                     </div>
                 </div>
@@ -644,17 +878,24 @@ BeCarSmart | Sellcar New
 @section('script')
 <script type="text/javascript" src="{{asset('js/image-uploader.min.js')}}"></script>
 <script>
-    $(document).ready(function() {
-        $('input[type=radio][name=accident_damaged]').change(function() {
+    $(document).ready(function () {
+        $('input[type=radio][name=accident_damaged]').change(function () {
             if (this.value == 1) {
                 $("#home_textarea").removeClass('d-none');
             } else {
                 $("#home_textarea").addClass('d-none');
             }
         });
+        $('input[type=radio][name=gearbox_condition]').change(function () {
+            if (this.value == 1) {
+                $("#mechanicalTextArea").removeClass('d-none');
+            } else {
+                $("#mechanicalTextArea").addClass('d-none');
+            }
+        });
 
 
-        $('input[type=radio][name=warning_light]').change(function() {
+        $('input[type=radio][name=warning_light]').change(function () {
             if (this.value == 1) {
                 $("#warning_textarea").removeClass('d-none');
             } else {
@@ -663,7 +904,7 @@ BeCarSmart | Sellcar New
 
         });
 
-        $('input[type=radio][name=scratches]').change(function() {
+        $('input[type=radio][name=scratches]').change(function () {
             if (this.value == 1) {
                 $("#scratches_textarea").removeClass('d-none');
             } else {
@@ -675,7 +916,7 @@ BeCarSmart | Sellcar New
     });
 
 
-    $('input[type=radio][name=warning_light]').change(function() {
+    $('input[type=radio][name=warning_light]').change(function () {
         if (this.value == 1) {
             $("#warning_textarea").removeClass('d-none');
         } else {
@@ -684,7 +925,7 @@ BeCarSmart | Sellcar New
 
     });
 
-    $('input[type=radio][name=accurate]').change(function() {
+    $('input[type=radio][name=accurate]').change(function () {
         if (this.value == 1) {
             $("#accurate_textarea").removeClass('d-none');
         } else {
@@ -692,18 +933,19 @@ BeCarSmart | Sellcar New
         }
 
     });
+
 </script>
 
 <script>
-    $("#flexCheckDisabled").change(function() {
+    $("#flexCheckDisabled").change(function () {
         if (this.checked) {
             $("#first-button").removeAttr('disabled');
         } else {
             $("#first-button").attr('disabled', 'disabled');
         }
     })
-    $(document).ready(function() {
-        $("#first-button").on('click', function() {
+    $(document).ready(function () {
+        $("#first-button").on('click', function () {
             var fullname = $("#fullname").val();
             var email = $("#email").val();
             var phone = $("#phone").val();
@@ -741,7 +983,7 @@ BeCarSmart | Sellcar New
             $("#step_3").hide();
         });
 
-        $("#second-button").on('click', function() {
+        $("#second-button").on('click', function () {
             //step2 form validations
             $(".service_history").html("");
             $(".non_runner").html("");
@@ -775,7 +1017,8 @@ BeCarSmart | Sellcar New
                 return false;
             }
 
-            if ($('input[name="accident_damaged"]:checked').val() == "1" && $("#textarea").val() == "") {
+            if ($('input[name="accident_damaged"]:checked').val() == "1" && $("#textarea").val() ==
+                "") {
                 $(".home_textarea").html("Please Enter Comment");
                 return false;
             }
@@ -787,7 +1030,7 @@ BeCarSmart | Sellcar New
 
         });
 
-        $("#third-page").on('click', function() {
+        $("#third-page").on('click', function () {
             //3rd page validations
             $(".gearbox_condition").html("");
             $(".warning_light").html("");
@@ -802,7 +1045,8 @@ BeCarSmart | Sellcar New
                 $(".warning_light").html("Please Select Warning Light");
                 return false;
             }
-            if ($('input[name="warning_light"]:checked').val() == "1" && $('textarea[name="warning_comments"]').val() == "") {
+            if ($('input[name="warning_light"]:checked').val() == "1" && $(
+                    'textarea[name="warning_comments"]').val() == "") {
                 $(".textarea").html("Enter Comment");
                 return false;
             }
@@ -810,7 +1054,8 @@ BeCarSmart | Sellcar New
                 $("span.text-danger.scratches").html("Please Select One Radio Button");
                 return false;
             }
-            if ($('input[name="scratches"]:checked').val() == "1" && $('textarea[name="scratches_comments"]').val() == "") {
+            if ($('input[name="scratches"]:checked').val() == "1" && $(
+                    'textarea[name="scratches_comments"]').val() == "") {
                 $(".scratches_textarea").html("Please Enter Comment");
                 return false;
             }
@@ -825,5 +1070,6 @@ BeCarSmart | Sellcar New
         });
 
     });
+
 </script>
 @endsection
