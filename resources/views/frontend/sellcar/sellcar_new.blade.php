@@ -164,7 +164,7 @@ BeCarSmart | Sellcar New
                             <div class="row">
                                 <div class="col-lg-6">
                                     <img style="width: 200px;"
-                                        src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" class="img-fluid">
+                                        src="{{asset ('assets/img/DEAL.png')}}" class="img-fluid">
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                         Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                 </div>
