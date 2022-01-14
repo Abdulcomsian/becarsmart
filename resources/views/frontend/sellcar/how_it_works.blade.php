@@ -9,6 +9,8 @@ BeCarSmart | How It Work
     }
     #how-it-work-content .how-works span{
         color:#e73e2c;
+        font-size: 20px;
+        font-weight: 600;
     }
     #how-it-work-content .how-works .vehicle-sourcing{
         line-height: 20px;
@@ -24,6 +26,8 @@ BeCarSmart | How It Work
     }
     #how-it-work-content .how-works .how-works-header{
         color:#2c3b53;
+        font-size: 18px;
+        font-weight: 600;
     }
 </style>
 @endsection
@@ -48,6 +52,7 @@ BeCarSmart | How It Work
                     <div class="col-md-12">
                         <div class="how-works">
                             <h3><span>Selling Your Car:</span></h3>
+                            <br>
                             <div class="row">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Enter Your Reg</h4><br>
@@ -62,7 +67,7 @@ BeCarSmart | How It Work
                             <div class="row">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Get Your Valuation!</h4><br>
-                                    <p>We will get in-touch via email or phone call as soon as we have completed analysing the information we have about your vehicle.  If we can't reach your contact number, we will email you a quote.</p>
+                                    <p>We will get in-touch via email or phone call as soon as we have completed analysing the information we have about your vehicle.  If we can't reach your contact number, we will email you a quote.</p>
                                     <p>Quotes are valid for a limited period of time. Prices are determined from the latest market data.</p>
                                 </div>
                                 <div class="col-lg-3">
@@ -73,9 +78,13 @@ BeCarSmart | How It Work
                             <br>
                             <div class="row">
                                 <div class="col-lg-9">
-                                    <h4 class="how-works-header">Accept Your Quote and Arrange for Collection!</h4><br>
-                                    <p>Once you're happy with the price for your vehicle you can contact us either by calling us or emailing us. You can click on 'accept this quote’ from the quote email we send you. This will notify us to contact you.</p>
-                                    <p>When we contact you, we will collect the correct details and arrange for a time and a date for the vehicle to be collected.</p>
+                                    <h4 class="how-works-header">Accept Your Quote and Arrange for Collection or Book an Appointment!</h4><br>
+                                    <p>Once you're happy with the price for your vehicle you can contact us either by calling us or emailing us. You can click on 'accept this quote’ from the quote email we send you. This will notify us to contact you. </p>
+                                    <p>When we contact you, we can do one of two things:</p>
+                                    <ol>
+                                        <li>Take the correct details and arrange for a time and a date for the vehicle to be collected.</li>
+                                        <li>Arrange an appointment for you to bring us the vehicle.</li>
+                                    </ol>
                                 </div>
                                 <div class="col-lg-3">
                                     <img style="width: 200px;" src="{{asset ('assets/img/DEAL.png')}}" class="img-fluid">
@@ -86,14 +95,14 @@ BeCarSmart | How It Work
                             <div class="row">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Sale Complete - Get Paid!</h4><br>
-                                    <p>On the day of the collection before the vehicle is sold and taken away. The DVLA paperwork side will be taken care of and you will be paid.</p>
+                                    <p>On the day of the collection or on your appointment day, before the vehicle is sold-: <br> The DVLA paperwork side will be taken care of and you will be paid.</p>
                                     <p>So, yes, it is an instant payment method, which will be made into your bank account.</p>
                                     <div class="sale-complete-get-paid">
                                         <p>-No transaction or admin fees.</p>
                                         <p>-No waiting around for the payment after the car has been taken.</p>
-                                        <p>-No fees for instant payment.</p>
+                                        <p>-No fees for an instant payment.</p>
                                         <p>-No collection fees in most UK locations.</p>
-                                        <p>-NO HAGGLING - As long as your description is accurate and honest.</p>
+                                        <p>-No HAGGLING - As long as your description is accurate and honest.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">

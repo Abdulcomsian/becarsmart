@@ -1,6 +1,8 @@
 /* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-
+p{
+  font-size: 16px !important;
+}
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -521,8 +523,7 @@ select.list-dt:focus {
 }
 .buy_a_car .blurb img{
   padding-bottom: 31px !important;
-  width: 73px;
-  height: 90px;
+  height: 170px;
 }
 
 /* Blog Section */
@@ -2489,6 +2490,12 @@ button:hover {
 
 
 @media (max-width: 576px) {
+  #msform input, #msform textarea{
+    width: 100%;
+  }
+  #msform fieldset .form-card{
+    padding: 0px !important;
+  }
   .home-ul-li {
     display: block;
     justify-content: center;
