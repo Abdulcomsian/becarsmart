@@ -4,121 +4,22 @@ BeCarSmart | index
 @endsection
 @section('css')
 <style>
-    #progressbar #account:before {
-        font-family: FontAwesome;
-        content: "";
+    #car_logo{
+        padding: 5% 0;
+        align-items:center;
     }
-
-
-    .slider-area {
-        margin-top: 30px;
+    #car_logo .single-slider{
+        display: flex;
+        width: 100%;
+        align-items: center;
     }
-
-    .single-slider h3 {
-        font-size: 15px;
+    #car_logo .single-slider .slider-img {
+        width:20%;
         text-align: center;
-        margin-top: 18px;
     }
-
-
-    button.slick-prev.slick-arrow {
-        position: relative;
-        width: 30px;
-        overflow: hidden;
-        background: transparent;
-        border: 0;
-        position: absolute;
-        left: 0px;
-        right: auto;
-        z-index: 11;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-    }
-
-    button.slick-prev.slick-arrow,
-    button.slick-next.slick-arrow {
-        display: none !important;
-    }
-
-    button.slick-prev.slick-arrow:after {
-        content: "<";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: #2c3b53;
-        color: #fff;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        font-size: 22px;
-    }
-
-    button.slick-next.slick-arrow {
-        position: relative;
-        width: 40px;
-        overflow: hidden;
-        background: transparent;
-        border: 0;
-        position: absolute;
-        left: auto;
-        right: 0px;
-        z-index: 11;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 40px;
-    }
-
-    button.slick-next.slick-arrow:after {
-        content: ">";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: #2c3b53;
-        color: #fff;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        font-size: 22px;
-    }
-
-    .sliders-list.slick-initialized.slick-slider {
-        position: relative;
-    }
-
-    .single-slider {
-        padding: 30px 0;
-    }
-
-    .slider-img img {
-        display: block;
-        width: 55%;
-        margin: 50px;
-    }
-
-    .single-slider.slick-slide {
-        padding: 15px;
-    }
-
-    .sliders-list.slick-initialized.slick-slider {
-        padding: 0 40px;
-    }
-
-    .car__wheel {
-        d: path("M8,2 L2,8");
-    }
-
-    .move_car svg {
-        float: left;
-    }
-
-    #How-it-Works .blurb img{
-        width: 150px;
+    #car_logo .single-slider .slider-img img{
+        width:140px;
+        padding:15px !important;
     }
 </style>
 @endsection
@@ -592,96 +493,246 @@ BeCarSmart | index
     </div>
 </section> -->
 
+<!-- Car Logos -->
 
-<div class="slider-area">
+<section id="car_logo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="single-slider">
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/audi.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-bmw-png-509573.png')}}"  />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/mer.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/land-rover.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-jaguar-png-logo-944830.png')}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="single-slider">
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-aston-martin-png-889778.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-ferrari-png-4313862.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-bentley-logo-png-4708966.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-mclaren-png-4450343.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-porsche-911-png-2875804.png')}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="single-slider">
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-volvo-png-4188595.png')}}" />
+                    </div>
+                    <div class= "slider-img">
+                        <img src="{{asset('assets/img/vippng.com-volkswagen-logo-png-32910.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-toyota-logo-png-transparent-4193482.png')}}" />
+                    </div>
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-black-bmw-png-328595.png')}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="single-slider">
+            <div class="slider-img">
+                <img src="{{asset('assets/img/vippng.com-aston-martin-png-889778.png')}}" />
+            </div>
+        </div>
+        <div class="single-slider">
+            <div class="slider-img">
+                <img src="{{asset('assets/img/vippng.com-ferrari-png-4313862.png')}}" />
+            </div>
+        </div>
+        <div class="single-slider">
+            <div class="slider-img">
+                <img src="{{asset('assets/img/vippng.com-bentley-logo-png-4708966.png')}}" />
+            </div>
+        </div>
+        <div class="single-slider">
+            <div class="slider-img">
+                <img src="{{asset('assets/img/vippng.com-mclaren-png-4450343.png')}}" />
+            </div>
+        </div>
+        <div class="single-slider">
+            <div class="slider-img">
+                <img src="{{asset('assets/img/vippng.com-porsche-911-png-2875804.png')}}" />
+            </div>
+        </div>
+        <div class="single-slider">
+            <div class="slider-img">
+                <img src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
+            </div>
+        </div>
+        <div class="single-slider">
+            <div class="slider-img">
+                <img src="{{asset('assets/img/vippng.com-volvo-png-4188595.png')}}" />
+            </div>
+        </div>
+        <div class="single-slider">
+            <div class= "slider-img">
+                <img src="{{asset('assets/img/vippng.com-volkswagen-logo-png-32910.png')}}" />
+            </div>
+        </div>
+        <div class="single-slider">
+            <div class="slider-img">
+                <img src="{{asset('assets/img/vippng.com-toyota-logo-png-transparent-4193482.png')}}" />
+            </div>
+        </div>
+        <div class="single-slider">
+            <div class="slider-img">
+                <img src="{{asset('assets/img/vippng.com-black-bmw-png-328595.png')}}" />
+            </div>
+        </div> -->
+    </div>
+</section>
+
+<!-- <div class="slider-area">
     <div class="container">
         <div class="sliders-list">
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/audi.png')}}" />
+            <div class="row">
+
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/audi.png')}}" />
+                        </div>
+                        </div>
+                <div class="col-md-3">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-bmw-png-509573.png')}}" />
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-bmw-png-509573.png')}}" />
+                <div class="col-md-3">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/mer.png')}}" />
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/mer.png')}}" />
+                <div class="col-md-3">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/land-rover.png')}}" />
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/land-rover.png')}}" />
+                <div class="col-md-3">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-jaguar-png-logo-944830.png')}}" />
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- /.single-slider -->
-           
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-jaguar-png-logo-944830.png')}}" />
+
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-aston-martin-png-889778.png')}}" />
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-aston-martin-png-889778.png')}}" />
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-ferrari-png-4313862.png')}}" />
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-ferrari-png-4313862.png')}}" />
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-bentley-logo-png-4708966.png')}}" />
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-bentley-logo-png-4708966.png')}}" />
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-mclaren-png-4450343.png')}}" />
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-mclaren-png-4450343.png')}}" />
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-porsche-911-png-2875804.png')}}" />
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-porsche-911-png-2875804.png')}}" />
-                </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
-                </div>
-            </div> <!-- /.single-slider -->
-            <!-- <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
-                </div>
-            </div>  -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-volvo-png-4188595.png')}}" />
-                </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-volkswagen-logo-png-32910.png')}}" />
-                </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-toyota-logo-png-transparent-4193482.png')}}" />
-                </div>
-            </div> <!-- /.single-slider -->
-            <div class="single-slider">
-                <div class="slider-img">
-                    <img src="{{asset('assets/img/vippng.com-black-bmw-png-328595.png')}}" />
-                </div>
-            </div> <!-- /.single-slider -->
-        </div> <!-- /.sliders-list -->
 
 
-    </div><!-- end container -->
-</div><!-- end slider area -->
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider">
+                    <div class="slider-img">
+                        <img src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
+                    </div>
+                </div>  ->
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-volvo-png-4188595.png')}}" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-volkswagen-logo-png-32910.png')}}" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-toyota-logo-png-transparent-4193482.png')}}" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single-slider">
+                        <div class="slider-img">
+                            <img src="{{asset('assets/img/vippng.com-black-bmw-png-328595.png')}}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>end slider area -->
 
 
 <!-- Suppport Section -->
@@ -711,34 +762,34 @@ BeCarSmart | index
 @endsection
 @section('script')
 <script>
-    $(document).ready(function() {
-        $('.sliders-list').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            arrows: true,
-            autoplaySpeed: 3000,
-            responsive: [{
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                    }
-                },
-            ]
-        });
-    });
+    // $(document).ready(function() {
+    //     $('.sliders-list').slick({
+    //         slidesToShow: 4,
+    //         slidesToScroll: 1,
+    //         autoplay: true,
+    //         arrows: true,
+    //         autoplaySpeed: 3000,
+    //         responsive: [{
+    //                 breakpoint: 991,
+    //                 settings: {
+    //                     slidesToShow: 3,
+    //                 }
+    //             },
+    //             {
+    //                 breakpoint: 767,
+    //                 settings: {
+    //                     slidesToShow: 2,
+    //                 }
+    //             },
+    //             {
+    //                 breakpoint: 480,
+    //                 settings: {
+    //                     slidesToShow: 1,
+    //                 }
+    //             },
+    //         ]
+    //     });
+    // });
 </script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>

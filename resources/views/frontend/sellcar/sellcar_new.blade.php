@@ -245,6 +245,33 @@ BeCarSmart | Sellcar New
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
                                                                     <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600">How many
+                                                                        sets of keys do you have for this
+                                                                        vehicle?</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="driving " name="set_of_keys"
+                                                                            class="-yes" type="radio" value="1"
+                                                                            {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
+                                                                        <label for="driving ">1</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="inputGroup">
+                                                                        <input id="tuition" name="set_of_keys"
+                                                                            class="-no" type="radio" value="2"
+                                                                            {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
+                                                                        <label for="tuition">2 or more</label>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="text-danger set_of_keys"></span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="col-md-6 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12 " style="">
+                                                                    <label for="fname" class="form-label"
                                                                         style="font-size:13px; font-weight:600">Is the
                                                                         vehicle a non-runner?</label>
                                                                 </div>
@@ -266,7 +293,7 @@ BeCarSmart | Sellcar New
                                                                 </div>
                                                                 <span class="text-danger non_runner"></span>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                     <div class="row mb-4">
                                                         <div class="col-md-12 ">
@@ -318,29 +345,29 @@ BeCarSmart | Sellcar New
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
                                                                     <label for="fname" class="form-label"
-                                                                        style="font-size:13px; font-weight:600">How many
-                                                                        sets of keys do you have for this
-                                                                        vehicle?</label>
+                                                                        style="font-size:13px; font-weight:600">Any
+                                                                        outstanding finance?</label>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="driving " name="set_of_keys"
+                                                                        <input id="finance-yes" name="finance"
                                                                             class="-yes" type="radio" value="1"
-                                                                            {{ old('set_of_keys') == '1' ? 'checked' : '' }}>
-                                                                        <label for="driving ">1</label>
+                                                                            {{ old('finance') == '1' ? 'checked' : '' }}>
+                                                                        <label for="finance-yes">Yes</label>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="inputGroup">
-                                                                        <input id="tuition" name="set_of_keys"
-                                                                            class="-no" type="radio" value="2"
-                                                                            {{ old('set_of_keys') == '2' ? 'checked' : '' }} />
-                                                                        <label for="tuition">2 or more</label>
+                                                                        <input id="finance-no" name="finance"
+                                                                            class="-no" type="radio" value="0"
+                                                                            {{ old('finance') == '0' ? 'checked' : '' }} />
+                                                                        <label for="finance-no">No</label>
                                                                     </div>
                                                                 </div>
-                                                                <span class="text-danger set_of_keys"></span>
+                                                                <span class="text-danger finance"></span>
                                                             </div>
                                                         </div>
+                                                        
                                                         <div class="col-md-6">
                                                             <div class="row">
                                                                 <div class="col-md-12 ">
@@ -376,7 +403,7 @@ BeCarSmart | Sellcar New
                                                     </div>
                                                     <div class="row ">
 
-                                                        <div class="col-md-6 ">
+                                                        <!-- <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
                                                                     <label for="fname" class="form-label"
@@ -408,8 +435,8 @@ BeCarSmart | Sellcar New
                                                                 </div>
                                                                 <span class="text-danger home_textarea"></span>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-md-6 ">
+                                                        </div> -->
+                                                        <!-- <div class="col-md-6 ">
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
                                                                     <label for="fname" class="form-label"
@@ -434,7 +461,7 @@ BeCarSmart | Sellcar New
                                                                 </div>
                                                                 <span class="text-danger finance"></span>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                     <div class="d-gri pt-5" style="float:right">
                                                         <button type="button" id="second-button"
@@ -754,7 +781,7 @@ BeCarSmart | Sellcar New
                                                     </div>
                                                     <div class="row mb-4">
                                                         <div class="col-md-6">
-   <div class="row">
+                    <div class="row">
                                                                 <div class="col-md-12">
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600"><img src="{{asset('assets/img/email.png')}}" style="width: 50px;" alt=""></label>
                                                                 </div>
