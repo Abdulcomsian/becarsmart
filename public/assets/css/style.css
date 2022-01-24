@@ -882,7 +882,7 @@ hr:not([size]) {
 .form-title h1{
   margin-left: 10%;
   margin-bottom: 5%;
-  color: #0F001A;
+  color: #2c3b53;
   font-size: 36px;
   line-height: 54px;
   font-weight: 500;
@@ -907,8 +907,8 @@ input#postal{
 
 button.btn.btn-primary.btn-md.btn-block {
   width: 100%;
-  background-color: #3566CD;
-  border: #3566CD;
+  background-color: #2c3b53;
+  border: #2c3b53;
   padding: 13px;
 }
 /* .contact-details {
@@ -2506,8 +2506,21 @@ button:hover {
   .wrap-login100 {
     padding: 100px 15px 33px 15px;
   }
+
 }
 @media only screen and (max-width: 600px) {
+  #car_logo .single-slider{
+    display: block !important;
+    width: 100%;
+    align-items: center;
+  }
+  #car_logo .single-slider .slider-img {
+      width:100% !important;
+      text-align: center;
+  }
+  #car_logo .single-slider .slider-img img{
+      width:180px !important;
+  }
   .want_to_sell #footer_reg_number{
     padding: 5px;
     font-size: 28px;
