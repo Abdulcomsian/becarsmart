@@ -2514,13 +2514,111 @@ button:hover {
     width: 100%;
     align-items: center;
   }
-  #car_logo .single-slider .slider-img {
+  #car_logo .single-slider .slider-img1 {
       width:100% !important;
       text-align: center;
   }
-  #car_logo .single-slider .slider-img img{
+  #car_logo .single-slider .slider-img2 {
+    width:100% !important;
+    text-align: center;
+}
+#car_logo .single-slider .slider-img3 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img4 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img5 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img6 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img7 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img8 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img9 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img10 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img11 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img12 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img13 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img14 {
+  width:100% !important;
+  text-align: center;
+}
+#car_logo .single-slider .slider-img15 {
+  width:100% !important;
+  text-align: center;
+}
+  #car_logo .single-slider .slider-img1 img{
       width:180px !important;
   }
+  #car_logo .single-slider .slider-img2 img{
+    width:180px !important;
+}
+#car_logo .single-slider .slider-img3 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img4 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img5 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img6 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img7 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img8 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img9 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img10 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img11 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img12 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img13 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img14 img{
+  width:180px !important;
+}
+#car_logo .single-slider .slider-img15 img{
+  width:180px !important;
+}
   .want_to_sell #footer_reg_number{
     padding: 5px;
     font-size: 28px;

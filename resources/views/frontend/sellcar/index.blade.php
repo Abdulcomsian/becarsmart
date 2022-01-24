@@ -13,12 +13,130 @@ BeCarSmart | index
         width: 100%;
         align-items: center;
     }
-    #car_logo .single-slider .slider-img {
+    #car_logo .single-slider .slider-img1 {
         width:20%;
         text-align: center;
     }
-    #car_logo .single-slider .slider-img img{
+    
+    #car_logo .single-slider .slider-img1 img{
         width:140px;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img2 {
+        width:20%;
+        text-align: center;
+    }
+    
+    #car_logo .single-slider .slider-img2 img{
+        width:140px;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img3 {
+        width:20%;
+        text-align: center;
+    }
+    
+    #car_logo .single-slider .slider-img3 img{
+        width:140px;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img4 {
+        width:20%;
+        text-align: center;
+    }
+    
+    #car_logo .single-slider .slider-img4 img{
+        width:140px;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img5 {
+        width:20%;
+        text-align: center;
+    }
+    
+    #car_logo .single-slider .slider-img5 img{
+        width:140px;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img6 {
+        width:20%;
+        text-align: center;
+    }
+    
+    #car_logo .single-slider .slider-img6 img{
+        width: 85%;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img7 {
+        width:20%;
+        text-align: center;
+    }
+    #car_logo .single-slider .slider-img7 img{
+        width:140px;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img8 {
+        width:20%;
+        text-align: center;
+    }
+    #car_logo .single-slider .slider-img8 img{
+        width:90%;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img9 {
+        width:20%;
+        text-align: center;
+    }
+    #car_logo .single-slider .slider-img9 img{
+        width:95%;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img10 {
+        width:20%;
+        text-align: center;
+    }
+    #car_logo .single-slider .slider-img10 img{
+        width:50%;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img11 {
+        width:20%;
+        text-align: center;
+    }
+    #car_logo .single-slider .slider-img11 img{
+        width:140px;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img12 {
+        width:20%;
+        text-align: center;
+    }
+    #car_logo .single-slider .slider-img12 img{
+        width:140px;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img13 {
+        width:20%;
+        text-align: center;
+    }
+    #car_logo .single-slider .slider-img13 img{
+        width:140px;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img14 {
+        width:20%;
+        text-align: center;
+    }
+    #car_logo .single-slider .slider-img14 img{
+        width:85%;
+        padding:15px !important;
+    }
+    #car_logo .single-slider .slider-img15 {
+        width:20%;
+        text-align: center;
+    }
+    #car_logo .single-slider .slider-img15 img{
+        width:85%;
         padding:15px !important;
     }
 </style>
@@ -500,19 +618,19 @@ BeCarSmart | index
         <div class="row">
             <div class="col-md-12">
                 <div class="single-slider">
-                    <div class="slider-img">
+                    <div class="slider-img1">
                         <img src="{{asset('assets/img/audi.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img2">
                         <img src="{{asset('assets/img/vippng.com-bmw-png-509573.png')}}"  />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img3">
                         <img src="{{asset('assets/img/mer.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img4">
                         <img src="{{asset('assets/img/land-rover.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img5">
                         <img src="{{asset('assets/img/vippng.com-jaguar-png-logo-944830.png')}}" />
                     </div>
                 </div>
@@ -521,19 +639,19 @@ BeCarSmart | index
         <div class="row">
             <div class="col-md-12">
                 <div class="single-slider">
-                    <div class="slider-img">
+                    <div class="slider-img6">
                         <img src="{{asset('assets/img/vippng.com-aston-martin-png-889778.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img7">
                         <img src="{{asset('assets/img/vippng.com-ferrari-png-4313862.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img8">
                         <img src="{{asset('assets/img/vippng.com-bentley-logo-png-4708966.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img9">
                         <img src="{{asset('assets/img/vippng.com-mclaren-png-4450343.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img10">
                         <img src="{{asset('assets/img/vippng.com-porsche-911-png-2875804.png')}}" />
                     </div>
                 </div>
@@ -542,19 +660,19 @@ BeCarSmart | index
         <div class="row">
             <div class="col-md-12">
                 <div class="single-slider">
-                    <div class="slider-img">
+                    <div class="slider-img11">
                         <img src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img12">
                         <img src="{{asset('assets/img/vippng.com-volvo-png-4188595.png')}}" />
                     </div>
-                    <div class= "slider-img">
+                    <div class= "slider-img13">
                         <img src="{{asset('assets/img/vippng.com-volkswagen-logo-png-32910.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img14">
                         <img src="{{asset('assets/img/vippng.com-toyota-logo-png-transparent-4193482.png')}}" />
                     </div>
-                    <div class="slider-img">
+                    <div class="slider-img15">
                         <img src="{{asset('assets/img/vippng.com-black-bmw-png-328595.png')}}" />
                     </div>
                 </div>
