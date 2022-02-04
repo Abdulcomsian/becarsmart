@@ -21,6 +21,7 @@ use App\Utils\HelperFunctions;
 use Notification;
 use Illuminate\Support\Facades\Redirect;
 
+
 class HomeController extends Controller
 {
     public function index()
@@ -99,47 +100,97 @@ class HomeController extends Controller
 
     public function find_vehicle(Request $request)
     {
-        try {
-            $reg_number = (string)$request->reg_number;
-            $curl = curl_init();
+        $reg_number = (string)$request->reg_number;
+        // try {
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.vehiclesmart.com/rest/vehicleData?reg=" . $reg_number . "&appid=becarsmart-t78MD2cMAx9&isRefreshing=false&dvsaFallbackMode=false",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_POSTFIELDS => "",
+            CURLOPT_HTTPHEADER => array(
+                "cache-control: no-cache",
+                "content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
+                "postman-token: 04f26ca8-7d9b-715e-44fd-96f2e4f3a82c"
+            ),
+        ));
 
-            curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://driver-vehicle-licensing.api.gov.uk/vehicle-enquiry/v1/vehicles",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 0,
-                CURLOPT_FOLLOWLOCATION => true,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => "{\n\t\"registrationNumber\": \"$reg_number\"\n}",
-                CURLOPT_HTTPHEADER => array(
-                    "x-api-key: 2vbQSp98Zh6TEObOPpjoa5Rro7wgr6sDaKfXc2Qp",
-                    "Content-Type: application/json"
-                ),
-            ));
-
-            $response = curl_exec($curl);
-            curl_close($curl);
-            $data = json_decode($response);
-            $title = 'something went wrong';
-            if (isset($data->errors[0]->status)) {
-                if ($data->errors[0]->status == 404) {
-                    return view('frontend/sellcar/manuallcar');
-                }
-                $title = $data->errors[0]->title;
-            } else {
-                $color = $data->colour;
-                $model = $data->make;
-                $fueltype = $data->fuelType;
-                $capacity = $data->engineCapacity;
-                $regno = $data->registrationNumber;
-                $euroStatus = $data->euroStatus;
-            }
-            return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model', 'fueltype', 'capacity'));
-        } catch (\Exception $exception) {
-            toastError($title);
-            return Redirect::back();
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+        if ($err) {
+            echo "cURL Error #:" . $err;
+        } else {
+            echo $response;
         }
+        // if ($err) {
+        //     echo $err;
+        //     exit;
+        //     toastError("Something Went Wrong " . $err);
+        //     return Redirect::back();
+        // } else {
+        //     $response = json_decode($response);
+        //     if ($response->Success) {
+        //         $year       = $response->VehicleDetails->Year;
+        //         $color      = $response->VehicleDetails->Colour;
+        //         $model      = $response->VehicleDetails->Model;
+        //         $regno      = $response->VehicleDetails->Registration;
+        //         $fueltype   = $response->VehicleDetails->Fuel;
+        //         $capacity   = $response->VehicleDetails->CylinderCapacity;
+        //         $euroStatus = $response->VehicleDetails->EuroStatus;
+        //         return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model', 'fueltype', 'capacity'));
+        //     } else {
+        //         return view('frontend/sellcar/manuallcar');
+        //     }
+        // }
+        // } catch (\Exception $exception) {
+        //     toastError("Something Went Wrong " . $exception->getMessage());
+        //     return Redirect::back();
+        // }
+
+        // old work for becarsmart api =======================================================================
+        // $curl = curl_init();
+
+        // curl_setopt_array($curl, array(
+        //     CURLOPT_URL => "https://driver-vehicle-licensing.api.gov.uk/vehicle-enquiry/v1/vehicles",
+        //     CURLOPT_RETURNTRANSFER => true,
+        //     CURLOPT_ENCODING => "",
+        //     CURLOPT_MAXREDIRS => 10,
+        //     CURLOPT_TIMEOUT => 0,
+        //     CURLOPT_FOLLOWLOCATION => true,
+        //     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        //     CURLOPT_CUSTOMREQUEST => "POST",
+        //     CURLOPT_POSTFIELDS => "{\n\t\"registrationNumber\": \"$reg_number\"\n}",
+        //     CURLOPT_HTTPHEADER => array(
+        //         "x-api-key: 2vbQSp98Zh6TEObOPpjoa5Rro7wgr6sDaKfXc2Qp",
+        //         "Content-Type: application/json"
+        //     ),
+        // ));
+
+        // $response = curl_exec($curl); 
+        //curl_close($curl);
+        //$data = json_decode($response);
+
+        // $title = 'something went wrong';
+        // if (isset($data->errors[0]->status)) {
+        //     if ($data->errors[0]->status == 404) {
+        //         return view('frontend/sellcar/manuallcar');
+        //     }
+        //     $title = $data->errors[0]->title;
+        // } else {
+        //     $color = $data->colour;
+        //     $model = $data->make;
+        //     $fueltype = $data->fuelType;
+        //     $capacity = $data->engineCapacity;
+        //     $regno = $data->registrationNumber;
+        //     $euroStatus = $data->euroStatus;
+        // }
+        // return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model', 'fueltype', 'capacity'));
+
+        //end of old work===========================================================================================
     }
 }
