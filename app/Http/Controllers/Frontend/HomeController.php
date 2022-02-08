@@ -86,15 +86,14 @@ class HomeController extends Controller
                     }
                 }
                 //send email to admin and user
-                // Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new SellCarNotification($inputs));
-                // Notification::route('mail', $request->email)->notify(new SellCarNotification($inputs));
+                Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new SellCarNotification($inputs));
+                Notification::route('mail', $request->email)->notify(new SellCarNotification($inputs));
                 //toastSuccess('Lead Created Successfully!');
                 return redirect()->route('thankyou.sell.car');
                 // return Redirect::back();
             }
         } catch (\Exception $exception) {
             toastError('Something went wrong, try again!');
-            toastError($exception);
             return Redirect::back();
         }
     }
