@@ -464,6 +464,8 @@ BeCarSmart | Sellcar New
                                                         </div> -->
                                                     </div>
                                                     <div class="d-gri pt-5" style="float:right">
+                                                    <button type="button" id="previous_button_1"
+                                                            class="btn text-light main-bg">Previous</button>
                                                         <button type="button" id="second-button"
                                                             class="btn text-light main-bg">Next</button>
                                                     </div>
@@ -516,6 +518,7 @@ BeCarSmart | Sellcar New
                                                                         <label for="iradio">NO</label>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger  gearbox_condition"></span>
                                                                 <!-- <div class="col-md-4">
                                                                     <div class="inputGroup">
                                                                         <input id="jradio" name="gearbox_condition" class="check-am" type="radio" value="does not" {{ old('gearbox_condition') == 'does not' ? 'checked' : '' }} />
@@ -523,11 +526,11 @@ BeCarSmart | Sellcar New
                                                                     </div>
                                                                 </div> -->
                                                                 <div id="mechanicalTextArea" class="col-md-12 d-none">
-                                                                    <textarea id="textarea" name="warning_comments"
+                                                                    <textarea id="textarea" name="gearbox_comments"
                                                                         type="text" placeholder="Enter your comment"
                                                                         style="width: 100%;height: 100px; padding-left:7px 17px"></textarea>
                                                                 </div>
-                                                                <span class="text-danger  gearbox_condition"></span>
+                                                                <span class="text-danger  gearbox_comments"></span>
 
                                                             </div>
                                                         </div>
@@ -560,7 +563,7 @@ BeCarSmart | Sellcar New
                                                                         type="text" placeholder="Enter your comment"
                                                                         style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                 </div>
-                                                                <span class="text-danger textarea"></span>
+                                                                <span class="text-danger warning_comments"></span>
 
                                                             </div>
                                                         </div>
@@ -590,7 +593,7 @@ BeCarSmart | Sellcar New
                                                                     <div class="inputGroup">
                                                                         <select class="form-select"
                                                                             aria-label="Default select example"
-                                                                            name="vehicle_condtion">
+                                                                            name="vehicle_bodywork">
                                                                             <option selected>Excellent</option>
                                                                             <option value="1">Good</option>
                                                                             <option value="2">Average</option>
@@ -599,15 +602,15 @@ BeCarSmart | Sellcar New
                                                                         </select>
                                                                     </div>
                                                                 </div>
-                                                                <span class="text-danger scratches"></span>
+                                                                <span class="text-danger vehicle_bodywork"></span>
 
-                                                                <div id="scratches_textarea" class="col-md-12 d-none">
+                                                                <!-- <div id="scratches_textarea" class="col-md-12 d-none">
                                                                     <textarea id="textarea" name="scratches_comments"
                                                                         type="text" placeholder="Enter your comment"
                                                                         style="width: 100%;height: 100px; padding-left:7px 17px"
                                                                         requried>{{old('comments')}}</textarea>
                                                                 </div>
-                                                                <span class="text-danger scratches_textarea"></span>
+                                                                <span class="text-danger scratches_textarea"></span> -->
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
@@ -631,6 +634,7 @@ BeCarSmart | Sellcar New
                                                                         </select>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger vehicle_condtion"></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -644,7 +648,7 @@ BeCarSmart | Sellcar New
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div class="uploadDiv" style="padding-left: 10px;">
-                                                                        <div class="input-images"></div>
+                                                                        <div class="input-images" ></div>
                                                                     </div>
                                                                     <!-- <div class="input-Group">
                                                                         <div class="input-Group">
@@ -686,7 +690,7 @@ BeCarSmart | Sellcar New
                                                                             type="text" placeholder="Enter your comment"
                                                                             style="width: 100%;height: 100px; padding-left:7px 17px">{{old('comments')}}</textarea>
                                                                     </div>
-                                                                    <span class="text-danger comments"></span>
+                                                                    <!-- <span class="text-danger comments"></span> -->
                                                                 </div>
                                                             </div>
                                                            
@@ -705,7 +709,7 @@ BeCarSmart | Sellcar New
                                                                     <div class="inputGroup">
                                                                         <select class="form-select"
                                                                             aria-label="Default select example"
-                                                                            name="vehicle_condtion">
+                                                                            name="vehicle_interior">
                                                                             <option selected>Excellent</option>
                                                                             <option value="1">Good</option>
                                                                             <option value="2">Average</option>
@@ -714,6 +718,7 @@ BeCarSmart | Sellcar New
                                                                         </select>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger vehicle_interior"></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-6">
@@ -727,7 +732,7 @@ BeCarSmart | Sellcar New
                                                                 <div class="inputGroup">
                                                                     <select class="form-select"
                                                                         aria-label="Default select example"
-                                                                        name="vehicle_condtion">
+                                                                        name="alloys_condtion">
                                                                         <option selected>Excellent</option>
                                                                         <option value="1">Good</option>
                                                                         <option value="2">Average</option>
@@ -736,6 +741,7 @@ BeCarSmart | Sellcar New
                                                                     </select>
                                                                 </div>
                                                             </div>
+                                                            <span class="text-danger alloys_condtion"></span>
                                                             </div>
                                                         </divcl>
                                                     </div>
@@ -764,7 +770,7 @@ BeCarSmart | Sellcar New
                                                                     <div class="inputGroup">
                                                                         <select class="form-select"
                                                                             aria-label="Default select example"
-                                                                            name="vehicle_condtion">
+                                                                            name="vehicle_sell_planning">
                                                                             <option selected>As soon as I can</option>
                                                                             <option value="1">Within a week</option>
                                                                             <option value="2">Within a month</option>
@@ -772,6 +778,7 @@ BeCarSmart | Sellcar New
                                                                         </select>
                                                                     </div>
                                                                 </div>
+                                                                <span class="text-danger vehicle_sell_planning"></span>
                                                             </div>
 
                                                         </div>
@@ -785,19 +792,19 @@ BeCarSmart | Sellcar New
                                                                 <div class="col-md-12">
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600"><img src="{{asset('assets/img/email.png')}}" style="width: 50px;" alt=""></label>
                                                                 </div>
-                                                                <div class="col-md-12">
+                                                                <!-- <div class="col-md-12">
                                                                     <div class="input-Group">
                                                                         <div class="col-md-12">
                                                                             <label for="fname" class="form-label" style="font-size:13px; font-weight:600">You can also send us photos with your rag number via whatsapp to 01234567899.</label>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                </div> -->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="d-gridd mt-4">
-                                                    <button type="button" id=""
-                                                            class="btn text-light main-bg"><a href="" style="color: #fff; text-decoration: none;">Previous</a></button>
+                                                    <button type="button" id="previous_button_2"
+                                                            class="btn text-light main-bg">Previous</button>
                                                         <button type="button" id="third-page"
                                                             class="btn text-light main-bg">Submit</button>
                                                     </div>
@@ -1009,46 +1016,62 @@ BeCarSmart | Sellcar New
             $("#step_2").show();
             $("#step_3").hide();
         });
+        
+        $("#previous_button_1").on('click', function () {
+            $(".how_it_works_header").hide();
+            $("#step_1").show();
+            $("#step_2").hide();
+            $("#step_3").hide();
+        });
+
+        $("#previous_button_2").on('click', function () {
+            $(".how_it_works_header").hide();
+            $("#step_1").hide();
+            $("#step_2").show();
+            $("#step_3").hide();
+        });
 
         $("#second-button").on('click', function () {
             //step2 form validations
             $(".service_history").html("");
-            $(".non_runner").html("");
-            // $(".finance").html("");
-            $(".accident_damaged").html("");
+            // $(".non_runner").html("");
+            // $(".accident_damaged").html("");
             $(".set_of_keys").html("");
+            $(".finance").html("");
             $(".home_textarea").html("");
             $("#mileageerr").html("");
 
             if ($("#mileage").val() == "") {
                 $("#mileageerr").html("Please Enter Mileage");
             }
-            // if ($('input[name="finance"]:checked').length == 0) {
-            //     $(".finance").html("Please Select Outstanding finance");
-            //     return false;
-            // }
+            if ($('input[name="finance"]:checked').length == 0) {
+                $(".finance").html("Please Select Outstanding finance");
+                return false;
+            }
             if ($('input[name="service_history"]:checked').length == 0) {
                 $(".service_history").html("Please Select Service History");
                 return false;
             }
-            if ($('input[name="non_runner"]:checked').length == 0) {
-                $(".non_runner").html("Please Select non runner ");
-                return false;
-            }
+            // if ($('input[name="non_runner"]:checked').length == 0) {
+            //     $(".non_runner").html("Please Select non runner ");
+            //     return false;
+            // }
             if ($('input[name="set_of_keys"]:checked').length == 0) {
                 $(".set_of_keys").html("Please Select  set of keys");
                 return false;
             }
-            if ($('input[name="accident_damaged"]:checked').length == 0) {
-                $(".accident_damaged").html("Please Select  Accident Damaged");
-                return false;
-            }
+            
+            // if ($('input[name="accident_damaged"]:checked').length == 0) {
+            //     $(".accident_damaged").html("Please Select  Accident Damaged");
+            //     return false;
+            // }
 
-            if ($('input[name="accident_damaged"]:checked').val() == "1" && $("#textarea").val() ==
-                "") {
-                $(".home_textarea").html("Please Enter Comment");
-                return false;
-            }
+            // if ($('input[name="accident_damaged"]:checked').val() == "1" && $("#textarea").val() ==
+            //     "") {
+            //     $(".home_textarea").html("Please Enter Comment");
+            //     return false;
+            // }
+            
 
             $(".how_it_works_header").hide();
             $("#step_1").hide();
@@ -1060,12 +1083,24 @@ BeCarSmart | Sellcar New
         $("#third-page").on('click', function () {
             //3rd page validations
             $(".gearbox_condition").html("");
+            $(".gearbox_comments").html("");
             $(".warning_light").html("");
-            $("span.text-danger.scratches").html("");
-            $(".scratches_textarea").html("");
-            $(".comments").html("");
+            $(".warning_comments").html("");
+            $(".vehicle_bodywork").html("");
+            $(".vehicle_condtion").html("");
+            $(".vehicle_interior").html("");
+            $(".alloys_condtion").html("");
+            $(".vehicle_sell_planning").html("");
+            // $("span.text-danger.scratches").html("");
+            // $(".scratches_textarea").html("");
+            // $(".comments").html("");
             if ($('input[name="gearbox_condition"]:checked').length == 0) {
                 $(".gearbox_condition").html("Please Select Conditon");
+                return false;
+            }
+            if ($('input[name="gearbox_condition"]:checked').val() == "1" && $(
+                    'textarea[name="gearbox_comments"]').val() == "") {
+                $(".textarea").html("Enter Comment");
                 return false;
             }
             if ($('input[name="warning_light"]:checked').length == 0) {
@@ -1077,15 +1112,46 @@ BeCarSmart | Sellcar New
                 $(".textarea").html("Enter Comment");
                 return false;
             }
-            if ($('input[name="scratches"]:checked').length == 0) {
-                $("span.text-danger.scratches").html("Please Select One Radio Button");
-                return false;
-            }
-            if ($('input[name="scratches"]:checked').val() == "1" && $(
-                    'textarea[name="scratches_comments"]').val() == "") {
-                $(".scratches_textarea").html("Please Enter Comment");
-                return false;
-            }
+
+            // if ($('input[name="vehicle_bodywork"]:checked', true)) {
+            //     $(".vehicle_bodywork").html("Please Select Vehicle Bodywork");
+            //     return false;
+            // }
+
+            // if ($('input[name="vehicle_condtion"]:checked').length == 0) {
+            //     $(".vehicle_condtion").html("Please Select Vehicle Condtion");
+            //     return false;
+            // }
+
+            // if ($('input[name="vehicle_interior"]:checked').length == 0) {
+            //     $(".vehicle_interior").html("Please Select Vehicle Interior");
+            //     return false;
+            // }
+
+            // if ($('input[name="alloys_condtion"]:checked').length == 0) {
+            //     $(".alloys_condtion").html("Please Select Alloys Condtion");
+            //     return false;
+            // }
+
+            // if ($('input[name="vehicle_sell_planning"]:checked').length == 0) {
+            //     $(".vehicle_sell_planning").html("Please Select Vehicle Sell Planning");
+            //     return false;
+            // }
+
+            // if ($('input[name="finance"]:checked').length == 0) {
+            //     $(".finance").html("Please Select Outstanding finance");
+            //     return false;
+            // }
+
+            // if ($('input[name="scratches"]:checked').length == 0) {
+            //     $("span.text-danger.scratches").html("Please Select One Radio Button");
+            //     return false;
+            // }
+            // if ($('input[name="scratches"]:checked').val() == "1" && $(
+            //         'textarea[name="scratches_comments"]').val() == "") {
+            //     $(".scratches_textarea").html("Please Enter Comment");
+            //     return false;
+            // }
             // if ($('textarea[name="more_info"]').val() == "") {
             //     $(".comments").html("Please Enter Comment");
             //     return false;

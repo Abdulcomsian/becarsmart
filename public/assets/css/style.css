@@ -433,9 +433,16 @@ select.list-dt:focus {
   position: relative;
 }
 
+#progressbar {
+  list-style-type: none;
+  counter-reset: css-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
+}
+#progressbar #account {
+  counter-increment: css-counter 1; /* Increase the counter by 1. */
+}
 #progressbar #account:before {
   font-family: FontAwesome;
-  content: "1";
+  content: counter(css-counter) ;
 }
 
 #progressbar #personal:before {

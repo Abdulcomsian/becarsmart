@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+=======
 /node_modules
 /vendor
 .env.backup
@@ -7,6 +13,7 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+>>>>>>> 7ef06b36db76255d43513306552a19ae82a7fae0
 
 # Laravel 4 specific
 bootstrap/compiled.php

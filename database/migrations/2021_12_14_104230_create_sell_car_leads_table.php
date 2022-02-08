@@ -41,6 +41,11 @@ class CreateSellCarLeadsTable extends Migration
             $table->tinyInteger('scratches')->default(0);
             $table->text('scratches_comments')->nullable();
             $table->string('vehicle_condtion')->nullable();
+            $table->text('gearbox_comments')->nullable();
+            $table->string('vehicle_bodywork')->nullable();
+            $table->string('vehicle_interior')->nullable();
+            $table->string('alloys_condtion')->nullable();
+            $table->string('vehicle_sell_planning')->nullable();
             $table->text('more_info')->nullable();
             $table->string('image')->nullable();
 
