@@ -106,32 +106,48 @@
                                             <table id="example" class="table table-striped" style="width:100%">
                                                 <tbody>
                                                     <tr>
+                                                        <td><b>What is the mileage?</b></td>
+                                                        <td>{{$lead->mileage}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>How many sets of keys do you have for this vehicle?</b></td>
+                                                        <td>@if($lead->set_of_keys==1){{'1'}}@else{{'2 or more'}}@endif</td>
+                                                    </tr> 
+                                                    <tr>
                                                         <td><b>Service History</b></td>
                                                         <td>{{$lead->service_history}}</td>
                                                     </tr>
                                                     <tr>
+                                                        <td><b>Any outstanding finance?</b></td>
+                                                        <td>{{$lead->finance}}</td>
+                                                    </tr>
+                                                    <!-- <tr>
                                                         <td><b>Is the vehicle a non-runner?</b></td>
                                                         <td>@if($lead->non_runner==1){{'Yes'}}@else{{'No'}}@endif</td>
                                                     </tr>
                                                     <tr>
                                                         <td><b>How many sets of keys do you have for this vehicle?</b></td>
                                                         <td>@if($lead->set_of_keys==1){{'1'}}@else{{'2 or more'}}@endif</td>
-                                                    </tr>
+                                                    </tr> -->
                                                     <tr>
                                                         <td><b>How many months untill the vehicle is due its MOT?</b></td>
                                                         <td>{{$lead->mot_due ?? ''}}</td>
                                                     </tr>
-                                                    <tr>
-                                                        <td><b> Has this vehicle been subject to an insurance write off or been in an accident?</b></td>
-                                                        <td>@if($lead->accident_damaged==1){{'Yes'}}@else{{'No'}}@endif</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Comment</b></td>
+                                                    <!-- <tr>
+                                                        <td><b>Any mechanical faults with the car?</b></td>
                                                         <td>{{$lead->comments ?? ''}}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><b>Gearbox Condition</b></td>
                                                         <td>{{$lead->gearbox_condition ?? ''}}</td>
+                                                    </tr> -->
+                                                    <tr>
+                                                        <td><b>Any mechanical faults with the car?</b></td>
+                                                        <td>@if($lead->gearbox_condition==1){{'Yes'}}@else{{'No'}}@endif</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Gearbox Condition Comments</b></td>
+                                                        <td>{{$lead->gearbox_comments ?? ''}}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><b>Any Warning lights or messages on the dash?</b></td>
@@ -142,20 +158,28 @@
                                                         <td>{{$lead->warning_comments ?? ''}}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><b> Any Scratches, marks or dents on the body?</b></td>
-                                                        <td>@if($lead->scratches==1){{'Yes'}}@else{{'No'}}@endif</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><b>Scratches Comment</b></td>
-                                                        <td>{{$lead->scratches_comments ?? ''}}</td>
+                                                        <td><b>How would you describe the bodywork of this vehicle?</b></td>
+                                                        <td>@if($lead->vehicle_bodywork==1){{'Good'}}@elseif($lead->vehicle_bodywork==2){{'Average'}}@elseif($lead->vehicle_bodywork==3){{'Poor'}}@elseif($lead->vehicle_bodywork==4){{'Very bad'}}@else{{'Excellent'}}@endif</td>
                                                     </tr>
                                                     <tr>
                                                         <td><b> What is the condition of this vehicle? Please select one:</b></td>
-                                                        <td>{{$lead->vehicle_condtion ?? ''}}</td>
+                                                        <td>@if($lead->vehicle_condtion==1){{'Good'}}@elseif($lead->vehicle_condtion==2){{'Average'}}@elseif($lead->vehicle_condtion==3){{'Poor'}}@elseif($lead->vehicle_condtion==4){{'Very bad'}}@else{{'Excellent'}}@endif</td>
                                                     </tr>
                                                     <tr>
                                                         <td><b> Feel free to give us more information on this vehicle. The more we know about your vehicle means the more accurate we will be with the valuation:</b></td>
                                                         <td>{{$lead->more_info ?? ''}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>How would you describe the interior of this vehicle?</b></td>
+                                                        <td>@if($lead->vehicle_interior==1){{'Good'}}@elseif($lead->vehicle_interior==2){{'Average'}}@elseif($lead->vehicle_interior==3){{'Poor'}}@elseif($lead->vehicle_interior==4){{'Very bad'}}@else{{'Excellent'}}@endif</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>What is condition of the alloys?</b></td>
+                                                        <td>@if($lead->alloys_condtion==1){{'Good'}}@elseif($lead->alloys_condtion==2){{'Average'}}@elseif($lead->alloys_condtion==3){{'Poor'}}@elseif($lead->alloys_condtion==4){{'Very bad'}}@else{{'Excellent'}}@endif</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>When are you planning to sell your car:</b></td>
+                                                        <td>@if($lead->vehicle_sell_planning==1){{'Within a week'}}@elseif($lead->vehicle_sell_planning==2){{'within a month'}}@elseif($lead->vehicle_sell_planning==3){{'Not sure'}}@else{{'As soon as I can'}}@endif</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

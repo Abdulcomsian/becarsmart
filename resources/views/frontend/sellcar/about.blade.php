@@ -19,22 +19,22 @@ BeCarSmart | About Us
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 offset-md-1">
-                @php $i=1;@endphp
+                <!-- @php $i=1;@endphp -->
                 @foreach($aboutdata as $data)
-                @if($i%2==1)
+                <!-- @if($i%2==1) -->
                 <div class="row pt-5" style="align-items:center">
-                    <div class="col-md-6 pb-3">
+                    <!-- <div class="col-md-6 pb-3">
                         <div class="blurb-img">
                             <img src="{{asset($data->image ?? '')}}" class="img-fluid" alt="">
                         </div>
-                    </div>
-                    <div class="col-md-6 pb-3">
+                    </div> -->
+                    <div class="col-md-12 pb-3 Justify-content">
                         <div class="blurbdiv">
                             <p class="about-text">{{$data->image_text ?? ''}}</p>
                         </div>
                     </div>
                 </div>
-                @else
+                <!-- @else
                 <div class="row pt-5" style="align-items:center">
                     <div class="col-md-6 pb-3">
                         <div class="blurbdiv">
@@ -46,9 +46,9 @@ BeCarSmart | About Us
                             <img src="{{asset($data->image ?? '')}}" class="img-fluid" alt="">
                         </div>
                     </div>
-                </div>
-                @endif
-                @php $i++;@endphp
+                </div> -->
+                <!-- @endif -->
+                <!-- @php $i++;@endphp -->
                 @endforeach
                 <!-- <div class="row pt-5" style="align-items:center">
                     <div class="col-md-6 pb-3">

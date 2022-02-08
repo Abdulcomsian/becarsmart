@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\AboutUs;
 use App\Utils\HelperFunctions;
+use Illuminate\Support\Facades\Redirect;
 
 class AboutController extends Controller
 {
@@ -17,19 +18,19 @@ class AboutController extends Controller
     public function store(Request $request)
     {
         try {
-            if ($request->file('image')) {
-                $filePath = HelperFunctions::aboutusimagepath();
-                $files = $request->file('image');
-                foreach ($files  as $key => $file) {
-                    $imagename = HelperFunctions::saveFile(null, $file, $filePath);
+            // if ($request->file('image')) {
+                // $filePath = HelperFunctions::aboutusimagepath();
+                // $files = $request->file('image');
+                // foreach ($files  as $key => $file) {
+                    // $imagename = HelperFunctions::saveFile(null, $file, $filePath);
                     $model = new AboutUs();
-                    $model->image = $imagename;
-                    $model->image_text = $request->image_text[$key];
+                    // $model->image = $imagename;
+                    $model->image_text = $request->image_text;
                     $model->save();
-                }
+                // }
                 toastSuccess('Data Saved Successfully');
                 return redirect('dashboard/about');
-            }
+            // }
         } catch (\Exception $exception) {
             toastError('Something went wrong,try again');
             return Redirect::back();
@@ -40,7 +41,7 @@ class AboutController extends Controller
         try {
             $res = AboutUs::find($request->id)->delete();
             if ($res) {
-                unlink(public_path() . '/' . $request->image);
+                // unlink(public_path() . '/' . $request->image);
                 toastSuccess("Record Deleted Successfully!");
                 return back();
             }

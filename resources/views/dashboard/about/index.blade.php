@@ -78,17 +78,17 @@
                         @csrf
                         <div id="aboutsection">
                             <div class="row">
-                                <div class="form-group row pb-5">
+                                <!-- <div class="form-group row pb-5">
                                     <label for="text" class="col-sm-2 col-form-label">Image</label>
                                     <div class="col-sm-10">
                                         <input type="file" class="form-control" name="image[]" id="row-1" required>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="form-group row pb-5">
                                     <label for="text" class="col-sm-2 col-form-label">Paragraph</label>
                                     <div class="col-sm-10">
-                                        <textarea name="image_text[]" class="form-control" rows="4" cols="40" required></textarea>
+                                        <textarea name="image_text" class="form-control" rows="4" cols="40" required></textarea>
 
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@
                         <thead>
                             <tr>
                                 <th>S-No</th>
-                                <th>Image</th>
+                                <!-- <th>Image</th> -->
                                 <th>Text</th>
                                 <th>Actions</th>
                             </tr>
@@ -116,7 +116,7 @@
                             @foreach($aboutdata as $data)
                             <tr>
                                 <td>{{$loop->index+1}}</td>
-                                <td><img src="{{asset($data->image)}}" class="img img-responsive" width="100px" height="100px" /></td>
+                                <!-- <td><img src="{{asset($data->image)}}" class="img img-responsive" width="100px" height="100px" /></td> -->
                                 <td>{{$data->image_text}}</td>
                                 <td>
                                     <button id="{{$data->id}}" class="btn btn-danger confirm"><span class="fa fa-trash"></span></button>
