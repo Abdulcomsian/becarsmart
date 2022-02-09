@@ -16,8 +16,6 @@ class WantToBuyCarSection extends Seeder
     {
         $questionnaire = [
             [
-                'sec_heading' => 'Want to Buy A Car?',
-                'sec_subHeading' => 'Fill out the form and let us find a best car you want.',
                 'question' => 'What is your name?',
                 'placeholder' => 'Enter your name',
                 'step' => '1',
@@ -26,8 +24,6 @@ class WantToBuyCarSection extends Seeder
             ],
 
             [
-                'sec_heading' => 'Want to Buy A Car?',
-                'sec_subHeading' => 'Fill out the form and let us find a best car you want.',
                 'question' => 'Where are you from?',
                 'placeholder' => 'Country name',
                 'step' => '2',
@@ -36,8 +32,6 @@ class WantToBuyCarSection extends Seeder
             ],
 
             [
-                'sec_heading' => 'Want to Buy A Car?',
-                'sec_subHeading' => 'Fill out the form and let us find a best car you want.',
                 'question' => 'How old are you?',
                 'placeholder' => 'Enter your age',
                 'step' => '3',
@@ -46,8 +40,6 @@ class WantToBuyCarSection extends Seeder
             ],
 
             [
-                'sec_heading' => 'Want to Buy A Car?',
-                'sec_subHeading' => 'Fill out the form and let us find a best car you want.',
                 'question' => 'How did you heard about us?',
                 'placeholder' => 'e.g Social media',
                 'step' => '4',

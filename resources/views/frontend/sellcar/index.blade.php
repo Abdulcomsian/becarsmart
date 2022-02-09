@@ -290,10 +290,17 @@ BeCarSmart | index
         <div class="col-md-8 offset-md-2">
             <div class="row form_overlap_row pt-5">
                 <div class="col-12 text-center">
-                    <div class="title">
-                        <h2>Looking for a new car?</h2>
-                        <p>Please fill out the form so we can help you source your new car.</p>
-                    </div>
+                    @if($questionair_heading)
+                        <div class="title">
+                            <h2>{{$questionair_heading->sec_heading}}</h2>
+                            <p>{{$questionair_heading->sec_subHeading}}</p>
+                        </div>
+                    @else
+                        <div class="title">
+                            <h2>Looking for a new car?</h2>
+                            <p>Please fill out the form so we can help you source your new car.</p>
+                        </div>
+                    @endif
                 </div>
                 <div class="col-12 p-0">
                     <form id="msform" method="post" action="{{url('buy-car-leads-save')}}">

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateQuestionnaireModelsTable extends Migration
+class CreateQuestionaireHeadingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateQuestionnaireModelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('questionnaire', function (Blueprint $table) {
+        Schema::create('questionaire_headings', function (Blueprint $table) {
             $table->id();
-            $table->longText('question');
-            $table->longText('placeholder');
-            $table->bigInteger('step');
+            $table->longText('sec_heading');
+            $table->longText('sec_subHeading');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateQuestionnaireModelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('questionnaire_models');
+        Schema::dropIfExists('questionaire_headings');
     }
 }
