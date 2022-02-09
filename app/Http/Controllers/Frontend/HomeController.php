@@ -20,6 +20,7 @@ use App\Notifications\BuyCarNotification;
 use App\Utils\HelperFunctions;
 use Notification;
 use Illuminate\Support\Facades\Redirect;
+use App\Models\QuestionaireHeading;
 
 
 class HomeController extends Controller
@@ -34,7 +35,8 @@ class HomeController extends Controller
         $blogheader  = BlogHeader::first();
         $testominals = Testominal::get();
         $questionair = QuestionnaireModel::get();
-        return view('frontend/sellcar/index', compact('howitworksheader', 'blogheader', 'herosection', 'howitworks', 'whysellcar', 'blogs', 'testominals', 'questionair'));
+        $questionair_heading = QuestionaireHeading::first();
+        return view('frontend/sellcar/index', compact('howitworksheader', 'blogheader', 'herosection', 'howitworks', 'whysellcar', 'blogs', 'testominals', 'questionair','questionair_heading'));
     }
 
     //insert buy car lead

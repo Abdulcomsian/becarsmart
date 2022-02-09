@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call(WhySellCarSeeder::class);
         $this->call(BlogSeeder::class);
         $this->call(BlogHeaderSeeder::class);
+        $this->call(QuestionaireSeeder::class);
         // \App\Models\User::factory(10)->create();
     }
 }

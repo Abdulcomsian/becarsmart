@@ -75,10 +75,10 @@
                     </div>
                 </div>
                 <!--end::Card header-->
-                <!--begin::Card body-->
+                <!--begin::Card body questionnaire-heading-->
                 <div class="card-body pt-5 questionnaire">
 
-                    <form class="pt-5" method="post" action="{{url('/insert-questions')}}">
+                    <form class="pt-5" method="post" action="{{url('/insert-headings')}}">
 
                         @csrf
 
@@ -97,6 +97,66 @@
                             </div>
                         </div>
 
+                        <div class="row pb-5">
+                            <div class="col-sm-12">
+                                @if($questionaire_heading->isNotEmpty())
+                                    <button type="submit" class="btn btn-success btn-md m-3" id="row-3" disabled style="float:right" href="#">Submit</button>
+                                @else
+                                    <button type="submit" class="btn btn-success btn-md m-3" id="row-3" style="float:right" href="#">Submit</button>
+                                @endif
+                            </div>
+                        </div>
+
+                    </form>
+
+                    </div>
+                    <!--end::Card body-->
+
+                    <!-- show section-->
+                    <div class="card mt-5">
+                    <div class="card-header pt-5">
+                        <h2>Section Heading and Sub Heading</h2>
+                    </div>
+
+                    <div class="card-body">
+
+                        <table class="table table-hovered">
+                            <thead>
+                                <tr>
+                                    <th>Section Heading</th>
+                                    <th>Section Sub Heading</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($questionaire_heading as $all)
+                                <tr>
+                                    <td>{{$all->sec_heading}}</td>
+                                    <td>{{$all->sec_subHeading}}</td>
+                                    <td>
+                                        <a href="{{url('questionaire-edit',$all->id)}}"><i class="fa fa-edit cursor-pointer" id="{{$all->id}}"></i></a>
+                                        <i class="fa fa-trash confirm cursor-pointer" id="{{$all->id}}"></i>
+                                        <form method="post" id="form_{{$all->id}}" action="{{url('delete-headings')}}">
+                                            @csrf
+                                            <input type="hidden" name="id" value="{{$all->id}}" />
+                                        </form>
+
+                                    </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <!--begin::Card body questionnaire-question-->
+
+                <!--begin::Card body questionnaire-question-->
+                <div class="card-body pt-5 questionnaire">
+
+                    <form class="pt-5" method="post" action="{{url('/insert-questions')}}">
+
+                        @csrf
                         <div id="input_row">
                             <div class="section-2 pt-5 pb-5">
                                 <div class="row">

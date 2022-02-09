@@ -110,7 +110,39 @@
                         </table>
                     </div>
                     <br><br>
+                    
                     @endforeach
+                    <div class="card">
+                        <!--begin::Card body-->
+                        <div class="card-body pt-0">
+                            <!--begin::Table-->
+                            <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_table_users">
+                                <!--begin::Table head-->
+                                <thead>
+                                    <!--begin::Table row-->
+                                    <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
+                                        <th class="min-w-125px">Name</th>
+                                        <th class="min-w-125px">Email</th>
+                                        <th class="min-w-125px">Phone number</th>
+                                        <th class="min-w-125px">Lead Source</th>
+                                    </tr>
+                                    <!--end::Table row-->
+                                </thead>
+                                <!--end::Table head-->
+                                <!--begin::Table body-->
+                                <tbody class="text-gray-600 fw-bold">
+                                    <tr>
+                                        <td class="">{{$lead_detail->name ?? ''}}</td>
+                                        <td class="">{{$lead_detail->email ?? ''}}</td>
+                                        <td class="">{{$lead_detail->phone_no ?? ''}}</td>
+                                        <td class="">{{$lead_detail->lead_source ?? ''}}</td>
+                                    </tr>
+                                </tbody>
+                                <!--end::Table body-->
+                            </table>
+                            <!--end::Table-->
+                        </div>
+                    </div>
 
                     <!-- <div class="step-2-main">
                         <div class="mt-5 mb-5">

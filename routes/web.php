@@ -75,7 +75,11 @@ Route::group(['middleware' => ['auth']], function () {
     // Questionnaire Routes
     Route::get('/questionnaire', [QuestionnaireController::class, 'index'])->name('user_dropdown/questionnaire');
     Route::post('/insert-questions', [QuestionnaireController::class, 'insert']);
+    Route::post('/insert-headings', [QuestionnaireController::class, 'insert_headings']);
     Route::post('/delete-questionnaire', [QuestionnaireController::class, 'delete'])->name('delete-questionnaire');
+    Route::post('/delete-headings', [QuestionnaireController::class, 'delete_headings'])->name('delete-headings');
+    Route::get('/questionaire-edit/{id}', [QuestionnaireController::class, 'edit_Questionaire']);
+    Route::post('/update-questionaire', [QuestionnaireController::class, 'update_Questionaire']);
 
     Route::get('/sell-car', [SellCarController::class, 'index'])->name('Car.sell-car');
     Route::get('/leads-details/{id}', [SellCarController::class, 'sell_car_lead_details'])->name('Car.leads-details');
