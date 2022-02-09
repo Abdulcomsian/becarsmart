@@ -185,3 +185,9 @@ Route::get('/thankyou_buy_car', function () {
 Route::get('/thankyou_sell_car', function () {
     return view('frontend/sellcar/thankyou_page2');
 })->name('thankyou.sell.car');;
+
+// Email routes
+
+Route::get('/template1', function () {
+    return view('frontend\mails\email_template1');
+})->name('email_template1');;

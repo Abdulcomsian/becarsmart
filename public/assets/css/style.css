@@ -675,13 +675,19 @@ select.list-dt:focus {
   justify-content: space-between;
   padding-right: 4%;
 }
-
-.blurbdiv .about-text {
-  font-size: 20px;
-  font-weight: 400;
-  color: #747474;
+.blurbdiv .about-top-text{
+  font-size: 23px !important;
+  font-weight: 100;
+  color: #e73e2c;
   line-height: 30px;
-  padding: 0px 50px;
+  text-align: left;
+}
+.blurbdiv .about-text {
+  font-size: 23px !important;
+  font-weight: 100;
+  color: #e73e2c;
+  line-height: 0px;
+  text-align: left;
 }
 
 
