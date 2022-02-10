@@ -71,6 +71,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('dashboard/contact-us', [ContactUsController::class, 'index']);
     Route::post('dashboard-contact-us-save', [ContactUsController::class, 'store'])->name('dashboard.contact.store');
 
+    //email page url
+    Route::get('dashboard/email', function () {
+        return view('dashboard/email/index');
+    })->name('index');
+
+
 
     // Questionnaire Routes
     Route::get('/questionnaire', [QuestionnaireController::class, 'index'])->name('user_dropdown/questionnaire');
@@ -188,47 +194,59 @@ Route::get('/thankyou_sell_car', function () {
 
 // Email routes
 
-Route::get('/template1', function () {
-    return view('frontend\mails\email_template1');
+Route::get('/frontend/template1', function () {
+    return view('frontend/mails/email_template1');
 })->name('email_template1');
 
-Route::get('/template2', function () {
-    return view('frontend\mails\email_template2');
+Route::get('/frontend/template2', function () {
+    return view('frontend/mails/email_template2');
 })->name('email_template2');
 
+Route::get('/dashboard/template2', function () {
+    return view('dashboard/email/template2');
+})->name('template2');
 
-Route::get('/template3', function () {
-    return view('frontend\mails\email_template3');
+Route::get('/frontend/template3', function () {
+    return view('frontend/mails/email_template3');
 })->name('email_template3');
+Route::get('/dashboard/template3', function () {
+    return view('dashboard/email/template3');
+})->name('template3');
 
-Route::get('/template4', function () {
-    return view('frontend\mails\email_template4');
+Route::get('/frontend/template4', function () {
+    return view('frontend/mails/email_template4');
 })->name('email_template4');
 
-Route::get('/template5', function () {
-    return view('frontend\mails\email_template5');
+Route::get('/frontend/template5', function () {
+    return view('frontend/mails/email_template5');
 })->name('email_template5');
 
-Route::get('/template6', function () {
-    return view('frontend\mails\email_template6');
+Route::get('/frontend/template6', function () {
+    return view('frontend/mails/email_template6');
 })->name('email_template6');
+Route::get('/dashboard/template6', function () {
+    return view('dashboard/email/template6');
+})->name('template6');
 
-Route::get('/template7', function () {
-    return view('frontend\mails\email_template7');
+Route::get('/frontend/template7', function () {
+    return view('frontend/mails/email_template7');
 })->name('email_template7');
 
-Route::get('/template8', function () {
-    return view('frontend\mails\email_template8');
+Route::get('/frontend/template8', function () {
+    return view('frontend/mails/email_template8');
 })->name('email_template8');
+Route::get('/dashboard/template8', function () {
+    return view('dashboard/email/template8');
+})->name('template8');
 
-Route::get('/template9', function () {
-    return view('frontend\mails\email_template9');
+Route::get('/frontend/template9', function () {
+    return view('frontend/mails/email_template9');
 })->name('email_template9');
 
-Route::get('/template10', function () {
-    return view('frontend\mails\email_template10');
+Route::get('/frontend/template10', function () {
+    return view('frontend/mails/email_template10');
 })->name('email_template10');
 
-Route::get('/template11', function () {
-    return view('frontend\mails\email_template11');
+Route::get('/frontend/template11', function () {
+    return view('frontend/mails/email_template11');
 })->name('email_template11');
