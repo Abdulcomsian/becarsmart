@@ -176,18 +176,59 @@ Route::get('/about', function () {
 
 Route::get('/reviews', function () {
     return view('frontend/sellcar/reviews');
-})->name('frontend/reviews');;
+})->name('frontend/reviews');
 
 Route::get('/thankyou_buy_car', function () {
     return view('frontend/sellcar/thankyou_page1');
-})->name('thankyou.buy.car');;
+})->name('thankyou.buy.car');
 
 Route::get('/thankyou_sell_car', function () {
     return view('frontend/sellcar/thankyou_page2');
-})->name('thankyou.sell.car');;
+})->name('thankyou.sell.car');
 
 // Email routes
 
 Route::get('/template1', function () {
     return view('frontend\mails\email_template1');
-})->name('email_template1');;
+})->name('email_template1');
+
+Route::get('/template2', function () {
+    return view('frontend\mails\email_template2');
+})->name('email_template2');
+
+
+Route::get('/template3', function () {
+    return view('frontend\mails\email_template3');
+})->name('email_template3');
+
+Route::get('/template4', function () {
+    return view('frontend\mails\email_template4');
+})->name('email_template4');
+
+Route::get('/template5', function () {
+    return view('frontend\mails\email_template5');
+})->name('email_template5');
+
+Route::get('/template6', function () {
+    return view('frontend\mails\email_template6');
+})->name('email_template6');
+
+Route::get('/template7', function () {
+    return view('frontend\mails\email_template7');
+})->name('email_template7');
+
+Route::get('/template8', function () {
+    return view('frontend\mails\email_template8');
+})->name('email_template8');
+
+Route::get('/template9', function () {
+    return view('frontend\mails\email_template9');
+})->name('email_template9');
+
+Route::get('/template10', function () {
+    return view('frontend\mails\email_template10');
+})->name('email_template10');
+
+Route::get('/template11', function () {
+    return view('frontend\mails\email_template11');
+})->name('email_template11');
