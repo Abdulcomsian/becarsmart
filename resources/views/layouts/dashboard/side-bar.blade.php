@@ -112,6 +112,14 @@
                                 <span class="menu-title">Contact Us Page</span>
                             </a>
                         </div>
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{url('dashboard/email')}}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">Email Templates</span>
+                            </a>
+                        </div>
                         <!-- <div class="menu-item">
                             <a class="menu-link" href="/add-blog">
 												<span class="menu-bullet">
