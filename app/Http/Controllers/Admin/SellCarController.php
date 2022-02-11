@@ -10,7 +10,8 @@ class SellCarController extends Controller
 {
     public function index()
     {
-        $sellcarleads = SellCarLead::get();
+        $sellcarleads = SellCarLead::orderBy('created_at', 'DESC')->get();
+        
         return view('Car.sell-car', compact('sellcarleads'));
     }
     public function sell_car_lead_details($id)

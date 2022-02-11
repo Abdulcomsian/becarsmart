@@ -22,13 +22,13 @@
                       <h3>{{$blog->title ?? ''}}</h3>
                       <p>{{$blog->exceed ?? ''}}</p>
                       <figure class="figure-img">
-                         <img class="img-responsive" src="{{asset('images/blogs/'.'/'.$blog->feature_img)}}" width="100%" alt="">
+                         <img class="img-responsive" src="{{asset('images/blogs/'.'/'.$blog->feature_img)}}" alt="" style="height: 420px; object-fit: cover; width: 100%;">
                       </figure>
 
                       <p>{{$blog->message ?? ''}}</p>
                    </div>
                 </div>
-                <div class="section-row">
+                <!-- <div class="section-row">
                    <div class="post-author">
                       <div class="media">
                          <div class="media-left">
@@ -47,7 +47,7 @@
                          </div>
                       </div>
                    </div>
-                </div>
+                </div> -->
              </div>
              <div class="col-md-4">
                 <div class="aside-widget">
@@ -56,7 +56,9 @@
                    </div>
                    @foreach($featureblogs as $blog)
                    <div class="post post-thumb">
-                      <a class="post-img" href="{{url('/blog',$blog->permalink)}}"><img src="{{asset ('images/blogs/'.'/'.$blog->feature_img)}}" alt=""></a>
+                      <a class="post-img" href="{{url('/blog',$blog->permalink)}}">
+                        <img src="{{asset ('images/blogs/'.'/'.$blog->feature_img)}}" class="img-fluid rounded-start" alt="" >
+                     </a>
                       <div class="post-body">
                          <div class="post-meta">
                             <a class="post-category cat-3" href="{{url('/blog',$blog->permalink)}}">{{$blog->title ?? ''}}</a>

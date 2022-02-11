@@ -146,7 +146,7 @@
                                                         <td>@if($lead->gearbox_condition==1){{'Yes'}}@else{{'No'}}@endif</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><b>Gearbox Condition Comments</b></td>
+                                                        <td><b>Mechanical fault comments</b></td>
                                                         <td>{{$lead->gearbox_comments ?? ''}}</td>
                                                     </tr>
                                                     <tr>

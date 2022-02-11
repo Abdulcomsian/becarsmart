@@ -229,7 +229,7 @@
                                 <td class="">{{ date('F,d,Y H:i:s ', strtotime($lead->created_at));}}</td>
                                 <td class="">
                                     <div class="view-btn" styles=" ">
-                                        <a class="btn btn-danger btn-md" href="{{url('/leads-details',$lead->id)}}">View</a>
+                                        <a class="btn btn-danger btn-md" href="{{url('/leads-details',$lead->id)}}"><i class="fa fa-eye fa-2x" aria-hidden="true"></i></a>
                                     </div>
                                 </td>
                             </tr>
