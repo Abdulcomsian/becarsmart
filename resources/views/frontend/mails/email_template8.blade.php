@@ -19,15 +19,16 @@
             <img src="{{asset ('assets/img/pexels-talha-riaz-2379998.jpg')}}" width="100%" />
         </div>
         <br>
-        <div class="multipale-button" style="text-align: center; width:100%; display:inline-flex;max-width: 100%;">
-            <div style="width:50%">
+        <div class="multipale-button" style="text-align: center; width:100%; display:inline-block;max-width: 100%;">
+            <div style="width:100%">
                 <center>
-                    <div style="background-color: #f5d11b;padding: 1px 8.8%;border-radius: 10px;width:100%;max-width:fit-content;line-height: 0;">
+                    <div style="background-color: #f5d11b;border-radius: 10px;width:100%;line-height: 0;max-width: 80%;padding: 2px 0px;">
                         <p style="text-align:center;font-size: 20px; text-transform: initial; font-weight: 800;line-height: 38px;">BMW M4 - 2018 - Automatic - <br> Coupe - Full Service History - 2 <br> previous Keepers - HPI Clear</p>
                     </div>
                 </center>
             </div>
-            <div style="width:50%">
+            <br><br>
+            <div style="width:100%">
             <center>
                 <div style="border: 17px solid #e74f42;padding: 2px 18%;width:100%;max-width:fit-content;line-height: 0;">
                     <p style="text-align:center;font-size: 60px; text-transform: uppercase; font-weight: 600;line-height: 0px;">£31,495</p>
