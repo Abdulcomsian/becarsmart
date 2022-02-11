@@ -10,16 +10,15 @@ class NewMail extends Mailable{
 
     use Queueable, SerializesModels;
 
-    public $user;
+    public $email_template2;
 
-    public function __construct($user){
+    public function __construct($email_template2){
 
-        $this->user = $user;
+        $this->email_template2 = $email_template2;
 
     }
 
-    public function build(){
-
-        return $this->subject('This is Testing Mail')->view('emails.test');
+    public function build(){  
+        return $this->subject('This is Testing Mail')->view('frontend.mails.email_template2');
     }
 }

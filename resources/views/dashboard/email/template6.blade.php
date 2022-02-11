@@ -86,34 +86,84 @@
                 <!--begin::Card body-->
                 <div class="card-body pt-5">
                     <div class="container">
-                        <div class="row" style="align-items: center;">
-                            <div class="col-md-6">
-                                <div class="template-content">
-                                    <div class="mb-3 row">
-                                        <label for="description" class="col-sm-4 col-form-label">Description</label>
-                                        <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="description">
+                        <form method="post" id="" action="{{url('email-template6')}}">
+                            @csrf
+                            <div class="row" style="align-items: center;">
+                                <div class="col-md-6">
+                                    <div class="template-content">
+                                        <div class="mb-3 row">
+                                            <label for="description" class="col-sm-4 col-form-label">Description</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" name="description" id="description">
+                                                @error('description')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="amount" class="col-sm-4 col-form-label">Amount</label>
-                                        <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="amount">
+                                        <div class="mb-3 row">
+                                            <label for="description" class="col-sm-4 col-form-label">Car Image</label>
+                                            <div class="col-sm-8">
+                                                <input type="file" class="form-control" name="image" id="image">
+                                                @error('image')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="model-number" class="col-sm-4 col-form-label">Model Number</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" name="model_number" id="model-number">
+                                                @error('model_number')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="amount" class="col-sm-4 col-form-label">Amount</label>
+                                            <div class="col-sm-8">
+                                                <input type="number" class="form-control" name="amount" id="amount">
+                                                @error('amount')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="amount" class="col-sm-4 col-form-label">Email Subject</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" placeholder="Enter Email Subject" name="email_subject" id="email_subject">
+                                                @error('email_subject')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="amount" class="col-sm-4 col-form-label">Email</label>
+                                            <div class="col-sm-8">
+                                                <select name="email" id="email" class="form-control">
+                                                    <option selected disabled value="">Select User </option>
+                                                    @foreach($users as $user)
+                                                    <option value="{{$user->id}}">{{$user->fullname }} -- {{$user->email}}</option>
+                                                    @endforeach
+                                                </select>
+                                                @error('email')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="template">
-                                    <img src="{{asset ('assets/img/template6.png')}}" width="100%" alt="">
+                                <div class="col-md-6">
+                                    <div class="template">
+                                        <img src="{{asset ('assets/img/template3.png')}}" width="100%" alt="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 offset-md-0">
-                                <a href="/frontend/template6" type="button" class="btn btn-dark w-100">Send</a>
+                            <div class="row">
+                                <div class="col-md-4 offset-md-0">
+                                    <button type="submit" value="Send Email" class="btn btn-dark w-100">Send Email</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <!--end::Card body-->
