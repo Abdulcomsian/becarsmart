@@ -288,91 +288,74 @@ BeCarSmart | index
 </section>
 <!-- Buy a Car Section -->
 <section id="Buy-a-Car" class="buy_a_car">
+    <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <div class="row form_overlap_row pt-5">
                 <div class="col-12 text-center">
-                    @if($questionair_heading)
-                        <div class="title">
-                            <h2>{{$questionair_heading->sec_heading}}</h2>
-                            <p>{{$questionair_heading->sec_subHeading}}</p>
+                                            <div class="title">
+                            <h2>Want to Buy A Car?</h2>
+                            <p>Fill out the form and let us find a best car you want.</p>
                         </div>
-                    @else
-                        <div class="title">
-                            <h2>Looking for a new car?</h2>
-                            <p>Please fill out the form so we can help you source your new car.</p>
-                        </div>
-                    @endif
-                </div>
+                                    </div>
                 <div class="col-12 p-0">
-                    <form id="msform" method="post" action="{{url('buy-car-leads-save')}}">
-                        @csrf
-                        <!-- progressbar -->
+                    <form id="msform" method="post" action="http://127.0.0.1:8000/buy-car-leads-save">
+                        <input type="hidden" name="_token" value="jeECH9s2fwVdrC77PCQIKogOAXC7uLXnugVa31ad">                        <!-- progressbar -->
                         <ul id="progressbar">
-                            @foreach($questionair as $key=> $q)
-                            @php
-                            $class="";
-                            if($key==0)
-                            {
-                            $class="active";
-                            }
-                            @endphp
-                            <li class="{{$class}}" id="account"><strong></strong></li>
-                            @endforeach
-                            <!-- <li id="personal"><strong></strong></li>
+                                                                                    <li class="active" id="account"><strong></strong></li>
+                                                                                    <li class="" id="account"><strong></strong></li>
+                                                                                    <li class="" id="account"><strong></strong></li>
+                                                                                    <li class="" id="account"><strong></strong></li>
+                                                        <!-- <li id="personal"><strong></strong></li>
                                 <li id="payment"><strong></strong></li>
                                 <li id="confirm"><strong></strong></li> -->
                         </ul>
-                        @php
-                        $i=0;
-                        @endphp
-                        @if(session()->get('thankyou')=='thankyou')
-                        <fieldset>
+                                                                                                                        <fieldset>
                             <div class="form-card">
-                                <h2 class="fs-title text-center">Success !</h2> <br><br>
-                                <div class="row justify-content-center">
-                                    <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"></div>
-                                </div> <br><br>
-                                <div class="row justify-content-center">
-                                    <div class="col-7 text-center">
-                                        <h5>You Have Successfully Signed Up</h5>
-                                    </div>
-                                </div>
+                                <h2 class="fs-title">What is your name?</h2>
+                                <input type="hidden" name="question[]" value="What is your name?">
+                                <input type="text" name="answer[]" id="answer1" placeholder="Enter your name">
                             </div>
-                        </fieldset>
-                        @else
-                        @foreach($questionair as $x=> $question)
-                        @php
-                        $i++
-                        @endphp
-                        <fieldset>
+                                                        <input type="button" name="next" id="1" class="next action-button" value="Next">
+                                                    </fieldset>
+                                                                        <fieldset>
                             <div class="form-card">
-                                <h2 class="fs-title">{{$question->question}}</h2>
-                                <input type="hidden" name="question[]" value="{{$question->question}}" />
-                                <input type="text" name="answer[]" id="answer{{$i}}" placeholder="{{$question->placeholder}}" @if(count($questionair)==$i){{'required'}}@endif>
+                                <h2 class="fs-title">Where are you from?</h2>
+                                <input type="hidden" name="question[]" value="Where are you from?">
+                                <input type="text" name="answer[]" id="answer2" placeholder="Country name">
                             </div>
-                            @if(count($questionair)!=$i)
-                            <input type="button" name="next" id="{{$i}}" class="next action-button" value="Next">
-                            @else
-                            <h2 class="fs-title">Other Details:</h2>
+                                                        <input type="button" name="next" id="2" class="next action-button" value="Next">
+                                                    </fieldset>
+                                                                        <fieldset>
                             <div class="form-card">
-                                <input type="text" name="lead_source" placeholder="Lead Source e.g Social Media" required>
+                                <h2 class="fs-title">How old are you?</h2>
+                                <input type="hidden" name="question[]" value="How old are you?">
+                                <input type="text" name="answer[]" id="answer3" placeholder="Enter your age">
                             </div>
+                                                        <input type="button" name="next" id="3" class="next action-button" value="Next">
+                                                    </fieldset>
+                                                                        <fieldset>
                             <div class="form-card">
-                                <input type="text" name="name" placeholder="Enter name" required>
+                                <h2 class="fs-title">How did you heard about us?</h2>
+                                <input type="hidden" name="question[]" value="How did you heard about us?">
+                                <input type="text" name="answer[]" id="answer4" placeholder="e.g Social media" required="">
+                            </div>
+                                                        <h2 class="fs-title">Other Details:</h2>
+                            <div class="form-card">
+                                <input type="text" name="lead_source" placeholder="Lead Source e.g Social Media" required="">
                             </div>
                             <div class="form-card">
-                                <input type="text" name="phone" placeholder="Enter Phone no" minlength="10" maxlength="11" required>
+                                <input type="text" name="name" placeholder="Enter name" required="">
                             </div>
                             <div class="form-card">
-                                <input type="email" name="email" placeholder="Enter Email" required>
+                                <input type="text" name="phone" placeholder="Enter Phone no" minlength="10" maxlength="11" required="">
+                            </div>
+                            <div class="form-card">
+                                <input type="email" name="email" placeholder="Enter Email" required="">
                             </div>
                             <input type="submit" class="action-button" value="Confirm">
-                            @endif
-                        </fieldset>
-                        @endforeach
-                        @endif
-
+                                                    </fieldset>
+                                                
                         <!-- <fieldset>
                                 <div class="form-card">
                                     <h2 class="fs-title">Hey, What is your good name</h2>
@@ -416,7 +399,7 @@ BeCarSmart | index
         <div class="row steps pt-5">
             <div class="col-md-4 col-12">
                 <div class="blurb">
-                    <img src="{{asset ('assets/img/MicrosoftTeams-image (5).png')}}" alt="Value my Car" class="float-center pb-3">
+                    <img src="http://127.0.0.1:8000/assets/img/MicrosoftTeams-image (5).png" alt="Value my Car" class="float-center pb-3">
                     <h2>Choose a Car</h2>
                     <p>Fill in the form so we know what car you’re looking for</p>
                 </div>
@@ -424,7 +407,7 @@ BeCarSmart | index
 
             <div class="col-md-4 col-12">
                 <div class="blurb">
-                    <img src="{{asset ('assets/img/MicrosoftTeams-image (1).png')}}" alt="Value my Car" class="float-center pb-3">
+                    <img src="http://127.0.0.1:8000/assets/img/MicrosoftTeams-image (1).png" alt="Value my Car" class="float-center pb-3">
                     <h2>Sourcing Consultation</h2>
                     <p>One of our vehicle sourcing specialists will get in touch and go into more detail to help you find the exact vehicle you want.</p>
                 </div>
@@ -432,14 +415,14 @@ BeCarSmart | index
 
             <div class="col-md-4 col-12">
                 <div class="blurb">
-                    <img src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" alt="Value my Car" class="float-center pb-3">
+                    <img src="http://127.0.0.1:8000/assets/img/MicrosoftTeams-image (3).png" alt="Value my Car" class="float-center pb-3">
                     <h2>Getting your Car</h2>
                     <p>Finalising a deal, taking care of the paperwork and getting your car.</p>
                 </div>
             </div>
         </div>
     </div>
-
+    </div>
 </section>
 <!-- Why-sell-your-car -->
 <section class="Why-sell-your-car">

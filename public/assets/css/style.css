@@ -2533,6 +2533,7 @@ button:hover {
 
 }
 @media only screen and (max-width: 600px) {
+ 
   .blog_section .title h2 {
     font-size: 24px;
     font-weight: bold;
@@ -2886,6 +2887,9 @@ button:hover {
   
 }
 @media only screen and (max-width: 992px) {
+  section#Buy-a-Car {
+    overflow-x: hidden !important;
+}
   .sell-blurb-icons img {
     width: 100%;
     max-width: 20%;
