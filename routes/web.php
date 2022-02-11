@@ -7,7 +7,8 @@ use App\Http\Controllers\Admin\QuestionnaireController;
 use App\Http\Controllers\Admin\BuyCarLeadController;
 use App\Http\Controllers\Admin\SellCarController;
 use App\Http\Controllers\Admin\AboutController;
-use App\Http\Controllers\Admin\Home\FaqController;
+use App\Http\Controllers\Admin\Home\FaqController;  
+use App\Http\Controllers\Admin\Home\EmailTemplateController;  
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Models\Faq;
@@ -86,6 +87,17 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/delete-headings', [QuestionnaireController::class, 'delete_headings'])->name('delete-headings');
     Route::get('/questionaire-edit/{id}', [QuestionnaireController::class, 'edit_Questionaire']);
     Route::post('/update-questionaire', [QuestionnaireController::class, 'update_Questionaire']);
+
+    // Email work
+
+    Route::get('/dashboard/template2', [EmailTemplateController::class, 'template2'])->name('template2');
+    Route::post('/email-template2', [EmailTemplateController::class, 'email_template2'])->name('email-template2');
+    Route::get('/dashboard/template3', [EmailTemplateController::class, 'template3'])->name('template3');
+    Route::post('/email-template3', [EmailTemplateController::class, 'email_template3'])->name('email-template3');
+    Route::get('/dashboard/template6', [EmailTemplateController::class, 'template6'])->name('template6');
+    Route::post('/email-template6', [EmailTemplateController::class, 'email_template6'])->name('email-template6');
+
+
 
     Route::get('/sell-car', [SellCarController::class, 'index'])->name('Car.sell-car');
     Route::get('/leads-details/{id}', [SellCarController::class, 'sell_car_lead_details'])->name('Car.leads-details');
@@ -202,16 +214,11 @@ Route::get('/frontend/template2', function () {
     return view('frontend/mails/email_template2');
 })->name('email_template2');
 
-Route::get('/dashboard/template2', function () {
-    return view('dashboard/email/template2');
-})->name('template2');
 
 Route::get('/frontend/template3', function () {
     return view('frontend/mails/email_template3');
 })->name('email_template3');
-Route::get('/dashboard/template3', function () {
-    return view('dashboard/email/template3');
-})->name('template3');
+
 
 Route::get('/frontend/template4', function () {
     return view('frontend/mails/email_template4');
@@ -223,10 +230,7 @@ Route::get('/frontend/template5', function () {
 
 Route::get('/frontend/template6', function () {
     return view('frontend/mails/email_template6');
-})->name('email_template6');
-Route::get('/dashboard/template6', function () {
-    return view('dashboard/email/template6');
-})->name('template6');
+})->name('email_template6');    
 
 Route::get('/frontend/template7', function () {
     return view('frontend/mails/email_template7');
@@ -250,3 +254,16 @@ Route::get('/frontend/template10', function () {
 Route::get('/frontend/template11', function () {
     return view('frontend/mails/email_template11');
 })->name('email_template11');
+
+Route::get('test', function () {
+
+    $user = [
+        'name' => 'Atif Masood',
+        'info' => 'Laravel & Python Devloper'
+    ];
+
+    \Mail::to('rajaatif927@gmail.org')->send(new \App\Mail\NewMail($user));
+
+    dd("success");
+
+});

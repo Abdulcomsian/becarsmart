@@ -17,8 +17,8 @@
         <br>
         <center>
                 <div style="background-color: #f5d11b;padding: 1px 8.8%;border-radius: 20px;width:100%;max-width:fit-content;line-height: 0;">
-                    <p style="/* text-align:center; */font-size: 80px;font-weight: 600;line-height: 0px;">RO59 GCU</p>
-                    <p style="text-align: initial;font-size: 30px;font-weight: 700;line-height: 5px;">Audi A5</p>
+                    <p style="/* text-align:center; */font-size: 80px;font-weight: 600;line-height: 0px;">{{ $email_template2['registration_number'] }}</p>
+                    <p style="text-align: initial;font-size: 30px;font-weight: 700;line-height: 5px;">{{ $email_template2['model_number'] }}</p>
                 </div>
             </center>  
             <br><br>
@@ -39,7 +39,7 @@
         <br><br>
             <h3 style="text-align:center; color: rgb(44 59 83); font-size: 40px;line-height: 0px; text-transform: uppercase; font-weight: 600;">Your Valuation is...</h3>
             <center>
-                <p style="text-align:center;padding: 40px 20%;font-size: 45px;font-weight: 900;border: 16px solid #e74f42;width: 100%;max-width: fit-content;">£13,495</p>
+                <p style="text-align:center;padding: 40px 20%;font-size: 60px;font-weight: 900;border: 16px solid #e74f42;width: 100%;max-width: fit-content;">£{{ $email_template2['amount'] }}</p>
             </center>         
 
             <div style="padding:8px; ">

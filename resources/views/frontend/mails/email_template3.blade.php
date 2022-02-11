@@ -18,12 +18,12 @@
         <br>
         <center>
                 <div style="background-color: #f5d11b;padding: 1px 8.8%;border-radius: 20px;width:100%;max-width:fit-content;line-height: 0;">
-                    <p style="/* text-align:center; */font-size: 80px; text-transform: uppercase; font-weight: 600;line-height: 0px;">RO59 GCU</p>
-                    <p style="text-align: initial;font-size: 30px;font-weight:700; text-transform: uppercase; line-height: 5px;">Audi A5</p>
+                    <p style="/* text-align:center; */font-size: 70px; text-transform: uppercase; font-weight: 500;line-height: 0px;">{{ $email_template3['registration_number'] }}</p>
+                    <p style="text-align: initial;font-size: 30px;font-weight:700; text-transform: uppercase; line-height: 5px;">{{ $email_template3['model_number'] }}</p>
                 </div>
             </center> 
             <center>
-                <p style="text-align:center;text-transform: uppercase; padding:  40px 20%;font-size: 45px;font-weight: 900;border: 16px solid #e74f42;width: 100%;max-width: fit-content;">£13,495</p>
+                <p style="text-align:center;text-transform: uppercase; padding:  40px 20%;font-size: 60px;font-weight: 900;border: 16px solid #e74f42;width: 100%;max-width: fit-content;">£{{ $email_template3['amount'] }}</p>
             </center>
         <p style="font-size:27px; text-align:center;text-transform: uppercase; color:#2c3b53; font-weight:600;">Why Choose Us?</p>
         <h3 style="color: #2c3b53;font-size: 23px; text-transform: capitalize; font-weight: 500; text-align:center">We will contact you to finalise the <br> deal and arrange the collection date.</h3>

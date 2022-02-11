@@ -20,17 +20,20 @@
         </div>
         <br>
         <div class="multipale-button" style="text-align: center; width:100%; display:inline-flex;max-width: 100%;">
-            <div style="width:50%">
+            <div style="width:100%">
                 <center>
                     <div style="background-color: #f5d11b;padding: 1px 8.8%;border-radius: 10px;width:100%;max-width:fit-content;line-height: 0;">
-                        <p style="text-align:center;font-size: 20px; text-transform: initial; font-weight: 800;line-height: 38px;">BMW M4 - 2018 - Automatic - <br> Coupe - Full Service History - 2 <br> previous Keepers - HPI Clear</p>
+                        <p style="text-align:center;font-size: 20px; text-transform: initial; font-weight: 800;line-height: 38px;">{{ $email_template6['description']}}</p>
                     </div>
                 </center>
             </div>
+        </div>
+        <div class="multipale-button" style="text-align: center; width:100%; display:inline-flex;max-width: 100%;">
+            
             <div style="width:50%">
             <center>
                 <div style="border: 17px solid #e74f42;padding: 2px 18%;width:100%;max-width:fit-content;line-height: 0;">
-                    <p style="text-align:center;font-size: 60px; text-transform: uppercase; font-weight: 600;line-height: 0px;">£13,495</p>
+                    <p style="text-align:center;font-size: 60px; text-transform: uppercase; font-weight: 600;line-height: 0px;">£ {{ $email_template6['amount']}}</p>
                 </div>
             </center>
             </div>
