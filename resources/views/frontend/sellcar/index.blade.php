@@ -267,7 +267,7 @@ BeCarSmart | index
                 <div class="col-md-4 col-12  align-items-center ">
                     @endif
                     <div class="blurb">
-                        <img alt="{{$work->file}}" src="{{asset('images/home'.'/'.$work->file)}}" class="float-center pb-3" width="18%" height="auto">
+                        <img alt="{{$work->file}}" src="{{asset('images/home'.'/'.$work->file)}}" class="float-center pb-3" width="80%" height="auto">
                         <h2>{{$work->title ?? ''}}</h2>
                         <p>{{$work->exceed ?? ''}} </p>
                     </div>
