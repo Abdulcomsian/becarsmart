@@ -22,7 +22,7 @@
                       <h3>{{$blog->title ?? ''}}</h3>
                       <p>{{$blog->exceed ?? ''}}</p>
                       <figure class="figure-img">
-                         <img class="img-responsive" src="{{asset('images/blogs/'.'/'.$blog->feature_img)}}" alt="" style="height: 420px; object-fit: cover; width: 100%;">
+                         <img class="img-responsive" src="{{asset('images/blogs/'.'/'.$blog->feature_img)}}" alt="" style="height: 500px; object-fit: cover; width: 100%;">
                       </figure>
 
                       <p>{{$blog->message ?? ''}}</p>

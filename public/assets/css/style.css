@@ -2504,6 +2504,16 @@ button:hover {
 
 
 @media (max-width: 576px) {
+  .post.post-thumb .post-body {
+  	position: absolute;
+    bottom: 0;
+    height: 175px;
+    overflow: scroll;
+    padding: 0px 15px;
+}
+  .Why-sell-your-car .container{
+    max-width: 95% !important;
+  }
   #msform input, #msform textarea{
     width: 100%;
   }
@@ -2523,6 +2533,12 @@ button:hover {
 
 }
 @media only screen and (max-width: 600px) {
+  .blog_section .title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(44 59 83);
+}
+
   #car_logo .single-slider{
     display: block !important;
     width: 100%;
@@ -2833,7 +2849,8 @@ button:hover {
   .Why-sell-your-car .clock-content h2 {
     font-size: 20px !important;
     font-weight: bold !important;
-    text-align: left !important;
+    text-align: center!important;
+    line-height: 28px;
   }
   .Why-sell-your-car img {
     max-width: 45% !important;
@@ -2981,3 +2998,4 @@ button:hover {
 @media screen and (max-width: 1400px) and (min-width: 1200px){
   
 }
+
