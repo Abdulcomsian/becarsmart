@@ -139,54 +139,7 @@ BeCarSmart | index
         width:85%;
         padding:15px !important;
     }
-    /* 
-
-
-   5 columns grid for 'md' and 'lg' screens
-
-   @tatygrassini
-
-
-*/
-
-@media (min-width: 660px) {
-  .col-md-1-5 { width: 20%; }
-  .col-md-2-5 { width: 20%; }
-  .col-md-3-5 { width: 20%; }
-  .col-md-4-5 { width: 20%; }
-  .col-md-5-5 { width: 20%; }
-}
-
-@media (min-width: 992px) {
-  .col-md-1-5 { width: 20%; }
-  .col-md-2-5 { width: 40%; }
-  .col-md-3-5 { width: 60%; }
-  .col-md-4-5 { width: 80%; }
-  .col-md-5-5 { width: 100%; }
-}
-
-@media (min-width: 1200px) {
-  .col-lg-1-5 { width: 20%; }
-  .col-lg-2-5 { width: 40%; }
-  .col-lg-3-5 { width: 60%; }
-  .col-lg-4-5 { width: 80%; }
-  .col-lg-5-5 { width: 100%; }
-}
-
-/* Demo only, no need for this */
-
-.show-grid [class^=col-] span,
-.container-fluid .show-grid [class^=col-] {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #eee;
-  background-color: rgba(86,61,124,.15);
-  text-align: center;
-  border: 1px solid #ddd;
-  border: 1px solid rgba(86,61,124,.2);
-}
-
+ 
 
 </style>
 @endsection
@@ -670,120 +623,116 @@ BeCarSmart | index
 <!-- Car Logos -->
 
 
-
 <section id="car_logo">
     <div class="container">
+        <div class="row d-flex flex-wrap align-items-center">
+            <div class="col-4 col-md-2 offset-md-1">
+                <div class="single-slider">
+                    <div class="slider-img1">
+                        <img class="img-fluid" src="{{asset('assets/img/audi.png')}}" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="single-slider">
+                    <div class="slider-img2">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-bmw-png-509573.png')}}"  />
+                    </div>
+                </div>
+            </div>
 
-    
-        <div class="row show-grid pb-5" style="align-items: baseline;">
-            <div class="col-sm-6 col-md-4-5 col-lg-1-5">
+            <div class="col-4 col-md-2">
                 <div class="single-slider">
-                    <div class="slider-img1 pt-2 pb-2">
-                        <img src="{{asset('assets/img/audi.png')}}" />
+                    <div class="slider-img3">
+                        <img class="img-fluid" src="{{asset('assets/img/mer.png')}}" />
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-5-5 col-lg-1-5">
-                <div class="single-slider">
-                    <div class="slider-img2 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-bmw-png-509573.png')}}"  />
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3-5 col-lg-1-5">
-                <div class="single-slider">
-                    <div class="slider-img3 pt-2 pb-2">
-                        <img src="{{asset('assets/img/mer.png')}}" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2-5 col-lg-1-5">
-                <div class="single-slider">
-                    <div class="slider-img4 pt-2 pb-2">
-                        <img src="{{asset('assets/img/land-rover.png')}}" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4-5 col-lg-1-5">
-                <div class="single-slider">
-                    <div class="slider-img5 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-jaguar-png-logo-944830.png')}}" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row show-grid pb-5" style="align-items: baseline;">
-            <div class="col-sm-6 col-md-4-5 col-lg-1-5">
-                <div class="single-slider">
-                    <div class="slider-img6 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-aston-martin-png-889778.png')}}" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-5-5 col-lg-1-5">
-                <div class="single-slider">
-                    <div class="slider-img7 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-ferrari-png-4313862.png')}}" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3-5 col-lg-1-5">
-                <div class="single-slider">
-                    <div class="slider-img8 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-bentley-logo-png-4708966.png')}}" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-2-5 col-lg-1-5">
-                <div class="single-slider">
-                    <div class="slider-img9 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-mclaren-png-4450343.png')}}" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4-5 col-lg-1-5">
-                <div class="single-slider">
-                    <div class="slider-img1 pt-2 pb-20">
-                        <img src="{{asset('assets/img/vippng.com-porsche-911-png-2875804.png')}}" />
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row show-grid pb-5" style="align-items: baseline;">
-            <div class="col-sm-6 col-md-4-5 col-lg-1-5">
+            <div class="col-4 col-md-2">
                 <div class="single-slider">
-                    <div class="slider-img11 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
+                    <div class="slider-img4">
+                        <img class="img-fluid" src="{{asset('assets/img/land-rover.png')}}" />
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-5-5 col-lg-1-5">
+
+            <div class="col-4 col-md-2">
                 <div class="single-slider">
-                    <div class="slider-img12 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-volvo-png-4188595.png')}}" />
+                    <div class="slider-img5">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-jaguar-png-logo-944830.png')}}" />
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3-5 col-lg-1-5">
+            <div class="col-4 offset-md-1 col-md-2">
                 <div class="single-slider">
-                    <div class= "slider-img13 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-volkswagen-logo-png-32910.png')}}" />
+                    <div class="slider-img6">
+                        <img class="img-fluid" class="img-fluid" src="{{asset('assets/img/vippng.com-aston-martin-png-889778.png')}}" />
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-2-5 col-lg-1-5">
+            <div class="col-4 col-md-2">
                 <div class="single-slider">
-                    <div class="slider-img14 pt-2 pb-2">
-                        <img src="{{asset('assets/img/vippng.com-toyota-logo-png-transparent-4193482.png')}}" />
+                    <div class="slider-img7">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-ferrari-png-4313862.png')}}" />
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4-5 col-lg-1-5">
+            <div class="col-4 col-md-2">
+                <div class="single-slider">
+                    <div class="slider-img8">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-bentley-logo-png-4708966.png')}}" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="single-slider">
+                    <div class="slider-img9">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-mclaren-png-4450343.png')}}" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="single-slider">
+                    <div class="slider-img1">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-porsche-911-png-2875804.png')}}" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 offset-md-1 col-md-2">
+                <div class="single-slider">
+                    <div class="slider-img11">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-burning-money-png-1289089.png')}}" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 col-md-2">
+                <div class="single-slider">
+                    <div class="slider-img12">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-volvo-png-4188595.png')}}" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="single-slider">
+                    <div class= "slider-img13">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-volkswagen-logo-png-32910.png')}}" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 col-md-2">
+                <div class="single-slider">
+                    <div class="slider-img14">
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-toyota-logo-png-transparent-4193482.png')}}" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
                 <div class="single-slider">
                     <div class="slider-img15">
-                        <img src="{{asset('assets/img/vippng.com-black-bmw-png-328595.png')}}" />
+                        <img class="img-fluid" src="{{asset('assets/img/vippng.com-black-bmw-png-328595.png')}}" />
                     </div>
                 </div>
             </div>
