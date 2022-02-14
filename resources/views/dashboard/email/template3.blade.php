@@ -118,7 +118,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <!-- <div class="mb-3 row">
                                             <label for="amount" class="col-sm-4 col-form-label">Email Subject</label>
                                             <div class="col-sm-8">
                                                 <input type="text" class="form-control" placeholder="Enter Email Subject" name="email_subject" id="email_subject">
@@ -126,7 +126,7 @@
                                                     <div class="alert alert-danger">{{ $message }}</div>
                                                 @enderror
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="mb-3 row">
                                             <label for="amount" class="col-sm-4 col-form-label">Email</label>
                                             <div class="col-sm-8">

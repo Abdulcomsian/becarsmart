@@ -34,6 +34,16 @@ class HelperFunctions
         return $path;
     }
 
+    public static function emailTemplate6($user = null)
+    {
+        if ($user) {
+            $path = 'uploads/' . strtolower(str_replace(' ', '_', trim($user->name))) . '-id-' . $user->id . '/profile_images/';
+        } else {
+            $path  = 'uploads/email_template/email_template6/';
+        }
+        return $path;
+    }
+
     public static function sellCarFilePath($user = null)
     {
         if ($user) {

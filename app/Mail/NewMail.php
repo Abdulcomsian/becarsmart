@@ -19,6 +19,6 @@ class NewMail extends Mailable{
     }
 
     public function build(){  
-        return $this->subject('This is Testing Mail')->view('frontend.mails.email_template2');
+        return $this->subject('BeCarSmart Your Car Valuation')->view('frontend.mails.email_template2');
     }
 }
