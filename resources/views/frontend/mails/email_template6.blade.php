@@ -16,7 +16,7 @@
         </div>
         <h3 style="text-align:center;color: rgb(44 59 83);font-size: 40px;line-height: 38px;text-transform: uppercase;font-weight: 600;margin-bottom: 10px;">We have found this for <br> you!</h3>
         <div class="header-content" style="text-align: center;width:100%; max-width:80%; margin: 0 auto;">
-            <img src="{{asset ('assets/img/pexels-erik-mclean-5864152.jpg')}}" width="100%" />
+            <img src="{{asset ('images/email_template6/' .  $email_template6['image_name'] )}}" width="100%" />
         </div>
         <br>
         <div class="multipale-button" style="text-align: center; width:100%; display:inline-flex;max-width: 100%;">

@@ -86,7 +86,7 @@
                 <!--begin::Card body-->
                 <div class="card-body pt-5">
                     <div class="container">
-                        <form method="post" id="" action="{{url('email-template6')}}">
+                        <form method="post" id="" action="{{url('email-template6')}}" enctype="multipart/form-data">
                             @csrf
                             <div class="row" style="align-items: center;">
                                 <div class="col-md-6">
@@ -103,7 +103,7 @@
                                         <div class="mb-3 row">
                                             <label for="description" class="col-sm-4 col-form-label">Car Image</label>
                                             <div class="col-sm-8">
-                                                <input type="file" class="form-control" name="image" id="image">
+                                                <input type="file" class="form-control" name="image" id="image" accept=".png, .jpg, .jpeg">
                                                 @error('image')
                                                     <div class="alert alert-danger">{{ $message }}</div>
                                                 @enderror
@@ -127,7 +127,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="mb-3 row">
+                                        <!-- <div class="mb-3 row">
                                             <label for="amount" class="col-sm-4 col-form-label">Email Subject</label>
                                             <div class="col-sm-8">
                                                 <input type="text" class="form-control" placeholder="Enter Email Subject" name="email_subject" id="email_subject">
@@ -135,7 +135,7 @@
                                                     <div class="alert alert-danger">{{ $message }}</div>
                                                 @enderror
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="mb-3 row">
                                             <label for="amount" class="col-sm-4 col-form-label">Email</label>
                                             <div class="col-sm-8">

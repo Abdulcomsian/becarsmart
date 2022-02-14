@@ -34,7 +34,7 @@ class EmailTemplateController extends Controller
             'registration_number' => ['required'],
             'model_number' => ['required'],
             'amount' => ['required'],
-            'email_subject' => ['required'],
+            // 'email_subject' => ['required'],
             'email' => ['required'],
 
         ]);
@@ -67,7 +67,7 @@ class EmailTemplateController extends Controller
             'registration_number' => ['required'],
             'model_number' => ['required'],
             'amount' => ['required'],
-            'email_subject' => ['required'],
+            // 'email_subject' => ['required'],
             'email' => ['required'],
 
         ]);
@@ -101,19 +101,19 @@ class EmailTemplateController extends Controller
             'amount' => ['required'],
             'model_number' => ['required'],
             'image' => ['required'],
-            'email_subject' => ['required'],
+            // 'email_subject' => ['required'],
             'email' => ['required'],
 
         ]);
         try {
             if ($request->hasFile('image')) {
                 $file = $request->file('image'); 
-                $filename     = date('mdYHis') .str_random(5).'.'.$file->extension();
+                $filename     = date('mdYHis').'.'.$file->extension();
                 $request->image->move(base_path('public/images/email_template6'), $filename);
                 $request->merge(array('image' => $filename));;
             } 
             $email_template6 = $request->all();
-               
+            $email_template6 = array_merge($request->all(), ['image_name' => $filename]);
             $sender_email = SellCarLead::find($request->email);
             $sender_email = $sender_email->email;
             \Mail::to($sender_email)->send(new \App\Mail\EmailTemplate6($email_template6));

@@ -28,6 +28,6 @@ class EmailTemplate3 extends Mailable
      */
     public function build()
     {
-        return $this->subject('This is Testing Mail')->view('frontend.mails.email_template3');
+        return $this->subject('BeCarSmart Accepting Quotes')->view('frontend.mails.email_template3');
     }
 }
