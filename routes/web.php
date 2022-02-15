@@ -204,6 +204,15 @@ Route::get('/thankyou_sell_car', function () {
     return view('frontend/sellcar/thankyou_page2');
 })->name('thankyou.sell.car');
 
+Route::get('/motor-traders', function () {
+    return view('frontend/sellcar/motor-traders');
+})->name('frontend/motor-traders');
+
+Route::get('/thankyou_traders', function () {
+    return view('frontend/sellcar/thankyou_traders');
+})->name('thankyou_traders');
+
+
 // Email routes
 
 Route::get('/frontend/template1', function () {
@@ -250,6 +259,7 @@ Route::get('/frontend/template9', function () {
 Route::get('/frontend/template10', function () {
     return view('frontend/mails/email_template10');
 })->name('email_template10');
+
 
 Route::get('/frontend/template11', function () {
     return view('frontend/mails/email_template11');
