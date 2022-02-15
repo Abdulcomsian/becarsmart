@@ -87,43 +87,43 @@
                 <div class="card-body pt-5">
                     <div class="row">
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/frontend/template1" type="button" class="btn btn-dark w-100">Email Template 1</a>
+                            <a href="frontend/template1" type="button" class="btn btn-dark w-100">Email Template 1</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/dashboard/template2" type="button" class="btn btn-dark w-100">Email Template 2</a>
+                            <a href="dashboard/template2" type="button" class="btn btn-dark w-100">Email Template 2</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/dashboard/template3" type="button" class="btn btn-dark w-100">Email Template 3</a>
+                            <a href="dashboard/template3" type="button" class="btn btn-dark w-100">Email Template 3</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/frontend/template4" type="button" class="btn btn-dark w-100">Email Template 4</a>
+                            <a href="frontend/template4" type="button" class="btn btn-dark w-100">Email Template 4</a>
                         </div>
                     </div>
                    <br><br>
                    <div class="row">
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/frontend/template5" type="button" class="btn btn-dark w-100">Email Template 5</a>
+                            <a href="frontend/template5" type="button" class="btn btn-dark w-100">Email Template 5</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/dashboard/template6" type="button" class="btn btn-dark w-100">Email Template 6</a>
+                            <a href="dashboard/template6" type="button" class="btn btn-dark w-100">Email Template 6</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/frontend/template7" type="button" class="btn btn-dark w-100">Email Template 7</a>
+                            <a href="frontend/template7" type="button" class="btn btn-dark w-100">Email Template 7</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/dashboard/template8" type="button" class="btn btn-dark w-100">Email Template 8</a>
+                            <a href="dashboard/template8" type="button" class="btn btn-dark w-100">Email Template 8</a>
                         </div>
                     </div>
                     <br><br>
                     <div class="row">
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/frontend/template9" type="button" class="btn btn-dark w-100">Email Template 9</a>
+                            <a href="frontend/template9" type="button" class="btn btn-dark w-100">Email Template 9</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/frontend/template10" type="button" class="btn btn-dark w-100">Email Template 10</a>
+                            <a href="frontend/template10" type="button" class="btn btn-dark w-100">Email Template 10</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/frontend/template11" type="button" class="btn btn-dark w-100">Email Template 11</a>
+                            <a href="frontend/template11" type="button" class="btn btn-dark w-100">Email Template 11</a>
                         </div>
                     </div>
                 </div>

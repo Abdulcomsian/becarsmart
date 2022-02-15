@@ -9,31 +9,6 @@
         <div class="container">
             <div class="row pb-5">
                 <div class="col-md-8 offset-md-2">
-                    <!-- <div class="home-blurb">
-                        <h1 class="heading-h1">ZS33 FS</h1>
-                        <h3>Hyundai I30 Active Blue Drive CRDI</h3>
-                       
-
-                    </div> -->
-                    <!-- <div class="home-ul-li pt-3 pb-5">
-                        <ul class="d-flex">
-                            <li><b>model:</b></li>
-                            <li> <span> {{$model ?? ''}}</span></li>
-                        </ul>
-                        <ul class="d-flex">
-                            <li><b>Color:</b></li>
-                            <li> <span> {{$color ?? ''}}</span></li>
-                        </ul>
-                        <ul class="d-flex">
-                            <li><b>Engine:</b></li>
-                            <li> <span> {{$fueltype ?? ''}}</span></li>
-                        </ul>
-                        <ul class="d-flex">
-                            <li><b>Engine capacity:</b></li>
-                            <li> <span> {{$capacity ?? ''}}</span></li>
-                        </ul>
-
-                    </div> -->
                     <form action="{{url ('/sellcar_new') }}" method="get">
                         <div class="row">
                             <div class="col-md-12" style="justify-content: left;">
@@ -42,13 +17,34 @@
                                         <div class="card shadow card-shadow ">
                                             <div class="card-title">
                                                 <h2 class="p-3 pb-0">Enter Car Details Manually</h2>
-                                                <p class="p-3 pt-0">Enter your details to get an instant valuation.</p>
+                                                <p class="p-3 pt-0">Enter your details to get a valuation.</p>
                                             </div>
                                             <div class="home-card-body card-body">
                                                 <div class="row mb-4">
                                                     <div class="col-md-12">
                                                         <div class="input-Group">
-                                                            <input type="text" name="model_no" class="form-control" placeholder="Enter Model No" required>
+                                                            <input type="text" name="make" class="form-control" placeholder="Enter Make" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="input-Group">
+                                                            <input type="text" name="model_no" class="form-control" placeholder="Enter Model" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="input-Group">
+                                                            <input type="text" name="year" class="form-control" placeholder="Enter Year" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="input-Group">
+                                                            <input type="text" name="fuel-type" class="form-control" placeholder="Enter Fuel Type" required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -56,20 +52,6 @@
                                                     <div class="col-md-12">
                                                         <div class="input-Group">
                                                             <input type="text" name="color" class="form-control" placeholder="Enter Color" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-4">
-                                                    <div class="col-md-12">
-                                                        <div class="input-Group">
-                                                            <input type="text" name="engine" class="form-control" placeholder="Enter Engine Type" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-4">
-                                                    <div class="col-md-12">
-                                                        <div class="input-Group">
-                                                            <input type="text" name="enginecapacity" class="form-control" placeholder="Engine Capacity" required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -88,36 +70,6 @@
                             </div>
                         </div>
                     </form>
-
-                    <!-- <form action="{{url ('/sellcar_new') }}" method="get">
-                        <input type="text" name="model_no" class="form-control" value="{{$model ?? ''}}">
-                        <input type="text" name="color" class="form-control" value="{{$color ?? ''}}">
-                        <input type="text" name="engine" class="form-control" value="{{$fueltype ?? ''}}">
-                        <input type="text" name="enginecapacity" class="form-control" value="{{$capacity ?? ''}}">
-                        <!-- Form --
-                        <div class="home-search-form">
-                            <div class="row">
-                                <div class="col-md-12 col-12">
-                                    <button type="submit" class="btn continue btn-danger">Continue</button>
-                                    <button type="submit" class="btn chevron-left btn-danger"><span><i class="fa fa-chevron-right"></i></span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </form> -->
-
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col pt-5 car">
-                    <img src="{{asset ('assets/img/car.png')}}" alt="car" class="float-start">
-                    <div class="moving-left-tyr circle1">
-                        <img src="{{asset ('assets/img/tyr.png')}}" alt="" class="img-fluid">
-                    </div>
-                    <div class="moving-right-tyr circle2">
-                        <img src="{{asset ('assets/img/tyr.png')}}" alt="" class="img-fluid">
-                    </div>
                 </div>
             </div>
         </div>
