@@ -53,7 +53,7 @@ BeCarSmart | How It Work
                         <div class="how-works">
                             <h3><span>Selling Your Car:</span></h3>
                             <br>
-                            <div class="row">
+                            <div class="row pb-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Enter Your Reg</h4><br>
                                     <p>Enter your reg and follow the steps, answer the questions to the best of your knowledge about the vehicle.</p>
@@ -62,9 +62,8 @@ BeCarSmart | How It Work
                                     <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image.png')}}" class="img-fluid">
                                 </div>
                             </div>
-                            <br>
-                            <br>
-                            <div class="row">
+                           
+                            <div class="row pb-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Get Your Valuation!</h4><br>
                                     <p>We will get in-touch via email or phone call as soon as we have completed analysing the information we have about your vehicle.  If we can't reach your contact number, we will email you a quote.</p>
@@ -74,9 +73,8 @@ BeCarSmart | How It Work
                                     <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image (2).png')}}" class="img-fluid">
                                 </div>
                             </div>
-                            <br>
-                            <br>
-                            <div class="row">
+
+                            <div class="row pb-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Accept Your Quote and Arrange for Collection or Book an Appointment!</h4><br>
                                     <p>Once you're happy with the price for your vehicle you can contact us either by calling us or emailing us. You can click on 'accept this quote’ from the quote email we send you. This will notify us to contact you. </p>
@@ -90,9 +88,8 @@ BeCarSmart | How It Work
                                     <img style="width: 200px;" src="{{asset ('assets/img/DEAL.png')}}" class="img-fluid">
                                 </div>
                             </div>
-                            <br>
-                            <br>
-                            <div class="row">
+
+                            <div class="row pb-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Sale Complete - Get Paid!</h4><br>
                                     <p>On the day of the collection or on your appointment day, before the vehicle is sold-: <br> The DVLA paperwork side will be taken care of and you will be paid.</p>
@@ -110,9 +107,8 @@ BeCarSmart | How It Work
                                 </div>
                             </div>
                             
-                            <br><br>
                             <h3><span>Vehicle Sourcing:</span></h3><br>
-                            <div class="row">
+                            <div class="row pb-4">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Choose a Car</h4><br>
                                     <div class="vehicle-sourcing">
@@ -126,10 +122,7 @@ BeCarSmart | How It Work
                             </div>
 
                             
-                            
-                            <br>
-                            <br>
-                            <div class="row">
+                            <div class="row pt-4">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Sourcing Consultation</h4>
                                     <br>
@@ -144,9 +137,8 @@ BeCarSmart | How It Work
                                 </div>
                             </div>
                             
-                            <br>
-                            <br>
-                            <div class="row">
+                 
+                            <div class="row pt-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Making a Deal & Getting Your Car!</h4>
                                     <br>

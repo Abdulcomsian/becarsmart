@@ -33,36 +33,36 @@ BeCarSmart | About Us
                         </div>
                     </div> -->
                     <div class="col-md-12 pb-3 Justify-content">
-                        <div class="blurbdiv">
+                        <div class="blurbdiv ">
                             <p class="about-top-text">We are BeCarSmart and we are here to provide an honest and easy way to sell your vehicle. We also offer a vehicle sourcing service, which means finding your next car can be very simple and headache free. </p>
                             <br><br>
                             <p class="about-text">“We make it easy.” </p>
-                            <p>Our tag-line and the shortest possible description of our mission to be the best vehicle purchasing service. We have seen the problems of the industry and we are here to be the difference you want to experience.</p>
+                            <p class="aboutText">Our tag-line and the shortest possible description of our mission to be the best vehicle purchasing service. We have seen the problems of the industry and we are here to be the difference you want to experience.</p>
                             <br>
                             <p class="about-text">We make it easy for you to trust. </p>
-                            <p>At BeCarSmart, we place trust and honesty at the centre of everything we do. As long as your description of the vehicle is accurate, there will be zero haggling. We will provide you with an honest quote for your vehicle based on the information you have given us, which will be reviewed by one of our vehicle valuation specialists. Our specialists both in our ‘purchasing service’ and our ‘sourcing service’ have years of experience.</p>
+                            <p class="aboutText">At BeCarSmart, we place trust and honesty at the centre of everything we do. As long as your description of the vehicle is accurate, there will be zero haggling. We will provide you with an honest quote for your vehicle based on the information you have given us, which will be reviewed by one of our vehicle valuation specialists. Our specialists both in our ‘purchasing service’ and our ‘sourcing service’ have years of experience.</p>
                             <br>
-                            <p>We have no secrets, we're transparent about what we do. The vehicles we buy will be sold into the motor trade. </p>
+                            <p class="aboutText">We have no secrets, we're transparent about what we do. The vehicles we buy will be sold into the motor trade. </p>
                             <br>
                             <p class="about-text">We make it easy for you to sell your Premium and Prestige cars. </p>
-                            <p>Whether it be your BMW, Mercedes, Audi, Bentley, Porsche, or any other prestige motor you have we are here to offer you an easier experience selling your car. We mainly buy premium and prestige vehicles that are no older than 7 years with no faults or write-offs.</p>
+                            <p class="aboutText"> Whether it be your BMW, Mercedes, Audi, Bentley, Porsche, or any other prestige motor you have we are here to offer you an easier experience selling your car. We mainly buy premium and prestige vehicles that are no older than 7 years with no faults or write-offs.</p>
                             <br><br><br>
                             <p class="about-text">We make it easy for you to know more about your vehicle. </p>
-                            <p>BeCarSmart is built with a strong passion for vehicles, importance in honesty, and over 10 years of working with leading brands in the industry. Aside from providing you with the honest prices, we are here to be your helpful guide in gaining an accurate knowledge of cars for when you are looking to find your next car. </p>
+                            <p class="aboutText">BeCarSmart is built with a strong passion for vehicles, importance in honesty, and over 10 years of working with leading brands in the industry. Aside from providing you with the honest prices, we are here to be your helpful guide in gaining an accurate knowledge of cars for when you are looking to find your next car. </p>
                             <br>
-                            <p>At BeCarSmart, purchasing your vehicle is not a transaction but an even-handed collaboration between you and our team of professionals. That is the same in sourcing a vehicle. We take pride in helping our clients and seeing them happy!</p>
+                            <p class="aboutText">At BeCarSmart, purchasing your vehicle is not a transaction but an even-handed collaboration between you and our team of professionals. That is the same in sourcing a vehicle. We take pride in helping our clients and seeing them happy!</p>
                             <br><br>
                             <p class="about-text">We make it easy. All of it.</p>
-                            <p>From the initial filling out of the form, to the collection of the vehicle, and up to the payment, all stages of the entire process are built around the idea of trust and convenience.</p>
-                            <p class="mb-1">-	Fast and convenient online form.</p>
-                            <p class="mb-1">-	Instant payment upon collection of the vehicle.</p>
-                            <p class="mb-1">-	Zero admin fees.</p>
-                            <p class="mb-1">-	No hidden charges.</p>
-                            <p class="mb-1">-	Free and hassle-free collection of the vehicle.</p>
+                            <p class="aboutText">From the initial filling out of the form, to the collection of the vehicle, and up to the payment, all stages of the entire process are built around the idea of trust and convenience.</p>
+                            <p class="aboutText aboutText mb-1">-	Fast and convenient online form.</p>
+                            <p class="aboutText mb-1">-	Instant payment upon collection of the vehicle.</p>
+                            <p class="aboutText mb-1">-	Zero admin fees.</p>
+                            <p class="aboutText mb-1">-	No hidden charges.</p>
+                            <p class="aboutText mb-1">-	Free and hassle-free collection of the vehicle.</p>
                             <br>
-                            <p>We value your time and priorities, so we have systematically streamlined the entire process to be as productive and hassle-free as possible.</p>
+                            <p class="aboutText">We value your time and priorities, so we have systematically streamlined the entire process to be as productive and hassle-free as possible.</p>
                             
-                            <p>BeCarSmart is here to become what the market needs. A fair and honest vehicle purchasing service provider who values the customers. Fill out the form and discover the appreciable difference when you place your vehicle in the hands of people who value you.</p>
+                            <p class="aboutText">BeCarSmart is here to become what the market needs. A fair and honest vehicle purchasing service provider who values the customers. Fill out the form and discover the appreciable difference when you place your vehicle in the hands of people who value you.</p>
                         </div>
                     </div>
                 </div>
