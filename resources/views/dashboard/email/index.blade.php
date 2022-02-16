@@ -90,10 +90,10 @@
                             <a href="/besmartcar/public/frontend/template1" type="button" class="btn btn-dark w-100">Email Template 1</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/dashboard/template2" type="button" class="btn btn-dark w-100">Email Template 2</a>
+                            <a href="/dashboard/template2" type="button" class="btn btn-dark w-100">Email Template 2</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/dashboard/template3" type="button" class="btn btn-dark w-100">Email Template 3</a>
+                            <a href="/dashboard/template3" type="button" class="btn btn-dark w-100">Email Template 3</a>
                         </div>
                         <div class="col-md-3">
                             <a href="/besmartcar/public/frontend/template4" type="button" class="btn btn-dark w-100">Email Template 4</a>
@@ -105,7 +105,7 @@
                             <a href="/besmartcar/public/frontend/template5" type="button" class="btn btn-dark w-100">Email Template 5</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="/besmartcar/public/dashboard/template6" type="button" class="btn btn-dark w-100">Email Template 6</a>
+                            <a href="/dashboard/template6" type="button" class="btn btn-dark w-100">Email Template 6</a>
                         </div>
                         <div class="col-md-3">
                             <a href="/besmartcar/public/frontend/template7" type="button" class="btn btn-dark w-100">Email Template 7</a>
