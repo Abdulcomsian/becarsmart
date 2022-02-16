@@ -39,7 +39,11 @@
                                         <textarea class="form-control" rows="5" name="message" placeholder="Your Message"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-md btn-block  mt-5 mb-5">Send</button>
-
+                                    <div class="sign-up">
+                                    Or you can WhatsApp us your query. <a href="https://www.whatsapp.com/">
+                                        <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid">
+                                    </a>
+                                    </div>
                                     <!-- <button type="submit" class="btn btn-primary mt-4 mb-5">Send</button> -->
                                 </form>
                             </div>

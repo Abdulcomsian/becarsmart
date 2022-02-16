@@ -67,8 +67,7 @@ BeCarSmart | Sellcar New
                                                 <div class="card shadow card-shadow ">
                                                     <div class="card-title">
                                                         <h2 class="p-3 pb-0">Enter Details</h2>
-                                                        <p class="p-3 pt-0">Enter your details to get an instant
-                                                            valuation.</p>
+                                                        <p class="p-3 pt-0"> Enter your details to get a valuation.</p>
                                                     </div>
                                                     <div class="home-card-body card-body">
 
@@ -147,32 +146,36 @@ BeCarSmart | Sellcar New
                             </div>
                         </div> -->
                         <div class="col-lg-7 col-md-12">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image.png')}}"
-                                        class="img-fluid">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                </div>
-                                <div class="col-lg-6">
-                                    <img style="width: 200px;"
-                                        src="{{asset ('assets/img/MicrosoftTeams-image (2).png')}}" class="img-fluid">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="title">
+                                    <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image.png')}}" class="img-fluid">
+                                    <p style="color: #2c3b53;font-weight:bold;font-size: 20px !important;">Enter Your Reg</p>
+                                    <p>Enter your Reg and follow the steps, answer the questions to the best of your knowledge.</p>
                                 </div>
                             </div>
+                            <div class="col-lg-6">
+                                <div class="title">
+                                    <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image (2).png')}}" class="img-fluid">
+                                    <p style="color: #2c3b53;font-weight:bold;font-size: 20px !important;">Get Your Valuation! </p>
+                                    <p>We will get in-touch via email or phone call.</p>
+                                </div>
+                            </div>
+                        </div>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img style="width: 200px;"
-                                        src="{{asset ('assets/img/DEAL.png')}}" class="img-fluid">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <div class="title">
+                                        <img style="width: 200px;" src="{{asset ('assets/img/DEAL.png')}}" class="img-fluid">
+                                        <p style="color: #2c3b53;font-weight:bold;font-size: 20px !important;">  Accept Your Quote and Arrange for Completion!</p>
+                                        <p>Once you're happy with the price for your vehicle you can get in-touch with us and arrange a date to complete the deal.</p>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <img style="width: 200px;"
-                                        src="{{asset ('assets/img/MicrosoftTeams-image (4).png')}}" class="img-fluid">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    <div class="title">
+                                        <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image (4).png')}}" class="img-fluid">
+                                        <p style="color: #2c3b53;font-weight:bold;font-size: 20px !important;"> Sale Complete - Get Paid</p>
+                                        <p>The best part - GETTING PAID! Before your vehicle is out of your site!</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- <div class="row pt-5">

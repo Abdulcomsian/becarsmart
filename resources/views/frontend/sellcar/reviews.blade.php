@@ -3,6 +3,7 @@
     @section('title')
         BeCarSmart | Reviews
     @endsection
+    
 @section('content')
 
     <section id="terms-section" >
@@ -10,12 +11,25 @@
             <div class="col-md-12">
                 <div class="contact-content text-center mt-5 mb-5">
                     <h2>Reviews</h2>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="faq-content pt-4">                        
+                                <p class="faq-text pb-2">You are now one step closer to selling your vehicle.</p>
+                                
+                                <p class="faq-text pb-2">What happens next? One of our agents will be in contact. They will confirm all the vehicle details are accurate and give you a guaranteed price.</p>
+                                
+                                <p class="faq-text pb-2">Once you are happy with the offer and wish to accept it we can move forward and arrange a suitable collection date.</p>
+                                
+                                <p class="faq-text pb-2">The payment will be made on collection. It will be an instant bank transfer payment. <p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
    
-    <section id="excellent">
+    <!-- <section id="excellent">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-10 offset-md-1 ">
@@ -174,11 +188,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- Suppport Section -->
-    <section class="want_to_sell p-3 text-white">
+    <!-- <section class="want_to_sell p-3 text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center d-flex alignCenter">
@@ -197,6 +211,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 @endsection

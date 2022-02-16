@@ -677,16 +677,16 @@ select.list-dt:focus {
   padding-right: 4%;
 }
 .blurbdiv .about-top-text{
-  font-size: 23px !important;
-  font-weight: 100;
-  color: #e73e2c;
+  font-size: 22px !important;
+  font-weight: 600;
+  color: #2c3b53;
   line-height: 30px;
   text-align: left;
 }
 .blurbdiv .about-text {
-  font-size: 23px !important;
-  font-weight: 100;
-  color: #e73e2c;
+  font-size: 22px !important;
+  font-weight: 600;
+  color: #2c3b53;
   line-height: 0px;
   text-align: left;
 }
@@ -1268,17 +1268,29 @@ a.btn.continue.btn-danger {
     font-weight: 600;
     font-size: 45px;
     line-height: 67.5px;
-    color: #13293D;
+    color: #2c3b53;
 }
 .how_it_works_header p{
   
 font-family: Poppins;
 font-style: normal;
 font-weight: normal;
-font-size: 25px;
+font-size: 22px !important;
 line-height: 30px;
 text-align: center;
 color: #747474;
+}
+.faq-content {
+  text-align: left;
+}
+p.faq-text.pb-2 {
+  text-align: left;
+  font-size: 18px !important;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 32px;
+  color: #747474;
+  padding: 0px 15px;
 }
 .blurb-icons {
   box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 15%);
@@ -1354,12 +1366,14 @@ color: #747474;
     font-size: 26px;
     font-weight: 600;
     line-height: 39px;
+    color: #2c3b53;
 }
 .card-shadow .card-title p{
   text-align: left;
   font-weight: 400;
   line-height: 26px;
   font-size: 16px;
+  color: #2c3b53;
 }
 input#remember {
   margin-right: 13px;
@@ -1396,22 +1410,37 @@ h1.heading-h1 {
 
 
 /* ************************ SellCar styling start************ */
+#generel-information .generel-information-content .heading #thankHeader{
+  font-weight: 600 !important;
+  color: #2c3b53 !important;
+  line-height: 67.5px !important;
+  font-size: 45px !important;
+  
+}
 
 .SellCar-section {
   padding: 0% 0% 0% 0%;
   /* background: rgba(242, 242, 242, 0.5); */
 }
 #generel-information .generel-information-content .heading #thankHeader{
+
+
+  text-align: center !important;
+  color: rgb(44 59 83) !important;
+  font-size: 40px !important;
+  line-height: 43px !important;
+  text-transform: uppercase !important;
   font-weight: 600 !important;
-  color: #2c3b53 !important;
-  line-height: 67.5px !important;
-  font-size: 45px !important;
 }
  #generel-information .generel-information-content .heading .thankyour-text {
-  font-size: 18px;
+  /* font-size: 18px;
   font-weight: normal;
-  color: rgb(44 59 83);
-
+  color: rgb(44 59 83); */
+  color: #2c3b53 !important;
+  font-size: 21px !important;
+  text-transform: capitalize !important;
+  font-weight: 500 !important;
+  text-align: center !important;
 }
 #generel-information .single-slider .slider-text h2 span{
   color: #e62e2d;
@@ -1486,6 +1515,7 @@ h1.heading-h1 {
   padding: 22px 45px 22px 45px; 
   background: #f24026;
   border-radius: 0px;
+  font-weight:bold;
 }
 
 .hero-section .search-form {
@@ -2058,6 +2088,11 @@ h1.heading-h1 {
   color: #747474;
   line-height: 30px;
 }
+ p.aboutText {
+  font-size: 18px;
+  font-weight: normal;
+  color: #747474;
+}
 #how-it-works-content .blurb-img img{
   width: 100%;
   max-width: 50%;
@@ -2494,16 +2529,51 @@ button:hover {
   text-transform: uppercase;
   text-align: center;
 }
+
+#motor_traders .motor_name{
+  background: #eaece7;
+  border-top: none;
+  height: 43px;
+  border-radius: 0;
+}
 /* img.float-center.pb-3 {
   width: 10%;
   height: 20%;
 } */
+.motor_button {
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+}
+#motor_traders .motor_button input{
+   width: 35% !important;
+    margin: 0 auto;
+    background: #2c3b53;
+    border: none;
+    height: 54px;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
 
 
 /* BreakPoints */
 
 
 @media (max-width: 576px) {
+  #faq-section .contact-content h2 {
+    font-weight: 600;
+    color: #2c3b53;
+    line-height: 67.5px;
+    font-size: 36px;
+}
+  .blurbdiv .about-text {
+    font-size: 22px !important;
+    font-weight: 600;
+    color: #2c3b53;
+    line-height: 30px;
+    text-align: left;
+}
   .post.post-thumb .post-body {
   	position: absolute;
     bottom: 0;

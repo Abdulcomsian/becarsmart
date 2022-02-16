@@ -28,7 +28,7 @@
                        <a class="dropdown-item" href="{{url ('/about')}}">About Us</a>
                     </li>
                     <li class="nav-item">
-                       <a class="dropdown-item" href="#">For Motor Traders</a>
+                       <a class="dropdown-item" href="{{url ('/motor-traders')}}">For Motor Traders</a>
                     </li>
                     <li class="nav-item">
                        <a class="dropdown-item" href="{{ url('/faq') }}">FAQ</a>

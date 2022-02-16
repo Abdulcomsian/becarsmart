@@ -5,16 +5,7 @@
     @endsection
 @section('content')
 
-    <!-- <section id="faq-section">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="contact-content text-center mt-5 mb-5">
-                    <h2>FAQ</h2>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Generel Information -->
+  
     <section id="generel-information">
         <div class="container">
             <div class="row generel-information-content">
