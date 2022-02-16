@@ -677,14 +677,14 @@ select.list-dt:focus {
   padding-right: 4%;
 }
 .blurbdiv .about-top-text{
-  font-size: 22px !important;
+  font-size: 20px !important;
   font-weight: 600;
   color: #2c3b53;
   line-height: 30px;
   text-align: left;
 }
 .blurbdiv .about-text {
-  font-size: 22px !important;
+  font-size: 18px !important;
   font-weight: 600;
   color: #2c3b53;
   line-height: 0px;
@@ -865,7 +865,7 @@ hr:not([size]) {
   background-color: #FFFFFF;
   background-position: inherit;
   background-size: cover;
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 #banner-section .contact-content h2 {
@@ -881,7 +881,7 @@ hr:not([size]) {
   box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
 } */
 .contact-section {
-  padding: 5%;
+  padding: 0px 5%;
 }
 
 .contact-section .contact-title h2 {
@@ -1285,11 +1285,11 @@ color: #747474;
 }
 p.faq-text.pb-2 {
   text-align: left;
-  font-size: 18px !important;
+  font-size: 16px !important;
   text-transform: capitalize;
   font-weight: 500;
   line-height: 32px;
-  color: #747474;
+  /* color: #747474; */
   padding: 0px 15px;
 }
 .blurb-icons {
@@ -2089,7 +2089,7 @@ h1.heading-h1 {
   line-height: 30px;
 }
  p.aboutText {
-  font-size: 18px;
+  font-size: 16px !important;
   font-weight: normal;
   color: #747474;
 }
@@ -2555,7 +2555,19 @@ button:hover {
     color: #fff;
     text-align: center;
 }
+.contact-content h2#sub-terms-header{
+  font-weight: 600;
+  color: #2c3b53;
+  line-height: 67.5px;
+  font-size: 45px;
 
+}
+
+ #content-div h4#sub-terms-header {
+  color: #2c3b53;
+  font-size: 18px;
+  font-weight: 600;
+}
 
 /* BreakPoints */
 

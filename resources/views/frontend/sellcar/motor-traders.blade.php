@@ -47,8 +47,9 @@
                                         <label class="form-check-label" for="exampleCheck1">I have read the Privacy Policy and Accept the Terms & Conditions.</label>
                                     </div>
                                     <div class="motor_button">
-                                        <a href="#">
-                                            <input type="submit" class="btn btn-md " value="SIGN UP" >
+                                        <a href="{{url('/thankyou_page3')}}">
+                                            <!-- <input type="submit" class="btn btn-md " value="SIGN UP" > -->
+                                            <input type="button" class="btn btn-md " value="SIGN UP" >
                                         </a>
                                     </div>
                                 </form>

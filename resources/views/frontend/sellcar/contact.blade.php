@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row  pb-5 ">
                 <div class="col-md-10 offset-md-1 " style="box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12)">
-                    <div class="contact-title text-center pt-5 pb-5">
+                    <div class="contact-title text-center  pb-3">
                         <h3><strong>{{ $contactdata->heading ?? ''}}</strong></h3>
                     </div>
                     <div class="row d-flex align-items-center">
@@ -40,7 +40,7 @@
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-md btn-block  mt-5 mb-5">Send</button>
                                     <div class="sign-up">
-                                    Or you can WhatsApp us your query. <a href="https://www.whatsapp.com/">
+                                    Or you can WhatsApp us your query. <a href="https://wa.me/+923245040502" target="_blank">
                                         <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid">
                                     </a>
                                     </div>

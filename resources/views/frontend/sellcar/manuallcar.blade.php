@@ -8,7 +8,7 @@
     <section id="Sell-Your-Car" class="hero-section text-center">
         <div class="container">
             <div class="row pb-5">
-                <div class="col-md-8 offset-md-2">
+                <div class="col-md-6 offset-md-3">
                     <form action="{{url ('/sellcar_new') }}" method="get">
                         <div class="row">
                             <div class="col-md-12" style="justify-content: left;">
@@ -23,35 +23,35 @@
                                                 <div class="row mb-4">
                                                     <div class="col-md-12">
                                                         <div class="input-Group">
-                                                            <input type="text" name="make" class="form-control" placeholder="Enter Make" required>
+                                                            <input type="text" name="make" class="form-control" placeholder="Enter Make" required syle="color: rgba(75, 75, 75, 1); padding: 10px; text-transform: capitalize; font-size: 18px; font-weight: 500; text-align: left; border-radius: 5px">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-4">
                                                     <div class="col-md-12">
                                                         <div class="input-Group">
-                                                            <input type="text" name="model_no" class="form-control" placeholder="Enter Model" required>
+                                                            <input type="text" name="model_no" class="form-control" placeholder="Enter Model" required syle="color: rgba(75, 75, 75, 1); padding: 10px; text-transform: capitalize; font-size: 18px; font-weight: 500; text-align: left; border-radius: 5px">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-4">
                                                     <div class="col-md-12">
                                                         <div class="input-Group">
-                                                            <input type="text" name="year" class="form-control" placeholder="Enter Year" required>
+                                                            <input type="text" name="year" class="form-control" placeholder="Enter Year" required syle="color: rgba(75, 75, 75, 1); padding: 10px; text-transform: capitalize; font-size: 18px; font-weight: 500; text-align: left; border-radius: 5px">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-4">
                                                     <div class="col-md-12">
                                                         <div class="input-Group">
-                                                            <input type="text" name="fuel-type" class="form-control" placeholder="Enter Fuel Type" required>
+                                                            <input type="text" name="fuel-type" class="form-control" placeholder="Enter Fuel Type" required syle="color: rgba(75, 75, 75, 1); padding: 10px; text-transform: capitalize; font-size: 18px; font-weight: 500; text-align: left; border-radius: 5px">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-4">
                                                     <div class="col-md-12">
                                                         <div class="input-Group">
-                                                            <input type="text" name="color" class="form-control" placeholder="Enter Color" required>
+                                                            <input type="text" name="color" class="form-control" placeholder="Enter Color" required syle="color: rgba(75, 75, 75, 1); padding: 10px; text-transform: capitalize; font-size: 18px; font-weight: 500; text-align: left; border-radius: 5px">
                                                         </div>
                                                     </div>
                                                 </div>

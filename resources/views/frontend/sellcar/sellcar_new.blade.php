@@ -29,7 +29,7 @@ BeCarSmart | Sellcar New
                                 <li><b>model: </b>&nbsp {{$_GET['model_no'] ?? ''}}</li>&nbsp &nbsp
                                 <li><b>Color: </b>&nbsp {{$_GET['color'] ?? ''}}</li>&nbsp &nbsp
                                 <li><b>Engine: </b>&nbsp {{$_GET['engine'] ?? ''}}</li>&nbsp &nbsp
-                                <li><b>Mileage: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>
+                                <li><b>Engine Capacity: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>
                             </ul>
                         </div>
                     </div>
@@ -348,6 +348,29 @@ BeCarSmart | Sellcar New
                                                             <div class="row">
                                                                 <div class="col-md-12 " style="">
                                                                     <label for="fname" class="form-label"
+                                                                        style="font-size:13px; font-weight:600"> Transmission </label>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="inputGroup">
+                                                                        <select class="form-select"
+                                                                            aria-label="Default select example"
+                                                                            name="mot_due">
+                                                                            <option value="0" selected>Automatic</option>
+                                                                            <option value="1">Semi-Auto</option>
+                                                                            <option value="2">CVT</option>
+                                                                            <option value="3">Manual Transmission</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <span class="text-danger finance"></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 ">
+                                                            <div class="row">
+                                                                <div class="col-md-12 " style="">
+                                                                    <label for="fname" class="form-label"
                                                                         style="font-size:13px; font-weight:600">Any
                                                                         outstanding finance?</label>
                                                                 </div>
@@ -370,6 +393,8 @@ BeCarSmart | Sellcar New
                                                                 <span class="text-danger finance"></span>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div class="row mb-4">
                                                         
                                                         <div class="col-md-6">
                                                             <div class="row">
