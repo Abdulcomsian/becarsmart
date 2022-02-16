@@ -2529,16 +2529,44 @@ button:hover {
   text-transform: uppercase;
   text-align: center;
 }
+
+#motor_traders .motor_name{
+  background: #eaece7;
+  border-top: none;
+  height: 43px;
+  border-radius: 0;
+}
 /* img.float-center.pb-3 {
   width: 10%;
   height: 20%;
 } */
+.motor_button {
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+}
+#motor_traders .motor_button input{
+   width: 35% !important;
+    margin: 0 auto;
+    background: #2c3b53;
+    border: none;
+    height: 54px;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
 
 
 /* BreakPoints */
 
 
 @media (max-width: 576px) {
+  #faq-section .contact-content h2 {
+    font-weight: 600;
+    color: #2c3b53;
+    line-height: 67.5px;
+    font-size: 36px;
+}
   .blurbdiv .about-text {
     font-size: 22px !important;
     font-weight: 600;
