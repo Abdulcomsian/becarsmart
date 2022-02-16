@@ -12,7 +12,7 @@
                 <div class="contact-content text-center mt-5 mb-5">
                     <h2>Reviews</h2>
                     <div class="row">
-                        <div class="col-md-8 offset-md-2">
+                        <div class="col-md-10 offset-md-1">
                             <div class="faq-content pt-4">                        
                                 <p class="faq-text pb-2">You are now one step closer to selling your vehicle.</p>
                                 

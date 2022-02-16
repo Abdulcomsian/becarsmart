@@ -56,20 +56,74 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row align-items-center">
+                                    <div class="col-md-2">
+                                        <div class="single-slider">
+                                            <div class="slider-img11 text-center">
+                                               <img class="img-fluid" width="50%" src="{{asset ('assets/img/vippng.com-ferrari-png-4313862.png')}}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div class="col-md-10 offset-md-1">
+                                                <div class="title text-center pt-5">
+                                                    <h2>Thank You For Completing Our Motor
+                                                    <br> Traders Application Form</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="single-slider">
+                                            <div class="slider-img11 text-center">
+                                                <img class="img-fluid" width="50%" src="{{asset ('assets/img/vippng.com-porsche-911-png-2875804.png')}}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-2 col-sm-push-6">
+                                        <div class="single-slider">
+                                            <div class="slider-img11 text-center">
+                                                <img class="img-fluid" width="50%" src="{{asset ('assets/img/vippng.com-bentley-logo-png-4708966.png')}}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="row">
+                                            <div class="col-md-10 offset-md-1">
+                                                <div class="title text-center pt-5">
+                                                    <p>You are now one step closer to finding new stock for your business. </p>
+                                                    <p>BeCarSmart are here to help motor traders get hold of stock directly from private individuals and companies who are looking to sell their cars.Sign up with us and we will be in touch.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-pull-6">
+                                        <div class="single-slider">
+                                            <div class="slider-img11 text-center">
+                                                <img class="img-fluid" width="50%" src="{{asset ('assets/img/vippng.com-aston-martin-png-889778.png')}}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row row-cols-5 align-items-center">
-                            
                             <div class="col p-2">
                                 <div class="single-slider">
-                                <div class="slider-img11 text-center">
-                                    <img class="img-fluid" width="50%" src="http://127.0.0.1:8000/assets/img/vippng.com-burning-money-png-1289089.png">
-                                </div>
+                                    <div class="slider-img11 text-center">
+                                        <img class="img-fluid" width="50%" src="http://127.0.0.1:8000/assets/img/vippng.com-burning-money-png-1289089.png">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col p-2">
                                 <div class="single-slider">
                                 <div class="slider-img12 text-center">
-                                    <img class="img-fluid" width="50%" src="http://127.0.0.1:8000/assets/img/vippng.com-volvo-png-4188595.png">
+                                    <img class="img-fluid" width="80%" src="{{asset('assets/img/vippng.com-mclaren-png-4450343.png')}}">
                                 </div>
                                 </div>
                             </div>

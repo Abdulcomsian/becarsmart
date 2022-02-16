@@ -122,7 +122,7 @@ BeCarSmart | How It Work
                             </div>
 
                             
-                            <div class="row pt-4">
+                            <div class="row pt-5 pb-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Sourcing Consultation</h4>
                                     <br>
