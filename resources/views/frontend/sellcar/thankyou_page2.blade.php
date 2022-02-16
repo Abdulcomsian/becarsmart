@@ -22,56 +22,56 @@
                 <div class="col-md-8 offset-md-2 ">
                     <div class="heading pt-5 text-center">
                         <h3 id="thankHeader" class="pb-2">Thank You for <br> completing our vehicle <br> valuation form.</h3>
-                        
-                        <p class="thankyour-text pb-2">You are now one step closer to selling your vehicle.</p>
-                        
-                        <p class="thankyour-text pb-2">What happens next? One of our agents will be in contact. They willconfirm all the vehicle details are accurate and give you a guaranteed price.</p>
-                        
-                        <p class="thankyour-text pb-2">Once you are happy with the offer and wish to accept it we can move forward and arrange a suitable collection date.</p>
-                        
-                        <p class="thankyour-text pb-2">The payment will be made on collection. It will be an instant bank transfer payment.<p>
-                    </div>
-                </div>
-            </div>
-            </div><br><br>
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <div class="row" style="align-items: baseline;">
-                        <div class="col-md-3">
-                            <div class="single-slider p-3">
-                                <div class="slider-text text-center">
-                                    <h2><span>FREE<br>COLLECTION!</span></h2>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <div class="row" style="align-items: baseline;">
+                                    <div class="col-md-4">
+                                        <div class="single-slider p-3">
+                                            <div class="slider-img text-center">
+                                                <img src="{{asset ('assets/img/MicrosoftTeams-image (5).png')}}" width="100%"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="single-slider p-3">
+                                            <div class="slider-img text-center">
+                                                <img src="{{asset ('assets/img/MicrosoftTeams-image (1).png')}}" width="100%"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="single-slider p-3">
+                                            <div class="slider-img text-center">
+                                                <img src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" width="100%"/>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="single-slider p-3">
-                                <div class="slider-img text-center">
-                                    <img src="{{asset ('assets/img/cars/tesla-roadster.png')}}" width="80%"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="single-slider p-3">
-                                <div class="slider-text text-center">
-                                    <h2><span>INSTANT <br>PAYMENT!</span></h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="single-slider p-3">
-                                <div class="slider-img text-center">
-                                    <img src="{{asset ('assets/img/cars/dollor-logo.png')}}" width="80%"/>
-                                </div>
-                            </div>
-                        </div>
+                        <br><br><br>
+                        <p class="thankyour-text pb-2">You are now one step closer to finding your next vehicle.</p>
+                        <p class="thankyour-text pb-2">What happens next? One of our agents will be in contact.</p>
+                        <p class="thankyour-text pb-2">They will confirm some further details and start searching for your next car.</p>
+                        
+                        <br><br>
+
+
                     </div>
                 </div>
             </div>
         </div>
+        <div class="footer-container" style="background:#2c3b53;padding: 11px 25%;">
+            <p style="font-size:25px; text-align:center;text-transform: uppercase; color:#fff; font-weight:600;">Why Choose Us?</p>
+            <div class="choose-us" style="padding-left:20px;">
+                <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">1 Free collection</p>
+                <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">2 Honest - Haggle Free Service</p>
+                <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">3 instant payment</p>
+            </div>
+        </div>
     </section>
-    <br>
-  
     <!-- Suppport Section -->
     <section class="want_to_sell p-3 text-white">
         <div class="container">

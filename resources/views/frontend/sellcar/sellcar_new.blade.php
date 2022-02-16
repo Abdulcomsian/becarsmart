@@ -831,7 +831,7 @@ BeCarSmart | Sellcar New
                                                         </div>
                                                     </div>
                                                     <div class="d-gridd mt-4">
-                                                    <button type="button" id="previous_button_2"
+                                                        <button type="button" id="previous_button_2"
                                                             class="btn text-light main-bg">Previous</button>
                                                         <button type="button" id="third-page"
                                                             class="btn text-light main-bg">Submit</button>

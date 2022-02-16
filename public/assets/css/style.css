@@ -679,7 +679,7 @@ select.list-dt:focus {
 .blurbdiv .about-top-text{
   font-size: 20px !important;
   font-weight: 600;
-  color: #2c3b53;
+  color: red;
   line-height: 30px;
   text-align: left;
 }
@@ -1500,7 +1500,7 @@ h1.heading-h1 {
   color: rgba(75, 75, 75, 1);
   font-weight: 600;
   text-align: center;
-}
+}6
 
 .hero-section #reg_number::placeholder{
   font-size: 45px;
