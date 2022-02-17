@@ -142,7 +142,7 @@ class HomeController extends Controller
                     $euroStatus = $response->VehicleDetails->EuroStatus;
                     return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model','make', 'fueltype', 'capacity'));
                 } else {
-                    return view('frontend/sellcar/manuallcar');
+                    return view('frontend/sellcar/manuallcar', compact('reg_number'));
                 }
             }
         } catch (\Exception $exception) {
