@@ -23,7 +23,15 @@
                                                 <div class="row mb-4">
                                                     <div class="col-md-12">
                                                         <div class="input-Group">
+                                                            <input type="hidden" name="registration" value="{{$_POST['reg_number']}}">
                                                             <input type="text" name="make" class="form-control" placeholder="Enter Make" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="input-Group">
+                                                            <input type="text" name="euroStatus" class="form-control" placeholder="Enter Euro Status" required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -44,7 +52,14 @@
                                                 <div class="row mb-4">
                                                     <div class="col-md-12">
                                                         <div class="input-Group">
-                                                            <input type="text" name="fuel-type" class="form-control" placeholder="Enter Fuel Type" required>
+                                                            <input type="text" name="engine" class="form-control" placeholder="Enter Fuel Type" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-md-12">
+                                                        <div class="input-Group">
+                                                            <input type="text" name="CylinderCapacity" class="form-control" placeholder="Enter Engine Capacity" required>
                                                         </div>
                                                     </div>
                                                 </div>

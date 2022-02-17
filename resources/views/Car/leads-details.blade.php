@@ -87,6 +87,33 @@
                             </tr>
                         </tbody>
                         <!--end::Table body-->
+                    </table><br><br>
+                    <!--end::Table-->
+
+                    <!--begin::Table-->
+                    <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_table_users">
+                        <!--begin::Table head-->
+                        <thead>
+                            <!--begin::Table row-->
+                            <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
+                                <th class="min-w-125px">Registration Number</th>
+                                <th class="min-w-125px">Make</th>
+                                <th class="min-w-125px">Euro Status</th>
+                                <th class="min-w-125px">Engine Capacity</th>
+                            </tr>
+                            <!--end::Table row-->
+                        </thead>
+                        <!--end::Table head-->
+                        <!--begin::2 Table body-->
+                        <tbody class="text-gray-600 fw-bold">
+                            <tr>
+                                <td class="">{{$lead->registration ?? ''}}</td>
+                                <td class="">{{$lead->make ?? ''}}</td>
+                                <td class="">{{$lead->euroStatus ?? ''}}</td>
+                                <td class="">{{$lead->CylinderCapacity ?? ''}}</td>
+                            </tr>
+                        </tbody>
+                        <!--end::Table body-->
                     </table>
                     <!--end::Table-->
                 </div>
@@ -116,6 +143,10 @@
                                                     <tr>
                                                         <td><b>Service History</b></td>
                                                         <td>{{$lead->service_history}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Transmission</b></td>
+                                                        <td>{{$lead->transmission}}</td>
                                                     </tr>
                                                     <tr>
                                                         <td><b>Any outstanding finance?</b></td>
