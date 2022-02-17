@@ -219,11 +219,11 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($data as $_data)
+                                @foreach($data as $key => $_data)
                                 <tr>
                                     <td>{{$_data->question}}</td>
                                     <td>{{$_data->placeholder}}</td>
-                                    <td>{{$_data->step}}</td>
+                                    <td>{{$key+1}}</td>
 
                                     <td>
                                         <i class="fa fa-trash confirm cursor-pointer" id="{{$_data->id}}"></i>
