@@ -118,6 +118,10 @@
                                                         <td>{{$lead->service_history}}</td>
                                                     </tr>
                                                     <tr>
+                                                        <td><b>Transmission</b></td>
+                                                        <td>{{$lead->transmission}}</td>
+                                                    </tr>
+                                                    <tr>
                                                         <td><b>Any outstanding finance?</b></td>
                                                         <td>{{$lead->finance}}</td>
                                                     </tr>

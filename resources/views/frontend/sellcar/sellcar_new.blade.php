@@ -356,10 +356,10 @@ BeCarSmart | Sellcar New
                                                                         <select class="form-select"
                                                                             aria-label="Default select example"
                                                                             name="transmission">
-                                                                            <option value="0" selected>Automatic</option>
-                                                                            <option value="1">Semi-Auto</option>
-                                                                            <option value="2">CVT</option>
-                                                                            <option value="3">Manual Transmission</option>
+                                                                            <option value="Automatic" selected>Automatic</option>
+                                                                            <option value="Semi-Auto">Semi-Auto</option>
+                                                                            <option value="CVT">CVT</option>
+                                                                            <option value="Manual Transmission">Manual Transmission</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1067,7 +1067,7 @@ BeCarSmart | Sellcar New
             // $(".accident_damaged").html("");
             $(".set_of_keys").html("");
             $(".finance").html("");  
-            $(".transmission").html("");  
+            // $(".transmission").html("");  
             $(".home_textarea").html("");
             $("#mileageerr").html("");
             var mileage = $("#mileage").val();
@@ -1087,16 +1087,16 @@ BeCarSmart | Sellcar New
                 $(".service_history").html("Please Select Service History");
                 return false;
             }
-            if ($('input[name="gearbox_condition"]:checked').length == 0) {
-                $(".gearbox_condition").html("Please Select Conditon");
-                return false;
-            }
+            // if ($('input[name="transmission"]:checked').length == 0) {
+            //     $(".transmission").html("Please Select Transmission");
+            //     return false;
+            // }
             // if ($('input[name="non_runner"]:checked').length == 0) {
             //     $(".non_runner").html("Please Select non runner ");
             //     return false;
             // }
-            if ($('input[name="transmission"]:checked').length == 0) {
-                $(".transmission").html("Please Select  Transmission Type");
+            if ($('input[name="set_of_keys"]:checked').length == 0) {
+                $(".set_of_keys").html("Please Select  set of keys");
                 return false;
             }
             
