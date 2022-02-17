@@ -97,6 +97,13 @@ ul.dropdown-menu.dropdown-menu-light.show .navbar-nav li a{
   background-repeat: repeat-x;
 }
 
+.her-section {
+  padding: 3% 0% 0% 0%;
+  background-image: url(../img/banner.png);
+  background-position: bottom left;
+  background-size: auto;
+  background-repeat: repeat-x;
+}
 .hero-section .top{
   padding-top: 10%;
 }
@@ -1495,12 +1502,12 @@ h1.heading-h1 {
 
   padding: 0px 50px;
   border-radius: 0px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 45px;
   color: rgba(75, 75, 75, 1);
   font-weight: 600;
-  text-align: center;
-}6
+  text-align: left;
+}
 
 .hero-section #reg_number::placeholder{
   font-size: 45px;
@@ -2615,6 +2622,14 @@ button:hover {
 
 }
 @media only screen and (max-width: 600px) {
+  #generel-information .generel-information-content .heading #thankHeader {
+    text-align: center !important;
+    color: rgb(44 59 83) !important;
+    font-size: 26px !important;
+    line-height: 43px !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+}
  
   .blog_section .title h2 {
     font-size: 24px;

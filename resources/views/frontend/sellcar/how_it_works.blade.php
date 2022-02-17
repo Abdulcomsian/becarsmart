@@ -121,7 +121,7 @@ BeCarSmart | How It Work
                                 </div>
                             </div>
 
-                            
+                            <br>
                             <div class="row pt-5 pb-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Sourcing Consultation</h4>
@@ -137,7 +137,7 @@ BeCarSmart | How It Work
                                 </div>
                             </div>
                             
-                 
+                 <br>
                             <div class="row pt-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Making a Deal & Getting Your Car!</h4>
