@@ -19,14 +19,15 @@ BeCarSmart | Sellcar New
                     </div>
                 </div>
                 <h3 style="text-align: left;">
-                    {{$_GET['euroStatus'] ?? 'Hyundai I30 Active Blue Drive CRDI'}}
+                    <b>Status : </b>{{$_GET['euroStatus'] ?? 'Hyundai I30 Active Blue Drive CRDI'}}
                 </h3>
 
                 <div class="row">
                     <div class="col-md-12">
                         <div class="sellcar-ul-li  pt-1 pb-2">
                             <ul class="d-flex">
-                                <li><b>model: </b>&nbsp {{$_GET['model_no'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Make: </b>&nbsp {{$_GET['make'] ?? ''}}</li>&nbsp &nbsp
+                                <li><b>Model: </b>&nbsp {{$_GET['model_no'] ?? ''}}</li>&nbsp &nbsp
                                 <li><b>Color: </b>&nbsp {{$_GET['color'] ?? ''}}</li>&nbsp &nbsp
                                 <li><b>Engine: </b>&nbsp {{$_GET['engine'] ?? ''}}</li>&nbsp &nbsp
                                 <li><b>Engine Capacity: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>
@@ -354,7 +355,7 @@ BeCarSmart | Sellcar New
                                                                     <div class="inputGroup">
                                                                         <select class="form-select"
                                                                             aria-label="Default select example"
-                                                                            name="mot_due">
+                                                                            name="transmission">
                                                                             <option value="0" selected>Automatic</option>
                                                                             <option value="1">Semi-Auto</option>
                                                                             <option value="2">CVT</option>
@@ -363,7 +364,7 @@ BeCarSmart | Sellcar New
                                                                     </div>
                                                                 </div>
                                                                 
-                                                                <span class="text-danger finance"></span>
+                                                                <span class="text-danger transmission"></span>
                                                             </div>
                                                         </div>
 
@@ -1065,12 +1066,18 @@ BeCarSmart | Sellcar New
             // $(".non_runner").html("");
             // $(".accident_damaged").html("");
             $(".set_of_keys").html("");
-            $(".finance").html("");
+            $(".finance").html("");  
+            $(".transmission").html("");  
             $(".home_textarea").html("");
             $("#mileageerr").html("");
+            var mileage = $("#mileage").val();
 
             if ($("#mileage").val() == "") {
                 $("#mileageerr").html("Please Enter Mileage");
+            }
+            if (mileage.length < 4 || mileage.length > 6) {
+                $("#mileageerr").html("Mileage must be 4 digits or 6 digits");
+                return false;
             }
             if ($('input[name="finance"]:checked').length == 0) {
                 $(".finance").html("Please Select Outstanding finance");
@@ -1080,12 +1087,16 @@ BeCarSmart | Sellcar New
                 $(".service_history").html("Please Select Service History");
                 return false;
             }
+            if ($('input[name="gearbox_condition"]:checked').length == 0) {
+                $(".gearbox_condition").html("Please Select Conditon");
+                return false;
+            }
             // if ($('input[name="non_runner"]:checked').length == 0) {
             //     $(".non_runner").html("Please Select non runner ");
             //     return false;
             // }
-            if ($('input[name="set_of_keys"]:checked').length == 0) {
-                $(".set_of_keys").html("Please Select  set of keys");
+            if ($('input[name="transmission"]:checked').length == 0) {
+                $(".transmission").html("Please Select  Transmission Type");
                 return false;
             }
             

@@ -135,11 +135,12 @@ class HomeController extends Controller
                     $year       = $response->VehicleDetails->Year;
                     $color      = $response->VehicleDetails->Colour;
                     $model      = $response->VehicleDetails->Model;
+                    $make      = $response->VehicleDetails->Make;
                     $regno      = $response->VehicleDetails->Registration;
                     $fueltype   = $response->VehicleDetails->Fuel;
                     $capacity   = $response->VehicleDetails->CylinderCapacity;
                     $euroStatus = $response->VehicleDetails->EuroStatus;
-                    return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model', 'fueltype', 'capacity'));
+                    return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model','make', 'fueltype', 'capacity'));
                 } else {
                     return view('frontend/sellcar/manuallcar');
                 }
