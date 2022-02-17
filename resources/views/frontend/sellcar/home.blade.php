@@ -125,13 +125,17 @@ button.slick-next.slick-arrow:after {
                 <div class="col-md-8 offset-md-2">
                     <div class="home-blurb">
                         <h1 class="heading-h1">{{$regno ?? 'ZS33 FS'}}</h1>
-                        <h3>{{$euroStatus ?? 'Hyundai I30 Active Blue Drive CRDI'}}</h3>
+                        <h3><b>Status : </b>{{$euroStatus ?? 'Hyundai I30 Active Blue Drive CRDI'}}</h3>
                         <!-- <p>Hyundai I30 Active Blue Drive CRDI</p> -->
 
                     </div>
                     <div class="home-ul-li pt-3 pb-5">
                         <ul class="d-flex">
-                            <li><b>model:</b></li>
+                            <li><b>Make:</b></li>
+                            <li> <span> {{$make ?? ''}}</span></li>
+                        </ul>
+                        <ul class="d-flex">
+                            <li><b>Model:</b></li>
                             <li> <span> {{$model ?? ''}}</span></li>
                         </ul>
                         <ul class="d-flex">
@@ -149,6 +153,7 @@ button.slick-next.slick-arrow:after {
 
                     </div>
                     <form action="{{url ('/sellcar_new') }}" method="get">
+                        <input type="hidden" name="make" value="{{$make ?? ''}}">
                         <input type="hidden" name="model_no" value="{{$model ?? ''}}">
                         <input type="hidden" name="color" value="{{$color ?? ''}}">
                         <input type="hidden" name="engine" value="{{$fueltype ?? ''}}">

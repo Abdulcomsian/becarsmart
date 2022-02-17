@@ -286,8 +286,10 @@ BeCarSmart | index
                   </div>
                </div>
                <div class="col-12 p-0">
-                  <form id="msform" method="post" action="http://127.0.0.1:8000/buy-car-leads-save">
-                     <input type="hidden" name="_token" value="jeECH9s2fwVdrC77PCQIKogOAXC7uLXnugVa31ad">                        <!-- progressbar -->
+                  <form id="msform" method="post" action="{{url ('/buy-car-leads-save') }}">
+                     @csrf
+                     <!-- <input type="hidden" name="_token" value="jeECH9s2fwVdrC77PCQIKogOAXC7uLXnugVa31ad">     -->
+                                         <!-- progressbar -->
                      <ul id="progressbar">
                         <li class="active" id="account"><strong></strong></li>
                         <li class="" id="account"><strong></strong></li>
