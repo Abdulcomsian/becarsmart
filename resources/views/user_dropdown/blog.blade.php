@@ -58,7 +58,7 @@
                                 @if($blogs)
                                 @foreach($blogs as $blog)
                                 <tr>
-                                    <td>{{$loop->index+1}}</td>
+                                    <td scope="row">{{$loop->index+1}}</td>
                                     <td>
                                         @if(isset($blog->feature_img))
                                         <img src="{{asset('images/blogs/'.'/'.$blog->feature_img ?? '')}}" width="150px" height="150px" class="img img-circle img-responsive" />
@@ -69,8 +69,18 @@
                                     <td>{{$blog->title}}</td>
                                     <td>{{$blog->exceed}}</td>
                                     <td>
-                                        <a href="{{url('blog-edit',$blog->id)}}"><button class="btn btn-primary">edit</button></a>
-                                        <button class="btn btn-danger confirm" id="{{$blog->id}}">delete</button>
+                                        <a class="btn btn-primary" href="{{url('blog-edit',$blog->id)}}" role="button">
+                                        <i class="fa fa-edit" aria-hidden="true"></i>
+
+                                        </a>
+                                        <!-- <a class="btn btn-primary"  href="{{url('blog-edit',$blog->id)}}">edit</a> -->
+                                        <!-- <button class="btn btn-danger confirm" id="{{$blog->id}}">
+                                        </button> -->
+
+                                        <a class="btn btn-danger confirm" id="{{$blog->id}}" href="#" role="button" >
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                        </a>
+
                                         <form method="post" id="form_{{$blog->id}}" action="{{url('blog-delete')}}">
                                             @csrf
                                             <input type="hidden" name="id" value="{{$blog->id}}" />

@@ -208,10 +208,9 @@ Route::get('/motor-traders', function () {
     return view('frontend/sellcar/motor-traders');
 })->name('frontend/motor-traders');
 
-Route::get('/thankyou_traders', function () {
-    return view('frontend/sellcar/thankyou_traders');
-})->name('thankyou_traders');
-
+Route::get('/thankyou_page3', function () {
+    return view('frontend/sellcar/thankyou_page3');
+})->name('thankyou_page3');
 
 // Email routes
 
