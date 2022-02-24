@@ -3,7 +3,7 @@
     BeCarSmart | Motor Traders
     @endsection
     @section('style')
-    @endsection{
+    @endsection
         <style>
             .motor_button .btn-primary:disabled {
                 color: #fff;
@@ -12,7 +12,6 @@
                 border-color: #2c3b53c7;
             }
         </style>
-    }
     @section('content')
 
     <section id="faq-section">
