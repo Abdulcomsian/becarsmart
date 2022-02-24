@@ -128,6 +128,33 @@ class EmailTemplateController extends Controller
         }
     }
 
+     public function email_template8(Request $request)
+    {
+        $request->validate([
+            'description' => ['required'],
+            'amount' => ['required'],
+             'image' => ['required'],
+            'email' => ['required'],
+        ]);
+        try {
+            if ($request->hasFile('image')) {
+                $file = $request->file('image'); 
+                $filename     = date('mdYHis').'.'.$file->extension();
+                $request->image->move(base_path('public/images/email_template8'), $filename);
+                $request->merge(array('image' => $filename));;
+            } 
+            $email_template8 = $request->all();
+            $email_template8 = array_merge($request->all(), ['image_name' => $filename]);
+            \Mail::to($request->email)->send(new \App\Mail\EmailTemplate8($email_template8));
+            toastSuccess("Email Successfully Sent");
+            return Redirect::back(); 
+        } catch (\Exception $exception) {
+            dd($exception->getMessage());
+            toastError('Something went wrong, try again!' . $exception->getMessage());
+            return Redirect::back();
+        }
+    }
+
     
     
 }

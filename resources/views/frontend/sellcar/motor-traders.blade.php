@@ -36,14 +36,23 @@
                                     <div class="mb-3">
                                         <label for="first_name" class="form-label">First name:</label>
                                         <input type="text" name="first_name" class="form-control motor_name" id="first_name">
-                                    </div>
+                                         @if($errors->has('first_name'))
+                                         <div class="error">{{ $errors->first('first_name') }}</div>
+                                         @endif
+                                        </div>
                                     <div class="mb-3">
                                         <label for="last_name" class="form-label">Last name:</label>
                                         <input type="text" name="last_name" class="form-control motor_name" id="last_name">
+                                         @if($errors->has('last_name'))
+                                         <div class="error">{{ $errors->first('last_name') }}</div>
+                                         @endif
                                     </div>
                                     <div class="mb-3">
                                         <label for="company_name" class="form-label">Company name:</label>
                                         <input type="text" name="company_name" class="form-control motor_name" id="company_name">
+                                         @if($errors->has('company_name'))
+                                         <div class="error">{{ $errors->first('company_name') }}</div>
+                                         @endif
                                     </div>
                                     <div class="mb-3">
                                         <label for="contact_number" class="form-label">Contact number:</label>
@@ -54,6 +63,9 @@
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email:</label>
                                         <input type="email" name="email" class="form-control motor_name" id="email">
+                                        @if($errors->has('email'))
+                                         <div class="error">{{ $errors->first('email') }}</div>
+                                         @endif
                                     </div>
                                     <div class="mb-3 form-check">
                                         <input type="checkbox"  class="form-check-input" id="flexCheckDefault">
@@ -122,7 +134,6 @@
     </section>
 
     @endsection
-
     
     @section('script')
     <script>

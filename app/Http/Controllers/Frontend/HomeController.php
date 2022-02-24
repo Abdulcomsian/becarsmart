@@ -17,6 +17,7 @@ use App\Models\SellCarLeadImages;
 use App\Models\HowItWorkHeader;
 use App\Notifications\SellCarNotification;
 use App\Notifications\BuyCarNotification;
+use App\Notifications\TradersNotification;
 use App\Utils\HelperFunctions;
 use Notification;
 use Illuminate\Support\Facades\Redirect;
@@ -141,7 +142,7 @@ class HomeController extends Controller
                     $regno      = $response->VehicleDetails->Registration;
                     $fueltype   = $response->VehicleDetails->Fuel;
                     $capacity   = $response->VehicleDetails->CylinderCapacity;
-                    $euroStatus = $response->VehicleDetails->EuroStatus;
+                    $euroStatus = $response->VehicleDetails->EuroStatus ?? '';
                     return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model','make', 'fueltype', 'capacity'));
                 } else {
                     return view('frontend/sellcar/manuallcar', compact('reg_number'));
@@ -212,7 +213,7 @@ class HomeController extends Controller
         $model->email = $request->email;
         if ($model->save()) {
             // Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
-            // Notification::route('mail', $request->email)->notify(new BuyCarNotification($request->all()));
+            Notification::route('mail', $request->email)->notify(new TradersNotification($request->all()));
             toastSuccess('Thank you for your information. We will be in touch soon.');
             return Redirect::back();
         }

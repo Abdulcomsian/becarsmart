@@ -19,6 +19,7 @@ use App\Http\Controllers\SellCar\CarController;
 use App\Models\BuyCarLead;
 use App\Models\SellCarLead;
 use App\Models\AboutUs;
+use App\Models\MotoreTraders;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -98,7 +99,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/email-template3', [EmailTemplateController::class, 'email_template3'])->name('email-template3');
     Route::get('/dashboard/template6', [EmailTemplateController::class, 'template6'])->name('template6');
     Route::post('/email-template6', [EmailTemplateController::class, 'email_template6'])->name('email-template6');
-
+    
+     Route::post('/email-template8', [EmailTemplateController::class, 'email_template8'])->name('email-template8');
 
 
     Route::get('/sell-car', [SellCarController::class, 'index'])->name('Car.sell-car');
@@ -251,7 +253,8 @@ Route::get('/frontend/template8', function () {
     return view('frontend/mails/email_template8');
 })->name('email_template8');
 Route::get('/dashboard/template8', function () {
-    return view('dashboard/email/template8');
+     $users = MotoreTraders::get();
+    return view('dashboard/email/template8',compact('users'));
 })->name('template8');
 
 Route::get('/frontend/template9', function () {
