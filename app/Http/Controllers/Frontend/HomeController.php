@@ -215,7 +215,7 @@ class HomeController extends Controller
             // Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
             Notification::route('mail', $request->email)->notify(new TradersNotification($request->all()));
             toastSuccess('Thank you for your information. We will be in touch soon.');
-            return Redirect::back();
+            return view('frontend.mails.email_template10');
         }
     }
 }

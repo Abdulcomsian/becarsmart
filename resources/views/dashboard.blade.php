@@ -71,7 +71,7 @@
                                         <div class="card welcome-card">
                                             <div class="s">
                                                 <div class="d-flex align-content-center align-middle bd-highlight">
-                                                    <div class="icon2 text-center"><img src="images/deadline.png"></div>
+                                                    <div class="icon2 text-center"><img src="{{asset ('images/deadline.png')}}"></div>
                                                     <div class="flex-grow-1 valtop">
                                                         <a href="">
                                                             <div class="heading2">Total Sell Car Leads</div>
@@ -86,7 +86,7 @@
                                         <div class="card welcome-card">
                                             <div class="s">
                                                 <div class="d-flex align-content-center align-middle bd-highlight">
-                                                    <div class="icon2 text-center"><img src="images/deadline.png"></div>
+                                                    <div class="icon2 text-center"><img src="{{asset ('images/deadline.png')}}"></div>
                                                     <div class="flex-grow-1 valtop">
                                                         <a href="">
                                                             <div class="heading2">Total Buy Car Leads</div>
@@ -101,10 +101,10 @@
                                         <div class="card welcome-card">
                                             <div class="s">
                                                 <div class="d-flex align-content-center align-middle bd-highlight">
-                                                    <div class="icon2 text-center"><img src="images/deadline.png"></div>
+                                                    <div class="icon2 text-center"><img src="{{asset ('images/deadline.png')}}"></div>
                                                     <div class="flex-grow-1 valtop">
                                                         <a href="">
-                                                            <div class="heading2">Total Faqs</div>
+                                                            <div class="heading2">Total Motor Trader</div>
                                                         </a>
                                                         <div class="cont-val"></div>
                                                     </div>
@@ -116,13 +116,6 @@
                                         <div class="card welcome-card">
                                             <div class="s">
                                                 <div class="d-flex align-content-center align-middle bd-highlight">
-                                                    <div class="icon2 text-center"><img src="images/deadline.png"></div>
-                                                    <div class="flex-grow-1 valtop">
-                                                        <a href="">
-                                                            <div class="heading2">Somethong Other</div>
-                                                        </a>
-                                                        <div class="cont-val"></div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
