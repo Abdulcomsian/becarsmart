@@ -137,14 +137,41 @@
     });
     $(document).ready(function () {
         $("#signup_btn").on('click', function () {
+            var first_name = $("#first_name").val();
+            var last_name = $("#last_name").val();
+            var company_name = $("#company_name").val();
             var phone = $("#contact_number").val();
-            $("#phoneerror").html("");
-         
-            if (phone.length < 10 || phone.length > 11) {
-                $("#phoneerror").html("Phone number must be 10 digits or 11 digits");
+            var email = $("#email").val();
+            $("#first_name").css("border", "none");
+            $("#last_name").css("border", "none");
+            $("#company_name").css("border", "none");
+            $("#contact_number").css("border", "none");
+            $("#email").css("border", "none");
+
+            if (first_name == "") {
+                $("#first_name").css("border", "1px solid red");
                 return false;
             }
-            $("#traderform").submit();
+            if (last_name == "") {
+                $("#last_name").css("border", "2px solid red");
+                return false;
+            }
+            if (company_name == "") {
+                $("#company_name").css("border", "1px solid red");
+                return false;
+            }
+            $("#phoneerror").html("");
+         
+         if (phone.length < 10 || phone.length > 11) {
+             $("#phoneerror").html("Phone number must be 10 digits or 11 digits");
+             return false;
+         }
+         $("#traderform").submit();
+            if (email == "") {
+                $("#email").css("border", "1px solid red");
+                return false;
+            }
+           
            
         });
 
