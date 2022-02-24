@@ -139,7 +139,7 @@ class HomeController extends Controller
                     $regno      = $response->VehicleDetails->Registration;
                     $fueltype   = $response->VehicleDetails->Fuel;
                     $capacity   = $response->VehicleDetails->CylinderCapacity;
-                    $euroStatus = $response->VehicleDetails->EuroStatus;
+                    $euroStatus = $response->VehicleDetails->EuroStatus ?? '';
                     return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model','make', 'fueltype', 'capacity'));
                 } else {
                     return view('frontend/sellcar/manuallcar', compact('reg_number'));
