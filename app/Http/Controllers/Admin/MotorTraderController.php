@@ -20,7 +20,7 @@ class MotorTraderController extends Controller
             return view('Car.motor-trader', compact('traders'));
         } catch (\Exception $exception) {
             toastError('Something went wrong,try again');
-            return Redirect::back();
+            return back();
         }
     }
 

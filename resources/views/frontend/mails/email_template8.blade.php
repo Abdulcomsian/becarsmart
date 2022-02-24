@@ -16,14 +16,14 @@
         </div>
         <h3 style="text-align:center;color: rgb(44 59 83);font-size: 40px;line-height: 38px;text-transform: uppercase;font-weight: 600;margin-bottom: 10px;">We have found this for <br> you!</h3>
         <div class="header-content" style="text-align: center;width:100%; max-width:80%; margin: 0 auto;">
-            <img src="{{asset ('assets/img/pexels-talha-riaz-2379998.jpg')}}" width="100%" />
+            <img src="{{asset ('images/email_template8/' .  $email_template8['image_name'] )}}" width="100%" />
         </div>
         <br>
         <div class="multipale-button" style="text-align: center; width:100%; display:inline-block;max-width: 100%;">
             <div style="width:100%">
                 <center>
                     <div style="background-color: #f5d11b;border-radius: 10px;width:100%;line-height: 0;max-width: 80%;padding: 2px 0px;">
-                        <p style="text-align:center;font-size: 20px; text-transform: initial; font-weight: 800;line-height: 38px;">BMW M4 - 2018 - Automatic - <br> Coupe - Full Service History - 2 <br> previous Keepers - HPI Clear</p>
+                        <p style="text-align:center;font-size: 20px; text-transform: initial; font-weight: 800;line-height: 38px;">{{ $email_template8['description']}}</p>
                     </div>
                 </center>
             </div>
@@ -31,7 +31,7 @@
             <div style="width:100%">
             <center>
                 <div style="border: 17px solid #e74f42;padding: 2px 18%;width:100%;max-width:fit-content;line-height: 0;">
-                    <p style="text-align:center;font-size: 60px; text-transform: uppercase; font-weight: 600;line-height: 0px;">£31,495</p>
+                    <p style="text-align:center;font-size: 60px; text-transform: uppercase; font-weight: 600;line-height: 0px;">£ {{ $email_template8['amount']}}</p>
                 </div>
             </center>
             </div>

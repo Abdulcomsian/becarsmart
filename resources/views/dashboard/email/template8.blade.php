@@ -86,21 +86,52 @@
                 <!--begin::Card body-->
                 <div class="card-body pt-5">
                     <div class="container">
+                        <form method="post" id="" action="{{url('email-template8')}}" enctype="multipart/form-data">
+                            @csrf
                         <div class="row" style="align-items: center;">
                             <div class="col-md-6">
                                 <div class="template-content">
                                     <div class="mb-3 row">
                                         <label for="description" class="col-sm-4 col-form-label">Description</label>
                                         <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="description">
+                                        <input type="text" class="form-control" id="description" name="description">
+                                        @error('description')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
+                                            <label for="description" class="col-sm-4 col-form-label">Car Image</label>
+                                            <div class="col-sm-8">
+                                                <input type="file" class="form-control" name="image" id="image" accept=".png, .jpg, .jpeg">
+                                                @error('image')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                    <div class="mb-3 row">
                                         <label for="amount" class="col-sm-4 col-form-label">Amount</label>
                                         <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="amount">
+                                        <input type="text" class="form-control" id="amount" name="amount">
+                                        @error('amount')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                         @enderror
                                         </div>
                                     </div>
+                                     <div class="mb-3 row">
+                                            <label for="amount" class="col-sm-4 col-form-label">Email</label>
+                                            <div class="col-sm-8">
+                                                <select name="email" id="email" class="form-control">
+                                                    <option selected disabled value="">Select User </option>
+                                                    @foreach($users as $user)
+                                                    <option value="{{$user->email}}">{{$user->email}}</option>
+                                                    @endforeach
+                                                </select>
+                                                @error('email')
+                                                    <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -109,11 +140,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 offset-md-0">
-                                <a href="/frontend/template8" type="button" class="btn btn-dark w-100">Send</a>
+                         <div class="row">
+                                <div class="col-md-4 offset-md-0">
+                                    <button type="submit" value="Send Email" class="btn btn-dark w-100">Send Email</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <!--end::Card body-->
