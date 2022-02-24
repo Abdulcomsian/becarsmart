@@ -90,22 +90,22 @@
                             <a href="{{url('frontend/template1')}}" type="button" class="btn btn-dark w-100">Email Template 1</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="{{url('dashboard/template2')}}')}}" type="button" class="btn btn-dark w-100">Email Template 2</a>
+                            <a href="{{url('dashboard/template2')}}" type="button" class="btn btn-dark w-100">Email Template 2</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="{{url('dashboard/template3')}}')}}" type="button" class="btn btn-dark w-100">Email Template 3</a>
+                            <a href="{{url('dashboard/template3')}}" type="button" class="btn btn-dark w-100">Email Template 3</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="{{url('frontend/template4')}}')}}" type="button" class="btn btn-dark w-100">Email Template 4</a>
+                            <a href="{{url('frontend/template4')}}" type="button" class="btn btn-dark w-100">Email Template 4</a>
                         </div>
                     </div>
                    <br><br>
                    <div class="row">
                         <div class="col-md-3">
-                            <a href="{{url('frontend/template5')}}')}}" type="button" class="btn btn-dark w-100">Email Template 5</a>
+                            <a href="{{url('frontend/template5')}}" type="button" class="btn btn-dark w-100">Email Template 5</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="{{url('dashboard/template6')}}')}}" type="button" class="btn btn-dark w-100">Email Template 6</a>
+                            <a href="{{url('dashboard/template6')}}" type="button" class="btn btn-dark w-100">Email Template 6</a>
                         </div>
                         <div class="col-md-3">
                             <a href="{{url('frontend/template7')}}" type="button" class="btn btn-dark w-100">Email Template 7</a>
