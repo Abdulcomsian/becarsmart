@@ -31,7 +31,7 @@
                     <div class="row">
                         <div class="col-md-4 offset-md-4">
                             <div id="motor_traders" class="pb-5">
-                                <form method="POST" action="{{ route('motor.trader') }}">
+                                <form method="POST" action="{{ route('motor.trader') }}" id="traderform">
                                 @csrf
                                     <div class="mb-3">
                                         <label for="first_name" class="form-label">First name:</label>
@@ -56,11 +56,10 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="contact_number" class="form-label">Contact number:</label>
-                                        <input type="number" name="contact_number" class="form-control motor_name" id="contact_number">
-                                         @if($errors->has('contact_number'))
-                                         <div class="error">{{ $errors->first('contact_number') }}</div>
-                                         @endif
+                                        <input type="number" name="contact_number" minlength="10" maxlength="11" class="form-control motor_name" id="contact_number">
+                                        <span id="phoneerror" class="text-danger " ></span>
                                     </div>
+                                    
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email:</label>
                                         <input type="email" name="email" class="form-control motor_name" id="email">
@@ -73,7 +72,9 @@
                                         <label class="form-check-label" for="flexCheckDefault">I have read the Privacy Policy and Accept the Terms & Conditions.</label>
                                     </div>
                                     <div class="motor_button">
-                                        <button type="submit" id="signup-btn"  class="btn btn-md btn-primary " disabled>SIGN UP</button>
+                                        <button type="submit" id="signup_btn"  class="btn btn-md btn-primary " disabled>SIGN UP</button>
+                                        <!-- <button type="button" id="first-button"class="btn text-light main-bg" disabled>Next</button> -->
+
                                     </div>
                                 </form>
                             </div>
@@ -133,18 +134,59 @@
     </section>
 
     @endsection
-
     
     @section('script')
     <script>
     $(document).ready(function () {
         $("#flexCheckDefault").change(function () {
         if (this.checked) {
-            $("#signup-btn").removeAttr('disabled');
+            $("#signup_btn").removeAttr('disabled');
         } else {
-            $("#signup-btn").attr('disabled', 'disabled');
+            $("#signup_btn").attr('disabled', 'disabled');
         }
     })
+    });
+    $(document).ready(function () {
+        $("#signup_btn").on('click', function () {
+            var first_name = $("#first_name").val();
+            var last_name = $("#last_name").val();
+            var company_name = $("#company_name").val();
+            var phone = $("#contact_number").val();
+            var email = $("#email").val();
+            $("#first_name").css("border", "none");
+            $("#last_name").css("border", "none");
+            $("#company_name").css("border", "none");
+            $("#contact_number").css("border", "none");
+            $("#email").css("border", "none");
+
+            if (first_name == "") {
+                $("#first_name").css("border", "1px solid red");
+                return false;
+            }
+            if (last_name == "") {
+                $("#last_name").css("border", "2px solid red");
+                return false;
+            }
+            if (company_name == "") {
+                $("#company_name").css("border", "1px solid red");
+                return false;
+            }
+            $("#phoneerror").html("");
+         
+         if (phone.length < 10 || phone.length > 11) {
+             $("#phoneerror").html("Phone number must be 10 digits or 11 digits");
+             return false;
+         }
+         $("#traderform").submit();
+            if (email == "") {
+                $("#email").css("border", "1px solid red");
+                return false;
+            }
+           
+           
+        });
+
+
     });
 
 </script>

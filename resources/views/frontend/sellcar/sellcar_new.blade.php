@@ -134,8 +134,7 @@ BeCarSmart | Sellcar New
                                                             </div>
                                                         </div>
                                                         <div class="" style="float:right" ;>
-                                                            <button type="button" id="first-button"
-                                                                class="btn text-light main-bg" disabled>Next</button>
+                                                            <button type="button" id="first-button"class="btn text-light main-bg" disabled>Next</button>
                                                         </div>
                                                     </div>
                                                 </div>
