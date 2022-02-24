@@ -53,6 +53,15 @@
                         <span class="menu-title">Buy Car Leads</span>
                     </a>
                 </div>
+                <div class="menu-item">
+                    <a class="menu-link" href="{{ url('traders') }}">
+                        <span class="menu-icon">
+                            <i class="bi bi-app-indicator fs-3"></i>
+                        </span>
+                        <span class="menu-title">Motor Traders Leads</span>
+                    </a>
+                </div>
+
 
                 <div data-kt-menu-trigger="click" class="menu-item here show menu-accordion mb-1">
                     <span class="menu-link">
