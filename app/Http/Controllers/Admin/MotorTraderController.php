@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\models\MotoreTraders;
+use App\Models\MotoreTraders;
 use Illuminate\Http\Request;
 
 class MotorTraderController extends Controller
@@ -16,7 +16,7 @@ class MotorTraderController extends Controller
     public function index()
     {
         try {
-            $traders = MotoreTraders::paginate(50);
+            $traders = MotoreTraders::get();
             return view('Car.motor-trader', compact('traders'));
         } catch (\Exception $exception) {
             toastError('Something went wrong,try again');
