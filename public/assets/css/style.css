@@ -1134,7 +1134,8 @@ button.accordion-button.collapsed {
     background-color: #6C757D;
     outline: none;
     border: 0px;
-     box-shadow: none;
+    padding: 13px;
+    box-shadow: none;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active{

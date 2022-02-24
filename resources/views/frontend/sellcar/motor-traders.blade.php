@@ -2,6 +2,17 @@
     @section('title')
     BeCarSmart | Motor Traders
     @endsection
+    @section('style')
+    @endsection{
+        <style>
+            .motor_button .btn-primary:disabled {
+                color: #fff;
+                padding:13px;
+                background-color: #2c3b53c7;
+                border-color: #2c3b53c7;
+            }
+        </style>
+    }
     @section('content')
 
     <section id="faq-section">
@@ -21,36 +32,34 @@
                     <div class="row">
                         <div class="col-md-4 offset-md-4">
                             <div id="motor_traders" class="pb-5">
-                                <form>
+                                <form method="POST" action="{{ route('motor.trader') }}">
+                                @csrf
                                     <div class="mb-3">
                                         <label for="first_name" class="form-label">First name:</label>
-                                        <input type="text" class="form-control motor_name" id="first_name">
+                                        <input type="text" name="first_name" class="form-control motor_name" id="first_name">
                                     </div>
                                     <div class="mb-3">
                                         <label for="last_name" class="form-label">Last name:</label>
-                                        <input type="text" class="form-control motor_name" id="last_name">
+                                        <input type="text" name="last_name" class="form-control motor_name" id="last_name">
                                     </div>
                                     <div class="mb-3">
                                         <label for="company_name" class="form-label">Company name:</label>
-                                        <input type="text" class="form-control motor_name" id="company_name">
+                                        <input type="text" name="company_name" class="form-control motor_name" id="company_name">
                                     </div>
                                     <div class="mb-3">
                                         <label for="contact_number" class="form-label">Contact number:</label>
-                                        <input type="number" class="form-control motor_name" id="contact_number">
+                                        <input type="number" name="contact_number" class="form-control motor_name" id="contact_number">
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email:</label>
-                                        <input type="email" class="form-control motor_name" id="email">
+                                        <input type="email" name="email" class="form-control motor_name" id="email">
                                     </div>
                                     <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">I have read the Privacy Policy and Accept the Terms & Conditions.</label>
+                                        <input type="checkbox"  class="form-check-input" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">I have read the Privacy Policy and Accept the Terms & Conditions.</label>
                                     </div>
                                     <div class="motor_button">
-                                        <a href="{{url('/thankyou_page3')}}">
-                                            <!-- <input type="submit" class="btn btn-md " value="SIGN UP" > -->
-                                            <input type="button" class="btn btn-md " value="SIGN UP" >
-                                        </a>
+                                        <button type="submit" id="signup-btn"  class="btn btn-md btn-primary " disabled>SIGN UP</button>
                                     </div>
                                 </form>
                             </div>
@@ -109,4 +118,20 @@
         </div>
     </section>
 
+    @endsection
+
+    
+    @section('script')
+    <script>
+    $(document).ready(function () {
+        $("#flexCheckDefault").change(function () {
+        if (this.checked) {
+            $("#signup-btn").removeAttr('disabled');
+        } else {
+            $("#signup-btn").attr('disabled', 'disabled');
+        }
+    })
+    });
+
+</script>
     @endsection

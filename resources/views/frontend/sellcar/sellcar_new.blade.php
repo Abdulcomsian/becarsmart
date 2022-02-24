@@ -821,7 +821,7 @@ BeCarSmart | Sellcar New
                                                     </div>
                                                     <div class="row mb-4">
                                                         <div class="col-md-6">
-                    <div class="row">
+                                                            <div class="row">
                                                                 <!-- <div class="col-md-12">
                                                                     <label for="fname" class="form-label" style="font-size:13px; font-weight:600"><img src="{{asset('assets/img/email.png')}}" style="width: 50px;" alt=""></label>
                                                                 </div> -->

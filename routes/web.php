@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\Home\HomeSectionController;
 use App\Http\Controllers\Admin\QuestionnaireController;
 use App\Http\Controllers\Admin\BuyCarLeadController;
 use App\Http\Controllers\Admin\SellCarController;
+use App\Http\Controllers\Admin\MotorTraderController;
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\Home\FaqController;  
 use App\Http\Controllers\Admin\Home\EmailTemplateController;  
@@ -39,6 +40,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => ['auth']], function () {
     //All Resource Controller
     Route::resources([
+        'traders' => MotorTraderController::class,
         'roles' => RoleController::class, //Roles and permissions
         'users' => UserController::class, //Clients
     ]);
@@ -138,6 +140,7 @@ Route::get('/index', [HomeController::class, 'index'])->name('frontend/index');
 Route::post('/buy-car-leads-save', [HomeController::class, 'buy_car_lead'])->name('buy-car-leads-save');
 Route::post('/sellcar_new', [HomeController::class, 'sell_car_lead'])->name('sell-car-leads-save');
 Route::post('/find-vehicle', [HomeController::class, 'find_vehicle'])->name('find.vehicle');
+Route::post('/motor-trader', [HomeController::class, 'motor_trader_lead'])->name('motor.trader');
 
 //frontend contact us controller
 Route::get('/contact',  [ContactController::class, 'index'])->name('frontend/contact');

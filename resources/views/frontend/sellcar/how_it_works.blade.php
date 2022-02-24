@@ -62,8 +62,8 @@ BeCarSmart | How It Work
                                     <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image.png')}}" class="img-fluid">
                                 </div>
                             </div>
-                           
-                            <div class="row pb-5">
+                            
+                            <div class="row pb-5 pt-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Get Your Valuation!</h4><br>
                                     <p>We will get in-touch via email or phone call as soon as we have completed analysing the information we have about your vehicle.  If we can't reach your contact number, we will email you a quote.</p>
@@ -73,8 +73,8 @@ BeCarSmart | How It Work
                                     <img style="width: 200px;" src="{{asset ('assets/img/MicrosoftTeams-image (2).png')}}" class="img-fluid">
                                 </div>
                             </div>
-
-                            <div class="row pb-5">
+                            
+                            <div class="row pb-5 pt-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Accept Your Quote and Arrange for Collection or Book an Appointment!</h4><br>
                                     <p>Once you're happy with the price for your vehicle you can contact us either by calling us or emailing us. You can click on 'accept this quote’ from the quote email we send you. This will notify us to contact you. </p>
@@ -89,7 +89,7 @@ BeCarSmart | How It Work
                                 </div>
                             </div>
 
-                            <div class="row pb-5">
+                            <div class="row pb-5 pt-5">
                                 <div class="col-lg-9">
                                     <h4 class="how-works-header">Sale Complete - Get Paid!</h4><br>
                                     <p>On the day of the collection or on your appointment day, before the vehicle is sold-: <br> The DVLA paperwork side will be taken care of and you will be paid.</p>

@@ -21,6 +21,8 @@ use App\Utils\HelperFunctions;
 use Notification;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\QuestionaireHeading;
+use App\Models\MotoreTraders;
+
 
 
 class HomeController extends Controller
@@ -190,5 +192,29 @@ class HomeController extends Controller
         // return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model', 'fueltype', 'capacity'));
 
         //end of old work===========================================================================================
+    }
+    public function motor_trader_lead(Request $request){
+        // dd($request->all());
+
+        $request->validate([
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
+            'company_name' => ['required', 'string', 'max:255'],
+            'contact_number' => ['required', 'string', 'max:15'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+
+        ]);
+        $model = new MotoreTraders();
+        $model->first_name = $request->first_name;
+        $model->last_name = $request->last_name;
+        $model->company_name = $request->company_name;
+        $model->contact_number = $request->contact_number;
+        $model->email = $request->email;
+        if ($model->save()) {
+            // Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
+            // Notification::route('mail', $request->email)->notify(new BuyCarNotification($request->all()));
+            toastSuccess('Thank you for your information. We will be in touch soon.');
+            return Redirect::back();
+        }
     }
 }
