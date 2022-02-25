@@ -214,8 +214,8 @@ class HomeController extends Controller
         if ($model->save()) {
             // Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
             Notification::route('mail', $request->email)->notify(new TradersNotification($request->all()));
-            toastSuccess('Thank you for your information. We will be in touch soon.');
-            return view('frontend.mails.email_template10');
+            // toastSuccess('Thank you for your information. We will be in touch soon.');
+            return view('frontend.sellcar.thankyou_page4');
         }
     }
 }
