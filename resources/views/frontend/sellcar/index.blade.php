@@ -251,7 +251,6 @@ BeCarSmart | index
    <div class="row steps pt-5">
       @foreach($howitworks as $work)
       @if(count($howitworks)>3)
-      {{$work->file}}
       <div class="col-md-3 col-12  align-items-center ">
          @else
          <div class="col-md-4 col-12  align-items-center ">
