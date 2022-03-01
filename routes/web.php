@@ -112,7 +112,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/dashboard', function () {
         $totalsellcarleads = SellCarLead::count();
         $buycarlead = BuyCarLead::count();
-        return view('dashboard', compact('totalsellcarleads', 'buycarlead'));
+        $motorslead=MotoreTraders::count();
+        return view('dashboard', compact('totalsellcarleads', 'buycarlead','motorslead'));
     })->name('dashboard');
 });
 
