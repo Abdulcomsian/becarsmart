@@ -106,7 +106,7 @@
                                                         <a href="">
                                                             <div class="heading2">Total Motor Trader</div>
                                                         </a>
-                                                        <div class="cont-val"></div>
+                                                        <div class="cont-val">{{$motorslead}}</div>
                                                     </div>
                                                 </div>
                                             </div>
