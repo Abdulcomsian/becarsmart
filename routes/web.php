@@ -107,7 +107,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('sell-car-delete',[SellCarController::class, 'destroy'])->name('sellcar-delete');
     Route::get('/leads-details/{id}', [SellCarController::class, 'sell_car_lead_details'])->name('Car.leads-details');
     Route::get('/buy-car', [BuyCarLeadController::class, 'index'])->name('Car.buy-car');
-    Route::get('/buy-car-lead-delete', [BuyCarLeadController::class, 'buy_car_delete'])->name('buy-car-delete');
+    Route::post('/buy-car-lead-delete', [BuyCarLeadController::class, 'buy_car_delete'])->name('buy-car-delete');
     Route::get('/evaluate-car/{id}', [BuyCarLeadController::class, 'evaluate_car'])->name('Car.evaluate-car');
 
     Route::get('/dashboard', function () {
