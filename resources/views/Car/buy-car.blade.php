@@ -114,16 +114,15 @@
                                 <td class="">{{ date('F,d,Y H:i:s ', strtotime($lead->created_at));}}</td>
                                 <td class="">
 
-                                    <button type="button" class="btn btn-primary py-3 px-4"><a class="" href="{{url('/evaluate-car',$lead->id)}}">
+                                    <button type="button" class="btn btn-primary py-3 px-4">
+                                        <a class="" href="{{url('/evaluate-car',$lead->id)}}">
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                         </a>
                                     </button>
-                                    <button type="button" class="btn btn-primary py-3 px-4 confirm" id="$lead->id">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </button>
-                                    <form method="post" id="form_{{$lead->id}}" action="{{url('buy-car-lead-delete')}}">
+                                    <form method="post"  style='width:20%' id="form_{{$lead->id}}" action="{{url('buy-car-lead-delete')}}">
                                         @csrf
                                         <input type="hidden" name="id" value="{{$lead->id}}" />
+                                         <button class="btn btn-danger confirm" id="{{$lead->id}}"><span class="fa fa-trash"></span></button>
                                     </form>
                                 </td>
                             </tr>
