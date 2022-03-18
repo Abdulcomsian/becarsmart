@@ -104,6 +104,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 
     Route::get('/sell-car', [SellCarController::class, 'index'])->name('Car.sell-car');
+    Route::post('sell-car-delete',[SellCarController::class, 'destroy'])->name('sellcar-delete');
     Route::get('/leads-details/{id}', [SellCarController::class, 'sell_car_lead_details'])->name('Car.leads-details');
     Route::get('/buy-car', [BuyCarLeadController::class, 'index'])->name('Car.buy-car');
     Route::get('/buy-car-lead-delete', [BuyCarLeadController::class, 'buy_car_delete'])->name('buy-car-delete');

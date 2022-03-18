@@ -73,7 +73,7 @@
                                                 <div class="d-flex align-content-center align-middle bd-highlight">
                                                     <div class="icon2 text-center"><img src="{{asset ('images/deadline.png')}}"></div>
                                                     <div class="flex-grow-1 valtop">
-                                                        <a href="">
+                                                        <a href="{{url('sell-car')}}">
                                                             <div class="heading2">Total Sell Car Leads</div>
                                                         </a>
                                                         <div class="cont-val">{{$totalsellcarleads}}</div>
@@ -88,7 +88,7 @@
                                                 <div class="d-flex align-content-center align-middle bd-highlight">
                                                     <div class="icon2 text-center"><img src="{{asset ('images/deadline.png')}}"></div>
                                                     <div class="flex-grow-1 valtop">
-                                                        <a href="">
+                                                        <a href="{{url('buy-car')}}">
                                                             <div class="heading2">Total Buy Car Leads</div>
                                                         </a>
                                                         <div class="cont-val">{{$buycarlead}}</div>
@@ -103,7 +103,7 @@
                                                 <div class="d-flex align-content-center align-middle bd-highlight">
                                                     <div class="icon2 text-center"><img src="{{asset ('images/deadline.png')}}"></div>
                                                     <div class="flex-grow-1 valtop">
-                                                        <a href="">
+                                                         <a href="{{url('traders')}}">
                                                             <div class="heading2">Total Motor Trader</div>
                                                         </a>
                                                         <div class="cont-val">{{$motorslead}}</div>

@@ -99,6 +99,7 @@
                         <!--end::Table head-->
                         <!--begin::Table body-->
                         <tbody class="text-gray-600 fw-bold">
+                            {{'gekki'}}
                             @foreach($sellcarleads as $lead)
                             <tr>
                                 <td class="">{{$lead->fullname ?? ''}}</td>
@@ -109,13 +110,14 @@
                                 <td class="">{{$lead->engine ?? ''}}</td>
                                 <td class="">{{ date('F,d,Y H:i:s ', strtotime($lead->created_at));}}</td>
                                 <td class="">
-                                    <div class="view-btn" styles=" ">
+                                    <div class="view-btn">
                                         <a class="btn btn-danger btn-md" href="{{url('/leads-details',$lead->id)}}"><i class="fa fa-eye fa-2x" aria-hidden="true"></i></a>
                                     </div>
-                                    <form method="post" id="form_{{$lead->id}}" action="{{url('blog-delete')}}">
+                                    <form method="post" style="width: 20%" id="form_{{$lead->id}}" action="{{route('sellcar-delete')}}">
                                             @csrf
                                             <input type="hidden" name="id" value="{{$lead->id}}" />
-                                        </form>
+                                            <button class="btn btn-danger confirm" id="{{$lead->id}}"><span class="fa fa-trash"></span></button>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach
