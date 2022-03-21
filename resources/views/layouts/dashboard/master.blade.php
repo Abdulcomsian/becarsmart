@@ -27,7 +27,7 @@ License: -->
 		<!-- <link rel="stylesheet" href="{{asset ('assets/css/ionicons.min.css')}}">
 		<link rel="stylesheet" href="{{asset ('assets/css/')}}">
          -->
-		<link rel="stylesheet" href="{{asset ('assets/css/style2.css')}}">
+		<!-- <link rel="stylesheet" href="{{asset ('assets/css/style2.css')}}"> -->
 
 {{--    begin::Global style files--}}
     @include('layouts.dashboard.styles')
@@ -105,6 +105,7 @@ License: -->
     <script src="{{asset ('assets/js/popper.js')}}"></script>
     <script src="{{asset ('assets/js/bootstrap.min.js')}}"></script>
     <script src="{{asset ('assets/js/main.js')}}"></script>
+    
 </body>
 <!--end::Body-->
 </html>
