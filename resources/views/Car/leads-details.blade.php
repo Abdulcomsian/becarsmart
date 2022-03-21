@@ -1,12 +1,95 @@
 @extends('layouts.dashboard.master',['title' => 'leads details'])
 @section('styles')
 @include('layouts.sweetalert.sweetalert_css')
-<link href="{{asset('css/style.css')}}" />
-<link href="{{asset('css/demo.css')}}" />
+
 <style>
     .view-btn {
         float: right;
     }
+
+    .modal-target {
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-target:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    position: absolute;
+  display: none; /* Hidden by default */
+ /* position: fixed;*/ /* Stay in place */
+  z-index: 99999999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 90%;
+  width: 100%; /* Full width */
+  height: auto; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  opacity: 1 !important;
+  max-width: 1200px;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+/* Add Animation */
+.modal-content, .modal-caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-atransform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 </style>
 @endsection
 @section('content')
@@ -234,13 +317,20 @@
                                                     @foreach($lead->sellcarimages as $img)
                                                     <tr>
                                                         <td><b>{{$loop->index+1}}</b></td>
-                                                        <td id="imageGallery"><img src="{{asset($img->image_name)}}" width="100px" height="100px" class="img img-circle" /></td>
+                                                        <td>
+                                                         <div>
+                                                            <img class="modal-target" alt="Img 1" src="{{asset($img->image_name)}}" />
+                                                         </div>
+                                                            </td>
                                                         <td>{{$img->created_at}}</td>
                                                     </tr>
                                                     @endforeach
                                                 </tbody>
                                             </table>
+                                            <!-- The Modal -->
+
                                         </div>
+    
                                     </div>
                                 </div>
                             </div>
@@ -255,37 +345,35 @@
     </div>
     <!--end::Post-->
 </div>
+<!-- The Modal -->
+<div id="modal" class="modal">
+  <span id="modal-close" class="modal-close">&times;</span>
+  <img id="modal-content" class="modal-content">
+  <div id="modal-caption" class="modal-caption"></div>
+</div>
 @endsection
 @section('scripts')
 @include('layouts.sweetalert.sweetalert_js')
-<script src="{{asset('js/jquery.image-popup.js')}}"></script>
-<script>
-$(document).ready(function(){
-    $("#imageGallery").imagePopup({
-    overlay: "rgba(0, 0, 0, 0.7)",
+<script type="text/javascript">
+    // Modal Setup
+var modal = document.getElementById('modal');
 
-    closeButton:{
-        src: "img/close.png",
-        width: "40px",
-        height:"40px"
-    },
-    imageBorder: "10px solid #ffffff",
-    borderRadius: "6px",
-    imageWidth: "800px",
-    imageHeight: "auto",
-    imageCaption: {
-        exist: true,
-        color: "#ffffff",
-        fontSize: "18px"
-    },
-    open: function(){
-        console.log("opened");
-    },
-    close: function(){
-        console.log("closed");
-    }
+var modalClose = document.getElementById('modal-close');
+modalClose.addEventListener('click', function() { 
+  modal.style.display = "none";
 });
 
+// global handler
+document.addEventListener('click', function (e) { 
+  if (e.target.className.indexOf('modal-target') !== -1) {
+      var img = e.target;
+      var modalImg = document.getElementById("modal-content");
+      var captionText = document.getElementById("modal-caption");
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      captionText.innerHTML = img.alt;
+   }
 });
+
 </script>
 @endsection
