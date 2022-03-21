@@ -57,16 +57,20 @@
                                     </li>
                                 </ul>
                                 <ul class="address">
-                                    <li><img src="{{asset ('assets/img/calling.png')}}" alt=""></li>
-                                    <li>
-                                        <p>{{ $contactdata->phone ?? ''}}</p>
-                                    </li>
+                                    <a href="tel:{{ $contactdata->phone ?? ''}}">
+                                        <li><img src="{{asset ('assets/img/calling.png')}}" alt=""></li>
+                                        <li>
+                                            <p>{{ $contactdata->phone ?? ''}}</p>
+                                        </li>
+                                     </a>
                                 </ul>
                                 <ul class="address">
-                                    <li><img src="{{asset ('assets/img/mail.png')}}" alt=""></li>
-                                    <li>
-                                        <p>{{ $contactdata->email ?? ''}}</p>
-                                    </li>
+                                    <a href="mailto:{{ $contactdata->email ?? ''}}">
+                                        <li><img src="{{asset ('assets/img/mail.png')}}" alt=""></li>
+                                        <li>
+                                            <p>{{ $contactdata->email ?? ''}}</p>
+                                        </li>
+                                    </a>
                                 </ul>
                             </div>
                             <div class="social-media">

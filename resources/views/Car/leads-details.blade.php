@@ -1,6 +1,8 @@
 @extends('layouts.dashboard.master',['title' => 'leads details'])
 @section('styles')
 @include('layouts.sweetalert.sweetalert_css')
+<link href="{{asset('css/style.css')}}" />
+<link href="{{asset('css/demo.css')}}" />
 <style>
     .view-btn {
         float: right;
@@ -232,7 +234,7 @@
                                                     @foreach($lead->sellcarimages as $img)
                                                     <tr>
                                                         <td><b>{{$loop->index+1}}</b></td>
-                                                        <td><img src="{{asset($img->image_name)}}" width="100px" height="100px" class="img img-circle" /></td>
+                                                        <td id="imageGallery"><img src="{{asset($img->image_name)}}" width="100px" height="100px" class="img img-circle" /></td>
                                                         <td>{{$img->created_at}}</td>
                                                     </tr>
                                                     @endforeach
@@ -256,4 +258,34 @@
 @endsection
 @section('scripts')
 @include('layouts.sweetalert.sweetalert_js')
+<script src="{{asset('js/jquery.image-popup.js')}}"></script>
+<script>
+$(document).ready(function(){
+    $("#imageGallery").imagePopup({
+    overlay: "rgba(0, 0, 0, 0.7)",
+
+    closeButton:{
+        src: "img/close.png",
+        width: "40px",
+        height:"40px"
+    },
+    imageBorder: "10px solid #ffffff",
+    borderRadius: "6px",
+    imageWidth: "800px",
+    imageHeight: "auto",
+    imageCaption: {
+        exist: true,
+        color: "#ffffff",
+        fontSize: "18px"
+    },
+    open: function(){
+        console.log("opened");
+    },
+    close: function(){
+        console.log("closed");
+    }
+});
+
+});
+</script>
 @endsection
