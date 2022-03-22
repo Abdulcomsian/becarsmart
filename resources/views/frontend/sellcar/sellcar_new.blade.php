@@ -14,7 +14,7 @@ BeCarSmart | Sellcar New
                 <div class="row">
                     <div class="col-md-12">
                         <h1 style="float: left;" class="heading-h1">
-                            {{$_GET['registration'] ?? 'ZS33 FS'}}
+                            {{$_GET['regno'] ?? 'ZS33 FS'}}
                         </h1>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ BeCarSmart | Sellcar New
                                 <li><b>Model: </b>&nbsp {{$_GET['model_no'] ?? ''}}</li>&nbsp &nbsp
                                 <li><b>Color: </b>&nbsp {{$_GET['color'] ?? ''}}</li>&nbsp &nbsp
                                 <li><b>Engine: </b>&nbsp {{$_GET['engine'] ?? ''}}</li>&nbsp &nbsp
-                                <li><b>Engine Capacity: </b>&nbsp {{$_GET['CylinderCapacity'] ?? ''}}</li>  
+                                <li><b>Engine Capacity: </b>&nbsp {{$_GET['enginecapacity'] ?? ''}}</li>  
                             </ul>
                         </div>
                     </div>
@@ -60,9 +60,9 @@ BeCarSmart | Sellcar New
                                 <input type="hidden" name="color" value="{{$_GET['color'] ?? ''}}">
                                 <input type="hidden" name="engine" value="{{$_GET['engine'] ?? ''}}">
                                 <input type="hidden" name="make" value="{{$_GET['make'] ?? ''}}">
-                                <input type="hidden" name="CylinderCapacity" value="{{$_GET['CylinderCapacity'] ?? ''}}">
+                                <input type="hidden" name="CylinderCapacity" value="{{$_GET['enginecapacity'] ?? ''}}">
                                 <input type="hidden" name="euroStatus" value="{{$_GET['euroStatus'] ?? ''}}">
-                                <input type="hidden" name="registration" value="{{$_GET['registration'] ?? ''}}">
+                                <input type="hidden" name="registration" value="{{$_GET['regno'] ?? ''}}">
 
                                 <div class="row">
                                     <div class="col-md-12" style="justify-content: left;">

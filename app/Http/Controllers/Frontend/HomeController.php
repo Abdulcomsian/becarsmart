@@ -69,6 +69,7 @@ class HomeController extends Controller
     //
     public function sell_car_lead(Request $request)
     {
+        dd($request->all());
         $request->validate([
             'fullname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
@@ -78,6 +79,7 @@ class HomeController extends Controller
         ]);
         try {
             $inputs = $request->except('_token', 'images');
+            dd($inputs);
             if ($sellcar = SellCarLead::create($inputs)) {
                 if ($request->file('images')) {
                     $filePath = HelperFunctions::sellCarFilePath();
@@ -105,62 +107,53 @@ class HomeController extends Controller
 
     public function find_vehicle(Request $request)
     {
-            $reg_number = (string)$request->reg_number;
-            $year       ='2015';
-            $color      = 'white';
-            $model      = 'Yamaha';
-            $make      =  'test make';
-            $regno      =  '1234567';
-            $fueltype   = 'Petrol';
-            $capacity   = '123';
-            $euroStatus = 'euro status';
-             return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model','make', 'fueltype', 'capacity'));
-        // try {
-        //     $curl = curl_init();
-        //     curl_setopt_array($curl, array(
-        //         CURLOPT_URL => "https://api.vehiclesmart.com/rest/vehicleData?reg=" . $reg_number . "&appid=becarsmart-t78MD2cMAx9&isRefreshing=false&dvsaFallbackMode=false",
-        //         CURLOPT_RETURNTRANSFER => true,
-        //         CURLOPT_ENCODING => "",
-        //         CURLOPT_MAXREDIRS => 10,
-        //         CURLOPT_TIMEOUT => 30,
-        //         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        //         CURLOPT_CUSTOMREQUEST => "GET",
-        //         CURLOPT_POSTFIELDS => "",
-        //         CURLOPT_HTTPHEADER => array(
-        //             "cache-control: no-cache",
-        //             "content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
-        //             "postman-token: 04f26ca8-7d9b-715e-44fd-96f2e4f3a82c"
-        //         ),
-        //     ));
+        $reg_number = (string)$request->reg_number;
+        try {
+            $curl = curl_init();
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://api.vehiclesmart.com/rest/vehicleData?reg=" . $reg_number . "&appid=becarsmart-t78MD2cMAx9&isRefreshing=false&dvsaFallbackMode=false",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => "",
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 30,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => "GET",
+                CURLOPT_POSTFIELDS => "",
+                CURLOPT_HTTPHEADER => array(
+                    "cache-control: no-cache",
+                    "content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
+                    "postman-token: 04f26ca8-7d9b-715e-44fd-96f2e4f3a82c"
+                ),
+            ));
 
-        //     $response = curl_exec($curl);
-        //     $err = curl_error($curl);
-        //     curl_close($curl);
-        //     if ($err) {
-        //         echo $err;
-        //         exit;
-        //         toastError("Something Went Wrong " . $err);
-        //         return Redirect::back();
-        //     } else {
-        //         $response = json_decode($response);
-        //         if ($response->Success) {
-        //             $year       = $response->VehicleDetails->Year;
-        //             $color      = $response->VehicleDetails->Colour;
-        //             $model      = $response->VehicleDetails->Model;
-        //             $make      = $response->VehicleDetails->Make;
-        //             $regno      = $response->VehicleDetails->Registration;
-        //             $fueltype   = $response->VehicleDetails->Fuel;
-        //             $capacity   = $response->VehicleDetails->CylinderCapacity;
-        //             $euroStatus = $response->VehicleDetails->EuroStatus ?? '';
-        //             return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model','make', 'fueltype', 'capacity'));
-        //         } else {
-        //             return view('frontend/sellcar/manuallcar', compact('reg_number'));
-        //         }
-        //     }
-        // } catch (\Exception $exception) {
-        //     toastError("Something Went Wrong " . $exception->getMessage());
-        //     return Redirect::back();
-        // }
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
+            curl_close($curl);
+            if ($err) {
+                echo $err;
+                exit;
+                toastError("Something Went Wrong " . $err);
+                return Redirect::back();
+            } else {
+                $response = json_decode($response);
+                if ($response->Success) {
+                    $year       = $response->VehicleDetails->Year;
+                    $color      = $response->VehicleDetails->Colour;
+                    $model      = $response->VehicleDetails->Model;
+                    $make      = $response->VehicleDetails->Make;
+                    $regno      = $response->VehicleDetails->Registration;
+                    $fueltype   = $response->VehicleDetails->Fuel;
+                    $capacity   = $response->VehicleDetails->CylinderCapacity;
+                    $euroStatus = $response->VehicleDetails->EuroStatus ?? '';
+                    return view('frontend/sellcar/home', compact('euroStatus', 'regno', 'color', 'model','make', 'fueltype', 'capacity'));
+                } else {
+                    return view('frontend/sellcar/manuallcar', compact('reg_number'));
+                }
+            }
+        } catch (\Exception $exception) {
+            toastError("Something Went Wrong " . $exception->getMessage());
+            return Redirect::back();
+        }
 
         // old work for becarsmart api =======================================================================
         // $curl = curl_init();
@@ -203,6 +196,7 @@ class HomeController extends Controller
 
         //end of old work===========================================================================================
     }
+    
     public function motor_trader_lead(Request $request){
         // dd($request->all());
 
