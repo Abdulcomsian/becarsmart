@@ -17,7 +17,7 @@
     <section class="contact-section">
         <div class="container">
             <div class="row  pb-5 ">
-                <div class="col-md-10 offset-md-1 " style="box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12)">
+                <div class="col-md-10 offset-md-1" style="box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12)">
                     <div class="contact-title text-center  pb-3">
                         <h3><strong>{{ $contactdata->heading ?? ''}}</strong></h3>
                     </div>
@@ -51,10 +51,12 @@
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="contact-details">
                                 <ul class="address">
-                                    <li><img src="{{asset ('assets/img/location.png')}}" alt=""></li>
-                                    <li>
-                                        <p>{{ $contactdata->address ?? ''}}</p>
-                                    </li>
+                                    <a target="_blank" href="http://maps.google.com/?q={{ $contactdata->address ?? ''}}">
+                                        <li><img src="{{asset ('assets/img/location.png')}}" alt=""></li>
+                                        <li>
+                                            <p>{{ $contactdata->address ?? ''}}</p>
+                                        </li>
+                                    </a>
                                 </ul>
                                 <ul class="address">
                                     <a href="tel:{{ $contactdata->phone ?? ''}}">
