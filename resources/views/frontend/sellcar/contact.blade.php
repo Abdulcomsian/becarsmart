@@ -51,7 +51,7 @@
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="contact-details">
                                 <ul class="address">
-                                    <a target="_blank" href="http://maps.google.com/?q={{ $contactdata->address ?? ''}}">
+                                    <a href="http://maps.google.com/?q={{ $contactdata->address ?? ''}}">
                                         <li><img src="{{asset ('assets/img/location.png')}}" alt=""></li>
                                         <li>
                                             <p>{{ $contactdata->address ?? ''}}</p>
@@ -85,7 +85,8 @@
 
                             </div>
                             <div class="map-img address">
-                                <img src="{{asset ('assets/img/map.png')}}" class="img-fluid" alt="">
+                                <!-- <img src="{{asset ('assets/img/map.png')}}" class="img-fluid" alt=""> -->
+                                <img src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" style="max-width: 375px !important;" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
