@@ -8,8 +8,7 @@
     }
 
     .modal-target {
-  width: 300px;
-  border-radius: 5px;
+   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -18,18 +17,22 @@
 
 /* The Modal (background) */
 .modal {
-    position: absolute;
-  display: none; /* Hidden by default */
- /* position: fixed;*/ /* Stay in place */
-  z-index: 99999999; /* Sit on top */
+    display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 90%;
+  top: 0;
   width: 100%; /* Full width */
-  height: auto; /* Full height */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  z-index: 99999;
+}
+
+.modal-target {
+    width: 200px;
 }
 
 /* Modal Content (image) */
@@ -37,8 +40,7 @@
   margin: auto;
   display: block;
   width: 80%;
-  opacity: 1 !important;
-  max-width: 1200px;
+  max-width: 700px;
 }
 
 /* Caption of Modal Image */
@@ -46,12 +48,11 @@
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 1200px;
+  max-width: 700px;
   text-align: center;
-  color: white;
-  font-weight: 700;
-  font-size: 1em;
-  margin-top: 32px;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
 /* Add Animation */
@@ -63,7 +64,7 @@
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-atransform:scale(0)} 
+  from {-webkit-transform:scale(0)} 
   to {-webkit-transform:scale(1)}
 }
 
@@ -88,6 +89,13 @@
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 </style>
