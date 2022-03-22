@@ -69,7 +69,7 @@ class HomeController extends Controller
     //
     public function sell_car_lead(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
         $request->validate([
             'fullname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
@@ -79,7 +79,7 @@ class HomeController extends Controller
         ]);
         try {
             $inputs = $request->except('_token', 'images');
-            dd($inputs);
+            // dd($inputs);
             if ($sellcar = SellCarLead::create($inputs)) {
                 if ($request->file('images')) {
                     $filePath = HelperFunctions::sellCarFilePath();

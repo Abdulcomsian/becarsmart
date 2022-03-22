@@ -108,7 +108,7 @@
                                 <td class="">{{$lead->color ?? ''}}</td>
                                 <td class="">{{$lead->engine ?? ''}}</td>
                                 <td class="">{{ date('F,d,Y H:i:s ', strtotime($lead->created_at));}}</td>
-                                <td class="">
+                                <td class="" style="display: flex; justify-content: space-around;">
                                     <div class="view-btn">
                                         <a class="btn btn-danger btn-md" href="{{url('/leads-details',$lead->id)}}"><i class="fa fa-eye fa-2x" aria-hidden="true"></i></a>
                                     </div>
