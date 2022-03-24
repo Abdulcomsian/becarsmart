@@ -959,6 +959,11 @@ button.btn.btn-primary.btn-md.btn-block {
   margin-left: 10px;
   font-family: "Poppins", sans-serif;
       font-size: 18px !important;
+      font-weight: 300;
+}
+.sign-up{
+  font-size: 18px !important;
+      font-weight: 300;
 }
 .social-media {
   margin-top: 5%;
