@@ -46,10 +46,10 @@
                     </p>
                     <br>
                     <h4 id="sub-terms-header">Third party and Targeting cookies</h4>
-                    <p style="font-weight: 400;color: #747474; line-height: 30px;">We collect this information in a way which doesn't identify anyone personally. To get the most out 
+                    <p style="font-weight: 400; line-height: 30px;">We collect this information in a way which doesn't identify anyone personally. To get the most out 
                         of our site, you will need to enable cookies on your browser.
                     </p>
-                    <p style="font-weight: 400;color: #747474; line-height: 30px;">We may use cookies stored on your computer after visiting our site to deliver personalised
+                    <p style="font-weight: 400; line-height: 30px;">We may use cookies stored on your computer after visiting our site to deliver personalised
                         adverts while you browse the internet.
                     </p>
                     <br>
@@ -60,7 +60,7 @@
                         analytical/performance cookies or targeting cookies
                     </p>
                     <br><br>
-                    <p style="font-weight: 400;color: red; line-height: 30px; text-align: start;">PLEASE USE COLOURS AND FONTS FOR THE WEBSITE CURRENT STYLING SCHEME! </p>
+                    <!-- <p style="font-weight: 400;color: red; line-height: 30px; text-align: start;">PLEASE USE COLOURS AND FONTS FOR THE WEBSITE CURRENT STYLING SCHEME! </p> -->
                 </div>
                 </div>
             </div>
