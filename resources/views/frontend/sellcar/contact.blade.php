@@ -1,4 +1,4 @@
-    @extends('frontend.layouts.master')
+@extends('frontend.layouts.master')
     @section('title')
     BeCarSmart | Contact
     @endsection
@@ -62,7 +62,13 @@
                                     </a>
                                 </ul>
                             </div>
-                            <div class="social-media">
+                            
+                            <div class="sign-up">
+                                    Or you can WhatsApp us your query. <a href="https://wa.me/+923245040502" target="_blank">
+                                        <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid">
+                                    </a>
+                                    </div>
+                                    <div class="social-media">
                                 <ul class="address">
                                     <li><a href="{{ $contactdata->youtube_link ?? '#'}}"><img src="{{asset ('assets/img/youtube.png')}}" alt=""></a></li>
                                     <li><a href="{{ $contactdata->instagram_link ?? '#'}}"><img src="{{asset ('assets/img/instagram.png')}}" alt=""></a></li>
@@ -71,11 +77,6 @@
                                 </ul>
 
                             </div>
-                            <div class="sign-up">
-                                    Or you can WhatsApp us your query. <a href="https://wa.me/+923245040502" target="_blank">
-                                        <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid">
-                                    </a>
-                                    </div>
                             <div class="map-img address">
                                 <!-- <img src="{{asset ('assets/img/map.png')}}" class="img-fluid" alt=""> -->
                                 <!-- <img src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" style="max-width: 375px !important;" class="img-fluid" alt=""> -->

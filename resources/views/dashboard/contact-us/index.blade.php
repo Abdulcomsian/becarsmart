@@ -84,12 +84,12 @@
                         @endif
                         <div id="aboutsection">
                             <div class="row">
-                                <div class="form-group col-md-6 pb-5">
+                                <!-- <div class="form-group col-md-6 pb-5">
                                     <label for="text" class="col-sm-4 col-form-label">Contact Us Heading:</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" name="heading" id="row-1" value="{{ $contactdata->heading ?? '' }}" required>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group col-md-6 pb-5">
                                     <label for="text" class="col-sm-4 col-form-label">Address:</label>
                                     <div class="col-sm-10">
