@@ -964,6 +964,9 @@ button.btn.btn-primary.btn-md.btn-block {
 .sign-up{
   font-size: 18px !important;
       font-weight: 300;
+      color: #000;
+      left: -8px;
+      position: relative;
 }
 .social-media {
   margin-top: 5%;
