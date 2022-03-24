@@ -18,14 +18,14 @@
     <!-- Blog Section -->
     <section class="blog_section">
         <div class="container">
-            <div class="row text-center pb-5">
+            <!-- <div class="row text-center pb-5">
                 <div class="col">
                     <div class="title">
                         <h2>How to Sign Up to BeCarSmart.</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             @foreach($blog as $bl )
             <div class="row">
                 <div class="col-md-12">

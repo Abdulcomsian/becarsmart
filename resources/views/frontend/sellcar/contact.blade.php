@@ -21,7 +21,7 @@
                     <div class="contact-title text-center  pb-3">
                         <h3><strong>{{ $contactdata->heading ?? ''}}</strong></h3>
                     </div>
-                    <div class="row d-flex align-items-center">
+                    <div class="row d-flex">
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="form-title">
                                 <h1>Leave us a message</h1>
@@ -39,11 +39,7 @@
                                         <textarea class="form-control" rows="5" name="message" placeholder="Your Message"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-md btn-block  mt-5 mb-5">Send</button>
-                                    <div class="sign-up">
-                                    Or you can WhatsApp us your query. <a href="https://wa.me/+923245040502" target="_blank">
-                                        <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid">
-                                    </a>
-                                    </div>
+                                    
                                     <!-- <button type="submit" class="btn btn-primary mt-4 mb-5">Send</button> -->
                                 </form>
                             </div>
@@ -52,26 +48,17 @@
                             <div class="contact-details">
                                 <ul class="address">
                                     <a href="http://maps.google.com/?q={{ $contactdata->address ?? ''}}">
-                                        <li><img src="{{asset ('assets/img/location.png')}}" alt=""></li>
-                                        <li>
-                                            <p>{{ $contactdata->address ?? ''}}</p>
-                                        </li>
+                                        <li><img src="{{asset ('assets/img/location.png')}}" alt="">  <p>{{ $contactdata->address ?? ''}}</p></li>
                                     </a>
                                 </ul>
                                 <ul class="address">
                                     <a href="tel:{{ $contactdata->phone ?? ''}}">
-                                        <li><img src="{{asset ('assets/img/calling.png')}}" alt=""></li>
-                                        <li>
-                                            <p>{{ $contactdata->phone ?? ''}}</p>
-                                        </li>
+                                        <li><img src="{{asset ('assets/img/calling.png')}}" alt=""> <p>{{ $contactdata->phone ?? ''}}</p></li>
                                      </a>
                                 </ul>
                                 <ul class="address">
                                     <a href="mailto:{{ $contactdata->email ?? ''}}">
-                                        <li><img src="{{asset ('assets/img/mail.png')}}" alt=""></li>
-                                        <li>
-                                            <p>{{ $contactdata->email ?? ''}}</p>
-                                        </li>
+                                        <li><img src="{{asset ('assets/img/mail.png')}}" alt="">  <p>{{ $contactdata->email ?? ''}}</p></li>
                                     </a>
                                 </ul>
                             </div>
@@ -84,9 +71,14 @@
                                 </ul>
 
                             </div>
+                            <div class="sign-up">
+                                    Or you can WhatsApp us your query. <a href="https://wa.me/+923245040502" target="_blank">
+                                        <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid">
+                                    </a>
+                                    </div>
                             <div class="map-img address">
                                 <!-- <img src="{{asset ('assets/img/map.png')}}" class="img-fluid" alt=""> -->
-                                <img src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" style="max-width: 375px !important;" class="img-fluid" alt="">
+                                <!-- <img src="{{asset ('assets/img/MicrosoftTeams-image (3).png')}}" style="max-width: 375px !important;" class="img-fluid" alt=""> -->
                             </div>
                         </div>
                     </div>
