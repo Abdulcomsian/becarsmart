@@ -311,7 +311,7 @@ BeCarSmart | index
                               <div class="form-card">
                                  <input type="text" name="lead_source" placeholder="Other Details" required="">
                               </div>
-                              <!-- <div class="form-card">
+                              <div class="form-card">
                                  <input type="text" name="name" placeholder="Enter name" required="">
                               </div>
                               <div class="form-card">
@@ -319,7 +319,7 @@ BeCarSmart | index
                               </div>
                               <div class="form-card">
                                  <input type="email" name="email" placeholder="Enter Email" required="">
-                              </div> -->
+                              </div>
                               <input type="submit" class="action-button" value="Confirm">
                         @endif
                         </fieldset>
