@@ -298,15 +298,33 @@ BeCarSmart | index
                            <li id="payment"><strong></strong></li>
                            <li id="confirm"><strong></strong></li> -->
                      </ul>
-                     <fieldset>
-                        <div class="form-card">
-                           <h2 class="fs-title">What is your name?</h2>
-                           <input type="hidden" name="question[]" value="What is your name?">
-                           <input type="text" name="answer[]" id="answer1" placeholder="Enter your name">
-                        </div>
-                        <input type="button" name="next" id="1" class="next action-button" value="Next">
-                     </fieldset>
-                     <fieldset>
+                     @foreach($questionair as $key=>$question)
+                        <fieldset>
+                           <div class="form-card">
+                              <h2 class="fs-title">{{$question->question}}</h2>
+                              <input type="hidden" name="question[]" value="{{$question->question}}">
+                              <input type="text" name="answer[]" id="answer{{$key}}" placeholder="{{$question->question}}">
+                           </div>
+                           <input type="button" name="next" id="{{$key}}" class="next action-button" value="Next">
+                           @if($key == '3')
+                              <h2 class="fs-title">Other Details:</h2>
+                              <div class="form-card">
+                                 <input type="text" name="lead_source" placeholder="Lead Source e.g Social Media" required="">
+                              </div>
+                              <div class="form-card">
+                                 <input type="text" name="name" placeholder="Enter name" required="">
+                              </div>
+                              <div class="form-card">
+                                 <input type="text" name="phone" placeholder="Enter Phone no" minlength="10" maxlength="11" required="">
+                              </div>
+                              <div class="form-card">
+                                 <input type="email" name="email" placeholder="Enter Email" required="">
+                              </div>
+                              <input type="submit" class="action-button" value="Confirm">
+                        @endif
+                        </fieldset>
+                     @endforeach
+                     <!-- <fieldset>
                         <div class="form-card">
                            <h2 class="fs-title">Where are you from?</h2>
                            <input type="hidden" name="question[]" value="Where are you from?">
@@ -342,7 +360,7 @@ BeCarSmart | index
                            <input type="email" name="email" placeholder="Enter Email" required="">
                         </div>
                         <input type="submit" class="action-button" value="Confirm">
-                     </fieldset>
+                     </fieldset> -->
                      <!-- <fieldset>
                         <div class="form-card">
                             <h2 class="fs-title">Hey, What is your good name</h2>
