@@ -46,15 +46,15 @@ class HomeController extends Controller
     public function buy_car_lead(Request $request)
     {
         $request->validate([
-            // 'name' => ['required', 'string', 'max:255'],
-            // 'email' => ['required', 'string', 'email', 'max:255'],
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
 
         ]);
         $model = new BuyCarLead();
-        // $model->name = $request->name;
-        // $model->email = $request->email;
+        $model->name = $request->name;
+        $model->email = $request->email;
         $model->lead_source = $request->lead_source;
-        // $model->phone_no = $request->phone;
+        $model->phone_no = $request->phone;
         $model->questions = $request->question;
         $model->answers = $request->answer;
         if ($model->save()) {

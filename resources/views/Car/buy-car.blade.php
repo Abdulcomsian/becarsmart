@@ -91,9 +91,9 @@
                         <thead>
                             <!--begin::Table row-->
                             <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                                <!-- <th class="min-w-125px">Name</th>
+                                <th class="min-w-125px">Name</th>
                                 <th class="min-w-125px">Phone number</th>
-                                <th class="min-w-125px">Email</th> -->
+                                <th class="min-w-125px">Email</th>
                                 <th class="min-w-125px">Lead Source</th>
                                 <th class="min-w-125px">Date</th>
                                 <th class="min-w-125px">Action</th>
@@ -107,9 +107,9 @@
                         <tbody class="text-gray-600 fw-bold">
                             @foreach($buycarleads as $lead)
                             <tr>
-                                <!-- <td class="">{{$lead->name ?? ''}}</td>
+                                <td class="">{{$lead->name ?? ''}}</td>
                                 <td class="">{{$lead->phone_no ?? ''}}</td>
-                                <td class="">{{$lead->email ?? ''}}</td> -->
+                                <td class="">{{$lead->email ?? ''}}</td>
                                 <td class="">{{$lead->lead_source ?? ''}}</td>
                                 <td class="">{{ date('F,d,Y H:i:s ', strtotime($lead->created_at));}}</td>
                                 <td class="" style="display:flex;">
