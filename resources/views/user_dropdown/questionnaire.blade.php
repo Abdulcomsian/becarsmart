@@ -192,7 +192,7 @@
                         <div class="row pb-5">
                             <div class="col-sm-12">
 
-                                <button type="button" class="btn btn-success btn-md m-3" id="add_row" style="float:right" href="#"> <i class="fa fa-plus"></i> Add Step</button>
+                                <button type="button" class="btn btn-success btn-md m-3" id="add_row" style="float:right" href="#"> <i class="fa fa-plus"></i> Add Another Question</button>
                                 <button type="submit" class="btn btn-success btn-md m-3" id="row-3" style="float:right" href="#">Submit</button>
                             </div>
                         </div>

@@ -303,15 +303,15 @@ BeCarSmart | index
                            <div class="form-card">
                               <h2 class="fs-title">{{$question->question}}</h2>
                               <input type="hidden" name="question[]" value="{{$question->question}}">
-                              <input type="text" name="answer[]" id="answer{{$key}}" placeholder="{{$question->question}}">
+                              <input type="text" name="answer[]" id="answer{{$key}}" placeholder="{{$question->placeholder}}">
                            </div>
                            <input type="button" name="next" id="{{$key}}" class="next action-button" value="Next">
                            @if($key == '3')
                               <h2 class="fs-title">Other Details:</h2>
                               <div class="form-card">
-                                 <input type="text" name="lead_source" placeholder="Lead Source e.g Social Media" required="">
+                                 <input type="text" name="lead_source" placeholder="Other Details" required="">
                               </div>
-                              <div class="form-card">
+                              <!-- <div class="form-card">
                                  <input type="text" name="name" placeholder="Enter name" required="">
                               </div>
                               <div class="form-card">
@@ -319,7 +319,7 @@ BeCarSmart | index
                               </div>
                               <div class="form-card">
                                  <input type="email" name="email" placeholder="Enter Email" required="">
-                              </div>
+                              </div> -->
                               <input type="submit" class="action-button" value="Confirm">
                         @endif
                         </fieldset>
