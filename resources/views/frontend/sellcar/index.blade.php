@@ -290,10 +290,15 @@ BeCarSmart | index
                      <!-- <input type="hidden" name="_token" value="jeECH9s2fwVdrC77PCQIKogOAXC7uLXnugVa31ad">     -->
                                          <!-- progressbar -->
                      <ul id="progressbar">
-                        <li class="active" id="account"><strong></strong></li>
-                        <li class="" id="account"><strong></strong></li>
-                        <li class="" id="account"><strong></strong></li>
-                        <li class="" id="account"><strong></strong></li>
+                        @foreach($questionair as $key=>$all)
+                        @if($loop->first)
+                           <li class="active" id="account"><strong></strong></li>
+                        @else
+                           <li class="" id="account"><strong></strong></li>
+                        @endif
+                        @endforeach
+                        <!-- <li class="" id="account"><strong></strong></li> -->
+                        <!-- <li class="" id="account"><strong></strong></li> -->
                         <!-- <li id="personal"><strong></strong></li>
                            <li id="payment"><strong></strong></li>
                            <li id="confirm"><strong></strong></li> -->
@@ -305,12 +310,12 @@ BeCarSmart | index
                               <input type="hidden" name="question[]" value="{{$question->question}}">
                               <input type="text" name="answer[]" id="answer{{$key}}" placeholder="{{$question->placeholder}}">
                            </div>
-                           @if($key == '3')
+                           @if($loop->last)
                           
                            @else
                             <input type="button" name="next" id="{{$key}}" class="next action-button" value="Next">
                            @endif
-                           @if($key == '3')
+                           @if($loop->last)
                               <h2 class="fs-title">Other Details:</h2>
                               <div class="form-card">
                                  <input type="text" name="lead_source" placeholder="Other Details" required="">
