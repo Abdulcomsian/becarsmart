@@ -305,7 +305,11 @@ BeCarSmart | index
                               <input type="hidden" name="question[]" value="{{$question->question}}">
                               <input type="text" name="answer[]" id="answer{{$key}}" placeholder="{{$question->placeholder}}">
                            </div>
-                           <input type="button" name="next" id="{{$key}}" class="next action-button" value="Next">
+                           @if($key == '3')
+                          
+                           @else
+                            <input type="button" name="next" id="{{$key}}" class="next action-button" value="Next">
+                           @endif
                            @if($key == '3')
                               <h2 class="fs-title">Other Details:</h2>
                               <div class="form-card">

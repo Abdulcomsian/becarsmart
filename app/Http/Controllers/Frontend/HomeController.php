@@ -37,8 +37,9 @@ class HomeController extends Controller
         $blogs       = Blogs::limit(3)->get();
         $blogheader  = BlogHeader::first();
         $testominals = Testominal::get();
-        $questionair = QuestionnaireModel::orderBy('id', 'desc')->take(4)->get();
+        $questionair = QuestionnaireModel::get();
         $questionair_heading = QuestionaireHeading::first();
+        // dd($questionair);
         return view('frontend/sellcar/index', compact('howitworksheader', 'blogheader', 'herosection', 'howitworks', 'whysellcar', 'blogs', 'testominals', 'questionair','questionair_heading'));
     }
 
