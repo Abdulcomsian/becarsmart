@@ -39,8 +39,8 @@ class HomeController extends Controller
         $testominals = Testominal::get();
         $questionair = QuestionnaireModel::get();
         $questionair_heading = QuestionaireHeading::first();
-        // dd($questionair);
-        return view('frontend/sellcar/index', compact('howitworksheader', 'blogheader', 'herosection', 'howitworks', 'whysellcar', 'blogs', 'testominals', 'questionair','questionair_heading'));
+        $count_question = count($questionair);
+        return view('frontend/sellcar/index', compact('howitworksheader', 'blogheader', 'herosection', 'howitworks', 'whysellcar', 'blogs', 'testominals', 'questionair','questionair_heading','count_question'));
     }
 
     //insert buy car lead
