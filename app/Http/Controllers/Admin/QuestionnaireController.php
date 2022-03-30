@@ -88,8 +88,17 @@ class QuestionnaireController extends Controller
     {
         $id = $req->input('id');
         try {
-            QuestionnaireModel::find($id)->delete();
-            toastSuccess('Record Deleted successfully!');
+            $count_question = QuestionnaireModel::get();
+            if(count($count_question) <= 4)
+            {
+                toastError('You have 4 question left. Kindly add more question to delete this question'); 
+            }
+            else
+            {
+               QuestionnaireModel::find($id)->delete();
+                toastSuccess('Record Deleted successfully!'); 
+            }
+            
             return Redirect::back();
         } catch (\Throwable $err) {
             toastError($err);
