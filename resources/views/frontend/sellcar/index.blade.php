@@ -232,7 +232,7 @@ BeCarSmart | index
    <div class="container">
       <div class="row">
          <div class="col">
-            <p>For Support mail us at:  info@becarsmart.co.uk</p>
+            <p>Email us at info@becarsmart.co.uk or call us on: 023 9355 2653</p>
          </div>
       </div>
    </div>
@@ -316,7 +316,7 @@ BeCarSmart | index
                             <input type="button" name="next" id="{{$key}}" class="next action-button" value="Next">
                            @endif
                            @if($loop->last)
-                              <h2 class="fs-title">Other Details:</h2>
+                              <!-- <h2 class="fs-title">Other Details:</h2>
                               <div class="form-card">
                                  <input type="text" name="lead_source" placeholder="Other Details" required="">
                               </div>
@@ -328,7 +328,7 @@ BeCarSmart | index
                               </div>
                               <div class="form-card">
                                  <input type="email" name="email" placeholder="Enter Email" required="">
-                              </div>
+                              </div> -->
                               <input type="submit" class="action-button" value="Confirm">
                         @endif
                         </fieldset>

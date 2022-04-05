@@ -20,35 +20,237 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="content-div">
-                        <p>“BeCarSmart having its registered office at Suite No. 301, Business Venue Building, Umm Hurair Road, P.O Box 121361,OudMetha,BurDubai, Dubai, United Arab Emiratesowns, operates and maintains the <a href="http://www.domain.com/">www.domain.com</a> Website ("Site")For the purpose of this Terms and conditions “BeCarSmart” includes its subsidiaries, affiliates, divisions, contractors and all their data sources and suppliers.</p>
-                        <p>The following are the terms of use that govern use of the Site ("Terms of Use"). By using the Site you expressly agree to be bound by these Terms of Use and the <a href="http://www.domain.com/">www.domain.com</a> privacy policy and to follow these Terms of Use and all applicable laws and regulations governing use of the Site.BeCarSmart reserves the right to change these Terms of Use at any time, effective immediately upon posting on the Site. Please check this page of the Site periodically. We will note when there are updates to the Terms of Use at the bottom of the Terms of Use. If you violate these Terms of Use, BeCarSmart may terminate your use of the Site, bar you from future use of the Site, and/or take appropriate legal action against you.</p>
-                        <p>1.	LIMITED LICENSE. You are granted a limited, non-exclusive, revocable and non-transferable license to utilize and access the Site pursuant to the requirements and restrictions of these Terms of Use. BeCarSmart may change, suspend, or discontinue any aspect of the Site at any time. BeCarSmart may also, without notice or liability, impose limits on certain features and services or restrict your access to all or portions of the Site. You shall have no rights to the proprietary software and related documentation, if any, provided to you in order to access the Site. Except as provided in the Terms of Use, you shall have no right to directly or indirectly, own, use, loan, sell, rent, lease, license, sublicense, assign, copy, translate, modify, adapt, improve, or create any new or derivative works from, or display, distribute, perform, or in any way exploit the Site, or any of its contents (including software) in whole or in part.</p>
-                        <p>2.	SITE OPERATION: United Arab Emirates is our Country of Domicile. BeCarSmart controls this Site from the U.A.E. BeCarSmart makes no representation that this Site is appropriate for use in other locations. If you use this Site from other locations, you are responsible for ensuring compliance with local laws. You may not use, export or re-export any materials from this Site in violation of any applicable laws or regulations, including, but not limited to any U.A.E export laws and regulations.</p>
-                        <p>3.	APPLICABLE LAW. The Laws of the United Arab Emirates shall govern the use of the Site and the Terms of Use, without regards to conflict of laws principals. All disputes arising in connection therewith shall be heard only by a court of competent jurisdiction in U.A.E.</p>
-                        <p>4.	MULTI-CURRENCY PRICED TRANSACTION, the displayed price and currency selected by you, will be the same price and currency charged to the Card and printed on the Transaction Receipt.</p>
-                        <p>5.	PURCHASES. BeCarSmart accepts payment by Visa or Mastercard debit and credit cards in AED for its products and services. All online purchases are also governed by the terms and conditions of respective merchant service providers. Please review respective merchant service provider’s user agreement and privacy policy before entering any transaction. Interpretation. These Terms of Use supersede all other written and oral communications or agreements with regard to the subject matters discussed in these Terms of Use. A waiver or modification of these Terms of Use will only be effective if made in writing signed by an authorized officer of BeCarSmart. All refunds will be made onto the original mode of payment.</p>
-                        <p>6.	PRICE.The Website provides Users with a catalogue of list of services. Prices and taxes to buy the services are indicated in the catalogue. BeCarSmart reserves the right to change its prices at any time by posting them online. The only prices applicable to ser transactions are the ones in effect at the time the purchase is made. The prices include the taxes applicable on the date of the purchase and any change in the rate of these taxes will be reflected in the price of the templates in the catalogue. The total amount of the purchase, including all taxes, is indicated before the final confirmation of the purchase order. The payment of the full price must be made when the purchase is made.</p>
-                        <p>7.	SUBSCRIPTION.Subject to the User purchasing sufficient Usage Rights in accordance with the terms and conditions of the Website, BeCarSmart hereby grants to the User a non-exclusive, non-transferable right to permit Authorized Users to use the Service during the Subscription Term. The initial Subscription Term will commence and expire in accordance with the start date and end date set forth on the Order Form, unless earlier terminated. Thereafter, the Subscription shall automatically renew for additional one (1) year periods (or for such longer period as may be set forth on a renewal Order Form executed by the parties) unless either party gives written notice to the other of its intention not to renew the Subscription at least thirty (30) days prior to the expiration of the then-current Subscription Term.</p>
-                        <p>8.	PAYMENT CONFIRMATION. By clicking “Submit,” you are consenting to receive a one-time confirmation of this payment electronically within 24 hrs to the Email address provided to us.</p>
-                        <p>9.	DELIVERY OF SERVICES. By submitting a signed Service Order request, User agrees to take and pay for, and, by accepting the Service Order request,  BeCarSmart agrees to deliver the service(s) during the term described on the Service Order Summary.Requested Product will be delivered within two Days at the E Mail Address provided in the Request Form.Multiple Requests/orders are possible and may result in multiple postings to the cardholder’s monthly statement and multiple deliveries.</p>
-                        <p>10.	SANCTIONED COUNTRIES. BeCarSmart will not trade with or provide any services to individuals and companies owned or controlled by, or acting for or on behalf of, OFFICE FOREIGN ASSETS CONTROL (OFAC), the United Nations Security Council (UNSC) , the European Union(EU), Her Majesty’s Treasury (HMT) , or other relevant sanctions authority targeted countries AND individuals, groups, and entities, such as terrorists and narcotics traffickers designated under the OFAC, UNSC , EU and  HMTSanction programs that are not countryspecific.</p>
-                        <p>11.	REPRESENTATIONS BY YOU. By visiting the Site, you represent, warrant and covenant that (a) you are at least 18 years old; (b) that all materials of any kind submitted by you to BeCarSmart through the Site or for inclusion on the Site will not plagiarize, violate or infringe upon the rights of any third-party including trade secret, copyright, trademark, trade dress, privacy, patent, or other personal or proprietary rights. The Userusing the website who are Minor /under the age of 18 shall not register as a User of the website and shall not transact on or use the website.</p>
-                        <p>12.	PERMITTED USE. You agree that you are only authorized to visit, view and to retain a copy of pages of this Site for your own personal use, that you shall not duplicate, download, publish, modify or otherwise distribute the material on this Site for any purpose other than for personal use, unless otherwise specifically authorized by BeCarSmart to do so. You also agree not to deep-link to the site for any purpose, unless specifically authorized by BeCarSmart to do so. The content and software on this Site are the property of BeCarSmart. The cardholder must retain a copy of transaction records and Merchant policies and rules.</p>
-                        <p>13.	YOUR ACCOUNT. If you use BeCarSmart Site, you are responsible for maintaining the confidentiality of your account and password and for restricting access to your account from any devices, and you agree to accept responsibility for all activities that occur under your account or password. The Site shall not be responsible or liable, directly or indirectly, in any way for any loss or damage of any kind incurred as a result of, or in connection with, your failure to comply with this section.</p>
-                        <p>14.	NO COMMERCIAL USE. This Site may not be used by you for any commercial purposes such as to conduct sales of merchandise or services of any kind. You must obtain BeCarSmart prior written consent to make commercial offers of any kind on the Site, whether by advertising, solicitations, links, or any other form of communication. BeCarSmart will investigate and take appropriate legal action against anyone who violates this provision, including without limitation, removing the offending communication from the Site and barring such violators from use of the Site.</p>
-                        <p>15.	LINKS AND SEARCH RESULTS. The Site may automatically produce search results that reference and/or link to third party sites throughout the World Wide Web.BeCarSmart has no control over these sites or the content within them. BeCarSmart does not guarantee, represent, or warrant that the content contained in the sites is accurate, legal and/or inoffensive. BeCarSmart does not endorse the content of any third-party site, nor does it make any representation or warranty about these sites, including that they will not contain viruses or otherwise impact your computer. By using the Site to search for or link to another site, you agree and understand that you may not make any claim against BeCarSmart for any damages or losses, whatsoever, resulting from your use of the Site to obtain search results or to link to another site. If you have a problem with a link from the Site, you may notify us at info@menainsurancekyc.com</p>
-                        <p>16.	COPYRIGHT POLICY.BeCarSmart may terminate the privileges of any user who uses this Site to unlawfully transmit copyrighted material without a license, express consent, valid defence, or fair use exemption to do so. If you submit information to this Site, you warrant that the information does not infringe the copyrights or other rights of third parties.</p>
-                        <p>17.	INTELLECTUAL PROPERTY. BeCarSmart is not responsible for the content, quality or accuracy of data provided by users, compilations of such data, text, information, and other materials made available to users through BeCarSmart system. The On-line Materials are BeCarSmart intellectual property and are protected by U.A.E and international intellectual property laws. The On-line Materials may not be copied or redistributed either in whole or in part without prior written consent of BeCarSmart, except as expressly and specifically permitted under these Terms of Use.</p>
-                        <p>18.	The On-line Materials are and will remain the exclusive property of BeCarSmart. All rights, titles and interests in and to the On-line Materials will be and remain vested solely in BeCarSmart. Under no circumstances will you have any right, directly or indirectly, to own, use, copy, loan, sell, rent, lease, license, sublicense, redistribute, assign, or otherwise convey the On- line Materials, or any rights thereto, except as expressly and specifically provided in the Terms of Use. Nothing in these Terms of Use will convey to you any right, title or interest, except that of a license with the express rights and subject to all limitations herein. Nothing in these Terms of Use grants you the right, directly or indirectly, to use the On-line Materials to create a product for resale or to use the On-line Materials in any way that competes with BeCarSmart.</p>
-                        <p>19.	You acknowledge and agree that BeCarSmart will own all rights, titles and interests in and to any copy, translation, modification, adaptation, derivative work or improvement of the On- line Materials made by or for you. At BeCarSmart request, you must execute, or obtain the execution of, any instrument that may be necessary to assign these rights, titles or interests to BeCarSmart or perfect these rights, titles or interests in BeCarSmart  name. </p>
-                        <p>20.	DISCLAIMER OF WARRANTY, LIMITATION OF DAMAGES. BeCarSmart MAKES NO WARRANTY OR REPRESENTATION OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTY OF TITLE OR NON-INFRINGEMENT OR IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT OR OTHER VIOLATION OF RIGHTS IN RELATION TO THE AVAILABILITY, ACCURACY, VALIDITY, RELIABILITY OR CONTENT OF THESE PAGES AND/OR THE SITE. BeCarSmart ALSO DOES NOT MAKE ANY REPRESENTATION OR WARRANTY REGARDING THE ACCURACY OR RELIABILITY OF ANY ADVICE, OPINION, STATEMENT OR OTHER INFORMATION THAT IS SUBMITTED, DISPLAYED OR UPLOADED THROUGH THE SITE BY ANY USER. BeCarSmart SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR FOR BUSINESS INTERRUPTION ARISING OUT OF THE USE OF OR INABILITY TO USE THIS SITE, EVEN IF BeCarSmart HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW EXCLUSION OF CERTAIN WARRANTIES OR LIMITATIONS OF LIABILITY, SO THE ABOVE LIMITATIONS OR EXCLUSIONS MAY NOT APPLY TO YOU. THE LIABILITY OF BeCarSmart WOULD IN SUCH CASE BE LIMITED TO THE GREATEST EXTENT OF LIABILITY PERMITTED BY LAW.</p>
-                        <p>21.	VIOLATION OF TERMS OF USE. You understand and agree that in BeCarSmart sole discretion, and without prior notice, BeCarSmart may terminate your access to the Site, or exercise any other remedy available and remove any unauthorized user information, if BeCarSmart believes that the information you provide has violated or is inconsistent with these Terms of Use, or violates the rights of BeCarSmart, or any third party, or violates the law. You agree that monetary damages may not provide a sufficient remedy to BeCarSmart for violations of these Terms of Use, and you consent to injunctive or other equitable relief for such violations. BeCarSmart may release user information about you if required by law or subpoena.</p>
-                        <p>22.	INDEMNITY. You agree to indemnify and hold BeCarSmart, its subsidiaries, affiliates, officers, agents and other partners and employees, harmless from any loss, liability, claim or demand, including reasonable attorneys’ fees, made by any third party due to or arising out of or relating to your use of the Site, including also your use of the Site to provide a link to another site or to upload content or other information to the Site, or your breach of the Terms of Use.</p>
-                        <p>23.	LICENCE GRANTED TO YOU. By providing materials to BeCarSmart, including by submitting oruploading content or materials for use on the Site you represent and warrant that you or the owner of all rights to such content or materials has expressly granted BeCarSmart an irrevocable world-wide right in all languages and in perpetuity to use and exploit all or any part of the content and materials provided by you. BeCarSmart maypublish and distribute any such submitted content or materials at its sole discretion by any method now existing or later developed. You agree that you shall waive all claims and have no recourse against BeCarSmart for any alleged or actual infringement or misappropriation of any proprietary rights in any communication, content or material submitted to BeCarSmart. Any communication or materials you send to BeCarSmart will be treated as non- confidential and non-proprietary and may bedisseminated or used by BeCarSmart for any purpose, including, but not limited to, developing, creating, manufacturing, or marketing products or services.</p>
-                        <p>24.	ADVERTISING. The Site may contain advertisements and/or sponsorships. The advertisersand/or sponsors that provide these advertisements and sponsorships are solely responsible for insuring that the materials submitted for inclusion on the Site are accurate and comply with all applicable laws.BeCarSmart is not responsible for the acts or omissions of any advertiser or sponsor.</p>
-                        <p>25.	SEVERABILITY. If any provision of the Terms of Use is held to be invalid, void, or unenforceable, the remaining provisions shall nevertheless continue in full force and effect.</p>
-                        <p>26.	FORCE MAJEURE.In the event BeCarSmart is unable to perform its obligations under these terms of use because of acts of God, strikes, equipment or transmission failure or damage reasonably beyond its control, or other causes reasonably beyond its control, BeCarSmart shall not be liable for damages to the other for any damages resulting from such failure to perform or otherwise from such causes.</p>
-                        <p>27.	Headings &amp; section titles in this Agreement are for convenience and do not define, limit, or extend any provision of this Agreement.</p>
+                        <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+<p>Our Terms and Conditions were last updated on</p>
+<p>&nbsp;</p>
+<p>Please read these terms and conditions carefully before using our services.</p>
+<h2>Interpretation and Definitions</h2>
+<h3>Interpretation</h3>
+<p>&nbsp;</p>
+<p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+<h3>Definitions</h3>
+<p>&nbsp;</p>
+<p>For the purposes of these Terms and Conditions:</p>
+<p>&nbsp;</p>
+<ul>
+<li>&ldquo;<strong>Account</strong>&rdquo; means a unique account created for You to access our Service or parts of our Service.</li>
+<li>&ldquo;<strong>Company</strong>&rdquo; (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to BE CAR SMART LIMITED registered in England and Wales under 1 Registered at Unit 9, Harts Farm Way, Havant, PO9 1HS.</li>
+<li>&ldquo;<strong>Country</strong>&rdquo; refers to England and Wales in the United Kingdom</li>
+<li>&ldquo;<strong>Content</strong>&rdquo; refers to content such as text, images, or other information that can be posted, uploaded, linked to or otherwise made available by You, regardless of the form of that content.</li>
+<li>&ldquo;<strong>Device</strong>&rdquo; means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
+<li>&ldquo;<strong>Service</strong>&rdquo; refers to the Website.</li>
+<li>&ldquo;<strong>Terms and Conditions</strong>&rdquo; (also referred as "<strong>Terms</strong>") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.</li>
+<li>&ldquo;<strong>Third-party Social Media Service</strong>&rdquo; means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</li>
+<li>&ldquo;<strong>Website</strong>&rdquo; refers to becarsmart.co.uk</li>
+<li>&ldquo;<strong>You</strong>&rdquo; means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
+<li>&ldquo;Procurement Partner&rdquo; means an authorised and registered trade partner with a agreed contract with the company to be informed of vehicle data agreed to be distributed by the seller for the direct reason of buying a vehicle that belongs to the seller.</li>
+<li>&ldquo;Selling Partners&rdquo; means an authorised and registered trade partner with a agreed contract with the company to be contacted for sourcing of vehicles to the customer.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Acknowledgment</h2>
+<p>&nbsp;</p>
+<p>These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service offered by the company.</p>
+<p>&nbsp;</p>
+<p>Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service or have been provided with the actual account opening application forms for a Representative of Be Car Smart Limited</p>
+<p>&nbsp;</p>
+<p>By accessing or using the Service you agree to be bound by these Terms and Conditions. If you disagree with any part of these Terms and Conditions, then You may not access the Service.</p>
+<p>&nbsp;</p>
+<p>You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.</p>
+<p>&nbsp;</p>
+<p>Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.</p>
+<h2>About Us</h2>
+<h3>Be Car Smart Limited and www.becarsmart.co.uk</h3>
+<p><a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> is a website operated by BE CAR SMART LIMITED a company registered in England and Wales under company number 13739097. Registered Office; Unit 9, Harts Farm Way, Havant, PO9 1HS.</p>
+<p>&nbsp;</p>
+<p>Be Car Smart Limited are predominantly a Procurement service who deal with individuals looking to sell their personal vehicles.</p>
+<p>&nbsp;</p>
+<p>Be Car Smart Limited also act as agents for outside procurers who are seeking vehicles to procure through an agency connected to end users.</p>
+<p>&nbsp;</p>
+<p>Be Car Smart Limited also act as a Vehicle sales and sourcing agency to enable end users and trade retailers to procure vehicles through the services offered by the company and agents.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Procurement Service</strong></p>
+<p>&nbsp;</p>
+<p>Any valuation generated by agent in contact on behalf of BE CAR SMART LIMITED is based on the information you tell us about your vehicle and on the following general assumptions we make about your vehicle.</p>
+<p>&nbsp;</p>
+<ul>
+<li>The vehicle has no major mechanical faults.</li>
+<li>it has never been subject to an insurance write off</li>
+<li>it has no damage, including interior and mechanical</li>
+<li>it has an engine which starts, and it can idle on its own, i.e. it is not a "non-runner"</li>
+<li>Physical inspection is carried out on the vehicle prior to the purchase being made, any valuation and quote offered via the agent is simply determined from the information provided from enquiry.</li>
+<li>Upon agreement to the valuation offered by the agent, a booking slot can be arranged for the physical inspection of the car. The time and place of this is to be mutually agreed by the enquirer &lsquo;You&rsquo; and the agent.</li>
+<li>If on inspection of the vehicle, from its history or condition shows an aspect that is deemed to influence the value of the vehicle, the price quoted may be subject to alteration.</li>
+<li>BE CAR SMART Limited trading as www.becarsmart.co.uk, have no obligation to purchase the vehicle that an enquiry has been sent for by &lsquo;you&rsquo;, or in fact a valuation has been provided for by &lsquo;the company&rsquo;.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>If there is a change in the market value of your car resulting in a reduced valuation, an agent will be in contact before the inspection to advise of the amended valuation and so that you have an opportunity to cancel your inspection if you wish to do so.</p>
+<p>&nbsp;</p>
+<p>Pre-Purchase Requisites</p>
+<p>&nbsp;</p>
+<p>Prior to the completion of purchase, we require you to provide us with the following.</p>
+<p>&nbsp;</p>
+<ul>
+<li>Photographic ID</li>
+<li>Proof of Address</li>
+<li>Confirmation of finance settlement (if applicable)</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Post Purchase Requisites</p>
+<p>&nbsp;</p>
+<p>Upon successful completion of inspection and agreement on the final price offered by an agent representing &lsquo;BE CAR SMART LIMITED&rsquo;, a procurement contract is to be provided by the company to you. On accurate completion of the document, a handover will be required of the following materials.</p>
+<p>&nbsp;</p>
+<ul>
+<li>Vehicle Registration Document</li>
+<li>Vehicle Service History and MOT Certificate (If required)</li>
+<li>All available keys</li>
+<li>Any other accessories such as Parcel shelf, locking wheel nut etc.</li>
+</ul>
+<p>&nbsp;</p>
+<p>In the event that the handover requirements cannot be fulfilled, it is agreed that the purchase contract may be rescinded, and any procurement obligations are cancelled, this will mean that there is no exchange of funds or vehicle.</p>
+<p>&nbsp;</p>
+<h3>Valuation Policy</h3>
+<p>&nbsp;</p>
+<p>The Company reserves the right to revise its prices or quotes offered at any point prior to the contractual completion of the procurement service. Any price offered prior to the successful checking of the vehicle against the accuracy of the details and data provided by you to the company is considered a quote only until the successful checks are completed by the company.</p>
+<p>&nbsp;</p>
+<p>The prices quoted may be revised by the Company after accepting an Order in the event of any occurrence affecting delivery caused by government action, natural disaster, and any other matter beyond the control of the Company. In that event, you will have the right to cancel Your Order.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Payments</h3>
+<p>&nbsp;</p>
+<p>Payments on the purchase of a vehicle on most occasions will be made prior to the uplift of the vehicle, however, may vary if in fact it is pending the confirmation of a finance settlement in which it may be up to 72 hours post the uplift of the vehicle.</p>
+<p>&nbsp;</p>
+<p>Finance Settlements</p>
+<p>&nbsp;</p>
+<p>If the vehicle has outstanding payments due against the finance settlement, any valuation offered by the company to you will be used to settle the complete total of the remaining finance, if the valuation is higher than this amount the remainder is directly transferred to You &lsquo;the seller&rsquo;. If the valuation offered is lower than the amount of the remainder of the finance, then confirmation is required prior to the handover of the vehicle of the amounts outstanding greater than the valuation agreed to be paid by <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> have been settled. Non &ndash; confirmation or failure to do this will result in the contract being terminated.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Buyer Agency Service</p>
+<p>&nbsp;</p>
+<p><a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> may also act as an agency service if agreed by you the seller with an outsourced procurement partner. Agreement to this service, is at no additional cost to you the seller, however it would be deemed to be agreed that <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> are entitled to share and advertise any details or images of the vehicle in question with a select list of traders and procurers in partnership with the company. <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> agrees to not disclose any personal information about you the seller until the point of an arranged inspection appointment booking, where the disclosure of information will only be what is required and relevant to the service at hand.</p>
+<p>&nbsp;</p>
+<p>This may include Name, Contact telephone number, and address.</p>
+<p>&nbsp;</p>
+<p>Once the seller accepts the offer from the buyer, the buyer must arrange immediate collection with the seller at a mutually agreed time and place. The buyer must provide a contract for the seller for completion prior to purchase.</p>
+<p>&nbsp;</p>
+<p>Withdrawal of this contract cannot be made unless it is of a reasonable cause such as;</p>
+<p>&nbsp;</p>
+<ul>
+<li>The seller cancels the sale prior to vehicle collection</li>
+<li>The seller has not shown proof of confirmation the any outstanding finance settlements have been cleared,</li>
+<li>The vehicle is not as is described and shows on inspection of the vehicle, from its history or condition shows an aspect that is deemed to influence the value of the vehicle, the price quoted may be subject to alteration.</li>
+</ul>
+<p>&nbsp;</p>
+<p>The procurement partner acknowledges that it is to always act in good faith with the seller and agrees to fulfil any contractual obligations once agreed.</p>
+<p>&nbsp;</p>
+<p>The procurement Partner acknowledges that when providing the seller with a contract it complies with.</p>
+<p>&nbsp;</p>
+<ul>
+<li>All Laws and legislation in the governing country</li>
+<li>Consumer Rights Act</li>
+<li>Is solely between the buyer and the seller and does not include the use of <a href="http://www.becarsmart.co.uk">becarsmart.co.uk</a> (BE CAR SMART Limited) in any contractual obligations.</li>
+<li>Does not sub-contract to any further procurers that are outside of the agreement between Be Car Smart Limited and the relevant partner.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The procurement partner agrees to pay all due sums to the seller as agreed in the contractual obligations. If the procurement partner does to fulfil obligations to pay the seller prior to the uplift of the vehicle, any connection and future use of the Be Car Smart Limited services will be suspended and the seller will be asked to process legal proceedings against the buyer. Be Car Smart Limited is not liable for any compensation claims in this situation and does not agree to be part of any contract between the procurement partner and the seller and is solely an Agency service.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Financial Obligations</p>
+<p>&nbsp;</p>
+<p>Financial obligations between www.becarsmart.co.uk; (Be Car Smart Limited) and the procurement partner are to be negotiated on an individual procurement basis, unless there is a long-term contractual obligation between the company and the procurement partner.</p>
+<p>&nbsp;</p>
+<p>Invoices for Agency fees will be raised from the successful agreement between the procurer and the seller, this will be as agreed between the Procurement partner and Be Car Smart Limited.</p>
+<p>&nbsp;</p>
+<p>Payment terms are in advance of the vehicle transfer being made unless agreed otherwise between Be Car Smart Limited and the procurement partner, any differentiation will be shown on the invoice as the &lsquo;Due Date&rsquo;.</p>
+<p>&nbsp;</p>
+<p>Failure to pay invoices will lead to standard debt collection methods, followed by any legal proceedings within 5 working days of the net due date. This will also end all future agency services from <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> (Be Car Smart Limited) to the procurement partner.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Vehicle Sourcing Services</p>
+<p>&nbsp;</p>
+<p>Be Car Smart Limited offer vehicle sourcing services for individuals looking to purchase a vehicle. This may be directly through the company or acting as an agency through a certified Selling Partner.</p>
+<p>&nbsp;</p>
+<p>You may contact Be Car Smart Limited directly through email, telephone or through the website with the specific details or range for a set of key data of the vehicle that you are looking to purchase. Be Car Smart Limited is authorised to use your contact details to make contact and discuss details more specifically.</p>
+<p>&nbsp;</p>
+<p>Be Car Smart Limited upon offering a variety of vehicles which meet specifications or close to will be due a deposit if a vehicle that meets the requirements is agreed upon by you the buyer. This will be formalised by provision of an official Be Car Smart Sellers Contract. Delivery or collection of the agreed vehicle will be determined between Be Car Smart Limited or if sourced through a Partner and the Seller.</p>
+<p>&nbsp;</p>
+<p>Prior to the handover of the vehicle remainder of the due sums are required to be paid immediately by the buyer to Be Car Smart Limited or if relevant the procurement partner.</p>
+<p>&nbsp;</p>
+<p>Be Car Smart Limited agrees that the vehicles should meet the following requirements, unless previously advised to the buyer and agreed &ndash; Any details are to be specified on the sellers contract;</p>
+<p>&nbsp;</p>
+<ul>
+<li>The vehicle has no major mechanical faults.</li>
+<li>it has never been subject to an insurance write off</li>
+<li>it has no damage, including interior and mechanical</li>
+<li>it has an engine which starts, and it can idle on its own, i.e. it is not a "non-runner"</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Upon delivery or collection of the vehicle, it is agreed that upon inspection of the vehicle, from its history or condition shows an aspect that is deemed to influence the value of the vehicle, the price quoted may be subject to alteration. If further agreement cannot be reached, then a full refund of the payments made will be provided. If is acceptable to the buyer alternative options will be provided and will mean that refund of the deposit is not provided and used for a future agreement.</p>
+<p>&nbsp;</p>
+<p>Vehicles purchased through a selling partner are under separate contractual obligations provided by the selling partner to you the buyer. Liability is not taken by Be Car Smart Limited in those instancing.</p>
+<p>&nbsp;</p>
+<p>Sales Pre-requisites;</p>
+<p>&nbsp;</p>
+<p>Prior to the completion of sale, we require you to provide us with the following.</p>
+<p>&nbsp;</p>
+<ul>
+<li>Photographic ID</li>
+<li>Proof of Address</li>
+</ul>
+<p>&nbsp;</p>
+<p>Post Sales Requisites;</p>
+<p>&nbsp;</p>
+<p>Upon handover the following will be passed from Be Car Smart Limited or the seller</p>
+<p>&nbsp;</p>
+<ul>
+<li>Vehicle Registration Document</li>
+<li>Vehicle Service History and MOT Certificate (If required)</li>
+<li>All available keys</li>
+<li>Any other accessories such as Parcel shelf, locking wheel nut etc.</li>
+</ul>
+<p>&nbsp;</p>
+<h2>Termination</h2>
+<p>&nbsp;</p>
+<p>We may terminate or suspend Your Account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.</p>
+<p>&nbsp;</p>
+<p>Upon termination, Your right to use the Service will cease immediately. If You wish to terminate Your Account, You may simply discontinue using the Service or contact us at <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> to notify us of your intention to do so</p>
+<h2>Limitation of Liability</h2>
+<p>&nbsp;</p>
+<p>Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.</p>
+<p>&nbsp;</p>
+<p>To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.</p>
+<p>&nbsp;</p>
+<p>Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.</p>
+<h2>Governing Law</h2>
+<p>&nbsp;</p>
+<p>The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.</p>
+<h2>Disputes Resolution</h2>
+<p>&nbsp;</p>
+<p>If You have any concern or dispute about the Service, you agree to first try to resolve the dispute informally by contacting the Company.</p>
+<h2>For European Union (EU) Users</h2>
+<p>&nbsp;</p>
+<p>If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.</p>
+<p>&nbsp;</p>
+<h2>Changes to These Terms and Conditions</h2>
+<p>We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.</p>
+<p>&nbsp;</p>
+<p>By continuing to access or use Our Service after those revisions become effective, you agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.</p>
+<h2>Contact Us</h2>
+<p>&nbsp;</p>
+<p>If you have any questions about these Terms and Conditions, you can contact us:</p>
+<p>&nbsp;</p>
+<ul>
+<li>By visiting www.becarsmart.co.uk</li>
+<li>By sending us an email: info@becarsmart.co.uk</li>
+</ul>
                     </div>
                 </div>
             </div>

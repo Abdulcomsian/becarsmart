@@ -91,10 +91,8 @@
                         <thead>
                             <!--begin::Table row-->
                             <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                                <th class="min-w-125px">Name</th>
-                                <th class="min-w-125px">Phone number</th>
-                                <th class="min-w-125px">Email</th>
-                                <th class="min-w-125px">Lead Source</th>
+                                <th class="min-w-125px">Question</th>
+                                <th class="min-w-125px">Answer</th>
                                 <th class="min-w-125px">Date</th>
                                 <th class="min-w-125px">Action</th>
 
@@ -105,28 +103,24 @@
                         <!--end::Table head-->
                         <!--begin::Table body-->
                         <tbody class="text-gray-600 fw-bold">
-                            @foreach($buycarleads as $lead)
                             <tr>
-                                <td class="">{{$lead->name ?? ''}}</td>
-                                <td class="">{{$lead->phone_no ?? ''}}</td>
-                                <td class="">{{$lead->email ?? ''}}</td>
-                                <td class="">{{$lead->lead_source ?? ''}}</td>
-                                <td class="">{{ date('F,d,Y H:i:s ', strtotime($lead->created_at));}}</td>
+                                <td class="">{{$buycarleads->questions[1] ?? ''}}</td>
+                                <td class="">{{$buycarleads->answers[1] ?? ''}}</td>
+                                <td class="">{{ date('F,d,Y H:i:s ', strtotime($buycarleads->created_at));}}</td>
                                 <td class="" style="display:flex;">
 
                                     <button type="button" class="btn btn-primary py-3 px-4" style="margin-right: 3px;">
-                                        <a class="" href="{{url('/evaluate-car',$lead->id)}}">
+                                        <a class="" href="{{url('/evaluate-car',$buycarleads->id)}}">
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                         </a>
                                     </button>
-                                    <form method="post"  style='width:20%' id="form_{{$lead->id}}" action="{{url('buy-car-lead-delete')}}">
+                                    <form method="post"  style='width:20%' id="form_{{$buycarleads->id}}" action="{{url('buy-car-lead-delete')}}">
                                         @csrf
-                                        <input type="hidden" name="id" value="{{$lead->id}}" />
-                                         <button class="btn btn-danger confirm" id="{{$lead->id}}"><span class="fa fa-trash"></span></button>
+                                        <input type="hidden" name="id" value="{{$buycarleads->id}}" />
+                                         <button class="btn btn-danger confirm" id="{{$buycarleads->id}}"><span class="fa fa-trash"></span></button>
                                     </form>
                                 </td>
                             </tr>
-                            @endforeach
                         </tbody>
 
                         <!--end::Table body-->
