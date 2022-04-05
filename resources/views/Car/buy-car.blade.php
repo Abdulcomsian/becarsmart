@@ -104,8 +104,8 @@
                         <!--begin::Table body-->
                         <tbody class="text-gray-600 fw-bold">
                             <tr>
-                                <td class="">{{$buycarleads->questions[1] ?? ''}}</td>
-                                <td class="">{{$buycarleads->answers[1] ?? ''}}</td>
+                                <td class="">{{$buycarleads->questions[0] ?? ''}}</td>
+                                <td class="">{{$buycarleads->answers[0] ?? ''}}</td>
                                 <td class="">{{ date('F,d,Y H:i:s ', strtotime($buycarleads->created_at));}}</td>
                                 <td class="" style="display:flex;">
 
