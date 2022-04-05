@@ -52,7 +52,7 @@ class HowItWorksSeeder extends Seeder
 
         $data1 = [
             'header' => 'How it Works?',
-            'sub_header' => '3 Easy Steps',
+            'sub_header' => '4 Easy Steps',
         ];
         HowItWorkHeader::create($data1);
         foreach ($data as $data) {

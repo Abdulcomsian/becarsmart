@@ -20,15 +20,14 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="content-div">
-                        <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
-<p>Our Terms and Conditions were last updated on</p>
+                        <p>Our Terms and Conditions were last updated on</p>
 <p>&nbsp;</p>
 <p>Please read these terms and conditions carefully before using our services.</p>
-<h2>Interpretation and Definitions</h2>
-<h3>Interpretation</h3>
+<h2><strong>Interpretation and Definitions</strong></h2>
+<h3><strong>Interpretation</strong></h3>
 <p>&nbsp;</p>
 <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
-<h3>Definitions</h3>
+<h3><strong>Definitions</strong></h3>
 <p>&nbsp;</p>
 <p>For the purposes of these Terms and Conditions:</p>
 <p>&nbsp;</p>
@@ -89,7 +88,7 @@
 <p>&nbsp;</p>
 <p>If there is a change in the market value of your car resulting in a reduced valuation, an agent will be in contact before the inspection to advise of the amended valuation and so that you have an opportunity to cancel your inspection if you wish to do so.</p>
 <p>&nbsp;</p>
-<p>Pre-Purchase Requisites</p>
+<p><strong>Pre-Purchase Requisites </strong></p>
 <p>&nbsp;</p>
 <p>Prior to the completion of purchase, we require you to provide us with the following.</p>
 <p>&nbsp;</p>
@@ -100,7 +99,7 @@
 </ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>Post Purchase Requisites</p>
+<p><strong>Post Purchase Requisites</strong></p>
 <p>&nbsp;</p>
 <p>Upon successful completion of inspection and agreement on the final price offered by an agent representing &lsquo;BE CAR SMART LIMITED&rsquo;, a procurement contract is to be provided by the company to you. On accurate completion of the document, a handover will be required of the following materials.</p>
 <p>&nbsp;</p>
@@ -113,7 +112,7 @@
 <p>&nbsp;</p>
 <p>In the event that the handover requirements cannot be fulfilled, it is agreed that the purchase contract may be rescinded, and any procurement obligations are cancelled, this will mean that there is no exchange of funds or vehicle.</p>
 <p>&nbsp;</p>
-<h3>Valuation Policy</h3>
+<h3><strong>Valuation Policy</strong></h3>
 <p>&nbsp;</p>
 <p>The Company reserves the right to revise its prices or quotes offered at any point prior to the contractual completion of the procurement service. Any price offered prior to the successful checking of the vehicle against the accuracy of the details and data provided by you to the company is considered a quote only until the successful checks are completed by the company.</p>
 <p>&nbsp;</p>
@@ -121,16 +120,16 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>Payments</h3>
+<h3><strong>Payments</strong></h3>
 <p>&nbsp;</p>
 <p>Payments on the purchase of a vehicle on most occasions will be made prior to the uplift of the vehicle, however, may vary if in fact it is pending the confirmation of a finance settlement in which it may be up to 72 hours post the uplift of the vehicle.</p>
 <p>&nbsp;</p>
-<p>Finance Settlements</p>
+<p><strong>Finance Settlements </strong></p>
 <p>&nbsp;</p>
 <p>If the vehicle has outstanding payments due against the finance settlement, any valuation offered by the company to you will be used to settle the complete total of the remaining finance, if the valuation is higher than this amount the remainder is directly transferred to You &lsquo;the seller&rsquo;. If the valuation offered is lower than the amount of the remainder of the finance, then confirmation is required prior to the handover of the vehicle of the amounts outstanding greater than the valuation agreed to be paid by <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> have been settled. Non &ndash; confirmation or failure to do this will result in the contract being terminated.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>Buyer Agency Service</p>
+<p><strong>Buyer Agency Service</strong></p>
 <p>&nbsp;</p>
 <p><a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> may also act as an agency service if agreed by you the seller with an outsourced procurement partner. Agreement to this service, is at no additional cost to you the seller, however it would be deemed to be agreed that <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> are entitled to share and advertise any details or images of the vehicle in question with a select list of traders and procurers in partnership with the company. <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> agrees to not disclose any personal information about you the seller until the point of an arranged inspection appointment booking, where the disclosure of information will only be what is required and relevant to the service at hand.</p>
 <p>&nbsp;</p>
@@ -161,7 +160,7 @@
 <p>The procurement partner agrees to pay all due sums to the seller as agreed in the contractual obligations. If the procurement partner does to fulfil obligations to pay the seller prior to the uplift of the vehicle, any connection and future use of the Be Car Smart Limited services will be suspended and the seller will be asked to process legal proceedings against the buyer. Be Car Smart Limited is not liable for any compensation claims in this situation and does not agree to be part of any contract between the procurement partner and the seller and is solely an Agency service.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>Financial Obligations</p>
+<p><strong>Financial Obligations</strong></p>
 <p>&nbsp;</p>
 <p>Financial obligations between www.becarsmart.co.uk; (Be Car Smart Limited) and the procurement partner are to be negotiated on an individual procurement basis, unless there is a long-term contractual obligation between the company and the procurement partner.</p>
 <p>&nbsp;</p>
@@ -172,7 +171,7 @@
 <p>Failure to pay invoices will lead to standard debt collection methods, followed by any legal proceedings within 5 working days of the net due date. This will also end all future agency services from <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> (Be Car Smart Limited) to the procurement partner.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>Vehicle Sourcing Services</p>
+<p><strong>Vehicle Sourcing Services</strong></p>
 <p>&nbsp;</p>
 <p>Be Car Smart Limited offer vehicle sourcing services for individuals looking to purchase a vehicle. This may be directly through the company or acting as an agency through a certified Selling Partner.</p>
 <p>&nbsp;</p>
@@ -197,7 +196,7 @@
 <p>&nbsp;</p>
 <p>Vehicles purchased through a selling partner are under separate contractual obligations provided by the selling partner to you the buyer. Liability is not taken by Be Car Smart Limited in those instancing.</p>
 <p>&nbsp;</p>
-<p>Sales Pre-requisites;</p>
+<p><strong>Sales Pre-requisites;</strong></p>
 <p>&nbsp;</p>
 <p>Prior to the completion of sale, we require you to provide us with the following.</p>
 <p>&nbsp;</p>
@@ -206,7 +205,7 @@
 <li>Proof of Address</li>
 </ul>
 <p>&nbsp;</p>
-<p>Post Sales Requisites;</p>
+<p><strong>Post Sales Requisites;</strong></p>
 <p>&nbsp;</p>
 <p>Upon handover the following will be passed from Be Car Smart Limited or the seller</p>
 <p>&nbsp;</p>
@@ -217,40 +216,40 @@
 <li>Any other accessories such as Parcel shelf, locking wheel nut etc.</li>
 </ul>
 <p>&nbsp;</p>
-<h2>Termination</h2>
+<h2><strong>Termination</strong></h2>
 <p>&nbsp;</p>
 <p>We may terminate or suspend Your Account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.</p>
 <p>&nbsp;</p>
 <p>Upon termination, Your right to use the Service will cease immediately. If You wish to terminate Your Account, You may simply discontinue using the Service or contact us at <a href="http://www.becarsmart.co.uk">www.becarsmart.co.uk</a> to notify us of your intention to do so</p>
-<h2>Limitation of Liability</h2>
+<h2><strong>Limitation of Liability</strong></h2>
 <p>&nbsp;</p>
 <p>Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.</p>
 <p>&nbsp;</p>
 <p>To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.</p>
 <p>&nbsp;</p>
 <p>Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.</p>
-<h2>Governing Law</h2>
+<h2><strong>Governing Law</strong></h2>
 <p>&nbsp;</p>
 <p>The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.</p>
-<h2>Disputes Resolution</h2>
+<h2><strong>Disputes Resolution</strong></h2>
 <p>&nbsp;</p>
 <p>If You have any concern or dispute about the Service, you agree to first try to resolve the dispute informally by contacting the Company.</p>
-<h2>For European Union (EU) Users</h2>
+<h2><strong>For European Union (EU) Users</strong></h2>
 <p>&nbsp;</p>
 <p>If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.</p>
 <p>&nbsp;</p>
-<h2>Changes to These Terms and Conditions</h2>
+<h2><strong>Changes to These Terms and Conditions</strong></h2>
 <p>We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.</p>
 <p>&nbsp;</p>
 <p>By continuing to access or use Our Service after those revisions become effective, you agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.</p>
-<h2>Contact Us</h2>
+<h2><strong>Contact Us</strong></h2>
 <p>&nbsp;</p>
 <p>If you have any questions about these Terms and Conditions, you can contact us:</p>
 <p>&nbsp;</p>
 <ul>
 <li>By visiting www.becarsmart.co.uk</li>
-<li>By sending us an email: info@becarsmart.co.uk</li>
 </ul>
+<p>By sending us an email: info@becarsmart.co.uk</p>
                     </div>
                 </div>
             </div>
