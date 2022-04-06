@@ -1,6 +1,7 @@
 @extends('layouts.dashboard.master',['title' => 'Add Blog'])
 @section('styles')
 @include('layouts.sweetalert.sweetalert_css')
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 @endsection
 @section('content')
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
@@ -64,7 +65,7 @@
                         <div class="form-group row pb-5">
                             <label for="text" class="col-sm-2 col-form-label">Blog Text Area</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" style="min-height: calc(7.5em + 2.5rem + 2px);" required></textarea>
+                                <textarea class="form-control summernote" name="message" id="exampleFormControlTextarea1" rows="3" style="min-height: calc(7.5em + 2.5rem + 2px);" required></textarea>
                             </div>
                         </div>
 
@@ -86,6 +87,7 @@
 @endsection
 @section('scripts')
 @include('layouts.sweetalert.sweetalert_js')
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 <script>
     $("#title").on('blur', function() {
         var title = $(this).val();
@@ -94,5 +96,16 @@
         title = title + currenttimestamp;
         $("#prmalink").val(title);
     })
+
+    $(document).ready(function() {
+
+    
+
+    $('.summernote').summernote({
+     });
+
+
+    
+  });
 </script>
 @endsection

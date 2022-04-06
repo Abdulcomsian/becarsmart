@@ -23,8 +23,8 @@
                     <div class="content-div" style="color: #2c3b53 !important;">
                         <p>We are Be Car Smart Limited. We&rsquo;re a company registered in England and Wales with company number 13739097 whose registered address is at Unit 9, Havant, P09 1HS, in this privacy notice we will refer to ourselves as &lsquo;<strong>we</strong>&rsquo;, &lsquo;<strong>us</strong>&rsquo; or &lsquo;<strong>our</strong>&rsquo;.</p>
 <p><strong>You can get hold of us in any of the following ways:</strong></p>
-<h5>(a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by phoning us on 023 935 52653</h5>
-<h5>(b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by e-mailing us at info@becarsmart.co.uk</h5><h5> or</h5>
+<p>&nbsp;&nbsp;&nbsp;(a)&nbsp;&nbsp;&nbsp;&nbsp; by phoning us on 023 935 52653</p>
+<p>&nbsp;&nbsp;&nbsp;(b)&nbsp;&nbsp;&nbsp; by e-mailing us at info@becarsmart.co.uk</p><h5> or</h5>
 <p>by writing to us at Basepoint Centre, Unit 9 Harts Farm Way, Havant, PO9 1HS</p>
 
 <p>We take the privacy, including the security, of personal information we hold about you seriously. &nbsp;This privacy notice is designed to inform you about how we collect personal information about you and how we use that personal information.&nbsp; You should read this privacy notice carefully so that you know and can understand why and how we use the personal information we collect and hold about you.</p>
@@ -48,14 +48,14 @@
 <h1 style='margin-top:16.0pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;text-align:justify;text-indent:-36.0pt;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;'><span style='font-family:"Arial";font-weight:normal;font-size:16px;'>&nbsp; &nbsp; 2. Details of personal information which we collect and hold about you</span></h1>
 <h2 style='margin-top:14.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:36.0pt;text-align:justify;text-indent:-36.0pt;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;color:#2c3b53;font-weight:normal;'><span style='font-family:"Arial";font-size:16px;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1. Set out below are the general categories and in each case the types of personal information which we collect, use and hold about you:&nbsp;</span></h2>
 
-<div style='margin:0cm;margin-bottom:.0001pt;text-align:justify;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;'>
-    <ol style="margin-bottom:0cm;list-style-type: decimal;">
+<div style='margin:0cm;margin-bottom:1cm;text-align:justify;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;'>
+    <!-- <ol style="margin-bottom:0cm;list-style-type: decimal;">
         <li style='margin:0cm;margin-bottom:.0001pt;text-align:justify;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;'>
             <h2 style='margin-top:14.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:36.0pt;text-align:justify;text-indent:-36.0pt;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;color:#2c3b53;font-weight:normal;'><span style='font-family:"Arial";font-size:16px;'>&nbsp;</span></h2>
         </li>
-    </ol>
+    </ol> -->
 </div>
-<table style="width:446.55pt;margin-left:-28.6pt;border-collapse:collapse;border: none;">
+<table style="width:446.55pt;margin-left:40.6pt;border-collapse:collapse;border: none;">
     <tbody>
         <tr>
             <td style="width: 99.25pt;border: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
@@ -170,7 +170,7 @@
 <h2 style='margin-top:14.0pt;margin-right:0cm;margin-bottom:6.0pt;margin-left:36.0pt;text-align:justify;text-indent:-36.0pt;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;color:#2c3b53;font-weight:normal;'><span style='font-family:"Arial";font-size:16px;'>&nbsp; &nbsp; &nbsp; 4.6 We have explained below the different purposes for which we use your personal information and, in each case, the legal reason(s) allowing us to use your personal information. &nbsp; Please also note the following:&nbsp;</span><span style='font-family:"Arial";font-size:16px;'><br></span><span style='font-family:"Arial";font-size:16px;'>a) if we use the Legitimate Interests Reason as the legal reason for which we can use your personal information, we have also explained what that legitimate interest is; and&nbsp;</span><br><br><br><span style='font-family:"Arial";font-size:16px;'>b) for some of the purposes we may have listed more than one legal reason on which we can use your personal information, because the legal reason may be different in different circumstances. &nbsp;If you need confirmation of the specific legal reason that we are relying on to use your personal data for that purpose, please contact us using the contact details set out at the start of this privacy notice.&nbsp;</span><br><br></h2>
 
 <div style='margin:0cm;margin-bottom:.0001pt;text-align:justify;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;'>
-    <table style="width:446.55pt;margin-left:-28.6pt;border-collapse:collapse;border: none;">
+    <table style="width:446.55pt;margin-left:40.6pt;border-collapse:collapse;border: none;">
         <tbody>
             <tr>
                 <td style="width: 212.65pt;border: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
