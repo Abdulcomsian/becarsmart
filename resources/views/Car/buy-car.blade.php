@@ -106,15 +106,13 @@
                             <tr>
                                 @foreach($buycarleads as $all)
                                 <td class="">
-                                    @foreach($all->questions as $question)
-                                        {{$question ?? ''}} <br>
-                                    @endforeach
+                                        {{$all->questions[0] ?? ''}} <br>
+                                        {{$all->questions[1] ?? ''}}
                                 </td>
                                 
                                 <td class="">
-                                    @foreach($all->answers as $answer)
-                                        {{$answer ?? ''}} <br>
-                                    @endforeach
+                                        {{$all->answers[0] ?? ''}} <br>
+                                        {{$all->answers[1] ?? ''}}
                                 </td>
                                 <td class="">{{ date('F,d,Y H:i:s ', strtotime($all->created_at));}}</td>
                                 <td class="" style="display:flex;">
