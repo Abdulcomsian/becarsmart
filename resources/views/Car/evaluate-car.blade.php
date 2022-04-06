@@ -92,15 +92,15 @@
                         <table id="example" class="table table-striped" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th><b>Question</b></th>
-                                    <th><b>User Response</b></th>
+                                    <th width="50%"><b>Question</b></th>
+                                    <th width="50%"><b>User Response</b></th>
 
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>{{$lead}}</td>
-                                    <td> {{$lead_detail->answers[$key]}}</td>
+                                    <td width="50%">{{$lead}}</td>
+                                    <td width="50%"> {{$lead_detail->answers[$key]}}</td>
                                 </tr>
                                 <!-- <tr>
                                     <td>Is the vehicle a non-runner?</td>

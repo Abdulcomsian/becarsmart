@@ -22,19 +22,14 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="content-div" style="color: #2c3b53 !important;">
                         <p>We are Be Car Smart Limited. We&rsquo;re a company registered in England and Wales with company number 13739097 whose registered address is at Unit 9, Havant, P09 1HS, in this privacy notice we will refer to ourselves as &lsquo;<strong>we</strong>&rsquo;, &lsquo;<strong>us</strong>&rsquo; or &lsquo;<strong>our</strong>&rsquo;.</p>
-<p>&nbsp;</p>
-<p>You can get hold of us in any of the following ways:</p>
-<p>&nbsp;</p>
+<p><strong>You can get hold of us in any of the following ways:</strong></p>
 <h5>(a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by phoning us on 023 935 52653</h5>
-<h5>(b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by e-mailing us at info@becarsmart.co.uk; or</h5>
+<h5>(b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; by e-mailing us at info@becarsmart.co.uk</h5><h5> or</h5>
 <p>by writing to us at Basepoint Centre, Unit 9 Harts Farm Way, Havant, PO9 1HS</p>
 
 <p>We take the privacy, including the security, of personal information we hold about you seriously. &nbsp;This privacy notice is designed to inform you about how we collect personal information about you and how we use that personal information.&nbsp; You should read this privacy notice carefully so that you know and can understand why and how we use the personal information we collect and hold about you.</p>
-<p>&nbsp;</p>
 <p>We do not have a Data Protection Officer, but if you have any questions about this privacy notice or issues arising from it then you should contact Mr Jabir Khan, who is responsible for matters relating to data protection at our organisation, including any matters in this privacy notice.&nbsp; You can contact them using the details set out above.</p>
-<p>&nbsp;</p>
 <p>We may issue you with other privacy notices from time to time, including when we collect personal information from you.&nbsp; This privacy notice is intended to supplement these and does not override them.</p>
-<p>&nbsp;</p>
 <p>We may update this privacy notice from time to time. &nbsp;This version was last updated on 20<sup>th</sup> March 2022</p>
 <p style='margin:0cm;margin-bottom:.0001pt;text-align:center;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;'><strong><u><span style='font-size:9px;font-family:"Arial";'><span style="text-decoration:none;">&nbsp;</span></span></u></strong></p>
 <div style='margin:0cm;margin-bottom:.0001pt;text-align:justify;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;'>
@@ -320,6 +315,7 @@
     <h1 style='margin-top:16.0pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;text-align:justify;text-indent:-36.0pt;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;'><strong><span style='font-family:"Arial";font-size:16px;'>&nbsp; 12. &nbsp;  Third Party Websites</strong></span></h1>
 </div>
 <h1 style='margin-top:16.0pt;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;text-align:justify;text-indent:0cm;line-height:15.0pt;font-size:15px;font-family:"Arial",serif;'><span style='font-size:16px;font-family:"Arial";font-weight:normal;'>Our website may contain links to third party websites. &nbsp;If you click and follow those links then these will take you to the third-party website. &nbsp; Those third-party websites may collect personal information from you and you will need to check their privacy notices to understand how your personal information is collected and used by them.</span></h1>
+<p>&nbsp;</p>
 
 
                     </div>
