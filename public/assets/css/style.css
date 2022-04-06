@@ -1605,6 +1605,10 @@ h1.heading-h1 {
     color: #212529 ;
     text-align: justify;
 }
+
+#how-to-find .content-div strong{
+    color: #2c3b53 ;
+}
 #how-to-find .content-div p a{
   color: #e62e2d;
 }
