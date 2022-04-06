@@ -12,7 +12,7 @@ class BuyCarLeadController extends Controller
     public function index()
     {
         try {
-            $buycarleads = BuyCarLead::orderBy('created_at', 'DESC')->first();
+            $buycarleads = BuyCarLead::orderBy('created_at', 'DESC')->get();
             // dd($buycarleads);
             return view('Car.buy-car', compact('buycarleads'));
         } catch (\Exception $exception) {

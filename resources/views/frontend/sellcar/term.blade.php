@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <div class="content-div">
+                    <div class="content-div" style="color: #2c3b53 !important;">
                         <p>Our Terms and Conditions were last updated on</p>
 <p>&nbsp;</p>
 <p>Please read these terms and conditions carefully before using our services.</p>
