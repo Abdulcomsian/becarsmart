@@ -19,8 +19,8 @@ class CreateBuyCarLeadsTable extends Migration
             $table->string('email')->nullable();
             $table->string('lead_source')->nullable();
             $table->string('phone_no')->nullable();
-            $table->string('questions')->nullable();
-            $table->string('answers')->nullable();
+            $table->longText('questions')->nullable();
+            $table->longText('answers')->nullable();
             $table->timestamps();
         });
     }

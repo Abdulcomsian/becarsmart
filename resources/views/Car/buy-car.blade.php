@@ -104,23 +104,35 @@
                         <!--begin::Table body-->
                         <tbody class="text-gray-600 fw-bold">
                             <tr>
-                                <td class="">{{$buycarleads->questions[0] ?? ''}}</td>
-                                <td class="">{{$buycarleads->answers[0] ?? ''}}</td>
-                                <td class="">{{ date('F,d,Y H:i:s ', strtotime($buycarleads->created_at));}}</td>
+                                @foreach($buycarleads as $all)
+                                <td class="">
+                                    @foreach($all->questions as $question)
+                                        {{$question ?? ''}} <br>
+                                    @endforeach
+                                </td>
+                                
+                                <td class="">
+                                    @foreach($all->answers as $answer)
+                                        {{$answer ?? ''}} <br>
+                                    @endforeach
+                                </td>
+                                <td class="">{{ date('F,d,Y H:i:s ', strtotime($all->created_at));}}</td>
                                 <td class="" style="display:flex;">
 
                                     <button type="button" class="btn btn-primary py-3 px-4" style="margin-right: 3px;">
-                                        <a class="" href="{{url('/evaluate-car',$buycarleads->id)}}">
+                                        <a class="" href="{{url('/evaluate-car',$all->id)}}">
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                         </a>
                                     </button>
-                                    <form method="post"  style='width:20%' id="form_{{$buycarleads->id}}" action="{{url('buy-car-lead-delete')}}">
+                                    <form method="post"  style='width:20%' id="form_{{$all->id}}" action="{{url('buy-car-lead-delete')}}">
                                         @csrf
-                                        <input type="hidden" name="id" value="{{$buycarleads->id}}" />
-                                         <button class="btn btn-danger confirm" id="{{$buycarleads->id}}"><span class="fa fa-trash"></span></button>
+                                        <input type="hidden" name="id" value="{{$all->id}}" />
+                                         <button class="btn btn-danger confirm" id="{{$all->id}}"><span class="fa fa-trash"></span></button>
                                     </form>
                                 </td>
+                                
                             </tr>
+                            @endforeach
                         </tbody>
 
                         <!--end::Table body-->
