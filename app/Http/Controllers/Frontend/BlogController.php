@@ -11,6 +11,7 @@ class BlogController extends Controller
     public function Blog_details($id)
     {
         $blog = Blogs::with('user')->where('permalink', $id)->first();
+        // dd($blog->id);
         $featureblogs = Blogs::limit(3)->get();
         return view('frontend/sellcar/blog', compact('blog', 'featureblogs'));
     }

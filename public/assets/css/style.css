@@ -1751,7 +1751,7 @@ h1.heading-h1 {
 
 .post .post-meta {
 	margin-top: 15px;
-	margin-bottom: 28px
+	margin-bottom: 4px
 }
 
 .post-meta .post-category {
@@ -1815,7 +1815,7 @@ h1.heading-h1 {
 }
 
 .post.post-thumb .post-title {
-	font-size: 22px
+	font-size: 20px
 }
 
 .post.post-thumb .post-title>a {
