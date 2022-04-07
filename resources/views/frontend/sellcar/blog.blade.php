@@ -64,7 +64,7 @@
                             <a class="post-category cat-3" href="{{url('/blog',$blog->permalink)}}">{{$blog->title ?? ''}}</a>
                             <!-- <span class="post-date">{{$blog->created_at->format('M d,y')}}</span> -->
                          </div>
-                         <h3 class="post-title"><a href="{{url('/blog',$blog->permalink)}}">{{$blog->exceed ?? ''}}</a></h3>
+                         <h3 class="post-title"><a href="{{url('/blog',$blog->permalink)}}">{{\Illuminate\Support\Str::limit($blog->exceed, 100)}}</a></h3>
                       </div>
                    </div>
                    @endforeach
