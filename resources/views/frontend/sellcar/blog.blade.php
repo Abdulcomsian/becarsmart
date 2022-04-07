@@ -25,7 +25,7 @@
                          <img class="img-responsive" src="{{asset('images/blogs/'.'/'.$blog->feature_img)}}" alt="" style="height: 500px; object-fit: cover; width: 100%;">
                       </figure>
 
-                      <p>{{$blog->message ?? ''}}</p>
+                      <p>{!!$blog->message ?? ''!!}</p>
                    </div>
                 </div>
                 <!-- <div class="section-row">
