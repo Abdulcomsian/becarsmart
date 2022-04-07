@@ -19,7 +19,7 @@ class CreateBlogsTable extends Migration
             $table->string('exceed')->nullable();
             $table->string('feature_img')->nullable();
             $table->text('message')->nullable();
-            $table->string('permalink')->nullable();
+            $table->string('permalink')->unique();
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
