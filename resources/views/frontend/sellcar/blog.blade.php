@@ -62,7 +62,7 @@
                       <div class="post-body">
                          <div class="post-meta">
                             <a class="post-category cat-3" href="{{url('/blog',$blog->permalink)}}">{{$blog->title ?? ''}}</a>
-                            <span class="post-date">{{$blog->created_at->format('M d,y')}}</span>
+                            <!-- <span class="post-date">{{$blog->created_at->format('M d,y')}}</span> -->
                          </div>
                          <h3 class="post-title"><a href="{{url('/blog',$blog->permalink)}}">{{$blog->exceed ?? ''}}</a></h3>
                       </div>
