@@ -1,7 +1,6 @@
 @extends('layouts.dashboard.master',['title' => 'Edit Blog'])
 @section('styles')
 @include('layouts.sweetalert.sweetalert_css')
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 @endsection
 @section('content')
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
@@ -65,7 +64,7 @@
                         <div class="form-group row pb-5">
                             <label for="text" class="col-sm-2 col-form-label">Blog Text Area</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control summernote" name="message" id="exampleFormControlTextarea1" rows="3" style="min-height: calc(7.5em + 2.5rem + 2px);" required>{{$blog->message ?? ''}}</textarea>
+                                <textarea class="form-control ckeditor" name="message" id="exampleFormControlTextarea1" rows="3" style="min-height: calc(7.5em + 2.5rem + 2px);" required>{!!$blog->message ?? ''!!}</textarea>
                             </div>
                         </div>
 
@@ -86,14 +85,11 @@
 </div>
 @endsection
 @section('scripts')
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
-<script>
-    $(document).ready(function() { 
-
-    $('.summernote').summernote({
-     });
-
-  });
+<script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
 </script>
 @include('layouts.sweetalert.sweetalert_js')
 @endsection
