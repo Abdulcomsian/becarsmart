@@ -143,7 +143,7 @@ BeCarSmart | index
          <div class="col-md-8 offset-md-2">
             <div class="blurb">
                <h1>{{$herosection->header ?? ''}}</h1>
-               <h3><span>No.1</span> {{$herosection->sub_header}}</h3>
+               <h3><!-- <span>No.1</span> --> {{$herosection->sub_header}}</h3>
                <p>{{$herosection->text}}</p>
             </div>
             <!-- Form -->
@@ -450,7 +450,7 @@ BeCarSmart | index
    </div>
 </section>
 <!-- Blog Section -->
-<section class="blog_section">
+<!-- <section class="blog_section">
    <div class="container">
       <div class="row text-center pb-5">
          <div class="col">
@@ -493,7 +493,13 @@ BeCarSmart | index
                   </div>
                </div>
             </div>
-            @endforeach
+            @endforeach -->
+
+
+            <!-- already comment -->
+
+
+
             <!-- blog post -->
             <!-- <div class="card blog_card nomargin">
                <div class="row g-0">
@@ -522,7 +528,15 @@ BeCarSmart | index
                    </div>
                </div>
                </div> -->
-         </div>
+
+
+
+               <!-- already comment end -->
+
+
+
+
+<!--          </div>
          @php $i=0;@endphp
          @foreach($blogs as $blog)
          @if($i==2)
@@ -559,7 +573,12 @@ BeCarSmart | index
          @endforeach
       </div>
    </div>
-</section>
+</section> -->
+
+<!-- end blog -->
+
+
+
 <!-- Testimonial Section -->
 <!-- <section class="testimonial text-center p-5">
    <div class="container">
