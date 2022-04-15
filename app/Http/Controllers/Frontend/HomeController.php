@@ -23,6 +23,7 @@ use Notification;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\QuestionaireHeading;
 use App\Models\MotoreTraders;
+use App\Models\ContactUs;
 
 
 
@@ -40,7 +41,8 @@ class HomeController extends Controller
         $questionair = QuestionnaireModel::get();
         $questionair_heading = QuestionaireHeading::first();
         $count_question = count($questionair);
-        return view('frontend/sellcar/index', compact('howitworksheader', 'blogheader', 'herosection', 'howitworks', 'whysellcar', 'blogs', 'testominals', 'questionair','questionair_heading','count_question'));
+        $contactdata = ContactUs::first();
+        return view('frontend/sellcar/index', compact('howitworksheader', 'blogheader', 'herosection', 'howitworks', 'whysellcar', 'blogs', 'testominals', 'questionair','questionair_heading','count_question','contactdata'));
     }
 
     //insert buy car lead
