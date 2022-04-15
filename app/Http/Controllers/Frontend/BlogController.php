@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Home\Blogs;
+use App\Models\ContactUs;
 
 class BlogController extends Controller
 {
@@ -17,7 +18,8 @@ class BlogController extends Controller
     }
 
     public function allblogs(){
+        $contactdata = ContactUs::first();
         $blog = Blogs::with('user')->paginate(20);
-        return view('frontend/sellcar/blogs',compact('blog'));
+        return view('frontend/sellcar/blogs',compact('blog','contactdata'));
     }
 }

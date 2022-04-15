@@ -19,6 +19,7 @@ use App\Http\Controllers\SellCar\CarController;
 use App\Models\BuyCarLead;
 use App\Models\SellCarLead;
 use App\Models\AboutUs;
+use App\Models\ContactUs;
 use App\Models\MotoreTraders;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
@@ -164,16 +165,19 @@ Route::get('/blogs', [BlogController::class, 'allblogs'])->name('frontend/allblo
 
 
 Route::get('/cookies', function () {
-    return view('frontend/sellcar/cookies');
+    $contactdata = ContactUs::first();
+    return view('frontend/sellcar/cookies',compact('contactdata'));
 })->name('frontend/cookies');
 
 Route::get('/faq', function () {
     $faqdata = Faq::get();
-    return view('frontend/sellcar/faq', compact('faqdata'));
+    $contactdata = ContactUs::first();
+    return view('frontend/sellcar/faq', compact('faqdata','contactdata'));
 })->name('frontend/faq');
 
 Route::get('/privacy_policy', function () {
-    return view('frontend/sellcar/privacy_policy');
+    $contactdata = ContactUs::first();
+    return view('frontend/sellcar/privacy_policy',compact('contactdata'));
 })->name('frontend/privacy_policy');
 
 Route::get('/sellcar', function () {
@@ -181,7 +185,8 @@ Route::get('/sellcar', function () {
 })->name('frontend/sellcar');
 
 Route::get('/term', function () {
-    return view('frontend/sellcar/term');
+    $contactdata = ContactUs::first();
+    return view('frontend/sellcar/term',compact('contactdata'));
 })->name('frontend/term');
 
 Route::get('/frontend/login', function () {
@@ -189,14 +194,16 @@ Route::get('/frontend/login', function () {
 })->name('frontend/login');
 
 Route::get('/how_it_works', function () {
-    return view('frontend/sellcar/how_it_works');
+    $contactdata = ContactUs::first();
+    return view('frontend/sellcar/how_it_works',compact('contactdata'));
 })->name('frontend/how_it_works');
 
 
 
 Route::get('/about', function () {
     $aboutdata = AboutUs::get();
-    return view('frontend/sellcar/about', compact('aboutdata'));
+    $contactdata = ContactUs::first();
+    return view('frontend/sellcar/about', compact('aboutdata','contactdata'));
 })->name('frontend/about');
 
 Route::get('/reviews', function () {
@@ -212,7 +219,8 @@ Route::get('/thankyou_sell_car', function () {
 })->name('thankyou.sell.car');
 
 Route::get('/motor-traders', function () {
-    return view('frontend/sellcar/motor-traders');
+    $contactdata = ContactUs::first();
+    return view('frontend/sellcar/motor-traders',compact('contactdata'));
 })->name('frontend/motor-traders');
 
 Route::get('/thankyou_page3', function () {
