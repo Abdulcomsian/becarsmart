@@ -64,11 +64,11 @@
                             </div>
                             
                             <div class="sign-up">
-                            <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid"> Or you can WhatsApp us your query. <a href="https://wa.me/+923245040502" target="_blank">
-                                        
-                                    </a>
-                                    </div>
-                                    <div class="social-media">
+                                <a href="https://wa.me/02393552653" target="_blank">
+                                <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid"> 
+                                </a><span>Or you can WhatsApp us your query. </span>
+                            </div>
+                            <div class="social-media">
                                 <ul class="address">
                                     <li><a href="{{ $contactdata->youtube_link ?? '#'}}"><img src="{{asset ('assets/img/youtube.png')}}" alt=""></a></li>
                                     <li><a href="{{ $contactdata->instagram_link ?? '#'}}"><img src="{{asset ('assets/img/instagram.png')}}" alt=""></a></li>

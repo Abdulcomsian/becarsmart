@@ -16,10 +16,10 @@
                         <p class="footer-text">Follow us on:</p>
                     </div>
                     <div class="footer-para text-center d-flex socialIcon" style="justify-content: center;">
-                        <p><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></p>
-                        <p><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
-                        <p><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
-                        <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
+                        <p><a href="https://web.telegram.org/" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></p>
+                        <p><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+                        <p><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></p>
+                        <p><a href="https://web.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
                     </div>
                 </div>
                 <hr align="center">
