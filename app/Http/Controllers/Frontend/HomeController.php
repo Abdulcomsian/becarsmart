@@ -103,7 +103,7 @@ class HomeController extends Controller
                 // return Redirect::back();
             }
         } catch (\Exception $exception) {
-            toastError('Something went wrong, try again!');
+            toastError($exception->getMessage());
             return Redirect::back();
         }
     }

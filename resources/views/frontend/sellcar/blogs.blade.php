@@ -26,6 +26,7 @@
                     </div>
                 </div>
             </div> -->
+            @if(is_null($blog))
             @foreach($blog as $bl )
             <div class="row">
                 <div class="col-md-12">
@@ -59,6 +60,9 @@
                 </div>    
             </div><br><br>
             @endforeach
+            @else
+            <p style="text-align:center;"><strong>No Blog Found</strong></p>
+            @endif
             <div class="col-md-6 d-flex" style="margin-bottom:10px">
                 {{$blog->links("pagination::bootstrap-4")}}
             </div>
