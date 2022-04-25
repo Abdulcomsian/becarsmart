@@ -60,9 +60,9 @@ BeCarSmart | Sellcar New
                                 <input type="hidden" name="color" value="{{$_GET['color'] ?? ''}}">
                                 <input type="hidden" name="engine" value="{{$_GET['engine'] ?? ''}}">
                                 <input type="hidden" name="make" value="{{$_GET['make'] ?? ''}}">
-                                <input type="hidden" name="capacity" value="{{$_GET['CylinderCapacity'] ?? ''}}">
+                                <input type="hidden" name="CylinderCapacity" value="{{$_GET['CylinderCapacity'] ?? ''}}">
                                 <input type="hidden" name="euroStatus" value="{{$_GET['euroStatus'] ?? ''}}">
-                                <input type="hidden" name="regno" value="{{$_GET['registration'] ?? ''}}">
+                                <input type="hidden" name="registration" value="{{$_GET['registration'] ?? ''}}">
 
                                 <div class="row">
                                     <div class="col-md-12" style="justify-content: left;">
