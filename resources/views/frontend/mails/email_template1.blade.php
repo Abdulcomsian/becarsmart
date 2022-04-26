@@ -14,7 +14,7 @@
         <div class="header-content" style="text-align: center;">
             <img src="{{asset ('assets/img/fff.svg')}}" width="45%" />
         </div>
-        <p style="text-align:center; color: rgb(44 59 83); font-size: 40px;line-height: 32px; text-transform: uppercase; font-weight: 600;">Thank You for  <br> Completing Our Vehicle <br> Valuation form.</p>
+        <p style="color: #2c3b53;font-size: 32px; text-transform: capitalize; font-weight: 700; text-align:center">Thank You for  <br> Completing Our Vehicle <br> Valuation form.</p>
         <br>
         <div class="multipale-img" style="text-align: center; width:100%; display:inline-flex;max-width: 100%;">
             <div style="width:25%">
