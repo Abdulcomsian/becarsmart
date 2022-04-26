@@ -1035,11 +1035,11 @@ BeCarSmart | Sellcar New
                 return false;
             }
             if (phone.length < 10 || phone.length > 11) {
-                $(".phoneerror").html("Phone number must be 10 digits or 11 digits");
+                $(".phoneerror").html("Phone number must be 10 digits to 11 digits");
                 return false;
             }
             if (postal.length < 5 || postal.length > 7) {
-                $(".postalerror").html("Phone number must be 5 digits or 7 digits");
+                $(".postalerror").html("Phone number must be 5 digits to 7 digits");
                 return false;
             }
 
@@ -1079,7 +1079,7 @@ BeCarSmart | Sellcar New
                 $("#mileageerr").html("Please Enter Mileage");
             }
             if (mileage.length < 4 || mileage.length > 6) {
-                $("#mileageerr").html("Mileage must be 4 digits or 6 digits");
+                $("#mileageerr").html("Mileage must be 4 digits to 6 digits");
                 return false;
             }
             if ($('input[name="finance"]:checked').length == 0) {
