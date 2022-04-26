@@ -10,7 +10,7 @@
 </head>
 
 <body style=" margin:0px; font-family: 'Poppins', sans-serif;">
-    <section id="header" style="width: 100%; max-width:50%;  margin:0 auto;">
+    <section id="header" style="width: 100%; max-width:80%;  margin:0 auto;">
         <div class="header-content" style="text-align: center;">
             <img src="{{asset ('assets/img/fff.svg')}}" width="45%" />
         </div>
