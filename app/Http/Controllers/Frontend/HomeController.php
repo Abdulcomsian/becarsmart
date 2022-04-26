@@ -61,7 +61,7 @@ class HomeController extends Controller
         $model->questions = $request->question;
         $model->answers = $request->answer;
         if ($model->save()) {
-            Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
+            Notification::route('mail', 'info@becarsmart.co.uk')->notify(new BuyCarNotification($request->all()));
             Notification::route('mail', $request->email)->notify(new BuyCarNotification($request->all()));
             //toastSuccess('Thank you for your information. We will be in touch soon.');
             return redirect()->route('thankyou.buy.car');
@@ -96,8 +96,8 @@ class HomeController extends Controller
                     }
                 }
                 //send email to admin and user
-                // Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new SellCarNotification($inputs));
-                // Notification::route('mail', $request->email)->notify(new SellCarNotification($inputs));
+                Notification::route('mail', 'info@becarsmart.co.uk')->notify(new SellCarNotification($inputs));
+                Notification::route('mail', $request->email)->notify(new SellCarNotification($inputs));
                 //toastSuccess('Lead Created Successfully!');
                 return redirect()->route('thankyou.sell.car');
                 // return Redirect::back();
@@ -218,7 +218,7 @@ class HomeController extends Controller
         $model->contact_number = $request->contact_number;
         $model->email = $request->email;
         if ($model->save()) {
-            // Notification::route('mail', 'basitawan.abdul@gmail.com')->notify(new BuyCarNotification($request->all()));
+            // Notification::route('mail', 'info@becarsmart.co.uk')->notify(new BuyCarNotification($request->all()));
             Notification::route('mail', $request->email)->notify(new TradersNotification($request->all()));
             // toastSuccess('Thank you for your information. We will be in touch soon.');
             return view('frontend.sellcar.thankyou_page4');
