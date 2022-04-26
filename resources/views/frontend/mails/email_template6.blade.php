@@ -8,7 +8,7 @@
       </style>
    </head>
    <body style=" margin:0px; font-family: 'Poppins', sans-serif;">
-      <section id="header" style="width: 100%; max-width:50%;  margin:0 auto;">
+      <section id="header" style="width: 100%; max-width:80%;  margin:0 auto;">
          <div class="header-content" style="text-align: left;">
             <img src="{{asset ('assets/img/FFF_BeCar_LO.svg')}}" width="45%" />
          </div>
