@@ -43,7 +43,7 @@ class SellCarNotification extends Notification
         return (new MailMessage)
             ->greeting('Becar Smart')
             ->subject('Sellcar Notification')
-            ->view('mail.sellcar');
+            ->view('frontend.mails.email_template1');
     }
 
     /**
