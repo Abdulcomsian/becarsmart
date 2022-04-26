@@ -1079,7 +1079,7 @@ BeCarSmart | Sellcar New
                 $("#mileageerr").html("Please Enter Mileage");
             }
             if (mileage.length < 4 || mileage.length > 6) {
-                $("#mileageerr").html("Mileage must be 4 digits to 6 digits");
+                $("#mileageerr").html("Mileage must be 4 digits to 6 digits (no commas or symbols)");
                 return false;
             }
             if ($('input[name="finance"]:checked').length == 0) {
