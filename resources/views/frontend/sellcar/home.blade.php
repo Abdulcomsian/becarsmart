@@ -157,8 +157,8 @@ button.slick-next.slick-arrow:after {
                         <input type="hidden" name="model_no" value="{{$model ?? ''}}">
                         <input type="hidden" name="color" value="{{$color ?? ''}}">
                         <input type="hidden" name="engine" value="{{$fueltype ?? ''}}">
-                        <input type="hidden" name="enginecapacity" value="{{$capacity ?? ''}}">
-                        <input type="hidden" name="regno" value="{{$regno ?? ''}}">
+                        <input type="hidden" name="CylinderCapacity" value="{{$capacity ?? ''}}">
+                        <input type="hidden" name="registration" value="{{$regno ?? ''}}">
                         <input type="hidden" name="euroStatus" value="{{$euroStatus ?? ''}}">
                         <!-- Form -->
                         <div class="home-search-form">
