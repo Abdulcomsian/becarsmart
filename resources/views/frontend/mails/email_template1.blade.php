@@ -42,19 +42,10 @@
             
             <div style="background:#2c3b53; padding:8px; ">
                 <p style="font-size:15px; text-align:center; color:#fff; font-weight:600;">Why Choose Us?</p>
-
-                <div class="row">
-                    <div class="col-4">
-                        
-                    </div>
-                    <div class="col-4">
-                        <p style="color:#fff; font-weight:600; font-size:12px;">1.  Free collection</p>
-                        <p style="color:#fff; font-weight:600; font-size:12px;">2.  Honest - Haggle free service</p>
-                        <p style="color:#fff; font-weight:600; font-size:12px;">3.  Instant payment</p>
-                    </div>
-                    <div class="col-4">
-                        
-                    </div>
+                <div>
+                    <p style="text-align: center; color:#fff; font-weight:600; font-size:12px;">1.  Free collection</p>
+                    <p style="text-align: center; color:#fff; font-weight:600; font-size:12px;">2.  Honest - Haggle free service</p>
+                    <p style="text-align: center; color:#fff; font-weight:600; font-size:12px;">3.  Instant payment</p>
                 </div>
                 
                 
