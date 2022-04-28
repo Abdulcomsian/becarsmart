@@ -54,15 +54,12 @@
         </div>
         <div class="footer-container" style="background:#2c3b53;padding: 11px 25%;">
             <p style="font-size:25px; text-align:center;text-transform: uppercase; color:#fff; font-weight:600;">Why Choose Us?</p>
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="choose-us col-4" style="padding-left:20px;">
-                    <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">1. Free collection</p>
-                    <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">2. Honest - Haggle Free Service</p>
-                    <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">3. instant payment</p>
+            
+                <div class="choose-us" style="padding-left:20px;">
+                    <p style="text-align: center; text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">1. Free collection</p>
+                    <p style="ttext-align: center; ext-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">2. Honest - Haggle Free Service</p>
+                    <p style="text-align: center; text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">3. instant payment</p>
                 </div>
-                <div class="col-4"></div>
-            </div>
         </div>
     </section>
     <!-- Suppport Section -->
