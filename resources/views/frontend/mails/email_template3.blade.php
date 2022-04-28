@@ -26,11 +26,11 @@
                 <p style="text-align:center;text-transform: uppercase; padding:  40px 20%;font-size: 60px;font-weight: 900;border: 16px solid #e74f42;width: 100%;max-width: fit-content;">£{{ $email_template3['amount'] }}</p>
             </center>
         <p style="font-size:27px; text-align:center;text-transform: uppercase; color:#2c3b53; font-weight:600;">Why Choose Us?</p>
-        <h3 style="color: #2c3b53;font-size: 23px; text-transform: capitalize; font-weight: 500; text-align:center">We will contact you to finalise the <br> deal and arrange the collection date.</h3>
+        <h3 style="color: #2c3b53;font-size: 23px; font-weight: 500; text-align:center">We will contact you to finalise the <br> deal and arrange the collection date.</h3>
         <br>
             <div style="background: #e74f42; text-align:center; padding:8px; ">                
                 <div style="padding-left:20px;">
-                    <p style="text-transform: capitalize; color:#fff; font-weight:600; font-size:29px;">Refer a friend to us and if they <br> sell with us, you'll get £100!</p>
+                    <p style="color:#fff; font-weight:600; font-size:29px;">Refer a friend to us and if they <br> sell with us, you'll get £100!</p>
                 </div>
             </div>
 

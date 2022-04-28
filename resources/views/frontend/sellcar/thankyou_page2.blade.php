@@ -21,7 +21,7 @@
             <div class="row generel-information-content">
                 <div class="col-md-10 offset-md-1 ">
                     <div class="heading pt-5 text-center">
-                        <h3 id="thankHeader" class="pb-2">Thank You for <br> completing our vehicle <br> valuation form.</h3>
+                        <h3 id="thankHeader" class="pb-2">Thank you for <br> completing our vehicle <br> valuation form.</h3>
                         <br>
                         <div class="row">
                             <div class="col-md-12">
@@ -85,7 +85,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center d-flex alignCenter">
-                    <p>Want to Sell Your Car?</p>
+                    <p>Want to sell your car?</p>
                 </div>
                 <div class="col-md-8 float-center">
                     <div class="row">

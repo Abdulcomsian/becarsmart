@@ -14,7 +14,7 @@
         <div class="header-content" style="text-align: center;">
             <img src="{{asset ('assets/img/fff.svg')}}" width="45%" />
         </div>
-        <p style="color: #2c3b53;font-size: 32px; text-transform: capitalize; font-weight: 700; text-align:center">Thank You for  <br> Completing Our Vehicle <br> Valuation form.</p>
+        <p style="color: #2c3b53;font-size: 32px; font-weight: 700; text-align:center">Thank you for  <br> completing our vehicle <br> valuation form.</p>
         <br>
         <div class="multipale-img" style="text-align: center; width:100%; display:inline-flex;max-width: 100%;">
             <div style="width:25%">
@@ -31,7 +31,7 @@
             </div>
         </div>
         <br><br>
-        <p style="color: #2c3b53;font-size: 15px; text-transform: capitalize; font-weight: 500; text-align:center">You are now one step closer to selling your vehicle.
+        <p style="color: #2c3b53;font-size: 15px; font-weight: 500; text-align:center">You are one step closer to selling your vehicle.
         <br><br> What happens next? One of our agents will be in contact. They
         <br> will confirm all the vehicle details are accurate and give you a
         <br> guaranteed price.
@@ -41,12 +41,12 @@
         <br><br>
             
             <div style="background:#2c3b53; padding:8px; ">
-                <p style="font-size:15px; text-align:center;text-transform: uppercase; color:#fff; font-weight:600;">Why Choose Us?</p>
+                <p style="font-size:15px; text-align:center; color:#fff; font-weight:600;">Why Choose Us?</p>
                 
-                <div style="padding-left:20px;">
-                    <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:12px;">1.  Free collection</p>
-                    <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:12px;">2.  Honest - Haggle Free Service</p>
-                    <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:12px;">3.  instant payment</p>
+                <div style="padding-left:20px; ">
+                    <p style="text-align:center; color:#fff; font-weight:600; font-size:12px;">1.  Free collection.</p>
+                    <p style="text-align:center; color:#fff; font-weight:600; font-size:12px;">2.  Honest - Haggle free service.</p>
+                    <p style="text-align:center; color:#fff; font-weight:600; font-size:12px;">3.  Instant payment.</p>
                 </div>
             </div>
 
