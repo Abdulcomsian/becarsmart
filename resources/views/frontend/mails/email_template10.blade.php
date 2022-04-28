@@ -27,13 +27,13 @@
         <!-- <p style="font-size:15px;text-align:left;color: #2b3a53;font-weight:400;">This email will have a document attached, which you will need to fill in so we have a better understanding of what type of vehicles you are looking to stock. 
         <br><br> Once we know what you are looking for, we will contact you either by phone or email.</p> -->
 
-        <p style="font-size:15px;text-align:left;color: #2b3a53;font-weight:600;">We will contact you soon to get a better idea of what type of vehicles you are looking to stock.</p>
+        <p style="font-size:15px;text-align:left;color: #747474;font-weight:600;">We will contact you soon to get a better idea of what type of vehicles you are looking to stock.</p>
 
         <br><br><br><br><br>
 
         <div style="padding: 5px 20px; background: #e74f42;">
                 <p style="font-size:15px;text-align:center;text-transform: uppercase;color:#fff;font-weight:700;letter-spacing: 1px;margin-bottom: -14px;">Refer a trader to us and get £100! </p>
-                <p style="font-size: 13px;text-align: center;color:#fff;font-weight:400;">(They must meet the requirements to sign up with us and purchase at least one vehicle).</p>                
+                <p style="font-size: 16px;text-align: center;color:#fff;font-weight:400;">(They must meet the requirements to sign up with us and purchase at least one vehicle).</p>                
             </div> 
 
     </section>

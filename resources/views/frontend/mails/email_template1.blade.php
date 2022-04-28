@@ -31,7 +31,7 @@
             </div>
         </div>
         <br><br>
-        <p style="color: #2c3b53;font-size: 15px; font-weight: 500; text-align:center">You are now one step closer to selling your vehicle.
+        <p style="color: #747474;font-size: 16px; font-weight: 500; text-align:center">You are now one step closer to selling your vehicle.
         <br><br> What happens next? One of our agents will be in contact. They
         <br> will confirm all the vehicle details are accurate and give you a
         <br> guaranteed price.
