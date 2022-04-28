@@ -70,7 +70,7 @@
                             </div>
                             <div class="social-media">
                                 <ul class="address">
-                                    <li><a href="{{ $contactdata->youtube_link ?? '#'}}" target="_blank"><img src="{{asset ('assets/img/youtube.png')}}" alt=""></a></li>
+                                    <li><a href="{{ $contactdata->youtube_link ?? '#'}}" target="_blank"><img src="{{asset ('assets/img/tiktok.png')}}" alt=""></a></li>
                                     <li><a href="{{ $contactdata->instagram_link ?? '#'}}" target="_blank"><img src="{{asset ('assets/img/instagram.png')}}" alt=""></a></li>
                                     <li><a href="{{ $contactdata->facebook_link ?? '#'}}" target="_blank"><img src="{{asset ('/assets/img/facebook.png')}}" alt=""></a></li>
                                     <li><a href="{{ $contactdata->twitter_link ?? '#'}}" target="_blank"><img src="{{asset ('/assets/img/twitter.png')}}" alt=""></a></li>
@@ -113,9 +113,9 @@
     @section('script')
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
-    <script>
+    <!-- <script>
         tinymce.init({
             selector: 'textarea'
         });
-    </script>
+    </script> -->
     @endsection

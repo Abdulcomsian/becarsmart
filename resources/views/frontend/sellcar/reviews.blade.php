@@ -14,16 +14,17 @@
                     <div class="row">
                         <div class="col-md-10 offset-md-1">
                             <div class="faq-content pt-4">                        
-                                <!-- <p class="faq-text pb-2">You are now one step closer to selling your vehicle.</p>
+                                <p class="faq-text pb-2">How important are reviews?</p>
                                 
-                                <p class="faq-text pb-2">What happens next? One of our agents will be in contact. They will confirm all the vehicle details are accurate and give you a guaranteed price.</p>
+                                <p class="faq-text pb-2">Without stating the obvious, we all know Reviews can be a deal breaker.</p>
                                 
-                                <p class="faq-text pb-2">Once you are happy with the offer and wish to accept it we can move forward and arrange a suitable collection date.</p>
+                                <p class="faq-text pb-2"> We're a new business and our aim is to become the best at what we do. 'Trust' and 'Honesty' is what we want to build our company on.</p>
                                 
-                                <p class="faq-text pb-2">The payment will be made on collection. It will be an instant bank transfer payment. <p> -->
-                                <p class="faq-text pb-2" style="font-weight:bold;">
-                                    ‘How important are reviews? Without stating the obvious, we all know Reviews can be a deal breaker. We're a new business and our aim is to become the best at what we do. 'Trust' and 'Honesty' is what we want to build our company on. Selling or Buying a car is a big deal for most of us, It's not daily, monthly or even yearly occurrence for the majority of us. So, making the right decision on how you do this is important. We're here to help you by making it an easy process and saving you any headaches.’
+                                <p class="faq-text pb-2"> Selling or Buying a car is a big deal for most of us, It's not daily, monthly or even yearly occurrence for the majority of us. So, making the right decision on how you do this is important. </p>
+                                <p class="faq-text pb-2">
+                                    We're here to help you by making it an easy process and saving you any headaches.
                                 </p>
+                                
                             </div>
                         </div>
                     </div>
