@@ -36,10 +36,10 @@
                     <li class="nav-item">
                        <a class="dropdown-item" href="{{ url('/contact')}}">Contact Us</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                        <a class="dropdown-item" href="{{url('/blogs')}}">Blog</a>
                     </li>
-                    <li class="nav-item">
+ -->                    <li class="nav-item">
                        <a class="dropdown-item" href="{{url('/reviews')}}">Reviews</a>
                     </li>
                  </ul>

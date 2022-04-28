@@ -28,7 +28,7 @@
             </div>
         </div>
         <br><br>
-        <p style="color: #2c3b53;font-size: 21px; text-transform: capitalize; font-weight: 500; text-align:center">You are now one step closer to selling your vehicle.
+        <p style="color: #2c3b53;font-size: 21px; font-weight: 500; text-align:center">You are now one step closer to selling your vehicle.
         <br><br> What happens next? One of our agents will be in contact. They will <br> confirm some further details and start searching for your next car.</p>
         <br><br>
             

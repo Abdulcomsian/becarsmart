@@ -34,17 +34,17 @@
         <br><br><br>
             
         <div style="padding: 5px 20px; background: #d9d9d9;">
-                <p style="font-size:25px; text-align:left;text-transform: capitalize; color: rgb(44 59 83); font-weight:400;">How to Accept?</p>
-                <p style="font-size:25px; text-align:left;text-transform: capitalize; color: rgb(44 59 83); font-weight:400;">Unfortunately, at this moment in time we can't offer our vehicle <br> services for your vehicle. We will contact you in the future <br> when we are able to offer you, our services.</p>
-                <p style="font-size:25px; text-align:left;text-transform: capitalize; color: rgb(44 59 83); font-weight:400;">Reasons why we can't purchase a vehicle:</p>
+                <p style="font-size:25px; text-align:left;color: rgb(44 59 83); font-weight:400;">How to accept?</p>
+                <p style="font-size:25px; text-align:left;color: rgb(44 59 83); font-weight:400;">Unfortunately, at this moment in time we can't offer our vehicle <br> services for your vehicle. We will contact you in the future <br> when we are able to offer you, our services.</p>
+                <p style="font-size:25px; text-align:left;color: rgb(44 59 83); font-weight:400;">Reasons why we can't purchase a vehicle:</p>
                 
 
-                <p style="font-size:25px; text-align:left;text-transform: capitalize; color: rgb(44 59 83); font-weight:400;line-height: 10px; ">-Not HPI Clear -Too old -Non-runner</p>
-                <p style="font-size:25px; text-align:left;text-transform: capitalize; color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Major mechanical fault</p>
-                <p style="font-size:25px; text-align:left;text-transform: capitalize; color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Previously written off and Cat repaired</p>
-                <p style="font-size:25px; text-align:left;text-transform: capitalize; color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Major Crash Damage</p>
-                <p style="font-size:25px; text-align:left;text-transform: capitalize; color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Scrap vehicle e.g. too old, rusty etc</p>
-                <p style="font-size:25px; text-align:left;text-transform: capitalize; color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Location</p>
+                <p style="font-size:25px; text-align:left;color: rgb(44 59 83); font-weight:400;line-height: 10px; ">-Not HPI Clear -Too old -Non-runner</p>
+                <p style="font-size:25px; text-align:left;color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Major mechanical fault</p>
+                <p style="font-size:25px; text-align:left;color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Previously written off and Cat repaired</p>
+                <p style="font-size:25px; text-align:left;color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Major crash damage</p>
+                <p style="font-size:25px; text-align:left;color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Scrap vehicle e.g. too old, rusty etc</p>
+                <p style="font-size:25px; text-align:left;color: rgb(44 59 83); font-weight:400; line-height: 10px;">-Location</p>
             </div> 
 
     </section>
