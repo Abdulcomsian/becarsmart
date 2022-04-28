@@ -109,9 +109,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6 pb-5">
-                                    <label for="text" class="col-sm-4 col-form-label">Youtube link</label>
+                                    <label for="text" class="col-sm-4 col-form-label">Tiktok link</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="youtube_link" value="{{ $contactdata->youtube_link ?? '' }}" id="row-1">
+                                        <input type="text" class="form-control" name="youtube_link" value="{{ $contactdata->youtube_link ?? '' }}" placeholder="Enter Tiktok Link" id="row-1">
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6 pb-5">
