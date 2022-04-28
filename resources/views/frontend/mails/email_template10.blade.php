@@ -23,9 +23,12 @@
             </div>
         </div>
         <br><br>
-        <h3 style="text-align:left;color: rgb(44 59 83);font-size: 22px;line-height: 38px;font-weight: 500;margin-bottom: 10px;">What happens next?</h4>
-        <p style="font-size:15px;text-align:left;color: #2b3a53;font-weight:400;">This email will have a document attached, which you will need to fill in so we have a better understanding of what type of vehicles you are looking to stock. 
-        <br><br> Once we know what you are looking for, we will contact you either by phone or email.</p>
+        <!-- <h3 style="text-align:left;color: rgb(44 59 83);font-size: 22px;line-height: 38px;font-weight: 500;margin-bottom: 10px;">What happens next?</h4> -->
+        <!-- <p style="font-size:15px;text-align:left;color: #2b3a53;font-weight:400;">This email will have a document attached, which you will need to fill in so we have a better understanding of what type of vehicles you are looking to stock. 
+        <br><br> Once we know what you are looking for, we will contact you either by phone or email.</p> -->
+
+        <p style="font-size:15px;text-align:left;color: #2b3a53;font-weight:600;">We will contact you soon to get a better idea of what type of vehicles you are looking to stock.</p>
+
         <br><br><br><br><br>
 
         <div style="padding: 5px 20px; background: #e74f42;">

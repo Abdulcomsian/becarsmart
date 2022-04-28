@@ -44,9 +44,7 @@
                             </div>
                         </div>
                         <br><br><br>
-                        <p class="thankyour-text pb-2">You are now one step closer to finding your next vehicle.</p>
-                        <p class="thankyour-text ">What happens next? One of our agents will be in contact.</p>
-                        <p class="thankyour-text pb-2">They will confirm some further details and start searching for your <br> next car.</p>
+                        <p class="thankyour-text pb-2">You are now one step closer to selling your vehicle. What happens next? One of our agents will be in contact. They will confirm all the vehicle details are accurate and give you a guaranteed price. Once you are happy with the offer and wish to accept it we can move forward and arrange a suitable collection date. The payment will be made on collection. It will be an instant bank transfer payment.</p>
                         <br><br>
 
 
