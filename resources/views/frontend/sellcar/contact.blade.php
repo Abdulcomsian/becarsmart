@@ -64,7 +64,7 @@
                             </div>
                             
                             <div class="sign-up">
-                                <a href="https://wa.me/00447340194209" target="_blank">
+                                <a href="https://wa.me/00447553456899" target="_blank">
                                 <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid"> 
                                 </a><span>Or you can WhatsApp us your query. </span>
                             </div>
