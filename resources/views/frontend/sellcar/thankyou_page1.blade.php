@@ -44,15 +44,15 @@
                             </div>
                         </div>
                         <br><br><br>
-                        <p class="thankyour-text pb-2">You are now one step closer to selling your vehicle. What happens next? One of our agents will be in contact. They will confirm all the vehicle details are accurate and give you a guaranteed price. Once you are happy with the offer and wish to accept it we can move forward and arrange a suitable collection date. The payment will be made on collection. It will be an instant bank transfer payment.</p>
-                        <br><br>
+                        <!-- <p class="thankyour-text pb-2">You are now one step closer to selling your vehicle. What happens next? One of our agents will be in contact. They will confirm all the vehicle details are accurate and give you a guaranteed price. Once you are happy with the offer and wish to accept it we can move forward and arrange a suitable collection date. The payment will be made on collection. It will be an instant bank transfer payment.</p>
+                        <br><br> -->
 
 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-container" style="background:#2c3b53;padding: 11px 25%;">
+        <!-- <div class="footer-container" style="background:#2c3b53;padding: 11px 25%;">
             <p style="font-size:25px; text-align:center;text-transform: uppercase; color:#fff; font-weight:600;">Why Choose Us?</p>
             <div class="row">
                 <div class="col-4"></div>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="col-4"></div>
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- Suppport Section -->
     <section class="want_to_sell p-3 text-white">
