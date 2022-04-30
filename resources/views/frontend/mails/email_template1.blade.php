@@ -35,16 +35,16 @@
             </div>
         </div>
         <br><br>
-        <!-- <p style="color: #747474;font-size: 16px; font-weight: 500; text-align:center">You are now one step closer to selling your vehicle.
+        <p style="color: #747474;font-size: 16px; font-weight: 500; text-align:center">You are now one step closer to selling your vehicle.
         <br><br> What happens next? One of our agents will be in contact. They
         <br> will confirm all the vehicle details are accurate and give you a
         <br> guaranteed price.
         <br><br> Once you are happy with the offer and wish to accept it, we can
         <br> move forward and arrange a suitable collection date.
         <br><br> The payment will be made on collection. It will be an instant <br> bank transfer payment.</p>
-        <br><br> -->
+        <br><br>
             
-            <!-- <div class="footer-container" style="background:#2c3b53; padding:8px; ">
+            <div class="footer-container" style="background:#2c3b53; padding:8px; ">
                 <p style="font-size:15px; text-align:center; color:#fff; font-weight:600;">Why Choose Us?</p>
                 <div class="row">
                     <div class="col-5"></div>
@@ -57,7 +57,7 @@
                 </div>
                 
                 
-            </div> -->
+            </div>
 
 
     </section>
