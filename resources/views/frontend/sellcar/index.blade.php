@@ -281,7 +281,7 @@ BeCarSmart | index
                <div class="col-12 text-center">
                   <div class="title">
                      <h2>Want to Buy A Car?</h2>
-                     <p>Fill out the form and let us find a best car you want.</p>
+                     <p>Fill out the form and let us find the car you're looking for.</p>
                   </div>
                </div>
                <div class="col-12 p-0">
