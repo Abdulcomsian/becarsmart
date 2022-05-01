@@ -207,7 +207,8 @@ Route::get('/about', function () {
 })->name('frontend/about');
 
 Route::get('/reviews', function () {
-    return view('frontend/sellcar/reviews');
+    $contactdata = ContactUs::first();
+    return view('frontend/sellcar/reviews',compact('contactdata'));
 })->name('frontend/reviews');
 
 Route::get('/thankyou_buy_car', function () {

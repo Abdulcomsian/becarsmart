@@ -47,8 +47,8 @@
             <div class="footer-container" style="background:#2c3b53; padding:8px; ">
                 <p style="font-size:15px; text-align:center; color:#fff; font-weight:600;">Why Choose Us?</p>
                 <div class="row">
-                    <div class="col-4"></div>
-                    <div class="choose-us col-4" style="padding-left:20px;">
+                    <div class="col-5"></div>
+                    <div class="choose-us col-3" style="padding-left:20px;">
                         <p style=" color:#fff; font-weight:600; font-size:12px;">1.  Free collection</p>
                         <p style=" color:#fff; font-weight:600; font-size:12px;">2.  Honest - Haggle free service</p>
                         <p style=" color:#fff; font-weight:600; font-size:12px;">3.  Instant payment</p>

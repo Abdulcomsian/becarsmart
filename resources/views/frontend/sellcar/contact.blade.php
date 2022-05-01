@@ -65,15 +65,15 @@
                             
                             <div class="sign-up">
                                 <a href="https://wa.me/00447553456899" target="_blank">
-                                <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="50px" class="rounded img-fluid"> 
-                                </a><span>Or you can WhatsApp us your query. </span>
+                                <img src="{{asset ('assets/img/whatsapp-logo.png')}}" width="45px" class="rounded img-fluid"> 
+                                </a><span> 07553456899 Or you can WhatsApp us your query. </span>
                             </div>
                             <div class="social-media">
                                 <ul class="address">
-                                    <li><a href="{{ $contactdata->youtube_link ?? '#'}}" target="_blank"><img src="{{asset ('assets/img/tiktok.png')}}" alt=""></a></li>
-                                    <li><a href="{{ $contactdata->instagram_link ?? '#'}}" target="_blank"><img src="{{asset ('assets/img/instagram.png')}}" alt=""></a></li>
-                                    <li><a href="{{ $contactdata->facebook_link ?? '#'}}" target="_blank"><img src="{{asset ('/assets/img/facebook.png')}}" alt=""></a></li>
-                                    <li><a href="{{ $contactdata->twitter_link ?? '#'}}" target="_blank"><img src="{{asset ('/assets/img/twitter.png')}}" alt=""></a></li>
+                                    <li><a href="{{ $contactdata->youtube_link ?? '#'}}" target="_blank"><img src="{{asset ('assets/img/tiktok.png')}}" alt="" style="width:20px;"></a></li>
+                                    <li><a href="{{ $contactdata->instagram_link ?? '#'}}" target="_blank"><img src="{{asset ('assets/img/instagram.png')}}" alt="" style="width:20px; height:20px;" ></a></li>
+                                    <li><a href="{{ $contactdata->facebook_link ?? '#'}}" target="_blank"><img src="{{asset ('/assets/img/facebook.png')}}" alt="" style="width:20px; height:20px;" ></a></li>
+                                    <li><a href="{{ $contactdata->twitter_link ?? '#'}}" target="_blank"><img src="{{asset ('/assets/img/twitter.png')}}" alt="" style="width:20px; height:20px;" ></a></li>
                                 </ul>
 
                             </div>
