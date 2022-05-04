@@ -19,7 +19,7 @@ class ContactController extends Controller
     {
         $input = $request->except('_token');
         Mail::send(array(), array(), function ($message) use ($input) {
-            $message->to('admin@example.com')
+            $message->to('info@becarsmart.co.uk')
                 ->subject('contact us mail')
                 ->from($input['email'])
                 ->setBody($input['message'], 'text/html');
