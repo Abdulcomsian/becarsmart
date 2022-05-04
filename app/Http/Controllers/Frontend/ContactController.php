@@ -22,7 +22,7 @@ class ContactController extends Controller
             $message->to('info@becarsmart.co.uk')
                 ->subject('contact us mail')
                 ->from($input['email'])
-                ->setBody($input['message'], 'text/html');
+                ->view('frontend.mails.email_template1');
         });
         toastSuccess('Your query send to admin successfully');
         return back();
