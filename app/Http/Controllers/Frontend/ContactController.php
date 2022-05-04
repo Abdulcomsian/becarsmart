@@ -21,8 +21,7 @@ class ContactController extends Controller
         Mail::send(array(), array(), function ($message) use ($input) {
             $message->to('info@becarsmart.co.uk')
                 ->subject('contact us mail')
-                ->from($input['email'])
-                ->view('frontend.mails.email_template1');
+                ->from($input['email']);
         });
         toastSuccess('Your query send to admin successfully');
         return back();
