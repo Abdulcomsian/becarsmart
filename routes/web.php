@@ -147,6 +147,11 @@ Route::post('/sellcar_new', [HomeController::class, 'sell_car_lead'])->name('sel
 Route::post('/find-vehicle', [HomeController::class, 'find_vehicle'])->name('find.vehicle');
 Route::post('/motor-trader', [HomeController::class, 'motor_trader_lead'])->name('motor.trader');
 
+Route::get('/motor-trader', function () {
+    $contactdata = ContactUs::first();
+    return view('frontend/sellcar/motor-traders',compact('contactdata'));
+})->name('frontend/motor-traders');
+
 //frontend contact us controller
 Route::get('/contact',  [ContactController::class, 'index'])->name('frontend/contact');
 Route::post('/contact-send',  [ContactController::class, 'store'])->name('contact-store');
