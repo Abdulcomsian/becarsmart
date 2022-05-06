@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 @section('title')
-BeCarSmart | index
+BeCarSmart | Sell Your Car Online
 @endsection
 @section('css')
 <style>

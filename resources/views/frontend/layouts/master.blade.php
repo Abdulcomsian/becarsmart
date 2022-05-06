@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sell your car with us | Premium vehicle purchasing specialists | Enter your reg | Becarsmart">
+  <meta name="keywords" content="BeCarSmart | Sell Your Car Online">
   <title>@yield('title')</title>
 
 
