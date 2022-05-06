@@ -7,18 +7,18 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class ContactUsNotification extends Notification
+class BuyCarNotification extends Notification
 {
     use Queueable;
-
+    private $offerData;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($offerData)
     {
-        //
+        $this->offerData = $offerData;
     }
 
     /**
