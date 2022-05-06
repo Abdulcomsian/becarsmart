@@ -10,12 +10,12 @@
 </head>
 
 <body style=" margin:0px; font-family: 'Poppins', sans-serif;">
-    <section id="header" style="width: 100%; max-width:80%;  margin:0 auto;">
+    <section id="header" style="width: 100%; max-width:80%;  margin:auto;">
         <div class="header-content" style="text-align: left;">
             <img src="{{asset ('assets/img/FFF_BeCar_LO.svg')}}" width="45%" />
         </div>
         <br>
-        <h3 style="text-align:center;color: rgb(44 59 83);font-size: 16px;line-height: 40px;text-transform: uppercase;font-weight: 600;margin-bottom: -16px;">CONGRATULATIONS! <br> YOU'RE NOW SIGNED UP.</h3>
+        <h3 style="text-align:center;color: rgb(44 59 83);font-size: 32px;line-height: 40px;text-transform: uppercase;font-weight: 600;margin-bottom: -16px;">CONGRATULATIONS! <br> YOU'RE NOW SIGNED UP.</h3>
 
         <div class="multipale-img" style="text-align: center; width:100%; max-width:70%; margin:0 auto;">
             <div style="width:100%">
