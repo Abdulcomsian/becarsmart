@@ -43,7 +43,7 @@ class BuyCarNotification extends Notification
         return (new MailMessage)
             ->greeting('Contact Us')
             ->subject('Contact Us')
-            ->view('frontend.mails.email_template1');
+            ->view('frontend.mails.contact_us');
     }
 
     /**
