@@ -21,7 +21,7 @@ class ContactController extends Controller
         
 
         $data [] = '';
-        Mail::send ( 'email', $data, function ($message) {
+        Mail::send ( 'email', $data, function ($message) use ($input) {
         
         $message->from ( $input['email'], 'Contact Us' );
         
