@@ -41,9 +41,9 @@ class BuyCarNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->greeting('Buy Car notification')
-            ->subject('Buy Car notification')
-            ->view('mail.buycar');
+            ->greeting('Contact Us')
+            ->subject('Contact Us')
+            ->view('frontend.mails.email_template1');
     }
 
     /**

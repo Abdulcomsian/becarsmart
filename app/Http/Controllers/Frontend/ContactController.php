@@ -6,8 +6,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\ContactUs;
 use Mail;
-use Notification;
-use App\Notifications\TradersNotification;
 
 class ContactController extends Controller
 {
@@ -20,9 +18,15 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $input = $request->except('_token');
-        Notification::route('mail', $request->email)->notify(new TradersNotification($request->all()));
-
         
+
+        $data [] = '';
+        Mail::send ( 'email', $data, function ($message) use ($input){
+        
+        $message->from ( $input['email'], 'Contact Us' )->setBody($input['message'], 'text/html');
+        
+        $message->to ('info@becarsmart.co.uk')->subject ( 'Just Laravel demo email using SendGrid' );
+    } );
         toastSuccess('Your query send to admin successfully');
         return back();
     }
