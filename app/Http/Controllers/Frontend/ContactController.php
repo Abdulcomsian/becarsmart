@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\ContactUs;
 use Mail;
 use Notification;
+use App\Notifications\TradersNotification;
 
 class ContactController extends Controller
 {
