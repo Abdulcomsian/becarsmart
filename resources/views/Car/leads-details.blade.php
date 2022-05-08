@@ -161,7 +161,7 @@
                                 <th class="min-w-125px">Full Name</th>
                                 <th class="min-w-125px">Email</th>
                                 <th class="min-w-125px">Phone number</th>
-                                <th class="min-w-125px">Model</th>
+                                <th class="min-w-125px">Postal Code</th>
                                 <th class="min-w-125px">Color</th>
                                 <th class="min-w-125px">Engine</th>
                             </tr>
@@ -174,7 +174,7 @@
                                 <td class="">{{$lead->fullname ?? ''}}</td>
                                 <td class="">{{$lead->email ?? ''}}</td>
                                 <td class="">{{$lead->phone ?? ''}}</td>
-                                <td class="">{{$lead->model_no}}</td>
+                                <td class="">{{$lead->postal ?? ''}}</td>
                                 <td class="">{{$lead->color ?? ''}}</td>
                                 <td class="">{{$lead->engine ?? ''}}</td>
                             </tr>
@@ -191,6 +191,7 @@
                             <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
                                 <th class="min-w-125px">Registration Number</th>
                                 <th class="min-w-125px">Make</th>
+                                <th class="min-w-125px">Model</th>
                                 <th class="min-w-125px">Euro Status</th>
                                 <th class="min-w-125px">Engine Capacity</th>
                             </tr>
@@ -202,6 +203,7 @@
                             <tr>
                                 <td class="">{{$lead->registration ?? ''}}</td>
                                 <td class="">{{$lead->make ?? ''}}</td>
+                                <td class="">{{$lead->model_no ?? ''}}</td>
                                 <td class="">{{$lead->euroStatus ?? ''}}</td>
                                 <td class="">{{$lead->CylinderCapacity ?? ''}}</td>
                             </tr>

@@ -24,7 +24,7 @@
         <p style="color: #747474;font-size: 16px; font-weight: 500; text-align:center">This automatic reply is just to let you know that we received your message and we’ll get back to you with a response as quickly as possible.
         <br><br>If you have any additional information that you think will help us to assist you, please feel free to reply to this email.
         
-        <br> We look forward to chatting soon!
+        <br> We look forward to speaking soon!
         <br><br>
         
         Thanks
