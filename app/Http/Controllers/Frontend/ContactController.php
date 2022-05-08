@@ -21,7 +21,7 @@ class ContactController extends Controller
     {
         $input = $request->except('_token');
         Notification::route('mail', $request->email)->notify(new ContactUsNotification($request->all()));
-        toastSuccess('Your query send to admin successfully');
+        // toastSuccess('Your query send to admin successfully');
         return back();
     }
 }

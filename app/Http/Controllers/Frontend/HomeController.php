@@ -61,8 +61,8 @@ class HomeController extends Controller
         $model->questions = $request->question;
         $model->answers = $request->answer;
         if ($model->save()) {
-            Notification::route('mail', 'info@becarsmart.co.uk')->notify(new BuyCarNotification($request->all()));
-            Notification::route('mail', $request->email)->notify(new BuyCarNotification($request->all()));
+            // Notification::route('mail', 'info@becarsmart.co.uk')->notify(new BuyCarNotification($request->all()));
+            // Notification::route('mail', $request->email)->notify(new BuyCarNotification($request->all()));
             //toastSuccess('Thank you for your information. We will be in touch soon.');
             return redirect()->route('thankyou.buy.car');
             //return Redirect::back()->with('thankyou', 'thankyou');
