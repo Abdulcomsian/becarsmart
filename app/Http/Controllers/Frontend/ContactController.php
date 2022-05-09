@@ -20,6 +20,12 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $input = $request->except('_token');
+        Mail::send(array(), array(), function ($message) use ($input) {
+            $message->to('areebhassan.ah@gmail.com')
+                ->subject('contact us mail')
+                ->from('info@becarsmart.co.uk')
+                ->setBody($input['message'], 'text/html');
+        });
         Notification::route('mail', $request->email)->notify(new ContactUsNotification($request->all()));
         // toastSuccess('Your query send to admin successfully');
         return back();
