@@ -106,9 +106,12 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/sell-car', [SellCarController::class, 'index'])->name('Car.sell-car');
     Route::post('sell-car-delete',[SellCarController::class, 'destroy'])->name('sellcar-delete');
+    Route::delete('sell-car-lead-delete-all', [SellCarController::class, 'deleteAll'])->name('sell-car-delete-all');
+    Route::delete('traders-delete-all', [MotorTraderController::class, 'deleteAll'])->name('traders-delete-all');
     Route::get('/leads-details/{id}', [SellCarController::class, 'sell_car_lead_details'])->name('Car.leads-details');
     Route::get('/buy-car', [BuyCarLeadController::class, 'index'])->name('Car.buy-car');
     Route::post('/buy-car-lead-delete', [BuyCarLeadController::class, 'buy_car_delete'])->name('buy-car-delete');
+    Route::delete('buy-car-lead-delete-all', [BuyCarLeadController::class, 'deleteAll'])->name('buy-car-delete');
     Route::get('/evaluate-car/{id}', [BuyCarLeadController::class, 'evaluate_car'])->name('Car.evaluate-car');
 
     Route::get('/dashboard', function () {

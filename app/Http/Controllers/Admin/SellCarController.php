@@ -25,4 +25,18 @@ class SellCarController extends Controller
         toastSuccess('Lead Deleted Successfully');
         return Redirect::back();
     }
+
+    //delte multiple lead
+    public function deleteAll(Request $request)
+    {
+        try {
+            $ids = $request->ids;
+            SellCarLead::whereIn('id',explode(',',$ids))->delete(); 
+            toastSuccess("Leads Deleted Successfully!");
+            return response()->json(['success'=>"Products Deleted successfully."]);
+        } catch (\Exception $exception) {
+            toastError('Something went wrong,try again');
+            return Redirect::back();
+        }
+    }
 }

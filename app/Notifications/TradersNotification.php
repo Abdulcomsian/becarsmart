@@ -43,7 +43,7 @@ class TradersNotification extends Notification
         return (new MailMessage)
             ->greeting('Trader notification')
             ->subject('Trader notification')
-            ->view('frontend.mails.email_template10');
+            ->view('frontend.mails.email_template7');
     }
 
     /**

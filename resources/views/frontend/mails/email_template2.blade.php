@@ -12,7 +12,7 @@
 <body style=" margin:0px; font-family: 'Poppins', sans-serif;">
     <section id="header" style="width: 100%; max-width:80%;  margin:0 auto;">
         <div class="header-content" style="text-align: left;">
-            <img src="{{asset ('assets/img/FFF_BeCar_LO.svg')}}" width="45%" />
+            <img src="{{asset ('assets/img/sellcar-logo.png')}}" width="45%" />
         </div>
         <br>
         <center>
@@ -24,16 +24,16 @@
             <br><br>
         <div class="multipale-img" style="text-align: center; width:100%; display:inline-flex;max-width: 100%;">
             <div style="width:25%">
-                <img src="{{asset ('assets/img/ENTER REG-3.png')}}" style="width:50%;" />
+                <img src="{{asset ('assets/img/enterreg.png')}}" style="width:50%;" />
             </div>
             <div style="width:25%">
-                <img src="{{asset ('assets/img/MicrosoftTeams-image (2).png')}}" style="width:50%;" />
+                <img src="{{asset ('assets/img/microsoft2.png')}}" style="width:50%;" />
             </div>
             <div style="width:25%">
                 <img src="{{asset ('assets/img/DEAL.png')}}" style="width:50%;" />
             </div>
             <div style="width:25%">
-                <img src="{{asset ('assets/img/MicrosoftTeams-image (4).png')}}" style="width:50%;" />
+                <img src="{{asset ('assets/img/microsoft2.png')}}" style="width:50%;" />
             </div>
         </div>
         <br><br>

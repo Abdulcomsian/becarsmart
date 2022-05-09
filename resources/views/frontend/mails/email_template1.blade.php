@@ -16,7 +16,7 @@
 <body style=" margin:0px; font-family: 'Poppins', sans-serif;">
     <section id="header" style="width: 100%; max-width:80%;  margin:0 auto;">
         <div class="header-content" style="text-align: center;">
-            <img src="{{asset ('assets/img/fff.svg')}}" width="45%" />
+            <img src="{{asset ('assets/img/sellcar-logo.png')}}" width="45%" />
         </div>
         <p style="color: #2c3b53;font-size: 32px; font-weight: 700; text-align:center">Thank you for  <br> completing our vehicle <br> valuation form.</p>
         <br>

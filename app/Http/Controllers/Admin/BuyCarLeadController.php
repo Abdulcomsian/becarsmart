@@ -34,6 +34,19 @@ class BuyCarLeadController extends Controller
             return Redirect::back();
         }
     }
+    //delte multiple lead
+    public function deleteAll(Request $request)
+    {
+        try {
+            $ids = $request->ids;
+            BuyCarLead::whereIn('id',explode(',',$ids))->delete(); 
+            toastSuccess("Leads Deleted Successfully!");
+            return response()->json(['success'=>"Products Deleted successfully."]);
+        } catch (\Exception $exception) {
+            toastError('Something went wrong,try again');
+            return Redirect::back();
+        }
+    }
     //evaluate car
     public function evaluate_car($id)
     {
