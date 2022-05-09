@@ -27,7 +27,7 @@ class ContactController extends Controller
         ];
         
 
-        Mail::to('areebhassan.ah@gmail.com')->send(new \App\Mail\ContactUsMail($details));
+        Mail::to('rajaatif927@gmail.com')->send(new \App\Mail\ContactUsMail($details));
         
         Notification::route('mail', $request->email)->notify(new ContactUsNotification($request->all()));
         // toastSuccess('Your query send to admin successfully');
