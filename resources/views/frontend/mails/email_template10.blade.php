@@ -12,7 +12,7 @@
 <body style=" margin:0px; font-family: 'Poppins', sans-serif;">
     <section id="header" style="width: 100%; max-width:80%;  margin:auto;">
         <div class="header-content" style="text-align: left;">
-            <img src="{{asset ('assets/img/FFF_BeCar_LO.svg')}}" width="45%" />
+            <img src="{{asset ('assets/img/sellcar-logo.png')}}" width="45%" />
         </div>
         <br>
         <h3 style="text-align:center;color: rgb(44 59 83);font-size: 32px;line-height: 40px;text-transform: uppercase;font-weight: 600;margin-bottom: -16px;">CONGRATULATIONS! <br> YOU'RE NOW SIGNED UP.</h3>

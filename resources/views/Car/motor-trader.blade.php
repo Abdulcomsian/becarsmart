@@ -85,12 +85,14 @@
                 <!--end::Card header-->
                 <!--begin::Card body-->
                 <div class="card-body pt-0">
+                    <button type="submit" class="btn btn-warning delete_all" data-url="{{ url('traders-delete-all') }}">Delete All Select</button>
                     <!--begin::Table-->
                     <table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_table_users">
                         <!--begin::Table head-->
                         <thead>
                             <!--begin::Table row-->
                             <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
+                                <th class="min-w-125px"> <input type="checkbox" id="master"> Check</th>
                                 <th class="min-w-125px">First name</th>
                                 <th class="min-w-125px">Last name</th>
                                 <th class="min-w-125px">Company name</th>
@@ -109,6 +111,9 @@
                         <tbody class="text-gray-600 fw-bold">
                             @foreach($traders as $lead)
                             <tr>
+                                <td>
+                                    <input type="checkbox" class="sub_chk" data-id="{{$lead->id}}">
+                                </td>
                                 <td class="">{{$lead->first_name ?? ''}}</td>
                                 <td class="">{{$lead->last_name ?? ''}}</td>
                                 <td class="">{{$lead->company_name ?? ''}}</td>
@@ -143,4 +148,60 @@
 @endsection
 @section('scripts')
 @include('layouts.sweetalert.sweetalert_js')
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#master').on('click',function (e) {
+            if ($(this).is(':checked',true)) {
+                $('.sub_chk').prop('checked',true)
+            }else {
+                $('.sub_chk').prop('checked',false)
+            }
+        });
+
+        $('.delete_all').on('click',function (e) {
+            var allVals = [];
+            $('.sub_chk:checked').each(function () {
+                allVals.push($(this).attr('data-id'));
+            });
+
+            if (allVals.length <= 0) {
+                alert("Please select row.");
+            }else {
+                var check = confirm("Are you sure you want to delete this row?");
+                if (check == true) {
+                    var join_selected_values = allVals.join(",");
+
+                    $.ajax({
+                        url: $(this).data('url'),
+                        type: 'DELETE',
+                        headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                        data:'ids='+join_selected_values,
+                        success:function (data) {
+                            console.log(data);
+                            if (data['success']) {
+                                $(".sub_chk:checked").each(function () {
+                                    $(this).parents("tr").remove();
+                                });
+                                alert(data['success']);
+                            } else if (data['success']){
+                                alert(data['error']);
+                            } else{
+                                alert('Whoops Something went wrong!!');
+                            }
+                        },
+                        error: function (data) {
+                            alert(data.responseText);
+                        }
+                    });
+
+                    $.each(allVals, function( index, value ){
+                        $('table tr').filter("[data-row-id='" + value + "']").remove();
+                    });
+                }
+            }
+        });
+
+
+    });
+</script>
 @endsection

@@ -12,7 +12,7 @@
 <body style=" margin:0px; font-family: 'Poppins', sans-serif;">
     <section id="header" style="width: 100%; max-width:80%;  margin:0 auto;">
         <div class="header-content" style="text-align: left;">
-            <img src="{{asset ('assets/img/FFF_BeCar_LO.svg')}}" width="45%" />
+            <img src="{{asset ('assets/img/sellcar-logo.png')}}" width="45%" />
         </div>
         <br>
         <div class="multipale-img" style="text-align: center; width:100%; max-width:70%; margin:0 auto;">
