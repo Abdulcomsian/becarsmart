@@ -19,7 +19,7 @@
 
         <div class="multipale-img" style="text-align: center; width:100%; max-width:70%; margin:0 auto;">
             <div style="width:100%">
-                <img src="{{asset ('assets/img/Untitled design-4.png')}}" style="width:50%;" />
+                <img src="{{asset ('assets/img/untitled_design_4.png')}}" style="width:50%;" />
             </div>
         </div>
         <br><br><br>
