@@ -32,14 +32,19 @@
         <br><br> What happens next? One of our agents will be in contact. They will <br> confirm some further details and start searching for your next car.</p>
         <br><br>
             
-            <div style="background:#2c3b53; padding:8px; ">
-                <p style="font-size:25px; text-align:center;text-transform: uppercase; color:#fff; font-weight:600;">Why Choose Us?</p>
-                
-                <div style="padding-left:20px;">
-                    <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">1 we are sourcing specialists </p>
-                    <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">2 Finance available</p>
-                    <p style="text-transform: uppercase; color:#fff; font-weight:600; font-size:25px;">3 Convenience - sell your current vehicle to Us.</p>
+            <div class="footer-container" style="background:#2c3b53; padding:8px; ">
+                <p style="font-size:15px; text-align:center; color:#fff; font-weight:600;">Why Choose Us?</p>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="choose-us col-4" style="padding-left:20px;">
+                        <p style=" color:#fff; font-weight:600; font-size:12px;">1.  Free collection</p>
+                        <p style=" color:#fff; font-weight:600; font-size:12px;">2.  Honest - Haggle free service</p>
+                        <p style=" color:#fff; font-weight:600; font-size:12px;">3.  Instant payment</p>
+                    </div>
+                    <div class="col-4"></div>
                 </div>
+                
+                
             </div>
 
 
