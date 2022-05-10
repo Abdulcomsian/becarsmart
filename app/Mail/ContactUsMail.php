@@ -29,7 +29,7 @@ class ContactUsMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('contact us mail')
+        return $this->subject('Contact Us')
                     ->view('frontend.mails.email_template12');
     }
 }
