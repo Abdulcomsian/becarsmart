@@ -45,7 +45,7 @@
             <div style="padding:8px; ">
                 <p style="font-size:25px; text-align:center;text-transform: uppercase; color: rgb(44 59 83); font-weight:600;">How to Accept?</p>
                 <div style="padding-left:20px;">
-                    <p style="text-transform: uppercase; color: rgb(44 59 83); font-weight:600; font-size:25px;">1 Call US On 023*********** </p>
+                    <p style="text-transform: uppercase; color: rgb(44 59 83); font-weight:600; font-size:25px;">1 Call US On 023 9355 2653 </p>
                     <p style="text-transform: uppercase; color: rgb(44 59 83); font-weight:600; font-size:25px;">2 Reply back to this email with 'ACCEPT'.</p>
                 </div>
             </div>
