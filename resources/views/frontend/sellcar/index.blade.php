@@ -325,10 +325,10 @@ BeCarSmart | Sell Your Car Online
                               </div>
                               <div class="form-card">
                                  <input type="text" name="phone" placeholder="Enter Phone no" minlength="10" maxlength="11" required="">
-                              </div>
+                              </div>-->
                               <div class="form-card">
                                  <input type="email" name="email" placeholder="Enter Email" required="">
-                              </div> -->
+                              </div> 
                               <input type="submit" class="action-button" value="Confirm">
                         @endif
                         </fieldset>
