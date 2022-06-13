@@ -8,7 +8,14 @@
   <meta name="description" content="Sell your car with us | Premium vehicle purchasing specialists | Enter your reg | Becarsmart">
   <meta name="keywords" content="BeCarSmart | Sell Your Car Online">
   <title>@yield('title')</title>
-
+  <!-- here is the code: Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-228154043-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-228154043-1');
+  </script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="{{asset ('assets/css/style.css')}}">
