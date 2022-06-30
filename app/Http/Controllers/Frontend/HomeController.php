@@ -218,7 +218,7 @@ class HomeController extends Controller
         $model->contact_number = $request->contact_number;
         $model->email = $request->email;
         if ($model->save()) {
-            // Notification::route('mail', 'info@becarsmart.co.uk')->notify(new BuyCarNotification($request->all()));
+            // Notifica::route('mail', 'info@becarsmart.co.uk')->notify(new BuyCarNotification($request->all()));
             Notification::route('mail', $request->email)->notify(new TradersNotification($request->all()));
             // toastSuccess('Thank you for your information. We will be in touch soon.');
             return view('frontend.sellcar.thankyou_page4');
