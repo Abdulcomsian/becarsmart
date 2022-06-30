@@ -205,6 +205,13 @@ g{
   
 }
 
+@media (max-width: 420px) {
+  .congratulations
+  {
+    font-size: 13px !important;
+  }
+}
+
 /* How it Works */
 
 .how_it_Works {
