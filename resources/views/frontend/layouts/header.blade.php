@@ -14,9 +14,11 @@
                  <a class="nav-link" href="{{ url('/how_it_works') }}">How It Works</a>
               </li>
               <li class="nav-item">
-                 <a class="nav-link" href="{{url('/index/')}}#Buy-a-Car">Source A Car</a>
+                 <a class="nav-link" href="https://becarsmart.co.uk/public/blog/">Source A Car</a>
               </li>
-
+             <li class="nav-item">
+                 <a class="nav-link" href="{{url('/index/')}}#Buy-a-Car">Blog</a>
+              </li>
 
               <li class="nav-item dropdown">
                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
