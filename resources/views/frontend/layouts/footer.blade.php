@@ -11,6 +11,9 @@
                         <a href="{{ url('/privacy_policy') }}">Privacy</a>
                         <span>.&nbsp</span>
                         <a href="{{ url('/cookies') }}">Cookies</a>
+                         <span>.&nbsp</span>
+                        <a href="https://becarsmart.co.uk/blog">Blog</a>
+                        
                     </div>
                     <div class="footer-para">
                         <p class="footer-text">Follow us on:</p>
